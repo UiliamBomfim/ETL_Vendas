@@ -3026,3 +3026,451 @@ NameError: name 'extract' is not defined
 [2022-06-21 03:14:46,924] {logging_mixin.py:115} INFO - [2022-06-21 03:14:46,924] {dag.py:2379} INFO - Sync 1 DAGs
 [2022-06-21 03:14:46,958] {logging_mixin.py:115} INFO - [2022-06-21 03:14:46,958] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
 [2022-06-21 03:14:46,976] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.539 seconds
+[2022-06-21 03:15:17,059] {processor.py:153} INFO - Started process (PID=65896) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:15:17,060] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:15:17,061] {logging_mixin.py:115} INFO - [2022-06-21 03:15:17,061] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:15:17,508] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:15:17,542] {logging_mixin.py:115} INFO - [2022-06-21 03:15:17,542] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:15:17,575] {logging_mixin.py:115} INFO - [2022-06-21 03:15:17,575] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:15:17,590] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.536 seconds
+[2022-06-21 03:15:47,680] {processor.py:153} INFO - Started process (PID=65941) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:15:47,680] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:15:47,681] {logging_mixin.py:115} INFO - [2022-06-21 03:15:47,681] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:15:48,103] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:15:48,132] {logging_mixin.py:115} INFO - [2022-06-21 03:15:48,132] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:15:48,166] {logging_mixin.py:115} INFO - [2022-06-21 03:15:48,166] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:15:48,183] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.509 seconds
+[2022-06-21 03:16:18,289] {processor.py:153} INFO - Started process (PID=66015) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:16:18,290] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:16:18,292] {logging_mixin.py:115} INFO - [2022-06-21 03:16:18,292] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:16:19,255] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:16:19,301] {logging_mixin.py:115} INFO - [2022-06-21 03:16:19,301] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:16:19,356] {logging_mixin.py:115} INFO - [2022-06-21 03:16:19,356] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:16:19,384] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 1.111 seconds
+[2022-06-21 03:16:49,483] {processor.py:153} INFO - Started process (PID=66067) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:16:49,484] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:16:49,484] {logging_mixin.py:115} INFO - [2022-06-21 03:16:49,484] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:16:49,915] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:16:49,947] {logging_mixin.py:115} INFO - [2022-06-21 03:16:49,946] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:16:49,982] {logging_mixin.py:115} INFO - [2022-06-21 03:16:49,982] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:16:49,999] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.521 seconds
+[2022-06-21 03:17:20,087] {processor.py:153} INFO - Started process (PID=66122) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:17:20,094] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:17:20,095] {logging_mixin.py:115} INFO - [2022-06-21 03:17:20,095] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:17:20,543] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:17:20,575] {logging_mixin.py:115} INFO - [2022-06-21 03:17:20,575] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:17:20,610] {logging_mixin.py:115} INFO - [2022-06-21 03:17:20,610] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:17:20,630] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.549 seconds
+[2022-06-21 03:17:50,710] {processor.py:153} INFO - Started process (PID=66173) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:17:50,711] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:17:50,712] {logging_mixin.py:115} INFO - [2022-06-21 03:17:50,711] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:17:51,134] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:17:51,166] {logging_mixin.py:115} INFO - [2022-06-21 03:17:51,165] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:17:51,200] {logging_mixin.py:115} INFO - [2022-06-21 03:17:51,199] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:17:51,224] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.518 seconds
+[2022-06-21 03:18:21,315] {processor.py:153} INFO - Started process (PID=66232) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:18:21,315] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:18:21,316] {logging_mixin.py:115} INFO - [2022-06-21 03:18:21,316] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:18:21,758] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:18:21,792] {logging_mixin.py:115} INFO - [2022-06-21 03:18:21,792] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:18:21,827] {logging_mixin.py:115} INFO - [2022-06-21 03:18:21,827] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:18:21,850] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.539 seconds
+[2022-06-21 03:18:51,930] {processor.py:153} INFO - Started process (PID=66270) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:18:51,930] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:18:51,931] {logging_mixin.py:115} INFO - [2022-06-21 03:18:51,931] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:18:52,353] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:18:52,387] {logging_mixin.py:115} INFO - [2022-06-21 03:18:52,387] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:18:52,422] {logging_mixin.py:115} INFO - [2022-06-21 03:18:52,422] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:18:52,445] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.519 seconds
+[2022-06-21 03:19:22,531] {processor.py:153} INFO - Started process (PID=66343) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:19:22,532] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:19:22,532] {logging_mixin.py:115} INFO - [2022-06-21 03:19:22,532] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:19:22,959] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:19:22,990] {logging_mixin.py:115} INFO - [2022-06-21 03:19:22,989] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:19:23,023] {logging_mixin.py:115} INFO - [2022-06-21 03:19:23,022] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:19:23,046] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.519 seconds
+[2022-06-21 03:19:53,098] {processor.py:153} INFO - Started process (PID=66399) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:19:53,099] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:19:53,100] {logging_mixin.py:115} INFO - [2022-06-21 03:19:53,100] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:19:53,540] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:19:53,571] {logging_mixin.py:115} INFO - [2022-06-21 03:19:53,571] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:19:53,602] {logging_mixin.py:115} INFO - [2022-06-21 03:19:53,602] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:19:53,626] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.532 seconds
+[2022-06-21 03:20:23,709] {processor.py:153} INFO - Started process (PID=66445) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:20:23,710] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:20:23,710] {logging_mixin.py:115} INFO - [2022-06-21 03:20:23,710] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:20:24,153] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:20:24,185] {logging_mixin.py:115} INFO - [2022-06-21 03:20:24,185] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:20:24,216] {logging_mixin.py:115} INFO - [2022-06-21 03:20:24,216] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:20:24,234] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.529 seconds
+[2022-06-21 03:20:54,265] {processor.py:153} INFO - Started process (PID=66500) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:20:54,266] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:20:54,267] {logging_mixin.py:115} INFO - [2022-06-21 03:20:54,266] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:20:54,731] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:20:54,766] {logging_mixin.py:115} INFO - [2022-06-21 03:20:54,766] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:20:54,800] {logging_mixin.py:115} INFO - [2022-06-21 03:20:54,800] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:20:54,822] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.561 seconds
+[2022-06-21 03:21:24,908] {processor.py:153} INFO - Started process (PID=66553) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:21:24,909] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:21:24,909] {logging_mixin.py:115} INFO - [2022-06-21 03:21:24,909] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:21:25,346] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:21:25,376] {logging_mixin.py:115} INFO - [2022-06-21 03:21:25,376] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:21:25,409] {logging_mixin.py:115} INFO - [2022-06-21 03:21:25,408] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:21:25,432] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.529 seconds
+[2022-06-21 03:21:55,511] {processor.py:153} INFO - Started process (PID=66595) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:21:55,511] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:21:55,512] {logging_mixin.py:115} INFO - [2022-06-21 03:21:55,512] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:21:55,932] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:21:55,963] {logging_mixin.py:115} INFO - [2022-06-21 03:21:55,962] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:21:55,996] {logging_mixin.py:115} INFO - [2022-06-21 03:21:55,996] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:21:56,019] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.512 seconds
+[2022-06-21 03:22:26,107] {processor.py:153} INFO - Started process (PID=66641) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:22:26,108] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:22:26,109] {logging_mixin.py:115} INFO - [2022-06-21 03:22:26,109] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:22:26,549] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:22:26,582] {logging_mixin.py:115} INFO - [2022-06-21 03:22:26,581] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:22:26,617] {logging_mixin.py:115} INFO - [2022-06-21 03:22:26,617] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:22:26,639] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.537 seconds
+[2022-06-21 03:22:56,722] {processor.py:153} INFO - Started process (PID=66691) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:22:56,723] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:22:56,724] {logging_mixin.py:115} INFO - [2022-06-21 03:22:56,723] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:22:57,180] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:22:57,212] {logging_mixin.py:115} INFO - [2022-06-21 03:22:57,212] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:22:57,247] {logging_mixin.py:115} INFO - [2022-06-21 03:22:57,247] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:22:57,264] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.547 seconds
+[2022-06-21 03:23:27,356] {processor.py:153} INFO - Started process (PID=66740) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:23:27,356] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:23:27,357] {logging_mixin.py:115} INFO - [2022-06-21 03:23:27,357] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:23:27,773] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:23:27,803] {logging_mixin.py:115} INFO - [2022-06-21 03:23:27,803] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:23:27,837] {logging_mixin.py:115} INFO - [2022-06-21 03:23:27,836] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:23:27,859] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.508 seconds
+[2022-06-21 03:23:57,933] {processor.py:153} INFO - Started process (PID=66782) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:23:57,940] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:23:57,941] {logging_mixin.py:115} INFO - [2022-06-21 03:23:57,940] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:23:58,369] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:23:58,398] {logging_mixin.py:115} INFO - [2022-06-21 03:23:58,397] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:23:58,430] {logging_mixin.py:115} INFO - [2022-06-21 03:23:58,430] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:23:58,454] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.525 seconds
+[2022-06-21 03:24:28,557] {processor.py:153} INFO - Started process (PID=66860) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:24:28,557] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:24:28,558] {logging_mixin.py:115} INFO - [2022-06-21 03:24:28,558] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:24:28,989] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:24:29,022] {logging_mixin.py:115} INFO - [2022-06-21 03:24:29,022] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:24:29,053] {logging_mixin.py:115} INFO - [2022-06-21 03:24:29,053] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:24:29,076] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.523 seconds
+[2022-06-21 03:24:59,158] {processor.py:153} INFO - Started process (PID=66901) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:24:59,158] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:24:59,159] {logging_mixin.py:115} INFO - [2022-06-21 03:24:59,159] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:24:59,604] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:24:59,638] {logging_mixin.py:115} INFO - [2022-06-21 03:24:59,638] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:24:59,669] {logging_mixin.py:115} INFO - [2022-06-21 03:24:59,669] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:24:59,692] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.540 seconds
+[2022-06-21 03:25:29,776] {processor.py:153} INFO - Started process (PID=66959) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:25:29,777] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:25:29,777] {logging_mixin.py:115} INFO - [2022-06-21 03:25:29,777] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:25:30,202] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:25:30,234] {logging_mixin.py:115} INFO - [2022-06-21 03:25:30,234] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:25:30,266] {logging_mixin.py:115} INFO - [2022-06-21 03:25:30,266] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:25:30,283] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.510 seconds
+[2022-06-21 03:26:00,361] {processor.py:153} INFO - Started process (PID=67008) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:26:00,367] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:26:00,368] {logging_mixin.py:115} INFO - [2022-06-21 03:26:00,368] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:26:00,813] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:26:00,846] {logging_mixin.py:115} INFO - [2022-06-21 03:26:00,846] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:26:00,877] {logging_mixin.py:115} INFO - [2022-06-21 03:26:00,877] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:26:00,902] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.546 seconds
+[2022-06-21 03:26:30,991] {processor.py:153} INFO - Started process (PID=67054) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:26:30,992] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:26:30,992] {logging_mixin.py:115} INFO - [2022-06-21 03:26:30,992] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:26:31,451] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:26:31,484] {logging_mixin.py:115} INFO - [2022-06-21 03:26:31,483] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:26:31,516] {logging_mixin.py:115} INFO - [2022-06-21 03:26:31,516] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:26:31,542] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.555 seconds
+[2022-06-21 03:27:01,625] {processor.py:153} INFO - Started process (PID=67103) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:27:01,632] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:27:01,633] {logging_mixin.py:115} INFO - [2022-06-21 03:27:01,633] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:27:02,071] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:27:02,103] {logging_mixin.py:115} INFO - [2022-06-21 03:27:02,103] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:27:02,138] {logging_mixin.py:115} INFO - [2022-06-21 03:27:02,137] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:27:02,163] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.544 seconds
+[2022-06-21 03:27:32,253] {processor.py:153} INFO - Started process (PID=67170) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:27:32,254] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:27:32,254] {logging_mixin.py:115} INFO - [2022-06-21 03:27:32,254] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:27:32,692] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:27:32,724] {logging_mixin.py:115} INFO - [2022-06-21 03:27:32,724] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:27:32,756] {logging_mixin.py:115} INFO - [2022-06-21 03:27:32,756] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:27:32,775] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.526 seconds
+[2022-06-21 03:28:02,853] {processor.py:153} INFO - Started process (PID=67209) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:28:02,853] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:28:02,854] {logging_mixin.py:115} INFO - [2022-06-21 03:28:02,854] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:28:03,291] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:28:03,323] {logging_mixin.py:115} INFO - [2022-06-21 03:28:03,323] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:28:03,355] {logging_mixin.py:115} INFO - [2022-06-21 03:28:03,355] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:28:03,378] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.530 seconds
+[2022-06-21 03:28:33,464] {processor.py:153} INFO - Started process (PID=67263) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:28:33,465] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:28:33,465] {logging_mixin.py:115} INFO - [2022-06-21 03:28:33,465] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:28:33,879] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:28:33,910] {logging_mixin.py:115} INFO - [2022-06-21 03:28:33,910] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:28:33,945] {logging_mixin.py:115} INFO - [2022-06-21 03:28:33,945] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:28:33,966] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.507 seconds
+[2022-06-21 03:29:03,998] {processor.py:153} INFO - Started process (PID=67303) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:29:04,004] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:29:04,005] {logging_mixin.py:115} INFO - [2022-06-21 03:29:04,005] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:29:04,451] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:29:04,486] {logging_mixin.py:115} INFO - [2022-06-21 03:29:04,485] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:29:04,516] {logging_mixin.py:115} INFO - [2022-06-21 03:29:04,516] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:29:04,539] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.546 seconds
+[2022-06-21 03:29:34,639] {processor.py:153} INFO - Started process (PID=67395) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:29:34,640] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:29:34,641] {logging_mixin.py:115} INFO - [2022-06-21 03:29:34,641] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:29:35,064] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:29:35,097] {logging_mixin.py:115} INFO - [2022-06-21 03:29:35,096] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:29:35,128] {logging_mixin.py:115} INFO - [2022-06-21 03:29:35,128] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:29:35,152] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.517 seconds
+[2022-06-21 03:30:05,193] {processor.py:153} INFO - Started process (PID=67445) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:30:05,200] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:30:05,200] {logging_mixin.py:115} INFO - [2022-06-21 03:30:05,200] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:30:05,637] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:30:05,672] {logging_mixin.py:115} INFO - [2022-06-21 03:30:05,671] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:30:05,702] {logging_mixin.py:115} INFO - [2022-06-21 03:30:05,702] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:30:05,725] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.537 seconds
+[2022-06-21 03:30:35,814] {processor.py:153} INFO - Started process (PID=67494) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:30:35,814] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:30:35,815] {logging_mixin.py:115} INFO - [2022-06-21 03:30:35,815] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:30:36,240] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:30:36,271] {logging_mixin.py:115} INFO - [2022-06-21 03:30:36,271] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:30:36,303] {logging_mixin.py:115} INFO - [2022-06-21 03:30:36,303] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:30:36,327] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.518 seconds
+[2022-06-21 03:31:06,375] {processor.py:153} INFO - Started process (PID=67539) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:31:06,376] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:31:06,376] {logging_mixin.py:115} INFO - [2022-06-21 03:31:06,376] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:31:06,792] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:31:06,824] {logging_mixin.py:115} INFO - [2022-06-21 03:31:06,824] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:31:06,855] {logging_mixin.py:115} INFO - [2022-06-21 03:31:06,855] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:31:06,879] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.510 seconds
+[2022-06-21 03:31:36,968] {processor.py:153} INFO - Started process (PID=67592) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:31:36,969] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:31:36,969] {logging_mixin.py:115} INFO - [2022-06-21 03:31:36,969] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:31:37,392] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:31:37,426] {logging_mixin.py:115} INFO - [2022-06-21 03:31:37,425] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:31:37,457] {logging_mixin.py:115} INFO - [2022-06-21 03:31:37,457] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:31:37,480] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.517 seconds
+[2022-06-21 03:32:07,555] {processor.py:153} INFO - Started process (PID=67639) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:32:07,562] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:32:07,562] {logging_mixin.py:115} INFO - [2022-06-21 03:32:07,562] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:32:07,999] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:32:08,030] {logging_mixin.py:115} INFO - [2022-06-21 03:32:08,030] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:32:08,062] {logging_mixin.py:115} INFO - [2022-06-21 03:32:08,061] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:32:08,085] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.535 seconds
+[2022-06-21 03:32:38,173] {processor.py:153} INFO - Started process (PID=67682) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:32:38,174] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:32:38,175] {logging_mixin.py:115} INFO - [2022-06-21 03:32:38,175] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:32:38,608] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:32:38,644] {logging_mixin.py:115} INFO - [2022-06-21 03:32:38,643] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:32:38,674] {logging_mixin.py:115} INFO - [2022-06-21 03:32:38,674] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:32:38,692] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.523 seconds
+[2022-06-21 03:33:08,774] {processor.py:153} INFO - Started process (PID=67737) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:33:08,781] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:33:08,782] {logging_mixin.py:115} INFO - [2022-06-21 03:33:08,781] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:33:09,202] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:33:09,241] {logging_mixin.py:115} INFO - [2022-06-21 03:33:09,240] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:33:09,274] {logging_mixin.py:115} INFO - [2022-06-21 03:33:09,274] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:33:09,291] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.522 seconds
+[2022-06-21 03:33:39,378] {processor.py:153} INFO - Started process (PID=67794) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:33:39,379] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:33:39,380] {logging_mixin.py:115} INFO - [2022-06-21 03:33:39,380] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:33:39,821] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:33:39,854] {logging_mixin.py:115} INFO - [2022-06-21 03:33:39,854] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:33:39,887] {logging_mixin.py:115} INFO - [2022-06-21 03:33:39,886] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:33:39,910] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.536 seconds
+[2022-06-21 03:34:09,989] {processor.py:153} INFO - Started process (PID=67856) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:34:09,990] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:34:09,990] {logging_mixin.py:115} INFO - [2022-06-21 03:34:09,990] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:34:10,448] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:34:10,481] {logging_mixin.py:115} INFO - [2022-06-21 03:34:10,481] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:34:10,511] {logging_mixin.py:115} INFO - [2022-06-21 03:34:10,511] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:34:10,534] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.549 seconds
+[2022-06-21 03:34:40,624] {processor.py:153} INFO - Started process (PID=67916) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:34:40,625] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:34:40,626] {logging_mixin.py:115} INFO - [2022-06-21 03:34:40,626] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:34:41,052] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:34:41,087] {logging_mixin.py:115} INFO - [2022-06-21 03:34:41,086] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:34:41,122] {logging_mixin.py:115} INFO - [2022-06-21 03:34:41,121] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:34:41,145] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.526 seconds
+[2022-06-21 03:35:11,228] {processor.py:153} INFO - Started process (PID=67971) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:35:11,235] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:35:11,235] {logging_mixin.py:115} INFO - [2022-06-21 03:35:11,235] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:35:11,662] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:35:11,694] {logging_mixin.py:115} INFO - [2022-06-21 03:35:11,694] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:35:11,725] {logging_mixin.py:115} INFO - [2022-06-21 03:35:11,725] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:35:11,749] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.526 seconds
+[2022-06-21 03:35:41,839] {processor.py:153} INFO - Started process (PID=68012) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:35:41,840] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:35:41,840] {logging_mixin.py:115} INFO - [2022-06-21 03:35:41,840] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:35:42,271] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:35:42,302] {logging_mixin.py:115} INFO - [2022-06-21 03:35:42,302] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:35:42,333] {logging_mixin.py:115} INFO - [2022-06-21 03:35:42,333] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:35:42,358] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.524 seconds
+[2022-06-21 03:36:12,437] {processor.py:153} INFO - Started process (PID=68064) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:36:12,438] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:36:12,438] {logging_mixin.py:115} INFO - [2022-06-21 03:36:12,438] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:36:12,875] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:36:12,905] {logging_mixin.py:115} INFO - [2022-06-21 03:36:12,905] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:36:12,936] {logging_mixin.py:115} INFO - [2022-06-21 03:36:12,936] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:36:12,959] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.526 seconds
+[2022-06-21 03:36:43,048] {processor.py:153} INFO - Started process (PID=68105) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:36:43,048] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:36:43,049] {logging_mixin.py:115} INFO - [2022-06-21 03:36:43,049] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:36:43,525] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:36:43,557] {logging_mixin.py:115} INFO - [2022-06-21 03:36:43,557] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:36:43,587] {logging_mixin.py:115} INFO - [2022-06-21 03:36:43,587] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:36:43,611] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.568 seconds
+[2022-06-21 03:37:13,694] {processor.py:153} INFO - Started process (PID=68158) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:37:13,700] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:37:13,701] {logging_mixin.py:115} INFO - [2022-06-21 03:37:13,701] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:37:14,130] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:37:14,162] {logging_mixin.py:115} INFO - [2022-06-21 03:37:14,161] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:37:14,194] {logging_mixin.py:115} INFO - [2022-06-21 03:37:14,194] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:37:14,211] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.522 seconds
+[2022-06-21 03:42:00,410] {processor.py:153} INFO - Started process (PID=68481) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:42:00,431] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:42:00,437] {logging_mixin.py:115} INFO - [2022-06-21 03:42:00,436] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:42:01,855] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:42:01,892] {logging_mixin.py:115} INFO - [2022-06-21 03:42:01,891] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:42:01,933] {logging_mixin.py:115} INFO - [2022-06-21 03:42:01,932] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:42:01,971] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 1.573 seconds
+[2022-06-21 03:42:32,081] {processor.py:153} INFO - Started process (PID=69362) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:42:32,081] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:42:32,082] {logging_mixin.py:115} INFO - [2022-06-21 03:42:32,082] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:42:32,522] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:42:32,555] {logging_mixin.py:115} INFO - [2022-06-21 03:42:32,555] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:42:32,591] {logging_mixin.py:115} INFO - [2022-06-21 03:42:32,590] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:42:32,616] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.540 seconds
+[2022-06-21 03:43:02,700] {processor.py:153} INFO - Started process (PID=69431) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:43:02,701] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:43:02,702] {logging_mixin.py:115} INFO - [2022-06-21 03:43:02,702] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:43:03,225] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:43:03,268] {logging_mixin.py:115} INFO - [2022-06-21 03:43:03,268] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:43:03,310] {logging_mixin.py:115} INFO - [2022-06-21 03:43:03,309] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:43:03,332] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.637 seconds
+[2022-06-21 03:43:33,426] {processor.py:153} INFO - Started process (PID=69471) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:43:33,427] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:43:33,427] {logging_mixin.py:115} INFO - [2022-06-21 03:43:33,427] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:43:33,871] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:43:33,906] {logging_mixin.py:115} INFO - [2022-06-21 03:43:33,906] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:43:33,938] {logging_mixin.py:115} INFO - [2022-06-21 03:43:33,938] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:43:33,961] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.538 seconds
+[2022-06-21 03:44:04,045] {processor.py:153} INFO - Started process (PID=69556) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:44:04,046] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:44:04,046] {logging_mixin.py:115} INFO - [2022-06-21 03:44:04,046] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:44:04,464] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:44:04,496] {logging_mixin.py:115} INFO - [2022-06-21 03:44:04,496] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:44:04,528] {logging_mixin.py:115} INFO - [2022-06-21 03:44:04,528] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:44:04,552] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.512 seconds
+[2022-06-21 03:44:34,637] {processor.py:153} INFO - Started process (PID=69598) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:44:34,638] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:44:34,638] {logging_mixin.py:115} INFO - [2022-06-21 03:44:34,638] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:44:35,067] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:44:35,100] {logging_mixin.py:115} INFO - [2022-06-21 03:44:35,099] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:44:35,130] {logging_mixin.py:115} INFO - [2022-06-21 03:44:35,129] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:44:35,153] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.521 seconds
+[2022-06-21 03:45:05,195] {processor.py:153} INFO - Started process (PID=69651) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:45:05,201] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:45:05,202] {logging_mixin.py:115} INFO - [2022-06-21 03:45:05,202] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:45:05,656] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:45:05,688] {logging_mixin.py:115} INFO - [2022-06-21 03:45:05,688] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:45:05,719] {logging_mixin.py:115} INFO - [2022-06-21 03:45:05,719] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:45:05,742] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.552 seconds
+[2022-06-21 03:45:35,828] {processor.py:153} INFO - Started process (PID=69704) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:45:35,829] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:45:35,829] {logging_mixin.py:115} INFO - [2022-06-21 03:45:35,829] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:45:36,248] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:45:36,280] {logging_mixin.py:115} INFO - [2022-06-21 03:45:36,280] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:45:36,312] {logging_mixin.py:115} INFO - [2022-06-21 03:45:36,311] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:45:36,336] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.512 seconds
+[2022-06-21 03:46:06,374] {processor.py:153} INFO - Started process (PID=69751) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:46:06,375] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:46:06,375] {logging_mixin.py:115} INFO - [2022-06-21 03:46:06,375] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:46:06,825] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:46:06,854] {logging_mixin.py:115} INFO - [2022-06-21 03:46:06,854] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:46:06,889] {logging_mixin.py:115} INFO - [2022-06-21 03:46:06,889] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:46:06,909] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.539 seconds
+[2022-06-21 03:46:36,997] {processor.py:153} INFO - Started process (PID=69801) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:46:36,998] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:46:36,999] {logging_mixin.py:115} INFO - [2022-06-21 03:46:36,998] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:46:37,433] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:46:37,470] {logging_mixin.py:115} INFO - [2022-06-21 03:46:37,470] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:46:37,501] {logging_mixin.py:115} INFO - [2022-06-21 03:46:37,501] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:46:37,525] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.531 seconds
+[2022-06-21 03:47:07,578] {processor.py:153} INFO - Started process (PID=69860) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:47:07,585] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:47:07,586] {logging_mixin.py:115} INFO - [2022-06-21 03:47:07,586] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:47:08,011] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:47:08,045] {logging_mixin.py:115} INFO - [2022-06-21 03:47:08,044] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:47:08,076] {logging_mixin.py:115} INFO - [2022-06-21 03:47:08,076] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:47:08,103] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.529 seconds
+[2022-06-21 03:47:38,188] {processor.py:153} INFO - Started process (PID=69934) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:47:38,188] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:47:38,189] {logging_mixin.py:115} INFO - [2022-06-21 03:47:38,189] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:47:38,652] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:47:38,685] {logging_mixin.py:115} INFO - [2022-06-21 03:47:38,685] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:47:38,716] {logging_mixin.py:115} INFO - [2022-06-21 03:47:38,716] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:47:38,739] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.556 seconds
+[2022-06-21 03:48:08,823] {processor.py:153} INFO - Started process (PID=69994) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:48:08,823] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:48:08,824] {logging_mixin.py:115} INFO - [2022-06-21 03:48:08,824] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:48:09,318] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:48:09,367] {logging_mixin.py:115} INFO - [2022-06-21 03:48:09,367] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:48:09,430] {logging_mixin.py:115} INFO - [2022-06-21 03:48:09,430] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:48:09,456] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.639 seconds
+[2022-06-21 03:48:39,548] {processor.py:153} INFO - Started process (PID=70055) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:48:39,548] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:48:39,549] {logging_mixin.py:115} INFO - [2022-06-21 03:48:39,549] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:48:40,023] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:48:40,057] {logging_mixin.py:115} INFO - [2022-06-21 03:48:40,056] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:48:40,091] {logging_mixin.py:115} INFO - [2022-06-21 03:48:40,090] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:48:40,110] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.567 seconds
+[2022-06-21 03:49:10,200] {processor.py:153} INFO - Started process (PID=70221) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:49:10,200] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:49:10,201] {logging_mixin.py:115} INFO - [2022-06-21 03:49:10,201] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:49:10,678] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:49:10,711] {logging_mixin.py:115} INFO - [2022-06-21 03:49:10,711] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:49:10,744] {logging_mixin.py:115} INFO - [2022-06-21 03:49:10,744] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:49:10,774] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.579 seconds
+[2022-06-21 03:49:40,862] {processor.py:153} INFO - Started process (PID=70283) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:49:40,863] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:49:40,864] {logging_mixin.py:115} INFO - [2022-06-21 03:49:40,864] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:49:41,415] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:49:41,451] {logging_mixin.py:115} INFO - [2022-06-21 03:49:41,451] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:49:41,490] {logging_mixin.py:115} INFO - [2022-06-21 03:49:41,490] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:49:41,515] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.657 seconds
+[2022-06-21 03:50:11,608] {processor.py:153} INFO - Started process (PID=70380) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:50:11,609] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:50:11,610] {logging_mixin.py:115} INFO - [2022-06-21 03:50:11,610] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:50:12,263] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:50:12,304] {logging_mixin.py:115} INFO - [2022-06-21 03:50:12,303] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:50:12,354] {logging_mixin.py:115} INFO - [2022-06-21 03:50:12,353] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:50:12,386] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.786 seconds
+[2022-06-21 03:50:42,477] {processor.py:153} INFO - Started process (PID=70446) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:50:42,477] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:50:42,478] {logging_mixin.py:115} INFO - [2022-06-21 03:50:42,478] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:50:42,931] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:50:42,965] {logging_mixin.py:115} INFO - [2022-06-21 03:50:42,965] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:50:42,999] {logging_mixin.py:115} INFO - [2022-06-21 03:50:42,999] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:50:43,023] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.551 seconds
+[2022-06-21 03:51:13,110] {processor.py:153} INFO - Started process (PID=70511) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:51:13,111] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:51:13,111] {logging_mixin.py:115} INFO - [2022-06-21 03:51:13,111] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:51:13,593] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:51:13,625] {logging_mixin.py:115} INFO - [2022-06-21 03:51:13,625] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:51:13,661] {logging_mixin.py:115} INFO - [2022-06-21 03:51:13,661] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:51:13,686] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.581 seconds
+[2022-06-21 03:51:43,770] {processor.py:153} INFO - Started process (PID=70570) to work on /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:51:43,771] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/sales.py for tasks to queue
+[2022-06-21 03:51:43,771] {logging_mixin.py:115} INFO - [2022-06-21 03:51:43,771] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:51:44,242] {processor.py:651} INFO - DAG(s) dict_keys(['sales']) retrieved from /home/uiliam/airflow/dags/sales.py
+[2022-06-21 03:51:44,274] {logging_mixin.py:115} INFO - [2022-06-21 03:51:44,274] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-21 03:51:44,306] {logging_mixin.py:115} INFO - [2022-06-21 03:51:44,306] {dag.py:2927} INFO - Setting next_dagrun for sales to 2022-06-21T00:00:00+00:00, run_after=2022-06-22T00:00:00+00:00
+[2022-06-21 03:51:44,329] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/sales.py took 0.563 seconds
