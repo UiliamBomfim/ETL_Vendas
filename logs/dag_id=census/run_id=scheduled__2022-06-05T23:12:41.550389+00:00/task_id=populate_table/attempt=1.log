@@ -1,0 +1,32 @@
+[2022-06-05 20:13:50,988] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.populate_table scheduled__2022-06-05T23:12:41.550389+00:00 [queued]>
+[2022-06-05 20:13:51,007] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.populate_table scheduled__2022-06-05T23:12:41.550389+00:00 [queued]>
+[2022-06-05 20:13:51,007] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 20:13:51,007] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-05 20:13:51,007] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 20:13:51,034] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): populate_table> on 2022-06-05 23:12:41.550389+00:00
+[2022-06-05 20:13:51,041] {standard_task_runner.py:52} INFO - Started process 153390 to run task
+[2022-06-05 20:13:51,046] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'populate_table', 'scheduled__2022-06-05T23:12:41.550389+00:00', '--job-id', '962', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpd78c4tea', '--error-file', '/tmp/tmp1n5kw3ti']
+[2022-06-05 20:13:51,046] {standard_task_runner.py:80} INFO - Job 962: Subtask populate_table
+[2022-06-05 20:13:51,134] {task_command.py:370} INFO - Running <TaskInstance: census.populate_table scheduled__2022-06-05T23:12:41.550389+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-05 20:13:51,238] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=populate_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-05T23:12:41.550389+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-05T23:12:41.550389+00:00
+[2022-06-05 20:13:51,679] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/uiliam/airflow/dags/census.py", line 71, in populate_table
+    if first_insert:
+UnboundLocalError: local variable 'first_insert' referenced before assignment
+[2022-06-05 20:13:51,694] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=census, task_id=populate_table, execution_date=20220605T231241, start_date=20220605T231350, end_date=20220605T231351
+[2022-06-05 20:13:51,717] {standard_task_runner.py:92} ERROR - Failed to execute job 962 for task populate_table (local variable 'first_insert' referenced before assignment; 153390)
+[2022-06-05 20:13:51,740] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-05 20:13:51,796] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

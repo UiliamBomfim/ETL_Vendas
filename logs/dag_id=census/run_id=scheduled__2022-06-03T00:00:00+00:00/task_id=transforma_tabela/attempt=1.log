@@ -1,0 +1,1606 @@
+[2022-06-04 02:48:02,016] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 02:48:02,042] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 02:48:02,043] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 02:48:02,044] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-04 02:48:02,044] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 02:48:02,086] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 02:48:02,098] {standard_task_runner.py:52} INFO - Started process 79039 to run task
+[2022-06-04 02:48:02,104] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp0jym5hzd', '--error-file', '/tmp/tmp72ta3utt']
+[2022-06-04 02:48:02,105] {standard_task_runner.py:80} INFO - Job 7: Subtask transforma_tabela
+[2022-06-04 02:48:02,202] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 02:48:02,320] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 02:48:02,776] {python.py:173} INFO - Done. Returned value was:       age          workclass  fnlwgt   education  education-num       marital-status  ...      sex capital-gain capital-loss hours-per-week  native-country    class
+0      39          State-gov   77516   Bachelors             13        Never-married  ...     Male         2174            0             40   United-States    <=50K
+1      50   Self-emp-not-inc   83311   Bachelors             13   Married-civ-spouse  ...     Male            0            0             13   United-States    <=50K
+2      38            Private  215646     HS-grad              9             Divorced  ...     Male            0            0             40   United-States    <=50K
+3      53            Private  234721        11th              7   Married-civ-spouse  ...     Male            0            0             40   United-States    <=50K
+4      28            Private  338409   Bachelors             13   Married-civ-spouse  ...   Female            0            0             40            Cuba    <=50K
+...    ..                ...     ...         ...            ...                  ...  ...      ...          ...          ...            ...             ...      ...
+48837  39            Private  215419   Bachelors             13             Divorced  ...   Female            0            0           null   United-States   <=50K.
+48838  64               null  321403     HS-grad              9              Widowed  ...     Male            0            0           null   United-States   <=50K.
+48839  38            Private  374983   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States   <=50K.
+48840  44            Private   83891   Bachelors             13             Divorced  ...     Male         5455            0           null   United-States   <=50K.
+48841  35       Self-emp-inc  182148   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 02:48:02,831] {taskinstance.py:1395} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T054802, end_date=20220604T054802
+[2022-06-04 02:48:02,877] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 02:48:02,935] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 03:58:00,438] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 03:58:00,454] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 03:58:00,454] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 03:58:00,454] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 03:58:00,454] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 03:58:00,474] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 03:58:00,482] {standard_task_runner.py:52} INFO - Started process 8649 to run task
+[2022-06-04 03:58:00,488] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpucd7yiym', '--error-file', '/tmp/tmplq0a_fb2']
+[2022-06-04 03:58:00,488] {standard_task_runner.py:80} INFO - Job 4: Subtask transforma_tabela
+[2022-06-04 03:58:00,560] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 03:58:00,655] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 03:58:01,013] {python.py:173} INFO - Done. Returned value was:       age          workclass  fnlwgt   education  education-num       marital-status  ...      sex capital-gain capital-loss hours-per-week  native-country    class
+0      39          State-gov   77516   Bachelors             13        Never-married  ...     Male         2174            0             40   United-States    <=50K
+1      50   Self-emp-not-inc   83311   Bachelors             13   Married-civ-spouse  ...     Male            0            0             13   United-States    <=50K
+2      38            Private  215646     HS-grad              9             Divorced  ...     Male            0            0             40   United-States    <=50K
+3      53            Private  234721        11th              7   Married-civ-spouse  ...     Male            0            0             40   United-States    <=50K
+4      28            Private  338409   Bachelors             13   Married-civ-spouse  ...   Female            0            0             40            Cuba    <=50K
+...    ..                ...     ...         ...            ...                  ...  ...      ...          ...          ...            ...             ...      ...
+48837  39            Private  215419   Bachelors             13             Divorced  ...   Female            0            0           null   United-States   <=50K.
+48838  64               null  321403     HS-grad              9              Widowed  ...     Male            0            0           null   United-States   <=50K.
+48839  38            Private  374983   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States   <=50K.
+48840  44            Private   83891   Bachelors             13             Divorced  ...     Male         5455            0           null   United-States   <=50K.
+48841  35       Self-emp-inc  182148   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 03:58:01,064] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T065800, end_date=20220604T065801
+[2022-06-04 03:58:01,100] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 03:58:01,153] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 04:05:23,486] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:05:23,503] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:05:23,503] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:05:23,503] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 04:05:23,503] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:05:23,525] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 04:05:23,533] {standard_task_runner.py:52} INFO - Started process 13368 to run task
+[2022-06-04 04:05:23,537] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp52znf2w_', '--error-file', '/tmp/tmpay9kseuf']
+[2022-06-04 04:05:23,537] {standard_task_runner.py:80} INFO - Job 9: Subtask transforma_tabela
+[2022-06-04 04:05:23,614] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 04:05:23,721] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 04:05:24,086] {python.py:173} INFO - Done. Returned value was:       age          workclass  fnlwgt   education  education-num       marital-status  ...      sex capital-gain capital-loss hours-per-week  native-country    class
+0      39          State-gov   77516   Bachelors             13        Never-married  ...     Male         2174            0             40   United-States    <=50K
+1      50   Self-emp-not-inc   83311   Bachelors             13   Married-civ-spouse  ...     Male            0            0             13   United-States    <=50K
+2      38            Private  215646     HS-grad              9             Divorced  ...     Male            0            0             40   United-States    <=50K
+3      53            Private  234721        11th              7   Married-civ-spouse  ...     Male            0            0             40   United-States    <=50K
+4      28            Private  338409   Bachelors             13   Married-civ-spouse  ...   Female            0            0             40            Cuba    <=50K
+...    ..                ...     ...         ...            ...                  ...  ...      ...          ...          ...            ...             ...      ...
+48837  39            Private  215419   Bachelors             13             Divorced  ...   Female            0            0           null   United-States   <=50K.
+48838  64               null  321403     HS-grad              9              Widowed  ...     Male            0            0           null   United-States   <=50K.
+48839  38            Private  374983   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States   <=50K.
+48840  44            Private   83891   Bachelors             13             Divorced  ...     Male         5455            0           null   United-States   <=50K.
+48841  35       Self-emp-inc  182148   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 04:05:24,136] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T070523, end_date=20220604T070524
+[2022-06-04 04:05:24,191] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 04:05:24,251] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 04:11:15,344] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:11:15,359] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:11:15,360] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:11:15,360] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 04:11:15,360] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:11:15,380] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 04:11:15,387] {standard_task_runner.py:52} INFO - Started process 17694 to run task
+[2022-06-04 04:11:15,392] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp8yj2dgl6', '--error-file', '/tmp/tmpqyeq03oh']
+[2022-06-04 04:11:15,392] {standard_task_runner.py:80} INFO - Job 15: Subtask transforma_tabela
+[2022-06-04 04:11:15,465] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 04:11:15,561] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 04:11:15,921] {python.py:173} INFO - Done. Returned value was:       age          workclass  fnlwgt   education  education-num       marital-status  ...      sex capital-gain capital-loss hours-per-week  native-country    class
+0      39          State-gov   77516   Bachelors             13        Never-married  ...     Male         2174            0             40   United-States    <=50K
+1      50   Self-emp-not-inc   83311   Bachelors             13   Married-civ-spouse  ...     Male            0            0             13   United-States    <=50K
+2      38            Private  215646     HS-grad              9             Divorced  ...     Male            0            0             40   United-States    <=50K
+3      53            Private  234721        11th              7   Married-civ-spouse  ...     Male            0            0             40   United-States    <=50K
+4      28            Private  338409   Bachelors             13   Married-civ-spouse  ...   Female            0            0             40            Cuba    <=50K
+...    ..                ...     ...         ...            ...                  ...  ...      ...          ...          ...            ...             ...      ...
+48837  39            Private  215419   Bachelors             13             Divorced  ...   Female            0            0           null   United-States   <=50K.
+48838  64               null  321403     HS-grad              9              Widowed  ...     Male            0            0           null   United-States   <=50K.
+48839  38            Private  374983   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States   <=50K.
+48840  44            Private   83891   Bachelors             13             Divorced  ...     Male         5455            0           null   United-States   <=50K.
+48841  35       Self-emp-inc  182148   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 04:11:16,004] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T071115, end_date=20220604T071116
+[2022-06-04 04:11:16,046] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 04:11:16,102] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 04:19:09,354] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:19:09,373] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:19:09,373] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:19:09,373] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 04:19:09,373] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:19:09,395] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 04:19:09,406] {standard_task_runner.py:52} INFO - Started process 22994 to run task
+[2022-06-04 04:19:09,411] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpxtjw9p83', '--error-file', '/tmp/tmpgyfsym9n']
+[2022-06-04 04:19:09,412] {standard_task_runner.py:80} INFO - Job 20: Subtask transforma_tabela
+[2022-06-04 04:19:09,494] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 04:19:09,604] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 04:19:10,046] {python.py:173} INFO - Done. Returned value was:       age          workclass  fnlwgt   education  education-num       marital-status  ...      sex capital-gain capital-loss hours-per-week  native-country    class
+0      39          State-gov   77516   Bachelors             13        Never-married  ...     Male         2174            0             40   United-States    <=50K
+1      50   Self-emp-not-inc   83311   Bachelors             13   Married-civ-spouse  ...     Male            0            0             13   United-States    <=50K
+2      38            Private  215646     HS-grad              9             Divorced  ...     Male            0            0             40   United-States    <=50K
+3      53            Private  234721        11th              7   Married-civ-spouse  ...     Male            0            0             40   United-States    <=50K
+4      28            Private  338409   Bachelors             13   Married-civ-spouse  ...   Female            0            0             40            Cuba    <=50K
+...    ..                ...     ...         ...            ...                  ...  ...      ...          ...          ...            ...             ...      ...
+48837  39            Private  215419   Bachelors             13             Divorced  ...   Female            0            0           null   United-States   <=50K.
+48838  64               null  321403     HS-grad              9              Widowed  ...     Male            0            0           null   United-States   <=50K.
+48839  38            Private  374983   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States   <=50K.
+48840  44            Private   83891   Bachelors             13             Divorced  ...     Male         5455            0           null   United-States   <=50K.
+48841  35       Self-emp-inc  182148   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 04:19:10,112] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T071909, end_date=20220604T071910
+[2022-06-04 04:19:10,184] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 04:19:10,246] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 04:20:49,306] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:20:49,323] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:20:49,323] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:20:49,323] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 04:20:49,324] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:20:49,345] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 04:20:49,354] {standard_task_runner.py:52} INFO - Started process 24676 to run task
+[2022-06-04 04:20:49,358] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp3_x2z9qf', '--error-file', '/tmp/tmp86_whl92']
+[2022-06-04 04:20:49,359] {standard_task_runner.py:80} INFO - Job 25: Subtask transforma_tabela
+[2022-06-04 04:20:49,440] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 04:20:49,546] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 04:20:49,918] {python.py:173} INFO - Done. Returned value was:       age          workclass  fnlwgt   education  education-num       marital-status  ...      sex capital-gain capital-loss hours-per-week  native-country    class
+0      39          State-gov   77516   Bachelors             13        Never-married  ...     Male         2174            0             40   United-States    <=50K
+1      50   Self-emp-not-inc   83311   Bachelors             13   Married-civ-spouse  ...     Male            0            0             13   United-States    <=50K
+2      38            Private  215646     HS-grad              9             Divorced  ...     Male            0            0             40   United-States    <=50K
+3      53            Private  234721        11th              7   Married-civ-spouse  ...     Male            0            0             40   United-States    <=50K
+4      28            Private  338409   Bachelors             13   Married-civ-spouse  ...   Female            0            0             40            Cuba    <=50K
+...    ..                ...     ...         ...            ...                  ...  ...      ...          ...          ...            ...             ...      ...
+48837  39            Private  215419   Bachelors             13             Divorced  ...   Female            0            0           null   United-States   <=50K.
+48838  64               null  321403     HS-grad              9              Widowed  ...     Male            0            0           null   United-States   <=50K.
+48839  38            Private  374983   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States   <=50K.
+48840  44            Private   83891   Bachelors             13             Divorced  ...     Male         5455            0           null   United-States   <=50K.
+48841  35       Self-emp-inc  182148   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 04:20:49,972] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T072049, end_date=20220604T072049
+[2022-06-04 04:20:50,012] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 04:20:50,065] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 04:22:23,202] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:22:23,222] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:22:23,223] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:22:23,223] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 04:22:23,223] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:22:23,253] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 04:22:23,265] {standard_task_runner.py:52} INFO - Started process 26003 to run task
+[2022-06-04 04:22:23,271] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpy4u2kny1', '--error-file', '/tmp/tmpngkv3up5']
+[2022-06-04 04:22:23,272] {standard_task_runner.py:80} INFO - Job 29: Subtask transforma_tabela
+[2022-06-04 04:22:23,367] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 04:22:23,479] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 04:22:23,881] {python.py:173} INFO - Done. Returned value was:       age          workclass  fnlwgt   education  education-num       marital-status  ...      sex capital-gain capital-loss hours-per-week  native-country    class
+0      39          State-gov   77516   Bachelors             13        Never-married  ...     Male         2174            0             40   United-States    <=50K
+1      50   Self-emp-not-inc   83311   Bachelors             13   Married-civ-spouse  ...     Male            0            0             13   United-States    <=50K
+2      38            Private  215646     HS-grad              9             Divorced  ...     Male            0            0             40   United-States    <=50K
+3      53            Private  234721        11th              7   Married-civ-spouse  ...     Male            0            0             40   United-States    <=50K
+4      28            Private  338409   Bachelors             13   Married-civ-spouse  ...   Female            0            0             40            Cuba    <=50K
+...    ..                ...     ...         ...            ...                  ...  ...      ...          ...          ...            ...             ...      ...
+48837  39            Private  215419   Bachelors             13             Divorced  ...   Female            0            0           null   United-States   <=50K.
+48838  64               null  321403     HS-grad              9              Widowed  ...     Male            0            0           null   United-States   <=50K.
+48839  38            Private  374983   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States   <=50K.
+48840  44            Private   83891   Bachelors             13             Divorced  ...     Male         5455            0           null   United-States   <=50K.
+48841  35       Self-emp-inc  182148   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 04:22:23,941] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T072223, end_date=20220604T072223
+[2022-06-04 04:22:24,004] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 04:22:24,066] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 04:23:10,187] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:23:10,202] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:23:10,202] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:23:10,202] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 04:23:10,202] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:23:10,221] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 04:23:10,231] {standard_task_runner.py:52} INFO - Started process 27024 to run task
+[2022-06-04 04:23:10,236] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '33', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpznyh_21x', '--error-file', '/tmp/tmpmrvgzeh0']
+[2022-06-04 04:23:10,237] {standard_task_runner.py:80} INFO - Job 33: Subtask transforma_tabela
+[2022-06-04 04:23:10,314] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 04:23:10,423] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 04:23:10,861] {python.py:173} INFO - Done. Returned value was:       age          workclass  fnlwgt   education  education-num       marital-status  ...      sex capital-gain capital-loss hours-per-week  native-country    class
+0      39          State-gov   77516   Bachelors             13        Never-married  ...     Male         2174            0             40   United-States    <=50K
+1      50   Self-emp-not-inc   83311   Bachelors             13   Married-civ-spouse  ...     Male            0            0             13   United-States    <=50K
+2      38            Private  215646     HS-grad              9             Divorced  ...     Male            0            0             40   United-States    <=50K
+3      53            Private  234721        11th              7   Married-civ-spouse  ...     Male            0            0             40   United-States    <=50K
+4      28            Private  338409   Bachelors             13   Married-civ-spouse  ...   Female            0            0             40            Cuba    <=50K
+...    ..                ...     ...         ...            ...                  ...  ...      ...          ...          ...            ...             ...      ...
+48837  39            Private  215419   Bachelors             13             Divorced  ...   Female            0            0           null   United-States   <=50K.
+48838  64               null  321403     HS-grad              9              Widowed  ...     Male            0            0           null   United-States   <=50K.
+48839  38            Private  374983   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States   <=50K.
+48840  44            Private   83891   Bachelors             13             Divorced  ...     Male         5455            0           null   United-States   <=50K.
+48841  35       Self-emp-inc  182148   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 04:23:10,923] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T072310, end_date=20220604T072310
+[2022-06-04 04:23:10,970] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 04:23:11,031] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 04:24:40,083] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:24:40,102] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:24:40,102] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:24:40,102] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 04:24:40,102] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:24:40,126] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 04:24:40,135] {standard_task_runner.py:52} INFO - Started process 28910 to run task
+[2022-06-04 04:24:40,140] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '38', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmptxz8z8ct', '--error-file', '/tmp/tmpaadljjr1']
+[2022-06-04 04:24:40,140] {standard_task_runner.py:80} INFO - Job 38: Subtask transforma_tabela
+[2022-06-04 04:24:40,218] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 04:24:40,325] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 04:24:40,722] {python.py:173} INFO - Done. Returned value was:       age          workclass  fnlwgt   education  education-num       marital-status  ...      sex capital-gain capital-loss hours-per-week  native-country    class
+0      39          State-gov   77516   Bachelors             13        Never-married  ...     Male         2174            0             40   United-States    <=50K
+1      50   Self-emp-not-inc   83311   Bachelors             13   Married-civ-spouse  ...     Male            0            0             13   United-States    <=50K
+2      38            Private  215646     HS-grad              9             Divorced  ...     Male            0            0             40   United-States    <=50K
+3      53            Private  234721        11th              7   Married-civ-spouse  ...     Male            0            0             40   United-States    <=50K
+4      28            Private  338409   Bachelors             13   Married-civ-spouse  ...   Female            0            0             40            Cuba    <=50K
+...    ..                ...     ...         ...            ...                  ...  ...      ...          ...          ...            ...             ...      ...
+48837  39            Private  215419   Bachelors             13             Divorced  ...   Female            0            0           null   United-States   <=50K.
+48838  64               null  321403     HS-grad              9              Widowed  ...     Male            0            0           null   United-States   <=50K.
+48839  38            Private  374983   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States   <=50K.
+48840  44            Private   83891   Bachelors             13             Divorced  ...     Male         5455            0           null   United-States   <=50K.
+48841  35       Self-emp-inc  182148   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 04:24:40,780] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T072440, end_date=20220604T072440
+[2022-06-04 04:24:40,833] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 04:24:40,889] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 04:29:05,948] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:29:05,970] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:29:05,970] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:29:05,970] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 04:29:05,971] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:29:06,003] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 04:29:06,016] {standard_task_runner.py:52} INFO - Started process 32729 to run task
+[2022-06-04 04:29:06,023] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '43', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmppc8unof0', '--error-file', '/tmp/tmpnin9tii6']
+[2022-06-04 04:29:06,024] {standard_task_runner.py:80} INFO - Job 43: Subtask transforma_tabela
+[2022-06-04 04:29:06,122] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 04:29:06,246] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 04:29:06,713] {python.py:173} INFO - Done. Returned value was:       age          workclass  fnlwgt   education  education-num       marital-status  ...      sex capital-gain capital-loss hours-per-week  native-country    class
+0      39          State-gov   77516   Bachelors             13        Never-married  ...     Male         2174            0             40   United-States    <=50K
+1      50   Self-emp-not-inc   83311   Bachelors             13   Married-civ-spouse  ...     Male            0            0             13   United-States    <=50K
+2      38            Private  215646     HS-grad              9             Divorced  ...     Male            0            0             40   United-States    <=50K
+3      53            Private  234721        11th              7   Married-civ-spouse  ...     Male            0            0             40   United-States    <=50K
+4      28            Private  338409   Bachelors             13   Married-civ-spouse  ...   Female            0            0             40            Cuba    <=50K
+...    ..                ...     ...         ...            ...                  ...  ...      ...          ...          ...            ...             ...      ...
+48837  39            Private  215419   Bachelors             13             Divorced  ...   Female            0            0           null   United-States   <=50K.
+48838  64               null  321403     HS-grad              9              Widowed  ...     Male            0            0           null   United-States   <=50K.
+48839  38            Private  374983   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States   <=50K.
+48840  44            Private   83891   Bachelors             13             Divorced  ...     Male         5455            0           null   United-States   <=50K.
+48841  35       Self-emp-inc  182148   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 04:29:06,807] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T072905, end_date=20220604T072906
+[2022-06-04 04:29:06,878] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 04:29:06,943] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 04:30:55,800] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:30:55,815] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:30:55,815] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:30:55,815] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 04:30:55,815] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:30:55,836] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 04:30:55,844] {standard_task_runner.py:52} INFO - Started process 34379 to run task
+[2022-06-04 04:30:55,849] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '46', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp27kohcie', '--error-file', '/tmp/tmpgdabdpw2']
+[2022-06-04 04:30:55,849] {standard_task_runner.py:80} INFO - Job 46: Subtask transforma_tabela
+[2022-06-04 04:30:55,925] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 04:30:56,028] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 04:30:56,383] {python.py:173} INFO - Done. Returned value was:       age          workclass  fnlwgt   education  education-num       marital-status  ...      sex capital-gain capital-loss hours-per-week  native-country    class
+0      39          State-gov   77516   Bachelors             13        Never-married  ...     Male         2174            0             40   United-States    <=50K
+1      50   Self-emp-not-inc   83311   Bachelors             13   Married-civ-spouse  ...     Male            0            0             13   United-States    <=50K
+2      38            Private  215646     HS-grad              9             Divorced  ...     Male            0            0             40   United-States    <=50K
+3      53            Private  234721        11th              7   Married-civ-spouse  ...     Male            0            0             40   United-States    <=50K
+4      28            Private  338409   Bachelors             13   Married-civ-spouse  ...   Female            0            0             40            Cuba    <=50K
+...    ..                ...     ...         ...            ...                  ...  ...      ...          ...          ...            ...             ...      ...
+48837  39            Private  215419   Bachelors             13             Divorced  ...   Female            0            0           null   United-States   <=50K.
+48838  64               null  321403     HS-grad              9              Widowed  ...     Male            0            0           null   United-States   <=50K.
+48839  38            Private  374983   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States   <=50K.
+48840  44            Private   83891   Bachelors             13             Divorced  ...     Male         5455            0           null   United-States   <=50K.
+48841  35       Self-emp-inc  182148   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 04:30:56,473] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T073055, end_date=20220604T073056
+[2022-06-04 04:30:56,543] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 04:30:56,608] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 04:32:16,344] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:32:16,366] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:32:16,366] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:32:16,366] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 04:32:16,366] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:32:16,391] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 04:32:16,399] {standard_task_runner.py:52} INFO - Started process 35795 to run task
+[2022-06-04 04:32:16,403] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '50', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpkde07fvf', '--error-file', '/tmp/tmp5nl5k7r1']
+[2022-06-04 04:32:16,404] {standard_task_runner.py:80} INFO - Job 50: Subtask transforma_tabela
+[2022-06-04 04:32:16,490] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 04:32:16,608] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 04:32:17,024] {python.py:173} INFO - Done. Returned value was:       age          workclass  fnlwgt   education  education-num       marital-status  ...      sex capital-gain capital-loss hours-per-week  native-country    class
+0      39          State-gov   77516   Bachelors             13        Never-married  ...     Male         2174            0             40   United-States    <=50K
+1      50   Self-emp-not-inc   83311   Bachelors             13   Married-civ-spouse  ...     Male            0            0             13   United-States    <=50K
+2      38            Private  215646     HS-grad              9             Divorced  ...     Male            0            0             40   United-States    <=50K
+3      53            Private  234721        11th              7   Married-civ-spouse  ...     Male            0            0             40   United-States    <=50K
+4      28            Private  338409   Bachelors             13   Married-civ-spouse  ...   Female            0            0             40            Cuba    <=50K
+...    ..                ...     ...         ...            ...                  ...  ...      ...          ...          ...            ...             ...      ...
+48837  39            Private  215419   Bachelors             13             Divorced  ...   Female            0            0           null   United-States   <=50K.
+48838  64               null  321403     HS-grad              9              Widowed  ...     Male            0            0           null   United-States   <=50K.
+48839  38            Private  374983   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States   <=50K.
+48840  44            Private   83891   Bachelors             13             Divorced  ...     Male         5455            0           null   United-States   <=50K.
+48841  35       Self-emp-inc  182148   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 04:32:17,079] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T073216, end_date=20220604T073217
+[2022-06-04 04:32:17,137] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 04:32:17,200] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 04:33:32,758] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:33:32,776] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:33:32,776] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:33:32,777] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 04:33:32,777] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:33:32,802] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 04:33:32,812] {standard_task_runner.py:52} INFO - Started process 36792 to run task
+[2022-06-04 04:33:32,817] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '54', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpy68vmvui', '--error-file', '/tmp/tmpb9ltpw60']
+[2022-06-04 04:33:32,818] {standard_task_runner.py:80} INFO - Job 54: Subtask transforma_tabela
+[2022-06-04 04:33:32,901] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 04:33:33,025] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 04:33:33,549] {python.py:173} INFO - Done. Returned value was:       age          workclass  fnlwgt   education  education-num       marital-status  ...      sex capital-gain capital-loss hours-per-week  native-country    class
+0      39          State-gov   77516   Bachelors             13        Never-married  ...     Male         2174            0             40   United-States    <=50K
+1      50   Self-emp-not-inc   83311   Bachelors             13   Married-civ-spouse  ...     Male            0            0             13   United-States    <=50K
+2      38            Private  215646     HS-grad              9             Divorced  ...     Male            0            0             40   United-States    <=50K
+3      53            Private  234721        11th              7   Married-civ-spouse  ...     Male            0            0             40   United-States    <=50K
+4      28            Private  338409   Bachelors             13   Married-civ-spouse  ...   Female            0            0             40            Cuba    <=50K
+...    ..                ...     ...         ...            ...                  ...  ...      ...          ...          ...            ...             ...      ...
+48837  39            Private  215419   Bachelors             13             Divorced  ...   Female            0            0           null   United-States   <=50K.
+48838  64               null  321403     HS-grad              9              Widowed  ...     Male            0            0           null   United-States   <=50K.
+48839  38            Private  374983   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States   <=50K.
+48840  44            Private   83891   Bachelors             13             Divorced  ...     Male         5455            0           null   United-States   <=50K.
+48841  35       Self-emp-inc  182148   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 04:33:33,620] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T073332, end_date=20220604T073333
+[2022-06-04 04:33:33,671] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 04:33:33,743] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 12:12:38,081] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 12:12:38,097] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 12:12:38,097] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 12:12:38,097] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 12:12:38,097] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 12:12:38,117] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 12:12:38,124] {standard_task_runner.py:52} INFO - Started process 17474 to run task
+[2022-06-04 12:12:38,128] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '60', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpx3a7p8e5', '--error-file', '/tmp/tmp8w4g1d48']
+[2022-06-04 12:12:38,129] {standard_task_runner.py:80} INFO - Job 60: Subtask transforma_tabela
+[2022-06-04 12:12:38,204] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 12:12:38,297] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 12:12:38,656] {python.py:173} INFO - Done. Returned value was:       age          workclass  fnlwgt   education  education-num       marital-status  ...      sex capital-gain capital-loss hours-per-week  native-country    class
+0      39          State-gov   77516   Bachelors             13        Never-married  ...     Male         2174            0             40   United-States    <=50K
+1      50   Self-emp-not-inc   83311   Bachelors             13   Married-civ-spouse  ...     Male            0            0             13   United-States    <=50K
+2      38            Private  215646     HS-grad              9             Divorced  ...     Male            0            0             40   United-States    <=50K
+3      53            Private  234721        11th              7   Married-civ-spouse  ...     Male            0            0             40   United-States    <=50K
+4      28            Private  338409   Bachelors             13   Married-civ-spouse  ...   Female            0            0             40            Cuba    <=50K
+...    ..                ...     ...         ...            ...                  ...  ...      ...          ...          ...            ...             ...      ...
+48837  39            Private  215419   Bachelors             13             Divorced  ...   Female            0            0           null   United-States   <=50K.
+48838  64               null  321403     HS-grad              9              Widowed  ...     Male            0            0           null   United-States   <=50K.
+48839  38            Private  374983   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States   <=50K.
+48840  44            Private   83891   Bachelors             13             Divorced  ...     Male         5455            0           null   United-States   <=50K.
+48841  35       Self-emp-inc  182148   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 12:12:38,707] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T151238, end_date=20220604T151238
+[2022-06-04 12:12:38,742] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 12:12:38,792] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 12:16:01,807] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 12:16:01,822] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 12:16:01,823] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 12:16:01,823] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 12:16:01,823] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 12:16:01,843] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 12:16:01,851] {standard_task_runner.py:52} INFO - Started process 20156 to run task
+[2022-06-04 12:16:01,855] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '65', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpgkqrayjw', '--error-file', '/tmp/tmp8ly0f8wh']
+[2022-06-04 12:16:01,856] {standard_task_runner.py:80} INFO - Job 65: Subtask transforma_tabela
+[2022-06-04 12:16:01,933] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 12:16:02,029] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 12:16:02,401] {python.py:173} INFO - Done. Returned value was:       age          workclass  fnlwgt   education  education-num       marital-status  ...      sex capital-gain capital-loss hours-per-week  native-country    class
+0      39          State-gov   77516   Bachelors             13        Never-married  ...     Male         2174            0             40   United-States    <=50K
+1      50   Self-emp-not-inc   83311   Bachelors             13   Married-civ-spouse  ...     Male            0            0             13   United-States    <=50K
+2      38            Private  215646     HS-grad              9             Divorced  ...     Male            0            0             40   United-States    <=50K
+3      53            Private  234721        11th              7   Married-civ-spouse  ...     Male            0            0             40   United-States    <=50K
+4      28            Private  338409   Bachelors             13   Married-civ-spouse  ...   Female            0            0             40            Cuba    <=50K
+...    ..                ...     ...         ...            ...                  ...  ...      ...          ...          ...            ...             ...      ...
+48837  39            Private  215419   Bachelors             13             Divorced  ...   Female            0            0           null   United-States   <=50K.
+48838  64               null  321403     HS-grad              9              Widowed  ...     Male            0            0           null   United-States   <=50K.
+48839  38            Private  374983   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States   <=50K.
+48840  44            Private   83891   Bachelors             13             Divorced  ...     Male         5455            0           null   United-States   <=50K.
+48841  35       Self-emp-inc  182148   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 12:16:02,553] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T151601, end_date=20220604T151602
+[2022-06-04 12:16:02,594] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 12:16:02,657] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 12:22:49,943] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 12:22:49,959] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 12:22:49,960] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 12:22:49,960] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 12:22:49,960] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 12:22:49,980] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 12:22:49,988] {standard_task_runner.py:52} INFO - Started process 24261 to run task
+[2022-06-04 12:22:49,993] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '72', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpnonjffv6', '--error-file', '/tmp/tmpswgpyy8g']
+[2022-06-04 12:22:49,994] {standard_task_runner.py:80} INFO - Job 72: Subtask transforma_tabela
+[2022-06-04 12:22:50,072] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 12:22:50,173] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 12:22:50,512] {python.py:173} INFO - Done. Returned value was:       age          workclass  fnlwgt   education  education-num       marital-status  ...      sex capital-gain capital-loss hours-per-week  native-country    class
+0      39          State-gov   77516   Bachelors             13        Never-married  ...     Male         2174            0             40   United-States    <=50K
+1      50   Self-emp-not-inc   83311   Bachelors             13   Married-civ-spouse  ...     Male            0            0             13   United-States    <=50K
+2      38            Private  215646     HS-grad              9             Divorced  ...     Male            0            0             40   United-States    <=50K
+3      53            Private  234721        11th              7   Married-civ-spouse  ...     Male            0            0             40   United-States    <=50K
+4      28            Private  338409   Bachelors             13   Married-civ-spouse  ...   Female            0            0             40            Cuba    <=50K
+...    ..                ...     ...         ...            ...                  ...  ...      ...          ...          ...            ...             ...      ...
+48837  39            Private  215419   Bachelors             13             Divorced  ...   Female            0            0           null   United-States   <=50K.
+48838  64               null  321403     HS-grad              9              Widowed  ...     Male            0            0           null   United-States   <=50K.
+48839  38            Private  374983   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States   <=50K.
+48840  44            Private   83891   Bachelors             13             Divorced  ...     Male         5455            0           null   United-States   <=50K.
+48841  35       Self-emp-inc  182148   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 12:22:50,569] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T152249, end_date=20220604T152250
+[2022-06-04 12:22:50,606] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 12:22:50,669] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 12:26:20,381] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 12:26:20,397] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 12:26:20,397] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 12:26:20,397] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 12:26:20,397] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 12:26:20,418] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 12:26:20,428] {standard_task_runner.py:52} INFO - Started process 26073 to run task
+[2022-06-04 12:26:20,433] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '78', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpzekhgt8j', '--error-file', '/tmp/tmpmqbh89yt']
+[2022-06-04 12:26:20,434] {standard_task_runner.py:80} INFO - Job 78: Subtask transforma_tabela
+[2022-06-04 12:26:20,512] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 12:26:20,611] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 12:26:20,973] {python.py:173} INFO - Done. Returned value was:       age          workclass  fnlwgt   education  education-num       marital-status  ...      sex capital-gain capital-loss hours-per-week  native-country    class
+0      39          State-gov   77516   Bachelors             13        Never-married  ...     Male         2174            0             40   United-States    <=50K
+1      50   Self-emp-not-inc   83311   Bachelors             13   Married-civ-spouse  ...     Male            0            0             13   United-States    <=50K
+2      38            Private  215646     HS-grad              9             Divorced  ...     Male            0            0             40   United-States    <=50K
+3      53            Private  234721        11th              7   Married-civ-spouse  ...     Male            0            0             40   United-States    <=50K
+4      28            Private  338409   Bachelors             13   Married-civ-spouse  ...   Female            0            0             40            Cuba    <=50K
+...    ..                ...     ...         ...            ...                  ...  ...      ...          ...          ...            ...             ...      ...
+48837  39            Private  215419   Bachelors             13             Divorced  ...   Female            0            0           null   United-States   <=50K.
+48838  64               null  321403     HS-grad              9              Widowed  ...     Male            0            0           null   United-States   <=50K.
+48839  38            Private  374983   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States   <=50K.
+48840  44            Private   83891   Bachelors             13             Divorced  ...     Male         5455            0           null   United-States   <=50K.
+48841  35       Self-emp-inc  182148   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 12:26:21,105] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T152620, end_date=20220604T152621
+[2022-06-04 12:26:21,167] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 12:26:21,234] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 12:28:46,731] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 12:28:46,757] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 12:28:46,757] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 12:28:46,758] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 12:28:46,758] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 12:28:46,789] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 12:28:46,802] {standard_task_runner.py:52} INFO - Started process 27841 to run task
+[2022-06-04 12:28:46,807] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '84', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpr4kl9l3l', '--error-file', '/tmp/tmpv70dau0r']
+[2022-06-04 12:28:46,807] {standard_task_runner.py:80} INFO - Job 84: Subtask transforma_tabela
+[2022-06-04 12:28:46,904] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 12:28:47,039] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 12:28:47,539] {python.py:173} INFO - Done. Returned value was:       age          workclass  fnlwgt   education  education-num       marital-status  ...      sex capital-gain capital-loss hours-per-week  native-country    class
+0      39          State-gov   77516   Bachelors             13        Never-married  ...     Male         2174            0             40   United-States    <=50K
+1      50   Self-emp-not-inc   83311   Bachelors             13   Married-civ-spouse  ...     Male            0            0             13   United-States    <=50K
+2      38            Private  215646     HS-grad              9             Divorced  ...     Male            0            0             40   United-States    <=50K
+3      53            Private  234721        11th              7   Married-civ-spouse  ...     Male            0            0             40   United-States    <=50K
+4      28            Private  338409   Bachelors             13   Married-civ-spouse  ...   Female            0            0             40            Cuba    <=50K
+...    ..                ...     ...         ...            ...                  ...  ...      ...          ...          ...            ...             ...      ...
+48837  39            Private  215419   Bachelors             13             Divorced  ...   Female            0            0           null   United-States   <=50K.
+48838  64               null  321403     HS-grad              9              Widowed  ...     Male            0            0           null   United-States   <=50K.
+48839  38            Private  374983   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States   <=50K.
+48840  44            Private   83891   Bachelors             13             Divorced  ...     Male         5455            0           null   United-States   <=50K.
+48841  35       Self-emp-inc  182148   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 12:28:47,613] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T152846, end_date=20220604T152847
+[2022-06-04 12:28:47,662] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 12:28:47,740] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 12:46:14,524] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 12:46:14,543] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 12:46:14,544] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 12:46:14,544] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 12:46:14,544] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 12:46:14,570] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 12:46:14,579] {standard_task_runner.py:52} INFO - Started process 34157 to run task
+[2022-06-04 12:46:14,584] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '92', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpxid_ldn2', '--error-file', '/tmp/tmpavqenuue']
+[2022-06-04 12:46:14,585] {standard_task_runner.py:80} INFO - Job 92: Subtask transforma_tabela
+[2022-06-04 12:46:14,670] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 12:46:14,778] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 12:46:15,154] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/uiliam/airflow/dags/census.py", line 75, in transform_data
+    df['classes'] = df['classes'].apply(lambda x: x.replace('?', 'null'))
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/series.py", line 4433, in apply
+    return SeriesApply(self, func, convert_dtype, args, kwargs).apply()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/apply.py", line 1082, in apply
+    return self.apply_standard()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/apply.py", line 1137, in apply_standard
+    mapped = lib.map_infer(
+  File "pandas/_libs/lib.pyx", line 2870, in pandas._libs.lib.map_infer
+  File "/home/uiliam/airflow/dags/census.py", line 75, in <lambda>
+    df['classes'] = df['classes'].apply(lambda x: x.replace('?', 'null'))
+AttributeError: 'float' object has no attribute 'replace'
+[2022-06-04 12:46:15,175] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T154614, end_date=20220604T154615
+[2022-06-04 12:46:15,199] {standard_task_runner.py:92} ERROR - Failed to execute job 92 for task transforma_tabela ('float' object has no attribute 'replace'; 34157)
+[2022-06-04 12:46:15,237] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-04 12:46:15,301] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 12:48:54,608] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 12:48:54,623] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 12:48:54,623] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 12:48:54,623] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 12:48:54,623] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 12:48:54,643] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 12:48:54,650] {standard_task_runner.py:52} INFO - Started process 35988 to run task
+[2022-06-04 12:48:54,654] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '96', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpo9507n64', '--error-file', '/tmp/tmprz157ggf']
+[2022-06-04 12:48:54,654] {standard_task_runner.py:80} INFO - Job 96: Subtask transforma_tabela
+[2022-06-04 12:48:54,730] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 12:48:54,832] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 12:48:55,199] {python.py:173} INFO - Done. Returned value was:       age          workclass  fnlwgt   education  education-num       marital-status  ...      sex capital-gain capital-loss hours-per-week  native-country  classes
+0      39          State-gov   77516   Bachelors             13        Never-married  ...     Male         2174            0             40   United-States    <=50K
+1      50   Self-emp-not-inc   83311   Bachelors             13   Married-civ-spouse  ...     Male            0            0             13   United-States    <=50K
+2      38            Private  215646     HS-grad              9             Divorced  ...     Male            0            0             40   United-States    <=50K
+3      53            Private  234721        11th              7   Married-civ-spouse  ...     Male            0            0             40   United-States    <=50K
+4      28            Private  338409   Bachelors             13   Married-civ-spouse  ...   Female            0            0             40            Cuba    <=50K
+...    ..                ...     ...         ...            ...                  ...  ...      ...          ...          ...            ...             ...      ...
+48837  39            Private  215419   Bachelors             13             Divorced  ...   Female            0            0           null   United-States   <=50K.
+48838  64               null  321403     HS-grad              9              Widowed  ...     Male            0            0           null   United-States   <=50K.
+48839  38            Private  374983   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States   <=50K.
+48840  44            Private   83891   Bachelors             13             Divorced  ...     Male         5455            0           null   United-States   <=50K.
+48841  35       Self-emp-inc  182148   Bachelors             13   Married-civ-spouse  ...     Male            0            0           null   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 12:48:55,265] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T154854, end_date=20220604T154855
+[2022-06-04 12:48:55,308] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 12:48:55,381] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 13:00:21,479] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 13:00:21,496] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 13:00:21,496] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 13:00:21,496] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 13:00:21,497] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 13:00:21,519] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 13:00:21,530] {standard_task_runner.py:52} INFO - Started process 39175 to run task
+[2022-06-04 13:00:21,535] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '102', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp2rrcveie', '--error-file', '/tmp/tmpw4rmw1uh']
+[2022-06-04 13:00:21,536] {standard_task_runner.py:80} INFO - Job 102: Subtask transforma_tabela
+[2022-06-04 13:00:21,623] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 13:00:21,736] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 13:00:21,999] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'class'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/uiliam/airflow/dags/census.py", line 58, in transform_data
+    df_data['class'] = df_data['class'].apply(lambda x: x.split(' ')[1])
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/frame.py", line 3505, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'class'
+[2022-06-04 13:00:22,025] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T160021, end_date=20220604T160022
+[2022-06-04 13:00:22,047] {standard_task_runner.py:92} ERROR - Failed to execute job 102 for task transforma_tabela ('class'; 39175)
+[2022-06-04 13:00:22,067] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-04 13:00:22,136] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 13:01:41,297] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 13:01:41,319] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 13:01:41,320] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 13:01:41,320] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 13:01:41,320] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 13:01:41,346] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 13:01:41,357] {standard_task_runner.py:52} INFO - Started process 40283 to run task
+[2022-06-04 13:01:41,364] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '107', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmps8mu0m0l', '--error-file', '/tmp/tmpd0denr54']
+[2022-06-04 13:01:41,364] {standard_task_runner.py:80} INFO - Job 107: Subtask transforma_tabela
+[2022-06-04 13:01:41,454] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 13:01:41,576] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 13:01:42,053] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/uiliam/airflow/dags/census.py", line 70, in transform_data
+    df_data['fnlwgt'] = df_data['fnlwgt'].apply(lambda x: x.split(' ')[1])
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/series.py", line 4433, in apply
+    return SeriesApply(self, func, convert_dtype, args, kwargs).apply()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/apply.py", line 1082, in apply
+    return self.apply_standard()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/apply.py", line 1137, in apply_standard
+    mapped = lib.map_infer(
+  File "pandas/_libs/lib.pyx", line 2870, in pandas._libs.lib.map_infer
+  File "/home/uiliam/airflow/dags/census.py", line 70, in <lambda>
+    df_data['fnlwgt'] = df_data['fnlwgt'].apply(lambda x: x.split(' ')[1])
+IndexError: list index out of range
+[2022-06-04 13:01:42,075] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T160141, end_date=20220604T160142
+[2022-06-04 13:01:42,103] {standard_task_runner.py:92} ERROR - Failed to execute job 107 for task transforma_tabela (list index out of range; 40283)
+[2022-06-04 13:01:42,137] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-04 13:01:42,219] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 13:07:39,236] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 13:07:39,256] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 13:07:39,256] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 13:07:39,256] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 13:07:39,256] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 13:07:39,289] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 13:07:39,302] {standard_task_runner.py:52} INFO - Started process 44473 to run task
+[2022-06-04 13:07:39,307] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '115', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpwcqzfz95', '--error-file', '/tmp/tmprgidpusr']
+[2022-06-04 13:07:39,308] {standard_task_runner.py:80} INFO - Job 115: Subtask transforma_tabela
+[2022-06-04 13:07:39,419] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 13:07:39,548] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 13:07:39,821] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/uiliam/airflow/dags/census.py", line 66, in transform_data
+    df_data['fnlwgt'] = df_data['fnlwgt'].apply(lambda x: x.split(' ')[1])
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/series.py", line 4433, in apply
+    return SeriesApply(self, func, convert_dtype, args, kwargs).apply()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/apply.py", line 1082, in apply
+    return self.apply_standard()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/apply.py", line 1137, in apply_standard
+    mapped = lib.map_infer(
+  File "pandas/_libs/lib.pyx", line 2870, in pandas._libs.lib.map_infer
+  File "/home/uiliam/airflow/dags/census.py", line 66, in <lambda>
+    df_data['fnlwgt'] = df_data['fnlwgt'].apply(lambda x: x.split(' ')[1])
+AttributeError: 'int' object has no attribute 'split'
+[2022-06-04 13:07:39,841] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T160739, end_date=20220604T160739
+[2022-06-04 13:07:39,864] {standard_task_runner.py:92} ERROR - Failed to execute job 115 for task transforma_tabela ('int' object has no attribute 'split'; 44473)
+[2022-06-04 13:07:39,922] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-04 13:07:39,994] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 13:17:33,767] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 13:17:33,782] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 13:17:33,782] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 13:17:33,782] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 13:17:33,782] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 13:17:33,802] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 13:17:33,809] {standard_task_runner.py:52} INFO - Started process 47748 to run task
+[2022-06-04 13:17:33,814] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '119', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpzx5xxogg', '--error-file', '/tmp/tmp5zcrh4a7']
+[2022-06-04 13:17:33,814] {standard_task_runner.py:80} INFO - Job 119: Subtask transforma_tabela
+[2022-06-04 13:17:33,892] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 13:17:33,986] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 13:17:34,548] {python.py:173} INFO - Done. Returned value was:       age         workclass  fnlwgt  education  education-num      marital-status  ...     sex capital-gain capital-loss hours-per-week  native-country  classes
+0      39         State-gov   77516  Bachelors             13       Never-married  ...    Male         2174            0             40   United-States    <=50K
+1      50  Self-emp-not-inc   83311  Bachelors             13  Married-civ-spouse  ...    Male            0            0             13   United-States    <=50K
+2      38           Private  215646    HS-grad              9            Divorced  ...    Male            0            0             40   United-States    <=50K
+3      53           Private  234721       11th              7  Married-civ-spouse  ...    Male            0            0             40   United-States    <=50K
+4      28           Private  338409  Bachelors             13  Married-civ-spouse  ...  Female            0            0             40            Cuba    <=50K
+...    ..               ...     ...        ...            ...                 ...  ...     ...          ...          ...            ...             ...      ...
+48837  39           Private  215419  Bachelors             13            Divorced  ...  Female            0            0           null   United-States   <=50K.
+48838  64              null  321403    HS-grad              9             Widowed  ...    Male            0            0           null   United-States   <=50K.
+48839  38           Private  374983  Bachelors             13  Married-civ-spouse  ...    Male            0            0           null   United-States   <=50K.
+48840  44           Private   83891  Bachelors             13            Divorced  ...    Male         5455            0           null   United-States   <=50K.
+48841  35      Self-emp-inc  182148  Bachelors             13  Married-civ-spouse  ...    Male            0            0           null   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 13:17:34,606] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T161733, end_date=20220604T161734
+[2022-06-04 13:17:34,668] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 13:17:34,730] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 13:33:07,154] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 13:33:07,176] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 13:33:07,176] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 13:33:07,177] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 13:33:07,177] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 13:33:07,215] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 13:33:07,231] {standard_task_runner.py:52} INFO - Started process 52145 to run task
+[2022-06-04 13:33:07,241] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '125', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp_k2fm_zc', '--error-file', '/tmp/tmpax28rus_']
+[2022-06-04 13:33:07,242] {standard_task_runner.py:80} INFO - Job 125: Subtask transforma_tabela
+[2022-06-04 13:33:07,352] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 13:33:07,482] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 13:33:08,113] {python.py:173} INFO - Done. Returned value was:       age         workclass  fnlwgt  education  education-num      marital-status  ...     sex capital-gain capital-loss hours-per-week  native-country  classes
+0      39         State-gov   77516  Bachelors             13       Never-married  ...    Male         2174            0             40   United-States    <=50K
+1      50  Self-emp-not-inc   83311  Bachelors             13  Married-civ-spouse  ...    Male            0            0             13   United-States    <=50K
+2      38           Private  215646    HS-grad              9            Divorced  ...    Male            0            0             40   United-States    <=50K
+3      53           Private  234721       11th              7  Married-civ-spouse  ...    Male            0            0             40   United-States    <=50K
+4      28           Private  338409  Bachelors             13  Married-civ-spouse  ...  Female            0            0             40            Cuba    <=50K
+...    ..               ...     ...        ...            ...                 ...  ...     ...          ...          ...            ...             ...      ...
+48837  39           Private  215419  Bachelors             13            Divorced  ...  Female            0            0           null   United-States   <=50K.
+48838  64              null  321403    HS-grad              9             Widowed  ...    Male            0            0           null   United-States   <=50K.
+48839  38           Private  374983  Bachelors             13  Married-civ-spouse  ...    Male            0            0           null   United-States   <=50K.
+48840  44           Private   83891  Bachelors             13            Divorced  ...    Male         5455            0           null   United-States   <=50K.
+48841  35      Self-emp-inc  182148  Bachelors             13  Married-civ-spouse  ...    Male            0            0           null   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 13:33:08,175] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T163307, end_date=20220604T163308
+[2022-06-04 13:33:08,220] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 13:33:08,288] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 13:44:41,068] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 13:44:41,084] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 13:44:41,084] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 13:44:41,084] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 13:44:41,084] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 13:44:41,106] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 13:44:41,117] {standard_task_runner.py:52} INFO - Started process 56590 to run task
+[2022-06-04 13:44:41,122] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '131', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmppfbxf0a7', '--error-file', '/tmp/tmp_nho48h4']
+[2022-06-04 13:44:41,123] {standard_task_runner.py:80} INFO - Job 131: Subtask transforma_tabela
+[2022-06-04 13:44:41,200] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 13:44:41,299] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 13:44:41,676] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/uiliam/airflow/dags/census.py", line 83, in transform_data
+    df_test['hours-per-week'] = df_test['hours-per-week'].apply(lambda x: x.split(' ')[1])
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/series.py", line 4433, in apply
+    return SeriesApply(self, func, convert_dtype, args, kwargs).apply()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/apply.py", line 1082, in apply
+    return self.apply_standard()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/apply.py", line 1137, in apply_standard
+    mapped = lib.map_infer(
+  File "pandas/_libs/lib.pyx", line 2870, in pandas._libs.lib.map_infer
+  File "/home/uiliam/airflow/dags/census.py", line 83, in <lambda>
+    df_test['hours-per-week'] = df_test['hours-per-week'].apply(lambda x: x.split(' ')[1])
+IndexError: list index out of range
+[2022-06-04 13:44:41,692] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T164441, end_date=20220604T164441
+[2022-06-04 13:44:41,710] {standard_task_runner.py:92} ERROR - Failed to execute job 131 for task transforma_tabela (list index out of range; 56590)
+[2022-06-04 13:44:41,735] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-04 13:44:41,796] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 13:47:43,692] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 13:47:43,708] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 13:47:43,709] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 13:47:43,709] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 13:47:43,709] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 13:47:43,729] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 13:47:43,737] {standard_task_runner.py:52} INFO - Started process 58251 to run task
+[2022-06-04 13:47:43,742] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '135', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpsbrvwht6', '--error-file', '/tmp/tmpn1t3fb54']
+[2022-06-04 13:47:43,743] {standard_task_runner.py:80} INFO - Job 135: Subtask transforma_tabela
+[2022-06-04 13:47:43,816] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 13:47:43,922] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 13:47:44,508] {python.py:173} INFO - Done. Returned value was:       age         workclass  fnlwgt  education  education-num      marital-status  ...     sex capital-gain capital-loss hours-per-week  native-country  classes
+0      39         State-gov   77516  Bachelors             13       Never-married  ...    Male         2174            0             40   United-States    <=50K
+1      50  Self-emp-not-inc   83311  Bachelors             13  Married-civ-spouse  ...    Male            0            0             13   United-States    <=50K
+2      38           Private  215646    HS-grad              9            Divorced  ...    Male            0            0             40   United-States    <=50K
+3      53           Private  234721       11th              7  Married-civ-spouse  ...    Male            0            0             40   United-States    <=50K
+4      28           Private  338409  Bachelors             13  Married-civ-spouse  ...  Female            0            0             40            Cuba    <=50K
+...    ..               ...     ...        ...            ...                 ...  ...     ...          ...          ...            ...             ...      ...
+48837  39           Private  215419  Bachelors             13            Divorced  ...  Female            0            0           null   United-States   <=50K.
+48838  64              null  321403    HS-grad              9             Widowed  ...    Male            0            0           null   United-States   <=50K.
+48839  38           Private  374983  Bachelors             13  Married-civ-spouse  ...    Male            0            0           null   United-States   <=50K.
+48840  44           Private   83891  Bachelors             13            Divorced  ...    Male         5455            0           null   United-States   <=50K.
+48841  35      Self-emp-inc  182148  Bachelors             13  Married-civ-spouse  ...    Male            0            0           null   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 13:47:44,565] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T164743, end_date=20220604T164744
+[2022-06-04 13:47:44,636] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 13:47:44,707] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 13:58:08,889] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 13:58:08,907] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 13:58:08,907] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 13:58:08,907] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 13:58:08,907] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 13:58:08,932] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 13:58:08,940] {standard_task_runner.py:52} INFO - Started process 61337 to run task
+[2022-06-04 13:58:08,946] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '141', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpya4i1lbs', '--error-file', '/tmp/tmp1upwyv7q']
+[2022-06-04 13:58:08,947] {standard_task_runner.py:80} INFO - Job 141: Subtask transforma_tabela
+[2022-06-04 13:58:09,025] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 13:58:09,125] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 13:58:09,740] {python.py:173} INFO - Done. Returned value was:       age         workclass  fnlwgt  education  education_num      marital_status  ... capital_gain capital_loss hours_per_week  native_country classes  education-num
+0      39         State-gov   77516  Bachelors           13.0       Never-married  ...         2174            0             40   United-States   <=50K            NaN
+1      50  Self-emp-not-inc   83311  Bachelors           13.0  Married-civ-spouse  ...            0            0             13   United-States   <=50K            NaN
+2      38           Private  215646    HS-grad            9.0            Divorced  ...            0            0             40   United-States   <=50K            NaN
+3      53           Private  234721       11th            7.0  Married-civ-spouse  ...            0            0             40   United-States   <=50K            NaN
+4      28           Private  338409  Bachelors           13.0  Married-civ-spouse  ...            0            0             40            Cuba   <=50K            NaN
+...    ..               ...     ...        ...            ...                 ...  ...          ...          ...            ...             ...     ...            ...
+48837  39           Private  215419  Bachelors            NaN            Divorced  ...            0            0           null   United-States  <=50K.           13.0
+48838  64              null  321403    HS-grad            NaN             Widowed  ...            0            0           null   United-States  <=50K.            9.0
+48839  38           Private  374983  Bachelors            NaN  Married-civ-spouse  ...            0            0           null   United-States  <=50K.           13.0
+48840  44           Private   83891  Bachelors            NaN            Divorced  ...         5455            0           null   United-States  <=50K.           13.0
+48841  35      Self-emp-inc  182148  Bachelors            NaN  Married-civ-spouse  ...            0            0           null   United-States   >50K.           13.0
+
+[48842 rows x 16 columns]
+[2022-06-04 13:58:09,813] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T165808, end_date=20220604T165809
+[2022-06-04 13:58:09,880] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 13:58:09,951] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 14:04:46,597] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 14:04:46,612] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 14:04:46,612] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 14:04:46,612] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 14:04:46,612] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 14:04:46,632] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 14:04:46,639] {standard_task_runner.py:52} INFO - Started process 64181 to run task
+[2022-06-04 14:04:46,644] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '147', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpq5isgsj6', '--error-file', '/tmp/tmp1b7z4qym']
+[2022-06-04 14:04:46,645] {standard_task_runner.py:80} INFO - Job 147: Subtask transforma_tabela
+[2022-06-04 14:04:46,718] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 14:04:46,815] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 14:04:47,373] {python.py:173} INFO - Done. Returned value was:       age         workclass  fnlwgt  education  education_num      marital_status  ...     sex capital_gain capital_loss hours_per_week  native_country  classes
+0      39         State-gov   77516  Bachelors             13       Never-married  ...    Male         2174            0             40   United-States    <=50K
+1      50  Self-emp-not-inc   83311  Bachelors             13  Married-civ-spouse  ...    Male            0            0             13   United-States    <=50K
+2      38           Private  215646    HS-grad              9            Divorced  ...    Male            0            0             40   United-States    <=50K
+3      53           Private  234721       11th              7  Married-civ-spouse  ...    Male            0            0             40   United-States    <=50K
+4      28           Private  338409  Bachelors             13  Married-civ-spouse  ...  Female            0            0             40            Cuba    <=50K
+...    ..               ...     ...        ...            ...                 ...  ...     ...          ...          ...            ...             ...      ...
+48837  39           Private  215419  Bachelors             13            Divorced  ...  Female            0            0           null   United-States   <=50K.
+48838  64              null  321403    HS-grad              9             Widowed  ...    Male            0            0           null   United-States   <=50K.
+48839  38           Private  374983  Bachelors             13  Married-civ-spouse  ...    Male            0            0           null   United-States   <=50K.
+48840  44           Private   83891  Bachelors             13            Divorced  ...    Male         5455            0           null   United-States   <=50K.
+48841  35      Self-emp-inc  182148  Bachelors             13  Married-civ-spouse  ...    Male            0            0           null   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 14:04:47,429] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T170446, end_date=20220604T170447
+[2022-06-04 14:04:47,499] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 14:04:47,569] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 14:19:39,861] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 14:19:39,883] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 14:19:39,884] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 14:19:39,884] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 14:19:39,884] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 14:19:39,910] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 14:19:39,921] {standard_task_runner.py:52} INFO - Started process 69264 to run task
+[2022-06-04 14:19:39,927] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '153', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp93u_8o0s', '--error-file', '/tmp/tmp1t3qidm7']
+[2022-06-04 14:19:39,927] {standard_task_runner.py:80} INFO - Job 153: Subtask transforma_tabela
+[2022-06-04 14:19:40,031] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 14:19:40,184] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 14:19:41,081] {python.py:173} INFO - Done. Returned value was:       age         workclass  fnlwgt  education  education_num      marital_status  ...     sex capital_gain capital_loss hours_per_week  native_country  classes
+0      39         State-gov   77516  Bachelors             13       Never-married  ...    Male         2174            0             40   United-States    <=50K
+1      50  Self-emp-not-inc   83311  Bachelors             13  Married-civ-spouse  ...    Male            0            0             13   United-States    <=50K
+2      38           Private  215646    HS-grad              9            Divorced  ...    Male            0            0             40   United-States    <=50K
+3      53           Private  234721       11th              7  Married-civ-spouse  ...    Male            0            0             40   United-States    <=50K
+4      28           Private  338409  Bachelors             13  Married-civ-spouse  ...  Female            0            0             40            Cuba    <=50K
+...    ..               ...     ...        ...            ...                 ...  ...     ...          ...          ...            ...             ...      ...
+48837  39           Private  215419  Bachelors             13            Divorced  ...  Female            0            0           null   United-States   <=50K.
+48838  64              null  321403    HS-grad              9             Widowed  ...    Male            0            0           null   United-States   <=50K.
+48839  38           Private  374983  Bachelors             13  Married-civ-spouse  ...    Male            0            0           null   United-States   <=50K.
+48840  44           Private   83891  Bachelors             13            Divorced  ...    Male         5455            0           null   United-States   <=50K.
+48841  35      Self-emp-inc  182148  Bachelors             13  Married-civ-spouse  ...    Male            0            0           null   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 14:19:41,147] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T171939, end_date=20220604T171941
+[2022-06-04 14:19:41,183] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 14:19:41,254] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 14:30:51,847] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 14:30:51,869] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 14:30:51,870] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 14:30:51,870] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 14:30:51,870] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 14:30:51,899] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 14:30:51,912] {standard_task_runner.py:52} INFO - Started process 72924 to run task
+[2022-06-04 14:30:51,918] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '159', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpxsf0wiy8', '--error-file', '/tmp/tmpwnkxb3h_']
+[2022-06-04 14:30:51,919] {standard_task_runner.py:80} INFO - Job 159: Subtask transforma_tabela
+[2022-06-04 14:30:52,013] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 14:30:52,125] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 14:30:52,744] {python.py:173} INFO - Done. Returned value was:       age         workclass  fnlwgt  education  education_num      marital_status  ...     sex capital_gain capital_loss hours_per_week native_country  classes
+0      39         State-gov   77516  Bachelors             13       Never-married  ...    Male         2174            0             40  United-States    <=50K
+1      50  Self-emp-not-inc   83311  Bachelors             13  Married-civ-spouse  ...    Male            0            0             13  United-States    <=50K
+2      38           Private  215646    HS-grad              9            Divorced  ...    Male            0            0             40  United-States    <=50K
+3      53           Private  234721       11th              7  Married-civ-spouse  ...    Male            0            0             40  United-States    <=50K
+4      28           Private  338409  Bachelors             13  Married-civ-spouse  ...  Female            0            0             40           Cuba    <=50K
+...    ..               ...     ...        ...            ...                 ...  ...     ...          ...          ...            ...            ...      ...
+48837  39           Private  215419  Bachelors             13            Divorced  ...  Female            0            0           null  United-States   <=50K.
+48838  64              null  321403    HS-grad              9             Widowed  ...    Male            0            0           null  United-States   <=50K.
+48839  38           Private  374983  Bachelors             13  Married-civ-spouse  ...    Male            0            0           null  United-States   <=50K.
+48840  44           Private   83891  Bachelors             13            Divorced  ...    Male         5455            0           null  United-States   <=50K.
+48841  35      Self-emp-inc  182148  Bachelors             13  Married-civ-spouse  ...    Male            0            0           null  United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 14:30:52,803] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T173051, end_date=20220604T173052
+[2022-06-04 14:30:52,852] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 14:30:52,915] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 14:34:19,856] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 14:34:19,873] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 14:34:19,873] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 14:34:19,873] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 14:34:19,873] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 14:34:19,893] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 14:34:19,901] {standard_task_runner.py:52} INFO - Started process 74769 to run task
+[2022-06-04 14:34:19,906] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '165', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp21zqlull', '--error-file', '/tmp/tmp11q7k0ap']
+[2022-06-04 14:34:19,907] {standard_task_runner.py:80} INFO - Job 165: Subtask transforma_tabela
+[2022-06-04 14:34:19,981] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 14:34:20,086] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 14:34:20,623] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/uiliam/airflow/dags/census.py", line 94, in transform_data
+    df['age'] = df['age'].apply(lambda x: x.split('.')[0])
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/series.py", line 4433, in apply
+    return SeriesApply(self, func, convert_dtype, args, kwargs).apply()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/apply.py", line 1082, in apply
+    return self.apply_standard()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/apply.py", line 1137, in apply_standard
+    mapped = lib.map_infer(
+  File "pandas/_libs/lib.pyx", line 2870, in pandas._libs.lib.map_infer
+  File "/home/uiliam/airflow/dags/census.py", line 94, in <lambda>
+    df['age'] = df['age'].apply(lambda x: x.split('.')[0])
+AttributeError: 'int' object has no attribute 'split'
+[2022-06-04 14:34:20,641] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T173419, end_date=20220604T173420
+[2022-06-04 14:34:20,665] {standard_task_runner.py:92} ERROR - Failed to execute job 165 for task transforma_tabela ('int' object has no attribute 'split'; 74769)
+[2022-06-04 14:34:20,719] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-04 14:34:20,799] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 14:35:38,921] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 14:35:38,941] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 14:35:38,942] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 14:35:38,942] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 14:35:38,942] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 14:35:38,968] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 14:35:38,980] {standard_task_runner.py:52} INFO - Started process 75817 to run task
+[2022-06-04 14:35:38,986] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '169', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpyehe5ye7', '--error-file', '/tmp/tmpp3eibqzj']
+[2022-06-04 14:35:38,986] {standard_task_runner.py:80} INFO - Job 169: Subtask transforma_tabela
+[2022-06-04 14:35:39,082] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 14:35:39,187] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 14:35:39,672] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/uiliam/airflow/dags/census.py", line 94, in transform_data
+    df['age'] = df['age'].apply(lambda x: x.split('.')[0])
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/series.py", line 4433, in apply
+    return SeriesApply(self, func, convert_dtype, args, kwargs).apply()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/apply.py", line 1082, in apply
+    return self.apply_standard()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/apply.py", line 1137, in apply_standard
+    mapped = lib.map_infer(
+  File "pandas/_libs/lib.pyx", line 2870, in pandas._libs.lib.map_infer
+  File "/home/uiliam/airflow/dags/census.py", line 94, in <lambda>
+    df['age'] = df['age'].apply(lambda x: x.split('.')[0])
+AttributeError: 'int' object has no attribute 'split'
+[2022-06-04 14:35:39,690] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T173538, end_date=20220604T173539
+[2022-06-04 14:35:39,710] {standard_task_runner.py:92} ERROR - Failed to execute job 169 for task transforma_tabela ('int' object has no attribute 'split'; 75817)
+[2022-06-04 14:35:39,759] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-04 14:35:39,828] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 14:39:37,634] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 14:39:37,656] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 14:39:37,656] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 14:39:37,657] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 14:39:37,657] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 14:39:37,679] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 14:39:37,689] {standard_task_runner.py:52} INFO - Started process 77645 to run task
+[2022-06-04 14:39:37,694] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '173', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpl9ff1yhm', '--error-file', '/tmp/tmpllki_wdm']
+[2022-06-04 14:39:37,695] {standard_task_runner.py:80} INFO - Job 173: Subtask transforma_tabela
+[2022-06-04 14:39:37,781] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 14:39:37,893] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 14:39:38,625] {python.py:173} INFO - Done. Returned value was:       age         workclass  fnlwgt  education education_num      marital_status  ...     sex capital_gain capital_loss hours_per_week native_country  classes
+0      39         State-gov   77516  Bachelors            13       Never-married  ...    Male         2174            0             40  United-States    <=50K
+1      50  Self-emp-not-inc   83311  Bachelors            13  Married-civ-spouse  ...    Male            0            0             13  United-States    <=50K
+2      38           Private  215646    HS-grad             9            Divorced  ...    Male            0            0             40  United-States    <=50K
+3      53           Private  234721       11th             7  Married-civ-spouse  ...    Male            0            0             40  United-States    <=50K
+4      28           Private  338409  Bachelors            13  Married-civ-spouse  ...  Female            0            0             40           Cuba    <=50K
+...    ..               ...     ...        ...           ...                 ...  ...     ...          ...          ...            ...            ...      ...
+48837  39           Private  215419  Bachelors            13            Divorced  ...  Female            0            0           null  United-States   <=50K.
+48838  64              null  321403    HS-grad             9             Widowed  ...    Male            0            0           null  United-States   <=50K.
+48839  38           Private  374983  Bachelors            13  Married-civ-spouse  ...    Male            0            0           null  United-States   <=50K.
+48840  44           Private   83891  Bachelors            13            Divorced  ...    Male         5455            0           null  United-States   <=50K.
+48841  35      Self-emp-inc  182148  Bachelors            13  Married-civ-spouse  ...    Male            0            0           null  United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 14:39:38,691] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T173937, end_date=20220604T173938
+[2022-06-04 14:39:38,749] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 14:39:38,828] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 15:04:38,420] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 15:04:38,443] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 15:04:38,443] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 15:04:38,444] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 15:04:38,444] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 15:04:38,471] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 15:04:38,483] {standard_task_runner.py:52} INFO - Started process 83570 to run task
+[2022-06-04 15:04:38,490] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '179', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp85mlqrtm', '--error-file', '/tmp/tmp9_gep8yh']
+[2022-06-04 15:04:38,490] {standard_task_runner.py:80} INFO - Job 179: Subtask transforma_tabela
+[2022-06-04 15:04:38,580] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 15:04:38,693] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 15:04:39,406] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-04 15:04:39,428] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T180438, end_date=20220604T180439
+[2022-06-04 15:04:39,464] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 15:04:39,530] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 15:08:55,205] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 15:08:55,225] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 15:08:55,225] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 15:08:55,225] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 15:08:55,225] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 15:08:55,250] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 15:08:55,262] {standard_task_runner.py:52} INFO - Started process 85926 to run task
+[2022-06-04 15:08:55,267] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '185', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp1qyyup1g', '--error-file', '/tmp/tmptnvtp2lr']
+[2022-06-04 15:08:55,267] {standard_task_runner.py:80} INFO - Job 185: Subtask transforma_tabela
+[2022-06-04 15:08:55,352] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 15:08:55,468] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 15:08:56,146] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-04 15:08:56,168] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T180855, end_date=20220604T180856
+[2022-06-04 15:08:56,242] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 15:08:56,316] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 15:10:40,382] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 15:10:40,401] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 15:10:40,402] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 15:10:40,402] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 15:10:40,402] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 15:10:40,424] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 15:10:40,435] {standard_task_runner.py:52} INFO - Started process 87415 to run task
+[2022-06-04 15:10:40,440] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '191', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpyaa62_ti', '--error-file', '/tmp/tmpojchv7s5']
+[2022-06-04 15:10:40,440] {standard_task_runner.py:80} INFO - Job 191: Subtask transforma_tabela
+[2022-06-04 15:10:40,525] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 15:10:40,646] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 15:10:41,302] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-04 15:10:41,324] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T181040, end_date=20220604T181041
+[2022-06-04 15:10:41,374] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 15:10:41,443] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 15:20:08,432] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 15:20:08,447] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 15:20:08,447] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 15:20:08,447] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 15:20:08,447] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 15:20:08,467] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 15:20:08,475] {standard_task_runner.py:52} INFO - Started process 90422 to run task
+[2022-06-04 15:20:08,480] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '197', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpcysxagwv', '--error-file', '/tmp/tmpo8v9nchr']
+[2022-06-04 15:20:08,480] {standard_task_runner.py:80} INFO - Job 197: Subtask transforma_tabela
+[2022-06-04 15:20:08,561] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 15:20:08,665] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 15:20:09,339] {logging_mixin.py:115} INFO -   age         workclass    fnlwgt  education education_num      marital_status  ...     sex capital_gain capital_loss hours_per_week  native_country  classes
+0  39         State-gov   77516.0  Bachelors            13       Never-married  ...    Male       2174.0            0             40   United-States    <=50K
+1  50  Self-emp-not-inc   83311.0  Bachelors            13  Married-civ-spouse  ...    Male          0.0            0             13   United-States    <=50K
+2  38           Private  215646.0    HS-grad             9            Divorced  ...    Male          0.0            0             40   United-States    <=50K
+3  53           Private  234721.0       11th             7  Married-civ-spouse  ...    Male          0.0            0             40   United-States    <=50K
+4  28           Private  338409.0  Bachelors            13  Married-civ-spouse  ...  Female          0.0            0             40            Cuba    <=50K
+
+[5 rows x 15 columns]
+[2022-06-04 15:20:09,346] {python.py:173} INFO - Done. Returned value was:       age         workclass    fnlwgt  education education_num      marital_status  ...     sex capital_gain capital_loss hours_per_week  native_country  classes
+0      39         State-gov   77516.0  Bachelors            13       Never-married  ...    Male       2174.0            0             40   United-States    <=50K
+1      50  Self-emp-not-inc   83311.0  Bachelors            13  Married-civ-spouse  ...    Male          0.0            0             13   United-States    <=50K
+2      38           Private  215646.0    HS-grad             9            Divorced  ...    Male          0.0            0             40   United-States    <=50K
+3      53           Private  234721.0       11th             7  Married-civ-spouse  ...    Male          0.0            0             40   United-States    <=50K
+4      28           Private  338409.0  Bachelors            13  Married-civ-spouse  ...  Female          0.0            0             40            Cuba    <=50K
+...    ..               ...       ...        ...           ...                 ...  ...     ...          ...          ...            ...             ...      ...
+48837  39           Private  215419.0  Bachelors            13            Divorced  ...  Female          0.0            0             36   United-States   <=50K.
+48838  64              null  321403.0    HS-grad             9             Widowed  ...    Male          0.0            0             40   United-States   <=50K.
+48839  38           Private  374983.0  Bachelors            13  Married-civ-spouse  ...    Male          0.0            0             50   United-States   <=50K.
+48840  44           Private   83891.0  Bachelors            13            Divorced  ...    Male       5455.0            0             40   United-States   <=50K.
+48841  35      Self-emp-inc  182148.0  Bachelors            13  Married-civ-spouse  ...    Male          0.0            0             60   United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-04 15:20:09,429] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T182008, end_date=20220604T182009
+[2022-06-04 15:20:09,494] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 15:20:09,570] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 15:26:57,833] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 15:26:57,852] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 15:26:57,853] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 15:26:57,853] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 15:26:57,853] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 15:26:57,876] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 15:26:57,885] {standard_task_runner.py:52} INFO - Started process 92939 to run task
+[2022-06-04 15:26:57,891] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '204', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmplsiqume_', '--error-file', '/tmp/tmp_te8yo25']
+[2022-06-04 15:26:57,892] {standard_task_runner.py:80} INFO - Job 204: Subtask transforma_tabela
+[2022-06-04 15:26:57,977] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 15:26:58,086] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 15:26:59,141] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-04 15:26:59,164] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T182657, end_date=20220604T182659
+[2022-06-04 15:26:59,226] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 15:26:59,283] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 15:42:23,431] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 15:42:23,448] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 15:42:23,449] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 15:42:23,449] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 15:42:23,449] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 15:42:23,473] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 15:42:23,484] {standard_task_runner.py:52} INFO - Started process 97004 to run task
+[2022-06-04 15:42:23,489] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '210', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpoiz9mj2f', '--error-file', '/tmp/tmpw19xljy4']
+[2022-06-04 15:42:23,490] {standard_task_runner.py:80} INFO - Job 210: Subtask transforma_tabela
+[2022-06-04 15:42:23,575] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 15:42:23,689] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 15:42:24,728] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-04 15:42:24,752] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T184223, end_date=20220604T184224
+[2022-06-04 15:42:24,825] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 15:42:24,893] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 15:49:47,573] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 15:49:47,590] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 15:49:47,590] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 15:49:47,590] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 15:49:47,590] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 15:49:47,616] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 15:49:47,624] {standard_task_runner.py:52} INFO - Started process 100259 to run task
+[2022-06-04 15:49:47,629] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '217', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpeyq4y9ro', '--error-file', '/tmp/tmp77_m8q_w']
+[2022-06-04 15:49:47,630] {standard_task_runner.py:80} INFO - Job 217: Subtask transforma_tabela
+[2022-06-04 15:49:47,714] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 15:49:47,822] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 15:49:48,999] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-04 15:49:49,026] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T184947, end_date=20220604T184949
+[2022-06-04 15:49:49,085] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 15:49:49,163] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 16:22:51,002] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 16:22:51,023] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 16:22:51,024] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 16:22:51,024] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 16:22:51,024] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 16:22:51,051] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 16:22:51,066] {standard_task_runner.py:52} INFO - Started process 107650 to run task
+[2022-06-04 16:22:51,073] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '223', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp_yjd909c', '--error-file', '/tmp/tmp785tf2hd']
+[2022-06-04 16:22:51,074] {standard_task_runner.py:80} INFO - Job 223: Subtask transforma_tabela
+[2022-06-04 16:22:51,169] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 16:22:51,290] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 16:22:52,461] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-04 16:22:52,484] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T192251, end_date=20220604T192252
+[2022-06-04 16:22:52,529] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 16:22:52,592] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 18:30:03,336] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 18:30:03,346] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 18:30:03,347] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 18:30:03,347] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 18:30:03,347] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 18:30:03,360] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 18:30:03,365] {standard_task_runner.py:52} INFO - Started process 6133 to run task
+[2022-06-04 18:30:03,368] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '266', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpeh25nhxs', '--error-file', '/tmp/tmp18bysy2x']
+[2022-06-04 18:30:03,369] {standard_task_runner.py:80} INFO - Job 266: Subtask transforma_tabela
+[2022-06-04 18:30:03,428] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 18:30:03,502] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 18:30:03,963] {logging_mixin.py:115} INFO -    index age         workclass  fnlwgt education education_num      marital_status  ...   race     sex capital_gain capital_loss hours_per_week  native_country classes
+0      0   0         State-gov   77516                      13       Never-married  ...  White    Male         2174            0             40          United   <=50K
+1      1   0  Self-emp-not-inc   83311                      13  Married-civ-spouse  ...  White    Male            0            0             13          United   <=50K
+2      2   0           Private  215646                       9  Married-civ-spouse  ...  White    Male            0            0             40          United   <=50K
+3      3   0           Private  234721                       7  Married-civ-spouse  ...  Black    Male            0            0             40          United   <=50K
+4      4   0           Private  338409                      13       Never-married  ...  Black  Female            0            0             40          United   <=50K
+
+[5 rows x 16 columns]
+[2022-06-04 18:30:04,219] {python.py:173} INFO - Done. Returned value was:        index age         workclass  fnlwgt education education_num  ...     sex capital_gain capital_loss hours_per_week native_country classes
+0          0   0         State-gov   77516                      13  ...    Male         2174            0             40         United   <=50K
+1          1   0  Self-emp-not-inc   83311                      13  ...    Male            0            0             13         United   <=50K
+2          2   0           Private  215646                       9  ...    Male            0            0             40         United   <=50K
+3          3   0           Private  234721                       7  ...    Male            0            0             40         United   <=50K
+4          4   0           Private  338409                      13  ...  Female            0            0             40         United   <=50K
+...      ...  ..               ...     ...       ...           ...  ...     ...          ...          ...            ...            ...     ...
+48837  48837  39           Private  215419                      13  ...  Female            0            0                           NaN  <=50K.
+48838  48838  64              null  321403                       9  ...    Male            0            0                           NaN  <=50K.
+48839  48839  38           Private  374983                      13  ...    Male            0            0                           NaN  <=50K.
+48840  48840  44           Private   83891                      13  ...    Male         5455            0                           NaN  <=50K.
+48841  48841  35      Self-emp-inc  182148                      13  ...    Male            0            0                           NaN   >50K.
+
+[48842 rows x 16 columns]
+[2022-06-04 18:30:04,259] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T213003, end_date=20220604T213004
+[2022-06-04 18:30:04,301] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 18:30:04,349] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 19:05:51,323] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 19:05:51,341] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 19:05:51,341] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 19:05:51,341] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 19:05:51,341] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 19:05:51,367] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 19:05:51,375] {standard_task_runner.py:52} INFO - Started process 8489 to run task
+[2022-06-04 19:05:51,380] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '272', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp8qnfod9g', '--error-file', '/tmp/tmp9k238wc6']
+[2022-06-04 19:05:51,381] {standard_task_runner.py:80} INFO - Job 272: Subtask transforma_tabela
+[2022-06-04 19:05:51,461] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 19:05:51,564] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 19:05:52,441] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-04 19:05:52,464] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T220551, end_date=20220604T220552
+[2022-06-04 19:05:52,516] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 19:05:52,575] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 19:16:55,103] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 19:16:55,120] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 19:16:55,120] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 19:16:55,120] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 19:16:55,120] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 19:16:55,142] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 19:16:55,152] {standard_task_runner.py:52} INFO - Started process 12274 to run task
+[2022-06-04 19:16:55,158] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '277', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpcbgcg_uj', '--error-file', '/tmp/tmppk08e0eb']
+[2022-06-04 19:16:55,158] {standard_task_runner.py:80} INFO - Job 277: Subtask transforma_tabela
+[2022-06-04 19:16:55,235] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 19:16:55,332] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 19:16:56,193] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-04 19:16:56,217] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T221655, end_date=20220604T221656
+[2022-06-04 19:16:56,252] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 19:16:56,321] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 19:18:44,748] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 19:18:44,765] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 19:18:44,765] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 19:18:44,765] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 19:18:44,765] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 19:18:44,790] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 19:18:44,802] {standard_task_runner.py:52} INFO - Started process 13811 to run task
+[2022-06-04 19:18:44,810] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '283', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp1iiheeym', '--error-file', '/tmp/tmp9t9qlzwi']
+[2022-06-04 19:18:44,811] {standard_task_runner.py:80} INFO - Job 283: Subtask transforma_tabela
+[2022-06-04 19:18:44,908] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 19:18:45,016] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 19:18:45,872] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-04 19:18:45,893] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220604T221844, end_date=20220604T221845
+[2022-06-04 19:18:45,946] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 19:18:46,024] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 21:17:19,298] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 21:17:19,378] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 21:17:19,378] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 21:17:19,379] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 21:17:19,379] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 21:17:19,473] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-03 00:00:00+00:00
+[2022-06-04 21:17:19,492] {standard_task_runner.py:52} INFO - Started process 35198 to run task
+[2022-06-04 21:17:19,544] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '305', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpy7_34xs3', '--error-file', '/tmp/tmpviccu7da']
+[2022-06-04 21:17:19,581] {standard_task_runner.py:80} INFO - Job 305: Subtask transforma_tabela
+[2022-06-04 21:17:19,823] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 21:17:20,132] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 21:17:21,360] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-04 21:17:21,419] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220603T000000, start_date=20220605T001719, end_date=20220605T001721
+[2022-06-04 21:17:21,566] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-04 21:17:21,776] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

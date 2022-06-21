@@ -1,0 +1,24 @@
+[2022-06-05 00:38:18,870] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.populate_table scheduled__2022-06-05T00:59:06.051317+00:00 [queued]>
+[2022-06-05 00:38:18,906] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.populate_table scheduled__2022-06-05T00:59:06.051317+00:00 [queued]>
+[2022-06-05 00:38:18,906] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 00:38:18,907] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-05 00:38:18,907] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 00:38:18,958] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): populate_table> on 2022-06-05 00:59:06.051317+00:00
+[2022-06-05 00:38:18,982] {standard_task_runner.py:52} INFO - Started process 20982 to run task
+[2022-06-05 00:38:19,026] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'populate_table', 'scheduled__2022-06-05T00:59:06.051317+00:00', '--job-id', '536', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpeb7wyza_', '--error-file', '/tmp/tmpye5adfb3']
+[2022-06-05 00:38:19,026] {standard_task_runner.py:80} INFO - Job 536: Subtask populate_table
+[2022-06-05 00:38:19,292] {task_command.py:370} INFO - Running <TaskInstance: census.populate_table scheduled__2022-06-05T00:59:06.051317+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-05 00:38:19,428] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=populate_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-05T00:59:06.051317+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-05T00:59:06.051317+00:00
+[2022-06-05 00:38:19,432] {logging_mixin.py:115} INFO - <_io.TextIOWrapper name='teste_uiliam.csv' mode='r' encoding='UTF-8'>
+[2022-06-05 00:38:20,500] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-05 00:38:20,525] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=populate_table, execution_date=20220605T005906, start_date=20220605T033818, end_date=20220605T033820
+[2022-06-05 00:38:20,593] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-05 00:38:20,670] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

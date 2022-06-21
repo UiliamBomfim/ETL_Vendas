@@ -1,0 +1,430 @@
+[2022-06-20 23:02:31,824] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-20 23:02:31,838] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-20 23:02:31,839] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-20 23:02:31,839] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-20 23:02:31,839] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-20 23:02:31,855] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): load_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-20 23:02:31,863] {standard_task_runner.py:52} INFO - Started process 9165 to run task
+[2022-06-20 23:02:31,867] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'load_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '527', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmp_pz6y555', '--error-file', '/tmp/tmpriuajhhv']
+[2022-06-20 23:02:31,867] {standard_task_runner.py:80} INFO - Job 527: Subtask load_DMs
+[2022-06-20 23:02:31,937] {task_command.py:370} INFO - Running <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-20 23:02:32,019] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=load_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-20 23:02:32,223] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-20 23:02:32,243] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=load_DMs, execution_date=20220620T000000, start_date=20220621T020231, end_date=20220621T020232
+[2022-06-20 23:02:32,278] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-20 23:02:32,335] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 01:35:40,759] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:35:40,782] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:35:40,783] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:35:40,783] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 01:35:40,783] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:35:40,803] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): load_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-21 01:35:40,814] {standard_task_runner.py:52} INFO - Started process 24964 to run task
+[2022-06-21 01:35:40,819] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'load_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '547', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpb3kozh0w', '--error-file', '/tmp/tmpr4eul_vx']
+[2022-06-21 01:35:40,820] {standard_task_runner.py:80} INFO - Job 547: Subtask load_DMs
+[2022-06-21 01:35:40,905] {task_command.py:370} INFO - Running <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 01:35:41,022] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=load_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 01:35:41,184] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1685, in _execute_context
+    self.dialect.do_executemany(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/dialects/postgresql/psycopg2.py", line 903, in do_executemany
+    context._psycopg2_fetched_rows = xtras.execute_values(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/psycopg2/extras.py", line 1270, in execute_values
+    cur.execute(b''.join(parts))
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type double precision: "Shipped"
+LINE 1: ...umber, orderlinenumber, status) VALUES (10181, 7, 'Shipped')...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/uiliam/airflow/dags/functions.py", line 133, in load_DMs
+    df_ord.to_sql('dm_orderd', engine, index=False, if_exists='append')
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/generic.py", line 2951, in to_sql
+    return sql.to_sql(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 697, in to_sql
+    return pandas_sql.to_sql(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 1739, in to_sql
+    total_inserted = sql_engine.insert_records(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 1332, in insert_records
+    raise err
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 1322, in insert_records
+    return table.insert(chunksize=chunksize, method=method)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 950, in insert
+    num_inserted = exec_insert(conn, keys, chunk_iter)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 857, in _execute_insert
+    result = conn.execute(self.table.insert(), data)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1200, in execute
+    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 313, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1389, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1748, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1929, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1685, in _execute_context
+    self.dialect.do_executemany(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/dialects/postgresql/psycopg2.py", line 903, in do_executemany
+    context._psycopg2_fetched_rows = xtras.execute_values(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/psycopg2/extras.py", line 1270, in execute_values
+    cur.execute(b''.join(parts))
+sqlalchemy.exc.DataError: (psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type double precision: "Shipped"
+LINE 1: ...umber, orderlinenumber, status) VALUES (10181, 7, 'Shipped')...
+                                                             ^
+
+[SQL: INSERT INTO dm_orderd (ordernumber, orderlinenumber, status) VALUES (%(ordernumber)s, %(orderlinenumber)s, %(status)s)]
+[parameters: ({'ordernumber': 10181, 'orderlinenumber': 7, 'status': 'Shipped'}, {'ordernumber': 10110, 'orderlinenumber': 12, 'status': 'Shipped'}, {'ordernumber': 10234, 'orderlinenumber': 2, 'status': 'Shipped'}, {'ordernumber': 10328, 'orderlinenumber': 7, 'status': 'Shipped'}, {'ordernumber': 10292, 'orderlinenumber': 5, 'status': 'Shipped'}, {'ordernumber': 10395, 'orderlinenumber': 4, 'status': 'Shipped'}, {'ordernumber': 10222, 'orderlinenumber': 18, 'status': 'Shipped'}, {'ordernumber': 10124, 'orderlinenumber': 3, 'status': 'Shipped'}  ... displaying 10 of 2996 total bound parameter sets ...  {'ordernumber': 10371, 'orderlinenumber': 4, 'status': 'Shipped'}, {'ordernumber': 10301, 'orderlinenumber': 5, 'status': 'Shipped'})]
+(Background on this error at: http://sqlalche.me/e/14/9h9h)
+[2022-06-21 01:35:41,209] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=sales, task_id=load_DMs, execution_date=20220620T000000, start_date=20220621T043540, end_date=20220621T043541
+[2022-06-21 01:35:41,231] {standard_task_runner.py:92} ERROR - Failed to execute job 547 for task load_DMs ((psycopg2.errors.InvalidTextRepresentation) invalid input syntax for type double precision: "Shipped"
+LINE 1: ...umber, orderlinenumber, status) VALUES (10181, 7, 'Shipped')...
+                                                             ^
+
+[SQL: INSERT INTO dm_orderd (ordernumber, orderlinenumber, status) VALUES (%(ordernumber)s, %(orderlinenumber)s, %(status)s)]
+[parameters: ({'ordernumber': 10181, 'orderlinenumber': 7, 'status': 'Shipped'}, {'ordernumber': 10110, 'orderlinenumber': 12, 'status': 'Shipped'}, {'ordernumber': 10234, 'orderlinenumber': 2, 'status': 'Shipped'}, {'ordernumber': 10328, 'orderlinenumber': 7, 'status': 'Shipped'}, {'ordernumber': 10292, 'orderlinenumber': 5, 'status': 'Shipped'}, {'ordernumber': 10395, 'orderlinenumber': 4, 'status': 'Shipped'}, {'ordernumber': 10222, 'orderlinenumber': 18, 'status': 'Shipped'}, {'ordernumber': 10124, 'orderlinenumber': 3, 'status': 'Shipped'}  ... displaying 10 of 2996 total bound parameter sets ...  {'ordernumber': 10371, 'orderlinenumber': 4, 'status': 'Shipped'}, {'ordernumber': 10301, 'orderlinenumber': 5, 'status': 'Shipped'})]
+(Background on this error at: http://sqlalche.me/e/14/9h9h); 24964)
+[2022-06-21 01:35:41,271] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-21 01:35:41,345] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 01:39:14,689] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:39:14,723] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:39:14,724] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:39:14,724] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 01:39:14,724] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:39:14,744] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): load_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-21 01:39:14,757] {standard_task_runner.py:52} INFO - Started process 26946 to run task
+[2022-06-21 01:39:14,763] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'load_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '563', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpyvf0z3zr', '--error-file', '/tmp/tmpd506v_b6']
+[2022-06-21 01:39:14,764] {standard_task_runner.py:80} INFO - Job 563: Subtask load_DMs
+[2022-06-21 01:39:14,854] {task_command.py:370} INFO - Running <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 01:39:14,965] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=load_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 01:39:15,200] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-21 01:39:15,222] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=load_DMs, execution_date=20220620T000000, start_date=20220621T043914, end_date=20220621T043915
+[2022-06-21 01:39:15,255] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 01:39:15,333] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 01:43:24,152] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:43:24,174] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:43:24,175] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:43:24,175] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 01:43:24,175] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:43:24,197] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): load_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-21 01:43:24,208] {standard_task_runner.py:52} INFO - Started process 28844 to run task
+[2022-06-21 01:43:24,213] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'load_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '581', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpfs1jal7d', '--error-file', '/tmp/tmpiphhy_ec']
+[2022-06-21 01:43:24,213] {standard_task_runner.py:80} INFO - Job 581: Subtask load_DMs
+[2022-06-21 01:43:24,296] {task_command.py:370} INFO - Running <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 01:43:24,409] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=load_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 01:43:24,649] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-21 01:43:24,678] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=load_DMs, execution_date=20220620T000000, start_date=20220621T044324, end_date=20220621T044324
+[2022-06-21 01:43:24,746] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 01:43:24,822] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 01:50:29,224] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:50:29,250] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:50:29,250] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:50:29,250] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 01:50:29,250] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:50:29,271] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): load_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-21 01:50:29,283] {standard_task_runner.py:52} INFO - Started process 31332 to run task
+[2022-06-21 01:50:29,288] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'load_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '599', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpxo1um55l', '--error-file', '/tmp/tmpsm4qxg03']
+[2022-06-21 01:50:29,288] {standard_task_runner.py:80} INFO - Job 599: Subtask load_DMs
+[2022-06-21 01:50:29,380] {task_command.py:370} INFO - Running <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 01:50:29,489] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=load_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 01:50:29,726] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-21 01:50:29,748] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=load_DMs, execution_date=20220620T000000, start_date=20220621T045029, end_date=20220621T045029
+[2022-06-21 01:50:29,821] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 01:50:29,903] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:14:11,032] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:14:11,060] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:14:11,060] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:14:11,060] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:14:11,060] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:14:11,079] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): load_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:14:11,088] {standard_task_runner.py:52} INFO - Started process 46831 to run task
+[2022-06-21 02:14:11,093] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'load_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmp7sy7didy', '--error-file', '/tmp/tmpg6nk327r']
+[2022-06-21 02:14:11,094] {standard_task_runner.py:80} INFO - Job 25: Subtask load_DMs
+[2022-06-21 02:14:11,178] {task_command.py:370} INFO - Running <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:14:11,292] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=load_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:14:11,501] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-21 02:14:11,524] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=load_DMs, execution_date=20220620T000000, start_date=20220621T051411, end_date=20220621T051411
+[2022-06-21 02:14:11,585] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:14:11,663] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:16:56,946] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:16:56,968] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:16:56,968] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:16:56,968] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:16:56,969] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:16:56,991] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): load_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:16:57,004] {standard_task_runner.py:52} INFO - Started process 48606 to run task
+[2022-06-21 02:16:57,010] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'load_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '42', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpthe4efxq', '--error-file', '/tmp/tmpahaoba5z']
+[2022-06-21 02:16:57,011] {standard_task_runner.py:80} INFO - Job 42: Subtask load_DMs
+[2022-06-21 02:16:57,096] {task_command.py:370} INFO - Running <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:16:57,207] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=load_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:16:57,447] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-21 02:16:57,468] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=load_DMs, execution_date=20220620T000000, start_date=20220621T051656, end_date=20220621T051657
+[2022-06-21 02:16:57,501] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:16:57,569] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:18:49,183] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:18:49,206] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:18:49,206] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:18:49,206] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:18:49,207] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:18:49,229] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): load_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:18:49,241] {standard_task_runner.py:52} INFO - Started process 50294 to run task
+[2022-06-21 02:18:49,248] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'load_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '60', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmp16_s4kpk', '--error-file', '/tmp/tmp7q8tw800']
+[2022-06-21 02:18:49,249] {standard_task_runner.py:80} INFO - Job 60: Subtask load_DMs
+[2022-06-21 02:18:49,336] {task_command.py:370} INFO - Running <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:18:49,450] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=load_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:18:49,688] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-21 02:18:49,711] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=load_DMs, execution_date=20220620T000000, start_date=20220621T051849, end_date=20220621T051849
+[2022-06-21 02:18:49,780] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:18:49,853] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:24:27,492] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:24:27,516] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:24:27,516] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:24:27,517] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:24:27,517] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:24:27,539] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): load_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:24:27,551] {standard_task_runner.py:52} INFO - Started process 52580 to run task
+[2022-06-21 02:24:27,556] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'load_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '78', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpq55drhd6', '--error-file', '/tmp/tmpgoq29fqg']
+[2022-06-21 02:24:27,557] {standard_task_runner.py:80} INFO - Job 78: Subtask load_DMs
+[2022-06-21 02:24:27,646] {task_command.py:370} INFO - Running <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:24:27,761] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=load_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:24:27,974] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-21 02:24:27,995] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=load_DMs, execution_date=20220620T000000, start_date=20220621T052427, end_date=20220621T052427
+[2022-06-21 02:24:28,049] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:24:28,124] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:42:21,050] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:42:21,076] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:42:21,076] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:42:21,076] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:42:21,076] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:42:21,099] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): load_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:42:21,109] {standard_task_runner.py:52} INFO - Started process 56149 to run task
+[2022-06-21 02:42:21,115] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'load_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '96', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmp62ooic17', '--error-file', '/tmp/tmpn0e47oy5']
+[2022-06-21 02:42:21,115] {standard_task_runner.py:80} INFO - Job 96: Subtask load_DMs
+[2022-06-21 02:42:21,216] {task_command.py:370} INFO - Running <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:42:21,345] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=load_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:42:21,578] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-21 02:42:21,599] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=load_DMs, execution_date=20220620T000000, start_date=20220621T054221, end_date=20220621T054221
+[2022-06-21 02:42:21,648] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:42:21,724] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:44:20,792] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:44:20,815] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:44:20,816] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:44:20,816] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:44:20,816] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:44:20,837] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): load_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:44:20,850] {standard_task_runner.py:52} INFO - Started process 58366 to run task
+[2022-06-21 02:44:20,856] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'load_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '115', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpv1sqvyxw', '--error-file', '/tmp/tmp2v8excar']
+[2022-06-21 02:44:20,856] {standard_task_runner.py:80} INFO - Job 115: Subtask load_DMs
+[2022-06-21 02:44:20,940] {task_command.py:370} INFO - Running <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:44:21,056] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=load_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:44:21,184] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1685, in _execute_context
+    self.dialect.do_executemany(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/dialects/postgresql/psycopg2.py", line 903, in do_executemany
+    context._psycopg2_fetched_rows = xtras.execute_values(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/psycopg2/extras.py", line 1270, in execute_values
+    cur.execute(b''.join(parts))
+psycopg2.errors.NotNullViolation: null value in column "reportsto" violates not-null constraint
+DETAIL:  Failing row contains (1, 1370, Hernandez, Gerard, ghernande@classicmodelcars.com, null, Sales Rep).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/uiliam/airflow/dags/functions.py", line 132, in load_DMs
+    df_emp.to_sql('dm_emp', engine, index=False, if_exists='append')
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/generic.py", line 2951, in to_sql
+    return sql.to_sql(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 697, in to_sql
+    return pandas_sql.to_sql(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 1739, in to_sql
+    total_inserted = sql_engine.insert_records(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 1332, in insert_records
+    raise err
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 1322, in insert_records
+    return table.insert(chunksize=chunksize, method=method)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 950, in insert
+    num_inserted = exec_insert(conn, keys, chunk_iter)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 857, in _execute_insert
+    result = conn.execute(self.table.insert(), data)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1200, in execute
+    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 313, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1389, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1748, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1929, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1685, in _execute_context
+    self.dialect.do_executemany(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/dialects/postgresql/psycopg2.py", line 903, in do_executemany
+    context._psycopg2_fetched_rows = xtras.execute_values(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/psycopg2/extras.py", line 1270, in execute_values
+    cur.execute(b''.join(parts))
+sqlalchemy.exc.IntegrityError: (psycopg2.errors.NotNullViolation) null value in column "reportsto" violates not-null constraint
+DETAIL:  Failing row contains (1, 1370, Hernandez, Gerard, ghernande@classicmodelcars.com, null, Sales Rep).
+
+[SQL: INSERT INTO dm_emp (employeenumber, lastname, firstname, email, jobtitle) VALUES (%(employeenumber)s, %(lastname)s, %(firstname)s, %(email)s, %(jobtitle)s)]
+[parameters: ({'employeenumber': 1370, 'lastname': 'Hernandez', 'firstname': 'Gerard', 'email': 'ghernande@classicmodelcars.com', 'jobtitle': 'Sales Rep'}, {'employeenumber': 1286, 'lastname': 'Tseng', 'firstname': 'Foon Yue', 'email': 'ftseng@classicmodelcars.com', 'jobtitle': 'Sales Rep'}, {'employeenumber': 1619, 'lastname': 'King', 'firstname': 'Tom', 'email': 'tking@classicmodelcars.com', 'jobtitle': 'Sales Rep'}, {'employeenumber': 1102, 'lastname': 'Bondur', 'firstname': 'Gerard', 'email': 'gbondur@classicmodelcars.com', 'jobtitle': 'Sale Manager (EMEA)'}, {'employeenumber': 1056, 'lastname': 'Patterson', 'firstname': 'Mary', 'email': 'mpatterso@classicmodelcars.com', 'jobtitle': 'VP Sales'}, {'employeenumber': 1002, 'lastname': 'Murphy', 'firstname': 'Diane', 'email': 'dmurphy@classicmodelcars.com', 'jobtitle': 'President'}, {'employeenumber': 1625, 'lastname': 'Kato', 'firstname': 'Yoshimi', 'email': 'ykato@classicmodelcars.com', 'jobtitle': 'Sales Rep'}, {'employeenumber': 1088, 'lastname': 'Patterson', 'firstname': 'William', 'email': 'wpatterson@classicmodelcars.com', 'jobtitle': 'Sales Manager (APAC)'}  ... displaying 10 of 23 total bound parameter sets ...  {'employeenumber': 1337, 'lastname': 'Bondur', 'firstname': 'Loui', 'email': 'lbondur@classicmodelcars.com', 'jobtitle': 'Sales Rep'}, {'employeenumber': 1143, 'lastname': 'Bow', 'firstname': 'Anthony', 'email': 'abow@classicmodelcars.com', 'jobtitle': 'Sales Manager (NA)'})]
+(Background on this error at: http://sqlalche.me/e/14/gkpj)
+[2022-06-21 02:44:21,205] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=sales, task_id=load_DMs, execution_date=20220620T000000, start_date=20220621T054420, end_date=20220621T054421
+[2022-06-21 02:44:21,224] {standard_task_runner.py:92} ERROR - Failed to execute job 115 for task load_DMs ((psycopg2.errors.NotNullViolation) null value in column "reportsto" violates not-null constraint
+DETAIL:  Failing row contains (1, 1370, Hernandez, Gerard, ghernande@classicmodelcars.com, null, Sales Rep).
+
+[SQL: INSERT INTO dm_emp (employeenumber, lastname, firstname, email, jobtitle) VALUES (%(employeenumber)s, %(lastname)s, %(firstname)s, %(email)s, %(jobtitle)s)]
+[parameters: ({'employeenumber': 1370, 'lastname': 'Hernandez', 'firstname': 'Gerard', 'email': 'ghernande@classicmodelcars.com', 'jobtitle': 'Sales Rep'}, {'employeenumber': 1286, 'lastname': 'Tseng', 'firstname': 'Foon Yue', 'email': 'ftseng@classicmodelcars.com', 'jobtitle': 'Sales Rep'}, {'employeenumber': 1619, 'lastname': 'King', 'firstname': 'Tom', 'email': 'tking@classicmodelcars.com', 'jobtitle': 'Sales Rep'}, {'employeenumber': 1102, 'lastname': 'Bondur', 'firstname': 'Gerard', 'email': 'gbondur@classicmodelcars.com', 'jobtitle': 'Sale Manager (EMEA)'}, {'employeenumber': 1056, 'lastname': 'Patterson', 'firstname': 'Mary', 'email': 'mpatterso@classicmodelcars.com', 'jobtitle': 'VP Sales'}, {'employeenumber': 1002, 'lastname': 'Murphy', 'firstname': 'Diane', 'email': 'dmurphy@classicmodelcars.com', 'jobtitle': 'President'}, {'employeenumber': 1625, 'lastname': 'Kato', 'firstname': 'Yoshimi', 'email': 'ykato@classicmodelcars.com', 'jobtitle': 'Sales Rep'}, {'employeenumber': 1088, 'lastname': 'Patterson', 'firstname': 'William', 'email': 'wpatterson@classicmodelcars.com', 'jobtitle': 'Sales Manager (APAC)'}  ... displaying 10 of 23 total bound parameter sets ...  {'employeenumber': 1337, 'lastname': 'Bondur', 'firstname': 'Loui', 'email': 'lbondur@classicmodelcars.com', 'jobtitle': 'Sales Rep'}, {'employeenumber': 1143, 'lastname': 'Bow', 'firstname': 'Anthony', 'email': 'abow@classicmodelcars.com', 'jobtitle': 'Sales Manager (NA)'})]
+(Background on this error at: http://sqlalche.me/e/14/gkpj); 58366)
+[2022-06-21 02:44:21,267] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-21 02:44:21,338] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:51:18,658] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:51:18,699] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:51:18,699] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:51:18,700] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:51:18,700] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:51:18,725] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): load_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:51:18,739] {standard_task_runner.py:52} INFO - Started process 60840 to run task
+[2022-06-21 02:51:18,745] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'load_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '131', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmppr3ncvjr', '--error-file', '/tmp/tmpy07g8s82']
+[2022-06-21 02:51:18,747] {standard_task_runner.py:80} INFO - Job 131: Subtask load_DMs
+[2022-06-21 02:51:18,840] {task_command.py:370} INFO - Running <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:51:18,958] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=load_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:51:19,203] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-21 02:51:19,226] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=load_DMs, execution_date=20220620T000000, start_date=20220621T055118, end_date=20220621T055119
+[2022-06-21 02:51:19,282] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:51:19,360] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:52:53,026] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:52:53,046] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:52:53,046] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:52:53,046] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:52:53,046] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:52:53,066] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): load_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:52:53,074] {standard_task_runner.py:52} INFO - Started process 62596 to run task
+[2022-06-21 02:52:53,079] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'load_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '149', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmp6q15zduq', '--error-file', '/tmp/tmpuau31y_4']
+[2022-06-21 02:52:53,079] {standard_task_runner.py:80} INFO - Job 149: Subtask load_DMs
+[2022-06-21 02:52:53,156] {task_command.py:370} INFO - Running <TaskInstance: sales.load_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:52:53,260] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=load_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:52:53,466] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-21 02:52:53,486] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=load_DMs, execution_date=20220620T000000, start_date=20220621T055253, end_date=20220621T055253
+[2022-06-21 02:52:53,532] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:52:53,595] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

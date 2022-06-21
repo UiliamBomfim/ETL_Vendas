@@ -1,0 +1,710 @@
+[2022-06-20 23:02:25,696] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-20 23:02:25,716] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-20 23:02:25,717] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-20 23:02:25,717] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-20 23:02:25,717] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-20 23:02:25,736] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_stages.criar_Stage_Customers> on 2022-06-20 00:00:00+00:00
+[2022-06-20 23:02:25,742] {standard_task_runner.py:52} INFO - Started process 8792 to run task
+[2022-06-20 23:02:25,745] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_stages.criar_Stage_Customers', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '514', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpoocje_te', '--error-file', '/tmp/tmphvxoyfp8']
+[2022-06-20 23:02:25,746] {standard_task_runner.py:80} INFO - Job 514: Subtask create_tables_stages.criar_Stage_Customers
+[2022-06-20 23:02:25,816] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-20 23:02:25,911] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_stages.criar_Stage_Customers
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-20 23:02:25,924] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-20 23:02:25,928] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS stg_customers (
+                customernumber INT NOT NULL,                 
+                customername VARCHAR(30) NOT NULL,
+                contactlastname VARCHAR(30) NOT NULL,
+                contactfirstname VARCHAR(30) NOT NULL,
+                phone VARCHAR(30) NOT NULL,
+                addressline1 VARCHAR(30) NOT NULL,
+                city VARCHAR(30) NOT NULL,
+                state VARCHAR(20) NOT NULL,
+                postalcode VARCHAR(30) NOT NULL,
+                country VARCHAR(30) NOT NULL,
+                creditlimit FLOAT NOT NULL
+                )
+            , parameters: None
+[2022-06-20 23:02:25,929] {postgres.py:94} INFO - NOTICE:  relation "stg_customers" already exists, skipping
+
+[2022-06-20 23:02:25,983] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_stages.criar_Stage_Customers, execution_date=20220620T000000, start_date=20220621T020225, end_date=20220621T020225
+[2022-06-20 23:02:26,040] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-20 23:02:26,096] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 01:35:32,320] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:35:32,350] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:35:32,351] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:35:32,351] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 01:35:32,351] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:35:32,379] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_stages.criar_Stage_Customers> on 2022-06-20 00:00:00+00:00
+[2022-06-21 01:35:32,393] {standard_task_runner.py:52} INFO - Started process 24542 to run task
+[2022-06-21 01:35:32,401] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_stages.criar_Stage_Customers', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '536', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpbe8mlwwf', '--error-file', '/tmp/tmpnk1q7dby']
+[2022-06-21 01:35:32,402] {standard_task_runner.py:80} INFO - Job 536: Subtask create_tables_stages.criar_Stage_Customers
+[2022-06-21 01:35:32,518] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 01:35:32,688] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_stages.criar_Stage_Customers
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 01:35:32,715] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 01:35:32,722] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS stg_customers (
+                customernumber INT NOT NULL,                 
+                customername VARCHAR(30) NOT NULL,
+                contactlastname VARCHAR(30) NOT NULL,
+                contactfirstname VARCHAR(30) NOT NULL,
+                phone VARCHAR(30) NOT NULL,
+                addressline1 VARCHAR(30) NOT NULL,
+                city VARCHAR(30) NOT NULL,
+                state VARCHAR(20) NOT NULL,
+                postalcode VARCHAR(30) NOT NULL,
+                country VARCHAR(30) NOT NULL,
+                creditlimit FLOAT NOT NULL
+                )
+            , parameters: None
+[2022-06-21 01:35:32,724] {postgres.py:94} INFO - NOTICE:  relation "stg_customers" already exists, skipping
+
+[2022-06-21 01:35:32,758] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_stages.criar_Stage_Customers, execution_date=20220620T000000, start_date=20220621T043532, end_date=20220621T043532
+[2022-06-21 01:35:32,816] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 01:35:32,990] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 01:39:06,539] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:39:06,584] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:39:06,585] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:39:06,585] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 01:39:06,585] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:39:06,628] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_stages.criar_Stage_Customers> on 2022-06-20 00:00:00+00:00
+[2022-06-21 01:39:06,641] {standard_task_runner.py:52} INFO - Started process 26452 to run task
+[2022-06-21 01:39:06,649] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_stages.criar_Stage_Customers', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '551', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmp52c_1tt2', '--error-file', '/tmp/tmp3piimqtz']
+[2022-06-21 01:39:06,650] {standard_task_runner.py:80} INFO - Job 551: Subtask create_tables_stages.criar_Stage_Customers
+[2022-06-21 01:39:06,758] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 01:39:06,908] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_stages.criar_Stage_Customers
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 01:39:06,933] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 01:39:06,940] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS stg_customers (
+                customernumber INT NOT NULL,                 
+                customername VARCHAR(30) NOT NULL,
+                contactlastname VARCHAR(30) NOT NULL,
+                contactfirstname VARCHAR(30) NOT NULL,
+                phone VARCHAR(30) NOT NULL,
+                addressline1 VARCHAR(30) NOT NULL,
+                city VARCHAR(30) NOT NULL,
+                state VARCHAR(20) NOT NULL,
+                postalcode VARCHAR(30) NOT NULL,
+                country VARCHAR(30) NOT NULL,
+                creditlimit FLOAT NOT NULL
+                )
+            , parameters: None
+[2022-06-21 01:39:06,942] {postgres.py:94} INFO - NOTICE:  relation "stg_customers" already exists, skipping
+
+[2022-06-21 01:39:07,001] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_stages.criar_Stage_Customers, execution_date=20220620T000000, start_date=20220621T043906, end_date=20220621T043907
+[2022-06-21 01:39:07,102] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 01:39:07,229] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 01:43:16,989] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:43:17,022] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:43:17,023] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:43:17,023] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 01:43:17,023] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:43:17,055] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_stages.criar_Stage_Customers> on 2022-06-20 00:00:00+00:00
+[2022-06-21 01:43:17,070] {standard_task_runner.py:52} INFO - Started process 28404 to run task
+[2022-06-21 01:43:17,090] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_stages.criar_Stage_Customers', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '573', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpr1vlkwum', '--error-file', '/tmp/tmp2ktrstr7']
+[2022-06-21 01:43:17,091] {standard_task_runner.py:80} INFO - Job 573: Subtask create_tables_stages.criar_Stage_Customers
+[2022-06-21 01:43:17,223] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 01:43:17,409] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_stages.criar_Stage_Customers
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 01:43:17,435] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 01:43:17,443] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS stg_customers (
+                customernumber INT NOT NULL,                 
+                customername VARCHAR(30) NOT NULL,
+                contactlastname VARCHAR(30) NOT NULL,
+                contactfirstname VARCHAR(30) NOT NULL,
+                phone VARCHAR(30) NOT NULL,
+                addressline1 VARCHAR(30) NOT NULL,
+                city VARCHAR(30) NOT NULL,
+                state VARCHAR(20) NOT NULL,
+                postalcode VARCHAR(30) NOT NULL,
+                country VARCHAR(30) NOT NULL,
+                creditlimit FLOAT NOT NULL
+                )
+            , parameters: None
+[2022-06-21 01:43:17,445] {postgres.py:94} INFO - NOTICE:  relation "stg_customers" already exists, skipping
+
+[2022-06-21 01:43:17,507] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_stages.criar_Stage_Customers, execution_date=20220620T000000, start_date=20220621T044316, end_date=20220621T044317
+[2022-06-21 01:43:17,581] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 01:43:17,681] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 01:50:20,481] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:50:20,521] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:50:20,522] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:50:20,522] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 01:50:20,522] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:50:20,564] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_stages.criar_Stage_Customers> on 2022-06-20 00:00:00+00:00
+[2022-06-21 01:50:20,580] {standard_task_runner.py:52} INFO - Started process 30811 to run task
+[2022-06-21 01:50:20,591] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_stages.criar_Stage_Customers', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '586', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpyrs6cm3e', '--error-file', '/tmp/tmpidbf35nm']
+[2022-06-21 01:50:20,592] {standard_task_runner.py:80} INFO - Job 586: Subtask create_tables_stages.criar_Stage_Customers
+[2022-06-21 01:50:20,737] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 01:50:20,873] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_stages.criar_Stage_Customers
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 01:50:20,895] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 01:50:20,903] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS stg_customers (
+                customernumber INT NOT NULL,                 
+                customername VARCHAR(30) NOT NULL,
+                contactlastname VARCHAR(30) NOT NULL,
+                contactfirstname VARCHAR(30) NOT NULL,
+                phone VARCHAR(30) NOT NULL,
+                addressline1 VARCHAR(30) NOT NULL,
+                city VARCHAR(30) NOT NULL,
+                state VARCHAR(20) NOT NULL,
+                postalcode VARCHAR(30) NOT NULL,
+                country VARCHAR(30) NOT NULL,
+                creditlimit FLOAT NOT NULL
+                )
+            , parameters: None
+[2022-06-21 01:50:20,904] {postgres.py:94} INFO - NOTICE:  relation "stg_customers" already exists, skipping
+
+[2022-06-21 01:50:20,937] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_stages.criar_Stage_Customers, execution_date=20220620T000000, start_date=20220621T045020, end_date=20220621T045020
+[2022-06-21 01:50:21,008] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 01:50:21,142] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 01:53:29,492] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:53:29,519] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:53:29,519] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:53:29,519] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 01:53:29,520] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:53:29,548] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_stages.criar_Stage_Customers> on 2022-06-20 00:00:00+00:00
+[2022-06-21 01:53:29,561] {standard_task_runner.py:52} INFO - Started process 33993 to run task
+[2022-06-21 01:53:29,568] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_stages.criar_Stage_Customers', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '609', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpv9z4yxcf', '--error-file', '/tmp/tmph12wdd_n']
+[2022-06-21 01:53:29,569] {standard_task_runner.py:80} INFO - Job 609: Subtask create_tables_stages.criar_Stage_Customers
+[2022-06-21 01:53:29,676] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 01:53:29,878] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_stages.criar_Stage_Customers
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 01:53:29,918] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 01:53:29,931] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS stg_customers (
+                customernumber INT NOT NULL,                 
+                customername VARCHAR(30) NOT NULL,
+                contactlastname VARCHAR(30) NOT NULL,
+                contactfirstname VARCHAR(30) NOT NULL,
+                phone VARCHAR(30) NOT NULL,
+                addressline1 VARCHAR(30) NOT NULL,
+                city VARCHAR(30) NOT NULL,
+                state VARCHAR(20) NOT NULL,
+                postalcode VARCHAR(30) NOT NULL,
+                country VARCHAR(30) NOT NULL,
+                creditlimit FLOAT NOT NULL
+                )
+            , parameters: None
+[2022-06-21 01:53:29,933] {postgres.py:94} INFO - NOTICE:  relation "stg_customers" already exists, skipping
+
+[2022-06-21 01:53:30,042] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_stages.criar_Stage_Customers, execution_date=20220620T000000, start_date=20220621T045329, end_date=20220621T045330
+[2022-06-21 01:53:30,148] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 01:53:30,392] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 01:55:19,925] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:55:19,968] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:55:19,968] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:55:19,969] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 01:55:19,969] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:55:20,003] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_stages.criar_Stage_Customers> on 2022-06-20 00:00:00+00:00
+[2022-06-21 01:55:20,017] {standard_task_runner.py:52} INFO - Started process 35429 to run task
+[2022-06-21 01:55:20,023] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_stages.criar_Stage_Customers', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '614', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpndqgyq7y', '--error-file', '/tmp/tmptcud0y03']
+[2022-06-21 01:55:20,024] {standard_task_runner.py:80} INFO - Job 614: Subtask create_tables_stages.criar_Stage_Customers
+[2022-06-21 01:55:20,115] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 01:55:20,254] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_stages.criar_Stage_Customers
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 01:55:20,270] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 01:55:20,277] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS stg_customers (
+                customernumber INT NOT NULL,                 
+                customername VARCHAR(30) NOT NULL,
+                contactlastname VARCHAR(30) NOT NULL,
+                contactfirstname VARCHAR(30) NOT NULL,
+                phone VARCHAR(30) NOT NULL,
+                addressline1 VARCHAR(30) NOT NULL,
+                city VARCHAR(30) NOT NULL,
+                state VARCHAR(20) NOT NULL,
+                postalcode VARCHAR(30) NOT NULL,
+                country VARCHAR(30) NOT NULL,
+                creditlimit FLOAT NOT NULL
+                )
+            , parameters: None
+[2022-06-21 01:55:20,279] {postgres.py:94} INFO - NOTICE:  relation "stg_customers" already exists, skipping
+
+[2022-06-21 01:55:20,373] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_stages.criar_Stage_Customers, execution_date=20220620T000000, start_date=20220621T045519, end_date=20220621T045520
+[2022-06-21 01:55:20,435] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 01:55:20,524] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:00:56,917] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:00:56,950] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:00:56,951] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:00:56,951] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:00:56,951] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:00:56,982] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_stages.criar_Stage_Customers> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:00:56,997] {standard_task_runner.py:52} INFO - Started process 37620 to run task
+[2022-06-21 02:00:57,010] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_stages.criar_Stage_Customers', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '625', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpkp776ux3', '--error-file', '/tmp/tmpe50_ixrk']
+[2022-06-21 02:00:57,011] {standard_task_runner.py:80} INFO - Job 625: Subtask create_tables_stages.criar_Stage_Customers
+[2022-06-21 02:00:57,164] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:00:57,372] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_stages.criar_Stage_Customers
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:00:57,395] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:00:57,404] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS stg_customers (
+                customernumber INT NOT NULL,                 
+                customername VARCHAR(30) NOT NULL,
+                contactlastname VARCHAR(30) NOT NULL,
+                contactfirstname VARCHAR(30) NOT NULL,
+                phone VARCHAR(30) NOT NULL,
+                addressline1 VARCHAR(30) NOT NULL,
+                city VARCHAR(30) NOT NULL,
+                state VARCHAR(20) NOT NULL,
+                postalcode VARCHAR(30) NOT NULL,
+                country VARCHAR(30) NOT NULL,
+                creditlimit FLOAT NOT NULL
+                )
+            , parameters: None
+[2022-06-21 02:00:57,405] {postgres.py:94} INFO - NOTICE:  relation "stg_customers" already exists, skipping
+
+[2022-06-21 02:00:57,536] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_stages.criar_Stage_Customers, execution_date=20220620T000000, start_date=20220621T050056, end_date=20220621T050057
+[2022-06-21 02:00:57,621] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:00:57,749] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:04:14,831] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:04:14,874] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:04:14,874] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:04:14,874] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:04:14,874] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:04:14,904] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_stages.criar_Stage_Customers> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:04:14,918] {standard_task_runner.py:52} INFO - Started process 39760 to run task
+[2022-06-21 02:04:14,924] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_stages.criar_Stage_Customers', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '631', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpwy3_c1gz', '--error-file', '/tmp/tmpa22uww2g']
+[2022-06-21 02:04:14,924] {standard_task_runner.py:80} INFO - Job 631: Subtask create_tables_stages.criar_Stage_Customers
+[2022-06-21 02:04:15,023] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:04:15,169] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_stages.criar_Stage_Customers
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:04:15,192] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:04:15,206] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS stg_customers (
+                customernumber INT NOT NULL,                 
+                customername VARCHAR(30) NOT NULL,
+                contactlastname VARCHAR(30) NOT NULL,
+                contactfirstname VARCHAR(30) NOT NULL,
+                phone VARCHAR(30) NOT NULL,
+                addressline1 VARCHAR(30) NOT NULL,
+                city VARCHAR(30) NOT NULL,
+                state VARCHAR(20) NOT NULL,
+                postalcode VARCHAR(30) NOT NULL,
+                country VARCHAR(30) NOT NULL,
+                creditlimit FLOAT NOT NULL
+                )
+            , parameters: None
+[2022-06-21 02:04:15,314] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_stages.criar_Stage_Customers, execution_date=20220620T000000, start_date=20220621T050414, end_date=20220621T050415
+[2022-06-21 02:04:15,378] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:04:15,495] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:12:05,410] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:12:05,459] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:12:05,460] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:12:05,460] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:12:05,460] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:12:05,497] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_stages.criar_Stage_Customers> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:12:05,511] {standard_task_runner.py:52} INFO - Started process 45087 to run task
+[2022-06-21 02:12:05,517] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_stages.criar_Stage_Customers', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpnznr2g27', '--error-file', '/tmp/tmpkqqb24v8']
+[2022-06-21 02:12:05,518] {standard_task_runner.py:80} INFO - Job 4: Subtask create_tables_stages.criar_Stage_Customers
+[2022-06-21 02:12:05,637] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:12:05,797] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_stages.criar_Stage_Customers
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:12:05,956] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/providers/postgres/operators/postgres.py", line 92, in execute
+    self.hook.run(self.sql, self.autocommit, parameters=self.parameters)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/hooks/dbapi.py", line 186, in run
+    with closing(self.get_conn()) as conn:
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/providers/postgres/hooks/postgres.py", line 86, in get_conn
+    conn = deepcopy(self.connection or self.get_connection(conn_id))
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/models/connection.py", line 430, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `***` isn't defined
+[2022-06-21 02:12:05,966] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=sales, task_id=create_tables_stages.criar_Stage_Customers, execution_date=20220620T000000, start_date=20220621T051205, end_date=20220621T051205
+[2022-06-21 02:12:05,993] {standard_task_runner.py:92} ERROR - Failed to execute job 4 for task create_tables_stages.criar_Stage_Customers (The conn_id `***` isn't defined; 45087)
+[2022-06-21 02:12:06,015] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-21 02:12:06,133] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:14:03,212] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:14:03,248] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:14:03,249] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:14:03,249] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:14:03,249] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:14:03,274] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_stages.criar_Stage_Customers> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:14:03,285] {standard_task_runner.py:52} INFO - Started process 46353 to run task
+[2022-06-21 02:14:03,292] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_stages.criar_Stage_Customers', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmp9q71ej_3', '--error-file', '/tmp/tmpvrr5evlo']
+[2022-06-21 02:14:03,293] {standard_task_runner.py:80} INFO - Job 12: Subtask create_tables_stages.criar_Stage_Customers
+[2022-06-21 02:14:03,391] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:14:03,548] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_stages.criar_Stage_Customers
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:14:03,571] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:14:03,579] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS stg_customers (
+                customernumber INT NOT NULL,                 
+                customername VARCHAR(30) NOT NULL,
+                contactlastname VARCHAR(30) NOT NULL,
+                contactfirstname VARCHAR(30) NOT NULL,
+                phone VARCHAR(30) NOT NULL,
+                addressline1 VARCHAR(30) NOT NULL,
+                city VARCHAR(30) NOT NULL,
+                state VARCHAR(20) NOT NULL,
+                postalcode VARCHAR(30) NOT NULL,
+                country VARCHAR(30) NOT NULL,
+                creditlimit FLOAT NOT NULL
+                )
+            , parameters: None
+[2022-06-21 02:14:03,580] {postgres.py:94} INFO - NOTICE:  relation "stg_customers" already exists, skipping
+
+[2022-06-21 02:14:03,689] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_stages.criar_Stage_Customers, execution_date=20220620T000000, start_date=20220621T051403, end_date=20220621T051403
+[2022-06-21 02:14:03,744] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:14:03,895] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:16:48,192] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:16:48,232] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:16:48,233] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:16:48,233] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:16:48,234] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:16:48,267] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_stages.criar_Stage_Customers> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:16:48,285] {standard_task_runner.py:52} INFO - Started process 48098 to run task
+[2022-06-21 02:16:48,291] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_stages.criar_Stage_Customers', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmp9cnw4usa', '--error-file', '/tmp/tmpstw_azzd']
+[2022-06-21 02:16:48,292] {standard_task_runner.py:80} INFO - Job 29: Subtask create_tables_stages.criar_Stage_Customers
+[2022-06-21 02:16:48,385] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:16:48,527] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_stages.criar_Stage_Customers
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:16:48,552] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:16:48,561] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS stg_customers (
+                customernumber INT NOT NULL,                 
+                customername VARCHAR(30) NOT NULL,
+                contactlastname VARCHAR(30) NOT NULL,
+                contactfirstname VARCHAR(30) NOT NULL,
+                phone VARCHAR(30) NOT NULL,
+                addressline1 VARCHAR(30) NOT NULL,
+                city VARCHAR(30) NOT NULL,
+                state VARCHAR(20) NOT NULL,
+                postalcode VARCHAR(30) NOT NULL,
+                country VARCHAR(30) NOT NULL,
+                creditlimit FLOAT NOT NULL
+                )
+            , parameters: None
+[2022-06-21 02:16:48,563] {postgres.py:94} INFO - NOTICE:  relation "stg_customers" already exists, skipping
+
+[2022-06-21 02:16:48,709] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_stages.criar_Stage_Customers, execution_date=20220620T000000, start_date=20220621T051648, end_date=20220621T051648
+[2022-06-21 02:16:48,785] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:16:48,910] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:18:39,760] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:18:39,799] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:18:39,799] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:18:39,799] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:18:39,799] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:18:39,822] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_stages.criar_Stage_Customers> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:18:39,835] {standard_task_runner.py:52} INFO - Started process 49781 to run task
+[2022-06-21 02:18:39,841] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_stages.criar_Stage_Customers', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '48', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpi1pjmwfa', '--error-file', '/tmp/tmp88k362ag']
+[2022-06-21 02:18:39,842] {standard_task_runner.py:80} INFO - Job 48: Subtask create_tables_stages.criar_Stage_Customers
+[2022-06-21 02:18:39,942] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:18:40,102] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_stages.criar_Stage_Customers
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:18:40,128] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:18:40,136] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS stg_customers (
+                customernumber INT NOT NULL,                 
+                customername VARCHAR(30) NOT NULL,
+                contactlastname VARCHAR(30) NOT NULL,
+                contactfirstname VARCHAR(30) NOT NULL,
+                phone VARCHAR(30) NOT NULL,
+                addressline1 VARCHAR(30) NOT NULL,
+                city VARCHAR(30) NOT NULL,
+                state VARCHAR(20) NOT NULL,
+                postalcode VARCHAR(30) NOT NULL,
+                country VARCHAR(30) NOT NULL,
+                creditlimit FLOAT NOT NULL
+                )
+            , parameters: None
+[2022-06-21 02:18:40,138] {postgres.py:94} INFO - NOTICE:  relation "stg_customers" already exists, skipping
+
+[2022-06-21 02:18:40,197] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_stages.criar_Stage_Customers, execution_date=20220620T000000, start_date=20220621T051839, end_date=20220621T051840
+[2022-06-21 02:18:40,253] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:18:40,399] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:24:18,140] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:24:18,171] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:24:18,171] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:24:18,171] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:24:18,171] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:24:18,195] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_stages.criar_Stage_Customers> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:24:18,207] {standard_task_runner.py:52} INFO - Started process 52096 to run task
+[2022-06-21 02:24:18,215] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_stages.criar_Stage_Customers', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '67', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpglb9n0pq', '--error-file', '/tmp/tmp48p9i1_m']
+[2022-06-21 02:24:18,216] {standard_task_runner.py:80} INFO - Job 67: Subtask create_tables_stages.criar_Stage_Customers
+[2022-06-21 02:24:18,328] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:24:18,489] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_stages.criar_Stage_Customers
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:24:18,520] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:24:18,530] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS stg_customers (
+                customernumber INT NOT NULL,                 
+                customername VARCHAR(30) NOT NULL,
+                contactlastname VARCHAR(30) NOT NULL,
+                contactfirstname VARCHAR(30) NOT NULL,
+                phone VARCHAR(30) NOT NULL,
+                addressline1 VARCHAR(30) NOT NULL,
+                city VARCHAR(30) NOT NULL,
+                state VARCHAR(20) NOT NULL,
+                postalcode VARCHAR(30) NOT NULL,
+                country VARCHAR(30) NOT NULL,
+                creditlimit FLOAT NOT NULL
+                )
+            , parameters: None
+[2022-06-21 02:24:18,532] {postgres.py:94} INFO - NOTICE:  relation "stg_customers" already exists, skipping
+
+[2022-06-21 02:24:18,567] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_stages.criar_Stage_Customers, execution_date=20220620T000000, start_date=20220621T052418, end_date=20220621T052418
+[2022-06-21 02:24:18,629] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:24:18,787] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:42:12,571] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:42:12,640] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:42:12,640] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:42:12,641] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:42:12,641] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:42:12,672] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_stages.criar_Stage_Customers> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:42:12,687] {standard_task_runner.py:52} INFO - Started process 55640 to run task
+[2022-06-21 02:42:12,701] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_stages.criar_Stage_Customers', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '83', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpf3w7u2fz', '--error-file', '/tmp/tmpll_tkat8']
+[2022-06-21 02:42:12,702] {standard_task_runner.py:80} INFO - Job 83: Subtask create_tables_stages.criar_Stage_Customers
+[2022-06-21 02:42:12,808] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:42:12,976] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_stages.criar_Stage_Customers
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:42:13,002] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:42:13,012] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS stg_customers (
+                customernumber INT NOT NULL,                 
+                customername VARCHAR(30) NOT NULL,
+                contactlastname VARCHAR(30) NOT NULL,
+                contactfirstname VARCHAR(30) NOT NULL,
+                phone VARCHAR(30) NOT NULL,
+                addressline1 VARCHAR(30) NOT NULL,
+                city VARCHAR(30) NOT NULL,
+                state VARCHAR(20) NOT NULL,
+                postalcode VARCHAR(30) NOT NULL,
+                country VARCHAR(30) NOT NULL,
+                creditlimit FLOAT NOT NULL
+                )
+            , parameters: None
+[2022-06-21 02:42:13,015] {postgres.py:94} INFO - NOTICE:  relation "stg_customers" already exists, skipping
+
+[2022-06-21 02:42:13,156] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_stages.criar_Stage_Customers, execution_date=20220620T000000, start_date=20220621T054212, end_date=20220621T054213
+[2022-06-21 02:42:13,238] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:42:13,366] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:44:12,248] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:44:12,299] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:44:12,299] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:44:12,299] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:44:12,300] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:44:12,326] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_stages.criar_Stage_Customers> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:44:12,338] {standard_task_runner.py:52} INFO - Started process 57868 to run task
+[2022-06-21 02:44:12,343] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_stages.criar_Stage_Customers', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '102', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpjwjxwd1k', '--error-file', '/tmp/tmpourntj9u']
+[2022-06-21 02:44:12,344] {standard_task_runner.py:80} INFO - Job 102: Subtask create_tables_stages.criar_Stage_Customers
+[2022-06-21 02:44:12,454] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:44:12,631] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_stages.criar_Stage_Customers
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:44:12,659] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:44:12,669] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS stg_customers (
+                customernumber INT NOT NULL,                 
+                customername VARCHAR(30) NOT NULL,
+                contactlastname VARCHAR(30) NOT NULL,
+                contactfirstname VARCHAR(30) NOT NULL,
+                phone VARCHAR(30) NOT NULL,
+                addressline1 VARCHAR(30) NOT NULL,
+                city VARCHAR(30) NOT NULL,
+                state VARCHAR(20) NOT NULL,
+                postalcode VARCHAR(30) NOT NULL,
+                country VARCHAR(30) NOT NULL,
+                creditlimit FLOAT NOT NULL
+                )
+            , parameters: None
+[2022-06-21 02:44:12,968] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_stages.criar_Stage_Customers, execution_date=20220620T000000, start_date=20220621T054412, end_date=20220621T054412
+[2022-06-21 02:44:13,043] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:44:13,159] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:51:09,387] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:51:09,419] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:51:09,420] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:51:09,420] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:51:09,420] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:51:09,445] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_stages.criar_Stage_Customers> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:51:09,461] {standard_task_runner.py:52} INFO - Started process 60327 to run task
+[2022-06-21 02:51:09,472] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_stages.criar_Stage_Customers', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '121', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpwb2m6veu', '--error-file', '/tmp/tmpm4d91qxu']
+[2022-06-21 02:51:09,472] {standard_task_runner.py:80} INFO - Job 121: Subtask create_tables_stages.criar_Stage_Customers
+[2022-06-21 02:51:09,624] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:51:09,858] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_stages.criar_Stage_Customers
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:51:09,888] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:51:09,900] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS stg_customers (
+                customernumber INT NOT NULL,                 
+                customername VARCHAR(30) NOT NULL,
+                contactlastname VARCHAR(30) NOT NULL,
+                contactfirstname VARCHAR(30) NOT NULL,
+                phone VARCHAR(30) NOT NULL,
+                addressline1 VARCHAR(30) NOT NULL,
+                city VARCHAR(30) NOT NULL,
+                state VARCHAR(20) NOT NULL,
+                postalcode VARCHAR(30) NOT NULL,
+                country VARCHAR(30) NOT NULL,
+                creditlimit FLOAT NOT NULL
+                )
+            , parameters: None
+[2022-06-21 02:51:09,902] {postgres.py:94} INFO - NOTICE:  relation "stg_customers" already exists, skipping
+
+[2022-06-21 02:51:10,003] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_stages.criar_Stage_Customers, execution_date=20220620T000000, start_date=20220621T055109, end_date=20220621T055110
+[2022-06-21 02:51:10,058] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:51:10,166] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:52:45,757] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:52:45,797] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:52:45,797] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:52:45,797] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:52:45,798] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:52:45,834] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_stages.criar_Stage_Customers> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:52:45,855] {standard_task_runner.py:52} INFO - Started process 62131 to run task
+[2022-06-21 02:52:45,864] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_stages.criar_Stage_Customers', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '136', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpkk1vj4f7', '--error-file', '/tmp/tmpwpl3xslt']
+[2022-06-21 02:52:45,865] {standard_task_runner.py:80} INFO - Job 136: Subtask create_tables_stages.criar_Stage_Customers
+[2022-06-21 02:52:45,973] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_stages.criar_Stage_Customers scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:52:46,336] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_stages.criar_Stage_Customers
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:52:46,356] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:52:46,365] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS stg_customers (
+                customernumber INT NOT NULL,                 
+                customername VARCHAR(30) NOT NULL,
+                contactlastname VARCHAR(30) NOT NULL,
+                contactfirstname VARCHAR(30) NOT NULL,
+                phone VARCHAR(30) NOT NULL,
+                addressline1 VARCHAR(30) NOT NULL,
+                city VARCHAR(30) NOT NULL,
+                state VARCHAR(20) NOT NULL,
+                postalcode VARCHAR(30) NOT NULL,
+                country VARCHAR(30) NOT NULL,
+                creditlimit FLOAT NOT NULL
+                )
+            , parameters: None
+[2022-06-21 02:52:46,409] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_stages.criar_Stage_Customers, execution_date=20220620T000000, start_date=20220621T055245, end_date=20220621T055246
+[2022-06-21 02:52:46,487] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:52:46,620] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

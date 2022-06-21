@@ -1,0 +1,181 @@
+[2022-06-17 19:49:57,412] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 19:49:57,432] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 19:49:57,432] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 19:49:57,432] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-17 19:49:57,432] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 19:49:57,457] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): load_DMs> on 2022-06-16 00:00:00+00:00
+[2022-06-17 19:49:57,468] {standard_task_runner.py:52} INFO - Started process 169775 to run task
+[2022-06-17 19:49:57,476] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'load_DMs', 'scheduled__2022-06-16T00:00:00+00:00', '--job-id', '1320', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpy_wz63bx', '--error-file', '/tmp/tmp6ossnw_z']
+[2022-06-17 19:49:57,476] {standard_task_runner.py:80} INFO - Job 1320: Subtask load_DMs
+[2022-06-17 19:49:57,565] {task_command.py:370} INFO - Running <TaskInstance: sales.load_DMs scheduled__2022-06-16T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-17 19:49:57,684] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=load_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-16T00:00:00+00:00
+[2022-06-17 19:49:57,699] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1705, in _execute_context
+    self.dialect.do_execute(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 716, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedTable: relation "stg_customers" does not exist
+LINE 1: select * from Stg_Customers
+                      ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/uiliam/airflow/dags/sales.py", line 96, in load_DMs
+    df_cost = pd.read_sql_query("select * from Stg_Customers", con=engine)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 399, in read_sql_query
+    return pandas_sql.read_query(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 1557, in read_query
+    result = self.execute(*args)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 1402, in execute
+    return self.connectable.execution_options().execute(*args, **kwargs)
+  File "<string>", line 2, in execute
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/util/deprecations.py", line 390, in warned
+    return fn(*args, **kwargs)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3037, in execute
+    return connection.execute(statement, *multiparams, **params)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1185, in execute
+    return self._exec_driver_sql(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1484, in _exec_driver_sql
+    ret = self._execute_context(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1748, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1929, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1705, in _execute_context
+    self.dialect.do_execute(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 716, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) relation "stg_customers" does not exist
+LINE 1: select * from Stg_Customers
+                      ^
+
+[SQL: select * from Stg_Customers]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+[2022-06-17 19:49:57,725] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=sales, task_id=load_DMs, execution_date=20220616T000000, start_date=20220617T224957, end_date=20220617T224957
+[2022-06-17 19:49:57,748] {standard_task_runner.py:92} ERROR - Failed to execute job 1320 for task load_DMs ((psycopg2.errors.UndefinedTable) relation "stg_customers" does not exist
+LINE 1: select * from Stg_Customers
+                      ^
+
+[SQL: select * from Stg_Customers]
+(Background on this error at: http://sqlalche.me/e/14/f405); 169775)
+[2022-06-17 19:49:57,806] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-17 19:49:57,879] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-17 20:02:36,771] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 20:02:36,794] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 20:02:36,794] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 20:02:36,794] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-17 20:02:36,794] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 20:02:36,818] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): load_DMs> on 2022-06-16 00:00:00+00:00
+[2022-06-17 20:02:36,829] {standard_task_runner.py:52} INFO - Started process 173410 to run task
+[2022-06-17 20:02:36,835] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'load_DMs', 'scheduled__2022-06-16T00:00:00+00:00', '--job-id', '1335', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmp_7lq_9ga', '--error-file', '/tmp/tmpccm0fecw']
+[2022-06-17 20:02:36,836] {standard_task_runner.py:80} INFO - Job 1335: Subtask load_DMs
+[2022-06-17 20:02:36,931] {task_command.py:370} INFO - Running <TaskInstance: sales.load_DMs scheduled__2022-06-16T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-17 20:02:37,044] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=load_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-16T00:00:00+00:00
+[2022-06-17 20:02:37,061] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1705, in _execute_context
+    self.dialect.do_execute(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 716, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedTable: relation "stg_customers" does not exist
+LINE 1: select * from stg_customers
+                      ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/uiliam/airflow/dags/sales.py", line 96, in load_DMs
+    df_cost = pd.read_sql_query("select * from stg_customers", con=engine)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 399, in read_sql_query
+    return pandas_sql.read_query(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 1557, in read_query
+    result = self.execute(*args)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 1402, in execute
+    return self.connectable.execution_options().execute(*args, **kwargs)
+  File "<string>", line 2, in execute
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/util/deprecations.py", line 390, in warned
+    return fn(*args, **kwargs)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3037, in execute
+    return connection.execute(statement, *multiparams, **params)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1185, in execute
+    return self._exec_driver_sql(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1484, in _exec_driver_sql
+    ret = self._execute_context(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1748, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1929, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1705, in _execute_context
+    self.dialect.do_execute(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 716, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) relation "stg_customers" does not exist
+LINE 1: select * from stg_customers
+                      ^
+
+[SQL: select * from stg_customers]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+[2022-06-17 20:02:37,082] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=sales, task_id=load_DMs, execution_date=20220616T000000, start_date=20220617T230236, end_date=20220617T230237
+[2022-06-17 20:02:37,102] {standard_task_runner.py:92} ERROR - Failed to execute job 1335 for task load_DMs ((psycopg2.errors.UndefinedTable) relation "stg_customers" does not exist
+LINE 1: select * from stg_customers
+                      ^
+
+[SQL: select * from stg_customers]
+(Background on this error at: http://sqlalche.me/e/14/f405); 173410)
+[2022-06-17 20:02:37,127] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-17 20:02:37,199] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-17 20:15:38,892] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 20:15:38,912] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_DMs scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 20:15:38,913] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 20:15:38,913] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-17 20:15:38,913] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 20:15:38,934] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): load_DMs> on 2022-06-16 00:00:00+00:00
+[2022-06-17 20:15:38,945] {standard_task_runner.py:52} INFO - Started process 178541 to run task
+[2022-06-17 20:15:38,950] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'load_DMs', 'scheduled__2022-06-16T00:00:00+00:00', '--job-id', '1365', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmp_wt4oonx', '--error-file', '/tmp/tmpwl_atyg9']
+[2022-06-17 20:15:38,951] {standard_task_runner.py:80} INFO - Job 1365: Subtask load_DMs
+[2022-06-17 20:15:39,035] {task_command.py:370} INFO - Running <TaskInstance: sales.load_DMs scheduled__2022-06-16T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-17 20:15:39,146] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=load_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-16T00:00:00+00:00
+[2022-06-17 20:15:39,244] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-17 20:15:39,266] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=load_DMs, execution_date=20220616T000000, start_date=20220617T231538, end_date=20220617T231539
+[2022-06-17 20:15:39,322] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-17 20:15:39,379] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

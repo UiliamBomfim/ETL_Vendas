@@ -1,0 +1,23 @@
+[2022-06-05 00:43:45,236] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-05T03:42:40.238875+00:00 [queued]>
+[2022-06-05 00:43:45,251] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-05T03:42:40.238875+00:00 [queued]>
+[2022-06-05 00:43:45,252] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 00:43:45,252] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-05 00:43:45,252] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 00:43:45,272] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-05 03:42:40.238875+00:00
+[2022-06-05 00:43:45,282] {standard_task_runner.py:52} INFO - Started process 31677 to run task
+[2022-06-05 00:43:45,287] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-05T03:42:40.238875+00:00', '--job-id', '764', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp313jqb1q', '--error-file', '/tmp/tmpwq639u6z']
+[2022-06-05 00:43:45,288] {standard_task_runner.py:80} INFO - Job 764: Subtask transforma_tabela
+[2022-06-05 00:43:45,367] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-05T03:42:40.238875+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-05 00:43:45,470] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-05T03:42:40.238875+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-05T03:42:40.238875+00:00
+[2022-06-05 00:43:45,985] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-05 00:43:46,007] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220605T034240, start_date=20220605T034345, end_date=20220605T034346
+[2022-06-05 00:43:46,062] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-05 00:43:46,127] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

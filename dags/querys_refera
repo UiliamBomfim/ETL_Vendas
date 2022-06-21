@@ -1,0 +1,70 @@
+-- Valor total das vendas por produto
+
+select distinct round(sum(f.quantityordered * f.priceeach)) as amount, p.productname from fato f
+inner join dm_products p
+on f.id_products = p.id_products
+group by p.productname
+
+-- Valor total das vendas por produto linha de produto
+select distinct SUM(f.quantityordered * f.priceeach) as amount, p.productline from fato f
+inner join dm_products p
+on f.id_products = p.id_products
+group by p.productline
+
+--Valor total das vendas por produto, linha de produto, data de venda, etc
+
+select distinct round(SUM(f.quantityordered * f.priceeach)) as amount, p.productname , p.productline, t.orderdate from fato f
+inner join dm_products p
+on f.id_products = p.id_products
+inner join dm_time t
+on f.id_time = t.id_time
+group by p.productname, p.productline, t.orderdate
+
+
+-- Valor de venda por vendedor
+
+select distinct round(sum(f.quantityordered * f.priceeach)) as amount, e.lastname from fato f
+inner join dm_emp e
+on e.id_emp = f.id_emp
+group by e.lastname
+
+-- Média de compras de cada cliente por data
+
+select distinct round(AVG(f.quantityordered * f.priceeach)) as amount, c.customername,  t.orderdate from fato f
+inner join dm_products p
+on f.id_products = p.id_products
+inner join dm_time t
+on f.id_time = t.id_time
+inner join dm_customers c
+on f.id_customers = c.id_customers 
+group by c.customername, t.orderdate
+order by amount desc
+
+
+-- Venda por cliente e por status
+select distinct round(SUM(f.quantityordered * f.priceeach)) as amount, c.customername,  od.status from fato f
+inner join dm_orderd od
+on f.id_ordd = f.id_ordd
+inner join dm_customers c
+on f.id_customers = c.id_customers 
+group by c.customername, od.status
+order by c.customername desc
+
+-- Tempo para envio de um pedido
+
+select distinct od.id_ordd,  t.requireddate, t.orderdate, (t.requireddate - t.orderdate) as dif_tempo  from dm_orderd od
+inner join fato f
+on od.id_ordd = f.id_ordd
+inner join dm_time t
+on f.id_time = f.id_time
+-- Quantidade de venda por gerente, cidade do cliente 
+
+select sum(f.quantityordered), reportsto, c.city  from fato f
+inner join dm_orderd od
+on f.id_ordd = od.id_ordd
+inner join dm_emp e
+on f.id_emp = e.id_emp
+inner join dm_customers c
+on f.id_customers = c.id_customers
+group by reportsto, c.city
+order by reportsto

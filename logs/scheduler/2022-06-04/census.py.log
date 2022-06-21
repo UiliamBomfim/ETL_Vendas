@@ -1,0 +1,156 @@
+[2022-06-04 15:59:41,491] {processor.py:153} INFO - Started process (PID=102691) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 15:59:41,492] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 15:59:41,493] {logging_mixin.py:115} INFO - [2022-06-04 15:59:41,493] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 15:59:41,936] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 15:59:41,953] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.466 seconds
+[2022-06-04 16:00:12,083] {processor.py:153} INFO - Started process (PID=102803) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:00:12,084] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:00:12,084] {logging_mixin.py:115} INFO - [2022-06-04 16:00:12,084] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:00:12,499] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:00:12,517] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.438 seconds
+[2022-06-04 16:00:43,098] {processor.py:153} INFO - Started process (PID=102886) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:00:43,098] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:00:43,099] {logging_mixin.py:115} INFO - [2022-06-04 16:00:43,099] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:00:43,499] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:00:43,517] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.424 seconds
+[2022-06-04 16:01:13,680] {processor.py:153} INFO - Started process (PID=102963) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:01:13,686] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:01:13,687] {logging_mixin.py:115} INFO - [2022-06-04 16:01:13,687] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:01:14,091] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:01:14,108] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.433 seconds
+[2022-06-04 16:01:44,230] {processor.py:153} INFO - Started process (PID=103061) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:01:44,231] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:01:44,232] {logging_mixin.py:115} INFO - [2022-06-04 16:01:44,232] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:01:44,649] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:01:44,666] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.440 seconds
+[2022-06-04 16:02:14,751] {processor.py:153} INFO - Started process (PID=103146) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:02:14,752] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:02:14,752] {logging_mixin.py:115} INFO - [2022-06-04 16:02:14,752] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:02:15,162] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:02:15,181] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.435 seconds
+[2022-06-04 16:02:45,791] {processor.py:153} INFO - Started process (PID=103250) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:02:45,792] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:02:45,792] {logging_mixin.py:115} INFO - [2022-06-04 16:02:45,792] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:02:46,256] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:02:46,275] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.489 seconds
+[2022-06-04 16:03:16,727] {processor.py:153} INFO - Started process (PID=103342) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:03:16,728] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:03:16,728] {logging_mixin.py:115} INFO - [2022-06-04 16:03:16,728] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:03:17,161] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:03:17,180] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.457 seconds
+[2022-06-04 16:03:47,570] {processor.py:153} INFO - Started process (PID=103424) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:03:47,571] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:03:47,571] {logging_mixin.py:115} INFO - [2022-06-04 16:03:47,571] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:03:47,979] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:03:47,996] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.431 seconds
+[2022-06-04 16:04:18,259] {processor.py:153} INFO - Started process (PID=103527) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:04:18,266] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:04:18,266] {logging_mixin.py:115} INFO - [2022-06-04 16:04:18,266] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:04:18,846] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:04:18,875] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.621 seconds
+[2022-06-04 16:04:49,217] {processor.py:153} INFO - Started process (PID=103720) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:04:49,218] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:04:49,218] {logging_mixin.py:115} INFO - [2022-06-04 16:04:49,218] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:04:49,621] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:04:49,638] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.426 seconds
+[2022-06-04 16:05:19,990] {processor.py:153} INFO - Started process (PID=103808) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:05:19,990] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:05:19,991] {logging_mixin.py:115} INFO - [2022-06-04 16:05:19,991] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:05:20,400] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:05:20,417] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.432 seconds
+[2022-06-04 16:05:50,815] {processor.py:153} INFO - Started process (PID=103929) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:05:50,816] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:05:50,817] {logging_mixin.py:115} INFO - [2022-06-04 16:05:50,816] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:05:51,299] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:05:51,317] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.506 seconds
+[2022-06-04 16:06:21,709] {processor.py:153} INFO - Started process (PID=104019) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:06:21,716] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:06:21,717] {logging_mixin.py:115} INFO - [2022-06-04 16:06:21,717] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:06:22,136] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:06:22,157] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.453 seconds
+[2022-06-04 16:06:52,197] {processor.py:153} INFO - Started process (PID=104107) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:06:52,198] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:06:52,198] {logging_mixin.py:115} INFO - [2022-06-04 16:06:52,198] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:06:52,606] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:06:52,623] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.431 seconds
+[2022-06-04 16:07:22,658] {processor.py:153} INFO - Started process (PID=104216) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:07:22,658] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:07:22,659] {logging_mixin.py:115} INFO - [2022-06-04 16:07:22,659] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:07:23,122] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:07:23,145] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.491 seconds
+[2022-06-04 16:07:53,323] {processor.py:153} INFO - Started process (PID=104307) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:07:53,323] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:07:53,324] {logging_mixin.py:115} INFO - [2022-06-04 16:07:53,324] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:07:53,808] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:07:53,828] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.510 seconds
+[2022-06-04 16:08:24,211] {processor.py:153} INFO - Started process (PID=104387) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:08:24,217] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:08:24,218] {logging_mixin.py:115} INFO - [2022-06-04 16:08:24,218] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:08:24,623] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:08:24,642] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.436 seconds
+[2022-06-04 16:08:54,879] {processor.py:153} INFO - Started process (PID=104478) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:08:54,879] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:08:54,880] {logging_mixin.py:115} INFO - [2022-06-04 16:08:54,880] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:08:55,284] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:08:55,301] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.427 seconds
+[2022-06-04 16:09:25,398] {processor.py:153} INFO - Started process (PID=104613) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:09:25,399] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:09:25,400] {logging_mixin.py:115} INFO - [2022-06-04 16:09:25,400] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:09:25,811] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:09:25,829] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.436 seconds
+[2022-06-04 16:09:56,210] {processor.py:153} INFO - Started process (PID=104709) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:09:56,211] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:09:56,211] {logging_mixin.py:115} INFO - [2022-06-04 16:09:56,211] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:09:56,609] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:09:56,626] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.422 seconds
+[2022-06-04 16:10:26,821] {processor.py:153} INFO - Started process (PID=104813) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:10:26,828] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:10:26,829] {logging_mixin.py:115} INFO - [2022-06-04 16:10:26,828] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:10:27,344] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:10:27,361] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.545 seconds
+[2022-06-04 16:10:57,582] {processor.py:153} INFO - Started process (PID=104887) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:10:57,583] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:10:57,583] {logging_mixin.py:115} INFO - [2022-06-04 16:10:57,583] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:10:58,044] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:10:58,063] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.485 seconds
+[2022-06-04 16:11:28,320] {processor.py:153} INFO - Started process (PID=104973) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:11:28,327] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:11:28,327] {logging_mixin.py:115} INFO - [2022-06-04 16:11:28,327] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:11:28,736] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:11:28,753] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.437 seconds
+[2022-06-04 16:11:58,875] {processor.py:153} INFO - Started process (PID=105060) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:11:58,875] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:11:58,876] {logging_mixin.py:115} INFO - [2022-06-04 16:11:58,876] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:11:58,876] {logging_mixin.py:115} INFO - [2022-06-04 16:11:58,876] {dagbag.py:300} INFO - File /home/uiliam/airflow/dags/census.py assumed to contain no DAGs. Skipping.
+[2022-06-04 16:11:58,877] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:11:58,896] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.026 seconds
+[2022-06-04 16:12:29,432] {processor.py:153} INFO - Started process (PID=105143) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:12:29,439] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:12:29,439] {logging_mixin.py:115} INFO - [2022-06-04 16:12:29,439] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:12:29,440] {logging_mixin.py:115} INFO - [2022-06-04 16:12:29,440] {dagbag.py:300} INFO - File /home/uiliam/airflow/dags/census.py assumed to contain no DAGs. Skipping.
+[2022-06-04 16:12:29,440] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:12:29,463] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.035 seconds
+[2022-06-04 16:12:59,660] {processor.py:153} INFO - Started process (PID=105219) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:12:59,661] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:12:59,661] {logging_mixin.py:115} INFO - [2022-06-04 16:12:59,661] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:12:59,662] {logging_mixin.py:115} INFO - [2022-06-04 16:12:59,662] {dagbag.py:300} INFO - File /home/uiliam/airflow/dags/census.py assumed to contain no DAGs. Skipping.
+[2022-06-04 16:12:59,662] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:12:59,682] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.027 seconds
+[2022-06-04 16:13:29,907] {processor.py:153} INFO - Started process (PID=105310) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:13:29,915] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:13:29,916] {logging_mixin.py:115} INFO - [2022-06-04 16:13:29,915] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:13:29,916] {logging_mixin.py:115} INFO - [2022-06-04 16:13:29,916] {dagbag.py:300} INFO - File /home/uiliam/airflow/dags/census.py assumed to contain no DAGs. Skipping.
+[2022-06-04 16:13:29,916] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:13:29,936] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.034 seconds
+[2022-06-04 16:14:00,110] {processor.py:153} INFO - Started process (PID=105385) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:14:00,110] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:14:00,111] {logging_mixin.py:115} INFO - [2022-06-04 16:14:00,111] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:14:00,111] {logging_mixin.py:115} INFO - [2022-06-04 16:14:00,111] {dagbag.py:300} INFO - File /home/uiliam/airflow/dags/census.py assumed to contain no DAGs. Skipping.
+[2022-06-04 16:14:00,111] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:14:00,134] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.030 seconds
+[2022-06-04 16:14:30,366] {processor.py:153} INFO - Started process (PID=105483) to work on /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:14:30,372] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/census.py for tasks to queue
+[2022-06-04 16:14:30,373] {logging_mixin.py:115} INFO - [2022-06-04 16:14:30,373] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:14:30,374] {logging_mixin.py:115} INFO - [2022-06-04 16:14:30,374] {dagbag.py:300} INFO - File /home/uiliam/airflow/dags/census.py assumed to contain no DAGs. Skipping.
+[2022-06-04 16:14:30,374] {processor.py:653} WARNING - No viable dags retrieved from /home/uiliam/airflow/dags/census.py
+[2022-06-04 16:14:30,394] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/census.py took 0.034 seconds

@@ -1,0 +1,47 @@
+[2022-06-17 17:11:59,712] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_Stage_Products scheduled__2022-06-17T20:11:30.740117+00:00 [queued]>
+[2022-06-17 17:11:59,816] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_Stage_Products scheduled__2022-06-17T20:11:30.740117+00:00 [queued]>
+[2022-06-17 17:11:59,817] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 17:11:59,817] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-17 17:11:59,817] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 17:11:59,905] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_Stage_Products> on 2022-06-17 20:11:30.740117+00:00
+[2022-06-17 17:11:59,930] {standard_task_runner.py:52} INFO - Started process 133281 to run task
+[2022-06-17 17:11:59,951] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_Stage_Products', 'scheduled__2022-06-17T20:11:30.740117+00:00', '--job-id', '1241', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpokskf9fj', '--error-file', '/tmp/tmpd3dmwhqa']
+[2022-06-17 17:11:59,952] {standard_task_runner.py:80} INFO - Job 1241: Subtask create_tables_tasks.criar_Stage_Products
+[2022-06-17 17:12:00,207] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_Stage_Products scheduled__2022-06-17T20:11:30.740117+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-17 17:12:00,506] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_Stage_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T20:11:30.740117+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T20:11:30.740117+00:00
+[2022-06-17 17:12:00,539] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-17 17:12:00,566] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS Stg_Products (
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor (25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-17 17:12:00,574] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/providers/postgres/operators/postgres.py", line 92, in execute
+    self.hook.run(self.sql, self.autocommit, parameters=self.parameters)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/hooks/dbapi.py", line 193, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/hooks/dbapi.py", line 217, in _run_command
+    cur.execute(sql_statement)
+psycopg2.errors.SyntaxError: syntax error at or near "("
+LINE 5:                 productvendor (25),
+                                      ^
+
+[2022-06-17 17:12:00,609] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=sales, task_id=create_tables_tasks.criar_Stage_Products, execution_date=20220617T201130, start_date=20220617T201159, end_date=20220617T201200
+[2022-06-17 17:12:00,651] {standard_task_runner.py:92} ERROR - Failed to execute job 1241 for task create_tables_tasks.criar_Stage_Products (syntax error at or near "("
+LINE 5:                 productvendor (25),
+                                      ^
+; 133281)
+[2022-06-17 17:12:00,741] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-17 17:12:00,860] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

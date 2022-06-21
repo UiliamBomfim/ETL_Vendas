@@ -1,0 +1,36 @@
+[2022-06-06 15:11:24,765] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-06T18:11:10.044367+00:00 [queued]>
+[2022-06-06 15:11:24,784] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.transforma_tabela scheduled__2022-06-06T18:11:10.044367+00:00 [queued]>
+[2022-06-06 15:11:24,784] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-06 15:11:24,785] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-06 15:11:24,785] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-06 15:11:24,824] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-06 18:11:10.044367+00:00
+[2022-06-06 15:11:24,834] {standard_task_runner.py:52} INFO - Started process 14210 to run task
+[2022-06-06 15:11:24,841] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'transforma_tabela', 'scheduled__2022-06-06T18:11:10.044367+00:00', '--job-id', '1203', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpj3ei3s3f', '--error-file', '/tmp/tmpwx5oaduf']
+[2022-06-06 15:11:24,842] {standard_task_runner.py:80} INFO - Job 1203: Subtask transforma_tabela
+[2022-06-06 15:11:24,948] {task_command.py:370} INFO - Running <TaskInstance: census.transforma_tabela scheduled__2022-06-06T18:11:10.044367+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-06 15:11:25,081] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-06T18:11:10.044367+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-06T18:11:10.044367+00:00
+[2022-06-06 15:11:25,632] {python.py:173} INFO - Done. Returned value was:        age          workclass  fnlwgt   education  education_num       marital_status  ...      sex capital_gain capital_loss hours_per_week  native_country    class
+0       -1          State-gov   77516   Bachelors             13        Never-married  ...     Male         2174            0             40   United-States    <=50K
+1       -1   Self-emp-not-inc   83311   Bachelors             13   Married-civ-spouse  ...     Male            0            0             13   United-States    <=50K
+2       -1            Private  215646     HS-grad              9             Divorced  ...     Male            0            0             40   United-States    <=50K
+3       -1            Private  234721        11th              7   Married-civ-spouse  ...     Male            0            0             40   United-States    <=50K
+4       -1            Private  338409   Bachelors             13   Married-civ-spouse  ...   Female            0            0             40            Cuba    <=50K
+...    ...                ...     ...         ...            ...                  ...  ...      ...          ...          ...            ...             ...      ...
+48837   39            Private  215419   Bachelors             13             Divorced  ...   Female            0            0                  United-States   <=50K.
+48838   64                     321403     HS-grad              9              Widowed  ...     Male            0            0                  United-States   <=50K.
+48839   38            Private  374983   Bachelors             13   Married-civ-spouse  ...     Male            0            0                  United-States   <=50K.
+48840   44            Private   83891   Bachelors             13             Divorced  ...     Male         5455            0                  United-States   <=50K.
+48841   35       Self-emp-inc  182148   Bachelors             13   Married-civ-spouse  ...     Male            0            0                  United-States    >50K.
+
+[48842 rows x 15 columns]
+[2022-06-06 15:11:25,698] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=transforma_tabela, execution_date=20220606T181110, start_date=20220606T181124, end_date=20220606T181125
+[2022-06-06 15:11:25,734] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-06 15:11:25,811] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

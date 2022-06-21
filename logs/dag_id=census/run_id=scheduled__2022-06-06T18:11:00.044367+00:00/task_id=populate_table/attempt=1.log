@@ -1,0 +1,23 @@
+[2022-06-06 15:11:22,113] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.populate_table scheduled__2022-06-06T18:11:00.044367+00:00 [queued]>
+[2022-06-06 15:11:22,134] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.populate_table scheduled__2022-06-06T18:11:00.044367+00:00 [queued]>
+[2022-06-06 15:11:22,134] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-06 15:11:22,134] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-06 15:11:22,135] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-06 15:11:22,157] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): populate_table> on 2022-06-06 18:11:00.044367+00:00
+[2022-06-06 15:11:22,166] {standard_task_runner.py:52} INFO - Started process 14067 to run task
+[2022-06-06 15:11:22,173] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'populate_table', 'scheduled__2022-06-06T18:11:00.044367+00:00', '--job-id', '1202', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpbcqgcbul', '--error-file', '/tmp/tmpmyhm22tw']
+[2022-06-06 15:11:22,174] {standard_task_runner.py:80} INFO - Job 1202: Subtask populate_table
+[2022-06-06 15:11:22,270] {task_command.py:370} INFO - Running <TaskInstance: census.populate_table scheduled__2022-06-06T18:11:00.044367+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-06 15:11:22,399] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=populate_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-06T18:11:00.044367+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-06T18:11:00.044367+00:00
+[2022-06-06 15:11:23,227] {python.py:173} INFO - Done. Returned value was: 1630
+[2022-06-06 15:11:23,249] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=populate_table, execution_date=20220606T181100, start_date=20220606T181122, end_date=20220606T181123
+[2022-06-06 15:11:23,308] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-06 15:11:23,365] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

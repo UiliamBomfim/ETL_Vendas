@@ -1,0 +1,439 @@
+[2022-06-20 23:02:29,442] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-20 23:02:29,461] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-20 23:02:29,461] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-20 23:02:29,461] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-20 23:02:29,461] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-20 23:02:29,481] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Employees> on 2022-06-20 00:00:00+00:00
+[2022-06-20 23:02:29,490] {standard_task_runner.py:52} INFO - Started process 9028 to run task
+[2022-06-20 23:02:29,493] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Employees', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '524', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpv5sc5_59', '--error-file', '/tmp/tmp6guytgw4']
+[2022-06-20 23:02:29,494] {standard_task_runner.py:80} INFO - Job 524: Subtask create_tables_tasks.criar_DM_Employees
+[2022-06-20 23:02:29,556] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-20 23:02:29,644] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Employees
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-20 23:02:29,659] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-20 23:02:29,663] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_emp (
+                id_emp SERIAL PRIMARY KEY, 
+                employeenumber INT NOT NULL,   
+                lastname VARCHAR(50) NOT NULL,
+                firstname VARCHAR(50) NOT NULL,
+                email VARCHAR (50) NOT NULL,
+                jobtitle VARCHAR(50) NOT NULL
+                )
+            , parameters: None
+[2022-06-20 23:02:29,664] {postgres.py:94} INFO - NOTICE:  relation "dm_emp" already exists, skipping
+
+[2022-06-20 23:02:29,703] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Employees, execution_date=20220620T000000, start_date=20220621T020229, end_date=20220621T020229
+[2022-06-20 23:02:29,746] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-20 23:02:29,812] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 01:35:37,202] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:35:37,233] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:35:37,234] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:35:37,234] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 01:35:37,234] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:35:37,259] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Employees> on 2022-06-20 00:00:00+00:00
+[2022-06-21 01:35:37,273] {standard_task_runner.py:52} INFO - Started process 24838 to run task
+[2022-06-21 01:35:37,280] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Employees', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '542', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpjof6nip5', '--error-file', '/tmp/tmpq40srwmn']
+[2022-06-21 01:35:37,281] {standard_task_runner.py:80} INFO - Job 542: Subtask create_tables_tasks.criar_DM_Employees
+[2022-06-21 01:35:37,378] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 01:35:37,529] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Employees
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 01:35:37,551] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 01:35:37,560] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_emp (
+                id_emp SERIAL PRIMARY KEY, 
+                employeenumber INT NOT NULL,   
+                lastname VARCHAR(50) NOT NULL,
+                firstname VARCHAR(50) NOT NULL,
+                email VARCHAR (50) NOT NULL,
+                jobtitle VARCHAR(50) NOT NULL
+                )
+            , parameters: None
+[2022-06-21 01:35:37,606] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Employees, execution_date=20220620T000000, start_date=20220621T043537, end_date=20220621T043537
+[2022-06-21 01:35:37,692] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 01:35:37,797] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 01:39:11,805] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:39:11,831] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:39:11,831] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:39:11,831] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 01:39:11,831] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:39:11,853] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Employees> on 2022-06-20 00:00:00+00:00
+[2022-06-21 01:39:11,866] {standard_task_runner.py:52} INFO - Started process 26743 to run task
+[2022-06-21 01:39:11,872] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Employees', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '557', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmphkpw_uvb', '--error-file', '/tmp/tmpz2q0tpdz']
+[2022-06-21 01:39:11,873] {standard_task_runner.py:80} INFO - Job 557: Subtask create_tables_tasks.criar_DM_Employees
+[2022-06-21 01:39:11,977] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 01:39:12,171] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Employees
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 01:39:12,198] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 01:39:12,206] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_emp (
+                id_emp SERIAL PRIMARY KEY, 
+                employeenumber INT NOT NULL,   
+                lastname VARCHAR(50) NOT NULL,
+                firstname VARCHAR(50) NOT NULL,
+                email VARCHAR (50) NOT NULL,
+                jobtitle VARCHAR(50) NOT NULL
+                )
+            , parameters: None
+[2022-06-21 01:39:12,265] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Employees, execution_date=20220620T000000, start_date=20220621T043911, end_date=20220621T043912
+[2022-06-21 01:39:12,364] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 01:39:12,461] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 01:43:21,239] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:43:21,269] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:43:21,270] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:43:21,270] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 01:43:21,270] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:43:21,294] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Employees> on 2022-06-20 00:00:00+00:00
+[2022-06-21 01:43:21,307] {standard_task_runner.py:52} INFO - Started process 28668 to run task
+[2022-06-21 01:43:21,313] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Employees', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '577', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpb8lgp_7o', '--error-file', '/tmp/tmpxy35z_yc']
+[2022-06-21 01:43:21,313] {standard_task_runner.py:80} INFO - Job 577: Subtask create_tables_tasks.criar_DM_Employees
+[2022-06-21 01:43:21,428] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 01:43:21,589] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Employees
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 01:43:21,615] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 01:43:21,622] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_emp (
+                id_emp SERIAL PRIMARY KEY, 
+                employeenumber INT NOT NULL,   
+                lastname VARCHAR(50) NOT NULL,
+                firstname VARCHAR(50) NOT NULL,
+                email VARCHAR (50) NOT NULL,
+                jobtitle VARCHAR(50) NOT NULL
+                )
+            , parameters: None
+[2022-06-21 01:43:21,663] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Employees, execution_date=20220620T000000, start_date=20220621T044321, end_date=20220621T044321
+[2022-06-21 01:43:21,727] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 01:43:21,822] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 01:50:25,641] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:50:25,671] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:50:25,672] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:50:25,672] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 01:50:25,672] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:50:25,698] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Employees> on 2022-06-20 00:00:00+00:00
+[2022-06-21 01:50:25,712] {standard_task_runner.py:52} INFO - Started process 31117 to run task
+[2022-06-21 01:50:25,721] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Employees', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '596', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpiz5tcvr9', '--error-file', '/tmp/tmp8y095ftl']
+[2022-06-21 01:50:25,722] {standard_task_runner.py:80} INFO - Job 596: Subtask create_tables_tasks.criar_DM_Employees
+[2022-06-21 01:50:25,864] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 01:50:26,002] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Employees
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 01:50:26,032] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 01:50:26,044] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_emp (
+                id_emp SERIAL PRIMARY KEY, 
+                employeenumber INT NOT NULL,   
+                lastname VARCHAR(50) NOT NULL,
+                firstname VARCHAR(50) NOT NULL,
+                email VARCHAR (50) NOT NULL,
+                jobtitle VARCHAR(50) NOT NULL
+                )
+            , parameters: None
+[2022-06-21 01:50:26,104] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Employees, execution_date=20220620T000000, start_date=20220621T045025, end_date=20220621T045026
+[2022-06-21 01:50:26,181] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 01:50:26,318] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:14:08,357] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:14:08,384] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:14:08,384] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:14:08,384] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:14:08,384] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:14:08,408] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Employees> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:14:08,422] {standard_task_runner.py:52} INFO - Started process 46647 to run task
+[2022-06-21 02:14:08,429] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Employees', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '21', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmph5b9hlqw', '--error-file', '/tmp/tmpvs2rglnh']
+[2022-06-21 02:14:08,429] {standard_task_runner.py:80} INFO - Job 21: Subtask create_tables_tasks.criar_DM_Employees
+[2022-06-21 02:14:08,535] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:14:08,707] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Employees
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:14:08,729] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:14:08,738] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_emp (
+                id_emp SERIAL PRIMARY KEY, 
+                employeenumber INT NOT NULL,   
+                lastname VARCHAR(50) NOT NULL,
+                firstname VARCHAR(50) NOT NULL,
+                email VARCHAR (50) NOT NULL,
+                jobtitle VARCHAR(50) NOT NULL
+                )
+            , parameters: None
+[2022-06-21 02:14:08,803] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Employees, execution_date=20220620T000000, start_date=20220621T051408, end_date=20220621T051408
+[2022-06-21 02:14:08,883] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:14:08,972] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:16:53,707] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:16:53,732] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:16:53,733] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:16:53,733] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:16:53,733] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:16:53,761] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Employees> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:16:53,774] {standard_task_runner.py:52} INFO - Started process 48435 to run task
+[2022-06-21 02:16:53,782] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Employees', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '37', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpg4jvtjw1', '--error-file', '/tmp/tmpeqy8jq_8']
+[2022-06-21 02:16:53,782] {standard_task_runner.py:80} INFO - Job 37: Subtask create_tables_tasks.criar_DM_Employees
+[2022-06-21 02:16:53,887] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:16:54,035] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Employees
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:16:54,061] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:16:54,071] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_emp (
+                id_emp SERIAL PRIMARY KEY, 
+                employeenumber INT NOT NULL,   
+                lastname VARCHAR(50) NOT NULL,
+                firstname VARCHAR(50) NOT NULL,
+                email VARCHAR (50) NOT NULL,
+                jobtitle VARCHAR(50) NOT NULL
+                )
+            , parameters: None
+[2022-06-21 02:16:54,113] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Employees, execution_date=20220620T000000, start_date=20220621T051653, end_date=20220621T051654
+[2022-06-21 02:16:54,155] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:16:54,266] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:18:45,846] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:18:45,881] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:18:45,882] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:18:45,882] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:18:45,882] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:18:45,972] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Employees> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:18:46,000] {standard_task_runner.py:52} INFO - Started process 50085 to run task
+[2022-06-21 02:18:46,012] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Employees', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '58', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpow9n4g45', '--error-file', '/tmp/tmpdufh5vm9']
+[2022-06-21 02:18:46,013] {standard_task_runner.py:80} INFO - Job 58: Subtask create_tables_tasks.criar_DM_Employees
+[2022-06-21 02:18:46,167] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:18:46,345] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Employees
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:18:46,372] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:18:46,381] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_emp (
+                id_emp SERIAL PRIMARY KEY, 
+                employeenumber INT NOT NULL,   
+                lastname VARCHAR(50) NOT NULL,
+                firstname VARCHAR(50) NOT NULL,
+                email VARCHAR (50) NOT NULL,
+                jobtitle VARCHAR(50) NOT NULL
+                )
+            , parameters: None
+[2022-06-21 02:18:46,441] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Employees, execution_date=20220620T000000, start_date=20220621T051845, end_date=20220621T051846
+[2022-06-21 02:18:46,510] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:18:46,586] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:24:23,732] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:24:23,767] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:24:23,767] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:24:23,768] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:24:23,768] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:24:23,790] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Employees> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:24:23,804] {standard_task_runner.py:52} INFO - Started process 52369 to run task
+[2022-06-21 02:24:23,808] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Employees', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '72', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpweewxis4', '--error-file', '/tmp/tmpusalm91r']
+[2022-06-21 02:24:23,809] {standard_task_runner.py:80} INFO - Job 72: Subtask create_tables_tasks.criar_DM_Employees
+[2022-06-21 02:24:23,907] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:24:24,064] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Employees
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:24:24,088] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:24:24,096] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_emp (
+                id_emp SERIAL PRIMARY KEY, 
+                employeenumber INT NOT NULL,   
+                lastname VARCHAR(50) NOT NULL,
+                firstname VARCHAR(50) NOT NULL,
+                email VARCHAR (50) NOT NULL,
+                jobtitle VARCHAR(50) NOT NULL
+                )
+            , parameters: None
+[2022-06-21 02:24:24,145] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Employees, execution_date=20220620T000000, start_date=20220621T052423, end_date=20220621T052424
+[2022-06-21 02:24:24,221] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:24:24,310] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:42:17,743] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:42:17,772] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:42:17,773] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:42:17,773] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:42:17,773] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:42:17,802] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Employees> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:42:17,818] {standard_task_runner.py:52} INFO - Started process 55958 to run task
+[2022-06-21 02:42:17,826] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Employees', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '91', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpv0stjf7t', '--error-file', '/tmp/tmpi7dvxqpr']
+[2022-06-21 02:42:17,827] {standard_task_runner.py:80} INFO - Job 91: Subtask create_tables_tasks.criar_DM_Employees
+[2022-06-21 02:42:17,945] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:42:18,139] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Employees
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:42:18,162] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:42:18,168] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_emp (
+                id_emp SERIAL PRIMARY KEY, 
+                employeenumber INT NOT NULL,   
+                lastname VARCHAR(50) NOT NULL,
+                firstname VARCHAR(50) NOT NULL,
+                email VARCHAR (50) NOT NULL,
+                reportsto VARCHAR (50) NOT NULL,
+                jobtitle VARCHAR(50) NOT NULL
+                )
+            , parameters: None
+[2022-06-21 02:42:18,169] {postgres.py:94} INFO - NOTICE:  relation "dm_emp" already exists, skipping
+
+[2022-06-21 02:42:18,213] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Employees, execution_date=20220620T000000, start_date=20220621T054217, end_date=20220621T054218
+[2022-06-21 02:42:18,281] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:42:18,372] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:44:18,131] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:44:18,161] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:44:18,162] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:44:18,162] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:44:18,162] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:44:18,186] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Employees> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:44:18,199] {standard_task_runner.py:52} INFO - Started process 58223 to run task
+[2022-06-21 02:44:18,206] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Employees', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '111', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpp8tl79m6', '--error-file', '/tmp/tmpemjlin_u']
+[2022-06-21 02:44:18,207] {standard_task_runner.py:80} INFO - Job 111: Subtask create_tables_tasks.criar_DM_Employees
+[2022-06-21 02:44:18,322] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:44:18,478] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Employees
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:44:18,503] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:44:18,514] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_emp (
+                id_emp SERIAL PRIMARY KEY, 
+                employeenumber INT NOT NULL,   
+                lastname VARCHAR(50) NOT NULL,
+                firstname VARCHAR(50) NOT NULL,
+                email VARCHAR (50) NOT NULL,
+                reportsto VARCHAR (50) NOT NULL,
+                jobtitle VARCHAR(50) NOT NULL
+                )
+            , parameters: None
+[2022-06-21 02:44:18,556] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Employees, execution_date=20220620T000000, start_date=20220621T054418, end_date=20220621T054418
+[2022-06-21 02:44:18,623] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:44:18,724] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:51:16,108] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:51:16,146] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:51:16,146] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:51:16,147] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:51:16,147] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:51:16,181] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Employees> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:51:16,197] {standard_task_runner.py:52} INFO - Started process 60721 to run task
+[2022-06-21 02:51:16,203] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Employees', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '129', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpxld_bju3', '--error-file', '/tmp/tmpf_fbygr3']
+[2022-06-21 02:51:16,204] {standard_task_runner.py:80} INFO - Job 129: Subtask create_tables_tasks.criar_DM_Employees
+[2022-06-21 02:51:16,321] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:51:16,497] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Employees
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:51:16,517] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:51:16,525] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_emp (
+                id_emp SERIAL PRIMARY KEY, 
+                employeenumber INT NOT NULL,   
+                lastname VARCHAR(50) NOT NULL,
+                firstname VARCHAR(50) NOT NULL,
+                email VARCHAR (50) NOT NULL,
+                reportsto VARCHAR (50) NOT NULL,
+                jobtitle VARCHAR(50) NOT NULL
+                )
+            , parameters: None
+[2022-06-21 02:51:16,531] {postgres.py:94} INFO - NOTICE:  relation "dm_emp" already exists, skipping
+
+[2022-06-21 02:51:16,567] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Employees, execution_date=20220620T000000, start_date=20220621T055116, end_date=20220621T055116
+[2022-06-21 02:51:16,618] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:51:16,736] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:52:50,184] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:52:50,219] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:52:50,219] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:52:50,219] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:52:50,220] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:52:50,265] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Employees> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:52:50,302] {standard_task_runner.py:52} INFO - Started process 62406 to run task
+[2022-06-21 02:52:50,317] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Employees', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '145', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpicnxcjhv', '--error-file', '/tmp/tmpm5637p8n']
+[2022-06-21 02:52:50,318] {standard_task_runner.py:80} INFO - Job 145: Subtask create_tables_tasks.criar_DM_Employees
+[2022-06-21 02:52:50,428] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Employees scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:52:50,579] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Employees
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:52:50,598] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:52:50,606] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_emp (
+                id_emp SERIAL PRIMARY KEY, 
+                employeenumber INT NOT NULL,   
+                lastname VARCHAR(50) NOT NULL,
+                firstname VARCHAR(50) NOT NULL,
+                email VARCHAR (50) NOT NULL,
+                reportsto VARCHAR (50) NOT NULL,
+                jobtitle VARCHAR(50) NOT NULL
+                )
+            , parameters: None
+[2022-06-21 02:52:50,693] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Employees, execution_date=20220620T000000, start_date=20220621T055250, end_date=20220621T055250
+[2022-06-21 02:52:50,768] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:52:50,882] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

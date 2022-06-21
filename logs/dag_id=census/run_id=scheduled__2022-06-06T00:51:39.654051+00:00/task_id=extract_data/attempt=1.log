@@ -1,0 +1,36 @@
+[2022-06-05 21:52:21,512] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.extract_data scheduled__2022-06-06T00:51:39.654051+00:00 [queued]>
+[2022-06-05 21:52:21,528] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.extract_data scheduled__2022-06-06T00:51:39.654051+00:00 [queued]>
+[2022-06-05 21:52:21,529] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 21:52:21,529] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-05 21:52:21,529] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 21:52:21,555] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): extract_data> on 2022-06-06 00:51:39.654051+00:00
+[2022-06-05 21:52:21,565] {standard_task_runner.py:52} INFO - Started process 25003 to run task
+[2022-06-05 21:52:21,572] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'extract_data', 'scheduled__2022-06-06T00:51:39.654051+00:00', '--job-id', '1162', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpy800thyr', '--error-file', '/tmp/tmpx9wejdrj']
+[2022-06-05 21:52:21,573] {standard_task_runner.py:80} INFO - Job 1162: Subtask extract_data
+[2022-06-05 21:52:21,665] {task_command.py:370} INFO - Running <TaskInstance: census.extract_data scheduled__2022-06-06T00:51:39.654051+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-05 21:52:21,769] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=extract_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-06T00:51:39.654051+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-06T00:51:39.654051+00:00
+[2022-06-05 21:52:21,880] {python.py:173} INFO - Done. Returned value was:       age          workclass   fnlwgt    education  education_num       marital_status  ...      sex capital_gain capital_loss hours_per_week  native_country   class
+0      39          State-gov    77516    Bachelors             13        Never-married  ...     Male         2174            0             40   United-States   <=50K
+1      50   Self-emp-not-inc    83311    Bachelors             13   Married-civ-spouse  ...     Male            0            0             13   United-States   <=50K
+2      38            Private   215646      HS-grad              9             Divorced  ...     Male            0            0             40   United-States   <=50K
+3      53            Private   234721         11th              7   Married-civ-spouse  ...     Male            0            0             40   United-States   <=50K
+4      28            Private   338409    Bachelors             13   Married-civ-spouse  ...   Female            0            0             40            Cuba   <=50K
+...    ..                ...      ...          ...            ...                  ...  ...      ...          ...          ...            ...             ...     ...
+32556  27            Private   257302   Assoc-acdm             12   Married-civ-spouse  ...   Female            0            0             38   United-States   <=50K
+32557  40            Private   154374      HS-grad              9   Married-civ-spouse  ...     Male            0            0             40   United-States    >50K
+32558  58            Private   151910      HS-grad              9              Widowed  ...   Female            0            0             40   United-States   <=50K
+32559  22            Private   201490      HS-grad              9        Never-married  ...     Male            0            0             20   United-States   <=50K
+32560  52       Self-emp-inc   287927      HS-grad              9   Married-civ-spouse  ...   Female        15024            0             40   United-States    >50K
+
+[32561 rows x 15 columns]
+[2022-06-05 21:52:21,937] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=extract_data, execution_date=20220606T005139, start_date=20220606T005221, end_date=20220606T005221
+[2022-06-05 21:52:21,983] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-05 21:52:22,050] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,104 @@
+[2022-06-17 17:12:05,032] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_data scheduled__2022-06-17T20:11:53.712679+00:00 [queued]>
+[2022-06-17 17:12:05,050] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_data scheduled__2022-06-17T20:11:53.712679+00:00 [queued]>
+[2022-06-17 17:12:05,050] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 17:12:05,050] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-17 17:12:05,050] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 17:12:05,075] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): extract_data> on 2022-06-17 20:11:53.712679+00:00
+[2022-06-17 17:12:05,086] {standard_task_runner.py:52} INFO - Started process 133629 to run task
+[2022-06-17 17:12:05,092] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'extract_data', 'scheduled__2022-06-17T20:11:53.712679+00:00', '--job-id', '1248', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmplvnc9vfg', '--error-file', '/tmp/tmpjdlfhopi']
+[2022-06-17 17:12:05,093] {standard_task_runner.py:80} INFO - Job 1248: Subtask extract_data
+[2022-06-17 17:12:05,177] {task_command.py:370} INFO - Running <TaskInstance: sales.extract_data scheduled__2022-06-17T20:11:53.712679+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-17 17:12:05,295] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=extract_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T20:11:53.712679+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T20:11:53.712679+00:00
+[2022-06-17 17:12:05,399] {logging_mixin.py:115} INFO -                         productname  buyprice                       customername  quantityordered  priceeach   status
+0          Collectable Wooden Train     67.56            Dragon Souveniers, Ltd.             21.0      81.68  Shipped
+1  1912 Ford Model T Delivery Wagon     46.91  Royal Canadian Collectables, Ltd.             34.0      80.54  Shipped
+2          1962 Volkswagen Microbus     61.34       Mini Gifts Distributors Ltd.             20.0     126.51  Shipped
+3                1970 Dodge Coronet     32.37                    Vitachrome Inc.             25.0      49.71  Shipped
+4         1969 Chevrolet Camaro Z28     50.51                 Muscle Machine Inc             44.0      83.90  Shipped
+[2022-06-17 17:12:05,399] {python.py:173} INFO - Done. Returned value was: (                       customername contactlastname contactfirstname             phone  ... postalcode  country salesrepemployeenumber creditlimit
+0           Tekni Collectables Inc.           Brown          William        2015559350  ...      94019      USA                 1323.0     43000.0
+1                 La Rochelle Gifts         Labrune          Janine         40.67.8555  ...      44000   France                 1370.0    118200.0
+2    Canadian Gift Exchange Network          Tamuri           Yoshi     (604) 555-3392  ...    V3F 2K1   Canada                 1323.0     90300.0
+3              Osaka Souveniers Co.         Kentary             Mory  +81 06 6342 5555  ...   530-0003    Japan                 1621.0     81200.0
+4         Cramer Spezialitäten, Ltd          Cramer          Philip         0555-09555  ...      14776  Germany                    NaN         0.0
+..                              ...             ...              ...               ...  ...        ...      ...                    ...         ...
+117                    Royale Belge        Cartrain         Pascale   (071) 23 67 2555  ...     B-6000  Belgium                 1401.0     23500.0
+118                   Mini Classics           Frick            Steve        9145554562  ...      24067      USA                 1323.0    102700.0
+119     West Coast Collectables Co.        Thompson            Steve        3105553722  ...      94019      USA                 1166.0     55400.0
+120            Diecast Collectables          Franco          Valarie        6175552555  ...      51003      USA                 1188.0     85100.0
+121         Auto-Moto Classics Inc.          Taylor           Leslie        6175558428  ...      58339      USA                 1216.0     23000.0
+
+[122 rows x 12 columns],                                productname       productline              productvendor                                 productdescription
+0                   1964 Mercedes Tour Bus  Trucks and Buses       Unimax Art Galleries  Exact replica. 100+ parts. working steering sy...
+1                    1976 Ford Gran Torino      Classic Cars       Gearbox Collectibles  Highly detailed 1976 Ford Gran Torino \"Starsk...
+2    1950s Chicago Surface Lines Streetcar            Trains       Gearbox Collectibles  This streetcar is a joy to see. It has 80 sepa...
+3                1957 Corvette Convertible      Classic Cars    Classic Metal Creations  1957 die cast Corvette Convertible in Roman Re...
+4                          1993 Mazda RX-7      Classic Cars   Highway 66 Mini Classics  This model features, opening hood, opening doo...
+..                                     ...               ...                        ...                                                ...
+105                      2001 Ferrari Enzo      Classic Cars        Second Gear Diecast  Turnable front wheels; steering function; deta...
+106            1992 Ferrari 360 Spider red      Classic Cars       Unimax Art Galleries  his replica features opening doors, superb det...
+107                       1995 Honda Civic      Classic Cars            Min Lin Diecast  This model features, opening hood, opening doo...
+108                         1958 Setra Bus  Trucks and Buses  Welly Diecast Productions  Model features 30 windows, skylights & glare r...
+109   2003 Harley-Davidson Eagle Drag Bike       Motorcycles          Red Start Diecast  Model features, official Harley Davidson logos...
+
+[110 rows x 4 columns],       orderdate requireddate shippeddate
+0    2004-06-24   2004-07-01        None
+1    2003-11-06   2003-11-15  2003-11-10
+2    2003-11-20   2003-11-29  2003-11-25
+3    2005-05-09   2005-05-20  2005-05-12
+4    2004-08-20   2004-08-26  2004-08-22
+..          ...          ...         ...
+318  2004-05-04   2004-05-12  2004-05-09
+319  2004-07-23   2004-08-02  2004-07-29
+320  2004-12-16   2004-12-22  2004-12-18
+321  2004-02-20   2004-02-29  2004-02-24
+322  2003-06-03   2003-06-09  2003-06-06
+
+[323 rows x 3 columns],      lastname firstname extension                            email              jobtitle
+0    Thompson    Leslie     x4065   lthompson@classicmodelcars.com             Sales Rep
+1      Fixter      Andy      x101     afixter@classicmodelcars.com             Sales Rep
+2        Bott     Larry     x2311       lbott@classicmodelcars.com             Sales Rep
+3    Castillo    Pamela     x2759   pcastillo@classicmodelcars.com             Sales Rep
+4        King       Tom      x103       tking@classicmodelcars.com             Sales Rep
+5       Marsh     Peter      x102      pmarsh@classicmodelcars.com             Sales Rep
+6   Patterson     Steve     x4334  spatterson@classicmodelcars.com             Sales Rep
+7         Bow   Anthony     x5428        abow@classicmodelcars.com    Sales Manager (NA)
+8       Tseng  Foon Yue     x2248      ftseng@classicmodelcars.com             Sales Rep
+9      Bondur      Loui     x6493     lbondur@classicmodelcars.com             Sales Rep
+10  Hernandez    Gerard     x2028   ghernande@classicmodelcars.com             Sales Rep
+11  Patterson      Mary     x4611   mpatterso@classicmodelcars.com              VP Sales
+12      Jones     Barry      x102      bjones@classicmodelcars.com             Sales Rep
+13      Nishi      Mami      x101      mnishi@classicmodelcars.com             Sales Rep
+14  Patterson   William     x4871  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+15   Jennings    Leslie     x3291   ljennings@classicmodelcars.com             Sales Rep
+16     Gerard    Martin     x2312     mgerard@classicmodelcars.com             Sales Rep
+17     Bondur    Gerard     x5408     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+18   Firrelli      Jeff     x9273   jfirrelli@classicmodelcars.com          VP Marketing
+19     Vanauf    George     x4102     gvanauf@classicmodelcars.com             Sales Rep
+20   Firrelli     Julie     x2173   jfirrelli@classicmodelcars.com             Sales Rep
+21     Murphy     Diane     x5800     dmurphy@classicmodelcars.com             President
+22       Kato   Yoshimi      x102       ykato@classicmodelcars.com             Sales Rep,                            productname  buyprice                       customername  quantityordered  priceeach    status
+0             Collectable Wooden Train     67.56            Dragon Souveniers, Ltd.             21.0      81.68   Shipped
+1     1912 Ford Model T Delivery Wagon     46.91  Royal Canadian Collectables, Ltd.             34.0      80.54   Shipped
+2             1962 Volkswagen Microbus     61.34       Mini Gifts Distributors Ltd.             20.0     126.51   Shipped
+3                   1970 Dodge Coronet     32.37                    Vitachrome Inc.             25.0      49.71   Shipped
+4            1969 Chevrolet Camaro Z28     50.51                 Muscle Machine Inc             44.0      83.90   Shipped
+...                                ...       ...                                ...              ...        ...       ...
+2990            1999 Yamaha Speed Boat     51.61              Salzburg Collectables             21.0      74.84   Shipped
+2991            1928 Mercedes-Benz SSK     72.56                  Toys4GrownUps.com             32.0     140.06  Resolved
+2992       1939 Chevrolet Deluxe Coupe     22.57       Mini Gifts Distributors Ltd.             39.0      31.86   Shipped
+2993         American Airlines: MD-11S     36.27                       Alpha Cognac             45.0      68.11   Shipped
+2994                  2002 Suzuki XREO     66.27                    Microscale Inc.             30.0     134.05   Shipped
+
+[2995 rows x 6 columns])
+[2022-06-17 17:12:05,502] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=extract_data, execution_date=20220617T201153, start_date=20220617T201205, end_date=20220617T201205
+[2022-06-17 17:12:05,544] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-17 17:12:05,614] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

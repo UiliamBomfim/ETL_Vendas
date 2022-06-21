@@ -1,0 +1,355 @@
+[2022-06-04 02:48:03,959] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 02:48:03,981] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 02:48:03,982] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 02:48:03,982] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-04 02:48:03,982] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 02:48:04,005] {taskinstance.py:1377} INFO - Executing <Task(PostgresOperator): create_table> on 2022-06-03 00:00:00+00:00
+[2022-06-04 02:48:04,013] {standard_task_runner.py:52} INFO - Started process 79162 to run task
+[2022-06-04 02:48:04,018] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'create_table', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp4079a9cl', '--error-file', '/tmp/tmpxubpxfzd']
+[2022-06-04 02:48:04,018] {standard_task_runner.py:80} INFO - Job 8: Subtask create_table
+[2022-06-04 02:48:04,113] {task_command.py:370} INFO - Running <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 02:48:04,219] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=create_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 02:48:04,236] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-04 02:48:04,241] {dbapi.py:213} INFO - Running statement: 
+            IF NOT EXISTS CREATE TABLE census (
+                id_census             INT NOT NULL PRIMARY KEY,
+                age                   INT,
+                workclass             VARCHAR(20),
+                fnlwgt                FLOAT,
+                education             VARCHAR(20),
+                education_num         INT,
+                marital_status        VARCHAR(30),
+                occupation            VARCHAR(20),
+                relationship          VARCHAR(30),
+                race                  VARCHAR(30),
+                sex                   VARCHAR(10),
+                capital_gain          FLOAT,
+                capital_loss          FLOAT,
+                hours_per_week        INT,
+                native_country        VARCHAR(30),
+                class                 VARCHAR(10)
+                )
+        , parameters: None
+[2022-06-04 02:48:04,242] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/providers/postgres/operators/postgres.py", line 92, in execute
+    self.hook.run(self.sql, self.autocommit, parameters=self.parameters)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/hooks/dbapi.py", line 193, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/hooks/dbapi.py", line 217, in _run_command
+    cur.execute(sql_statement)
+psycopg2.errors.SyntaxError: syntax error at or near "IF"
+LINE 2:             IF NOT EXISTS CREATE TABLE census (
+                    ^
+
+[2022-06-04 02:48:04,256] {taskinstance.py:1395} INFO - Marking task as FAILED. dag_id=census, task_id=create_table, execution_date=20220603T000000, start_date=20220604T054803, end_date=20220604T054804
+[2022-06-04 02:48:04,274] {standard_task_runner.py:92} ERROR - Failed to execute job 8 for task create_table (syntax error at or near "IF"
+LINE 2:             IF NOT EXISTS CREATE TABLE census (
+                    ^
+; 79162)
+[2022-06-04 02:48:04,310] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-04 02:48:04,365] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 03:58:01,902] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 03:58:01,922] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 03:58:01,922] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 03:58:01,922] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 03:58:01,922] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 03:58:01,943] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_table> on 2022-06-03 00:00:00+00:00
+[2022-06-04 03:58:01,949] {standard_task_runner.py:52} INFO - Started process 8677 to run task
+[2022-06-04 03:58:01,954] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'create_table', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpnka_2aq7', '--error-file', '/tmp/tmpbok3sqj_']
+[2022-06-04 03:58:01,954] {standard_task_runner.py:80} INFO - Job 5: Subtask create_table
+[2022-06-04 03:58:02,025] {task_command.py:370} INFO - Running <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 03:58:02,123] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=create_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 03:58:02,138] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-04 03:58:02,141] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/providers/postgres/operators/postgres.py", line 92, in execute
+    self.hook.run(self.sql, self.autocommit, parameters=self.parameters)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/hooks/dbapi.py", line 186, in run
+    with closing(self.get_conn()) as conn:
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/providers/postgres/hooks/postgres.py", line 113, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "***" to address: Temporary failure in name resolution
+
+[2022-06-04 03:58:02,157] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=census, task_id=create_table, execution_date=20220603T000000, start_date=20220604T065801, end_date=20220604T065802
+[2022-06-04 03:58:02,176] {standard_task_runner.py:92} ERROR - Failed to execute job 5 for task create_table (could not translate host name "***" to address: Temporary failure in name resolution
+; 8677)
+[2022-06-04 03:58:02,206] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-04 03:58:02,254] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 04:05:25,033] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:05:25,049] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:05:25,049] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:05:25,049] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 04:05:25,049] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:05:25,071] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_table> on 2022-06-03 00:00:00+00:00
+[2022-06-04 04:05:25,077] {standard_task_runner.py:52} INFO - Started process 13410 to run task
+[2022-06-04 04:05:25,081] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'create_table', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpfvdblicz', '--error-file', '/tmp/tmpwadtf1n1']
+[2022-06-04 04:05:25,082] {standard_task_runner.py:80} INFO - Job 10: Subtask create_table
+[2022-06-04 04:05:25,156] {task_command.py:370} INFO - Running <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 04:05:25,255] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=create_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 04:05:25,271] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-04 04:05:25,273] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/providers/postgres/operators/postgres.py", line 92, in execute
+    self.hook.run(self.sql, self.autocommit, parameters=self.parameters)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/hooks/dbapi.py", line 186, in run
+    with closing(self.get_conn()) as conn:
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/providers/postgres/hooks/postgres.py", line 113, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "***" to address: Temporary failure in name resolution
+
+[2022-06-04 04:05:25,287] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=census, task_id=create_table, execution_date=20220603T000000, start_date=20220604T070525, end_date=20220604T070525
+[2022-06-04 04:05:25,304] {standard_task_runner.py:92} ERROR - Failed to execute job 10 for task create_table (could not translate host name "***" to address: Temporary failure in name resolution
+; 13410)
+[2022-06-04 04:05:25,334] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-04 04:05:25,380] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 04:11:16,874] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:11:16,892] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:11:16,893] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:11:16,893] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 04:11:16,893] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:11:16,917] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_table> on 2022-06-03 00:00:00+00:00
+[2022-06-04 04:11:16,927] {standard_task_runner.py:52} INFO - Started process 17732 to run task
+[2022-06-04 04:11:16,934] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'create_table', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '16', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp007p3cye', '--error-file', '/tmp/tmpy5gixssc']
+[2022-06-04 04:11:16,934] {standard_task_runner.py:80} INFO - Job 16: Subtask create_table
+[2022-06-04 04:11:17,016] {task_command.py:370} INFO - Running <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 04:11:17,127] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=create_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 04:11:17,142] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-04 04:11:17,144] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/providers/postgres/operators/postgres.py", line 92, in execute
+    self.hook.run(self.sql, self.autocommit, parameters=self.parameters)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/hooks/dbapi.py", line 186, in run
+    with closing(self.get_conn()) as conn:
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/providers/postgres/hooks/postgres.py", line 113, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "***" to address: Temporary failure in name resolution
+
+[2022-06-04 04:11:17,157] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=census, task_id=create_table, execution_date=20220603T000000, start_date=20220604T071116, end_date=20220604T071117
+[2022-06-04 04:11:17,174] {standard_task_runner.py:92} ERROR - Failed to execute job 16 for task create_table (could not translate host name "***" to address: Temporary failure in name resolution
+; 17732)
+[2022-06-04 04:11:17,224] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-04 04:11:17,275] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 04:19:11,707] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:19:11,726] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:19:11,727] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:19:11,727] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 04:19:11,727] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:19:11,750] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_table> on 2022-06-03 00:00:00+00:00
+[2022-06-04 04:19:11,759] {standard_task_runner.py:52} INFO - Started process 23100 to run task
+[2022-06-04 04:19:11,763] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'create_table', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '21', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpjkza6vx8', '--error-file', '/tmp/tmpze496lnm']
+[2022-06-04 04:19:11,763] {standard_task_runner.py:80} INFO - Job 21: Subtask create_table
+[2022-06-04 04:19:11,843] {task_command.py:370} INFO - Running <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 04:19:11,959] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=create_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 04:19:11,975] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-04 04:19:11,978] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/providers/postgres/operators/postgres.py", line 92, in execute
+    self.hook.run(self.sql, self.autocommit, parameters=self.parameters)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/hooks/dbapi.py", line 186, in run
+    with closing(self.get_conn()) as conn:
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/providers/postgres/hooks/postgres.py", line 113, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "***" to address: Temporary failure in name resolution
+
+[2022-06-04 04:19:11,993] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=census, task_id=create_table, execution_date=20220603T000000, start_date=20220604T071911, end_date=20220604T071911
+[2022-06-04 04:19:12,011] {standard_task_runner.py:92} ERROR - Failed to execute job 21 for task create_table (could not translate host name "***" to address: Temporary failure in name resolution
+; 23100)
+[2022-06-04 04:19:12,056] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-04 04:19:12,109] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 04:20:51,585] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:20:51,608] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:20:51,608] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:20:51,608] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 04:20:51,608] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:20:51,634] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_table> on 2022-06-03 00:00:00+00:00
+[2022-06-04 04:20:51,642] {standard_task_runner.py:52} INFO - Started process 24796 to run task
+[2022-06-04 04:20:51,648] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'create_table', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '26', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpuihswq92', '--error-file', '/tmp/tmprp_venwz']
+[2022-06-04 04:20:51,648] {standard_task_runner.py:80} INFO - Job 26: Subtask create_table
+[2022-06-04 04:20:51,740] {task_command.py:370} INFO - Running <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 04:20:51,874] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=create_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 04:20:51,894] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-04 04:20:51,897] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/providers/postgres/operators/postgres.py", line 92, in execute
+    self.hook.run(self.sql, self.autocommit, parameters=self.parameters)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/hooks/dbapi.py", line 186, in run
+    with closing(self.get_conn()) as conn:
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/providers/postgres/hooks/postgres.py", line 113, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "***" to address: Temporary failure in name resolution
+
+[2022-06-04 04:20:51,914] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=census, task_id=create_table, execution_date=20220603T000000, start_date=20220604T072051, end_date=20220604T072051
+[2022-06-04 04:20:51,936] {standard_task_runner.py:92} ERROR - Failed to execute job 26 for task create_table (could not translate host name "***" to address: Temporary failure in name resolution
+; 24796)
+[2022-06-04 04:20:51,979] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-04 04:20:52,034] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 04:22:25,772] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:22:25,788] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:22:25,789] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:22:25,789] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 04:22:25,789] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:22:25,810] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_table> on 2022-06-03 00:00:00+00:00
+[2022-06-04 04:22:25,818] {standard_task_runner.py:52} INFO - Started process 26158 to run task
+[2022-06-04 04:22:25,824] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'create_table', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp7s15ynrw', '--error-file', '/tmp/tmpmfns2eu1']
+[2022-06-04 04:22:25,824] {standard_task_runner.py:80} INFO - Job 30: Subtask create_table
+[2022-06-04 04:22:25,908] {task_command.py:370} INFO - Running <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 04:22:26,017] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=create_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 04:22:26,033] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-04 04:22:26,036] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/providers/postgres/operators/postgres.py", line 92, in execute
+    self.hook.run(self.sql, self.autocommit, parameters=self.parameters)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/hooks/dbapi.py", line 186, in run
+    with closing(self.get_conn()) as conn:
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/providers/postgres/hooks/postgres.py", line 113, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "***" to address: Temporary failure in name resolution
+
+[2022-06-04 04:22:26,051] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=census, task_id=create_table, execution_date=20220603T000000, start_date=20220604T072225, end_date=20220604T072226
+[2022-06-04 04:22:26,073] {standard_task_runner.py:92} ERROR - Failed to execute job 30 for task create_table (could not translate host name "***" to address: Temporary failure in name resolution
+; 26158)
+[2022-06-04 04:22:26,115] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-04 04:22:26,176] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 04:23:12,606] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:23:12,624] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:23:12,624] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:23:12,624] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 04:23:12,624] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:23:12,648] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_table> on 2022-06-03 00:00:00+00:00
+[2022-06-04 04:23:12,659] {standard_task_runner.py:52} INFO - Started process 27161 to run task
+[2022-06-04 04:23:12,664] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'create_table', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '34', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpbbsq91hq', '--error-file', '/tmp/tmpkq40fba0']
+[2022-06-04 04:23:12,665] {standard_task_runner.py:80} INFO - Job 34: Subtask create_table
+[2022-06-04 04:23:12,754] {task_command.py:370} INFO - Running <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 04:23:12,867] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=create_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 04:23:12,884] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-04 04:23:12,887] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/providers/postgres/operators/postgres.py", line 92, in execute
+    self.hook.run(self.sql, self.autocommit, parameters=self.parameters)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/hooks/dbapi.py", line 186, in run
+    with closing(self.get_conn()) as conn:
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/providers/postgres/hooks/postgres.py", line 113, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "***" to address: Temporary failure in name resolution
+
+[2022-06-04 04:23:12,901] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=census, task_id=create_table, execution_date=20220603T000000, start_date=20220604T072312, end_date=20220604T072312
+[2022-06-04 04:23:12,918] {standard_task_runner.py:92} ERROR - Failed to execute job 34 for task create_table (could not translate host name "***" to address: Temporary failure in name resolution
+; 27161)
+[2022-06-04 04:23:12,957] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-04 04:23:13,006] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-04 04:24:42,525] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:24:42,548] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [queued]>
+[2022-06-04 04:24:42,548] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:24:42,548] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-04 04:24:42,548] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-04 04:24:42,584] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_table> on 2022-06-03 00:00:00+00:00
+[2022-06-04 04:24:42,596] {standard_task_runner.py:52} INFO - Started process 28999 to run task
+[2022-06-04 04:24:42,603] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'create_table', 'scheduled__2022-06-03T00:00:00+00:00', '--job-id', '39', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpgk2sz676', '--error-file', '/tmp/tmprvrsqp1a']
+[2022-06-04 04:24:42,604] {standard_task_runner.py:80} INFO - Job 39: Subtask create_table
+[2022-06-04 04:24:42,686] {task_command.py:370} INFO - Running <TaskInstance: census.create_table scheduled__2022-06-03T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-04 04:24:42,794] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=create_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-03T00:00:00+00:00
+[2022-06-04 04:24:42,810] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-04 04:24:42,813] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/providers/postgres/operators/postgres.py", line 92, in execute
+    self.hook.run(self.sql, self.autocommit, parameters=self.parameters)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/hooks/dbapi.py", line 186, in run
+    with closing(self.get_conn()) as conn:
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/providers/postgres/hooks/postgres.py", line 113, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "***" to address: Temporary failure in name resolution
+
+[2022-06-04 04:24:42,827] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=census, task_id=create_table, execution_date=20220603T000000, start_date=20220604T072442, end_date=20220604T072442
+[2022-06-04 04:24:42,847] {standard_task_runner.py:92} ERROR - Failed to execute job 39 for task create_table (could not translate host name "***" to address: Temporary failure in name resolution
+; 28999)
+[2022-06-04 04:24:42,895] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-04 04:24:42,948] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

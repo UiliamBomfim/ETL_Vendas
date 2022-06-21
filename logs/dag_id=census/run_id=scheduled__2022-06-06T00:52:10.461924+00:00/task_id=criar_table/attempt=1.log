@@ -1,0 +1,45 @@
+[2022-06-05 21:52:47,667] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.criar_table scheduled__2022-06-06T00:52:10.461924+00:00 [queued]>
+[2022-06-05 21:52:47,685] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.criar_table scheduled__2022-06-06T00:52:10.461924+00:00 [queued]>
+[2022-06-05 21:52:47,685] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 21:52:47,685] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-05 21:52:47,685] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 21:52:47,707] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): criar_table> on 2022-06-06 00:52:10.461924+00:00
+[2022-06-05 21:52:47,718] {standard_task_runner.py:52} INFO - Started process 25845 to run task
+[2022-06-05 21:52:47,725] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'criar_table', 'scheduled__2022-06-06T00:52:10.461924+00:00', '--job-id', '1170', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp9kjt7kj2', '--error-file', '/tmp/tmp8jgwwd1h']
+[2022-06-05 21:52:47,726] {standard_task_runner.py:80} INFO - Job 1170: Subtask criar_table
+[2022-06-05 21:52:47,813] {task_command.py:370} INFO - Running <TaskInstance: census.criar_table scheduled__2022-06-06T00:52:10.461924+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-05 21:52:47,932] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=criar_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-06T00:52:10.461924+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-06T00:52:10.461924+00:00
+[2022-06-05 21:52:47,951] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-05 21:52:47,957] {dbapi.py:213} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS census (
+                id_census             SERIAL PRIMARY KEY,
+                age                   INT,
+                workclass             VARCHAR(20),
+                fnlwgt                FLOAT,
+                education             VARCHAR(20),
+                education_num         INT,
+                marital_status        VARCHAR(30),
+                occupation            VARCHAR(20),
+                relationship          VARCHAR(30),
+                race                  VARCHAR(30),
+                sex                   VARCHAR(10),
+                capital_gain          FLOAT,
+                capital_loss          FLOAT,
+                hours_per_week        INT,
+                native_country        VARCHAR(30),
+                class                 VARCHAR(10)
+                )
+        , parameters: None
+[2022-06-05 21:52:47,959] {postgres.py:94} INFO - NOTICE:  relation "census" already exists, skipping
+
+[2022-06-05 21:52:47,982] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=criar_table, execution_date=20220606T005210, start_date=20220606T005247, end_date=20220606T005247
+[2022-06-05 21:52:48,015] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-05 21:52:48,079] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

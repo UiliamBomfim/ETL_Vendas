@@ -1,0 +1,1089 @@
+[2022-06-17 17:36:32,991] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.transforma_tabela scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 17:36:33,014] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.transforma_tabela scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 17:36:33,014] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 17:36:33,014] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-17 17:36:33,014] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 17:36:33,036] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-16 00:00:00+00:00
+[2022-06-17 17:36:33,045] {standard_task_runner.py:52} INFO - Started process 146484 to run task
+[2022-06-17 17:36:33,051] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'transforma_tabela', 'scheduled__2022-06-16T00:00:00+00:00', '--job-id', '1271', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpq83x_vgf', '--error-file', '/tmp/tmp5zlpw6b5']
+[2022-06-17 17:36:33,052] {standard_task_runner.py:80} INFO - Job 1271: Subtask transforma_tabela
+[2022-06-17 17:36:33,136] {task_command.py:370} INFO - Running <TaskInstance: sales.transforma_tabela scheduled__2022-06-16T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-17 17:36:33,243] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-16T00:00:00+00:00
+[2022-06-17 17:36:33,341] {python.py:173} INFO - Done. Returned value was: (                          customername contactlastname contactfirstname             phone  ...          state postalcode       country creditlimit
+0              Tekni Collectables Inc.           Brown          William        2015559350  ...             NJ      94019           USA     43000.0
+2       Canadian Gift Exchange Network          Tamuri           Yoshi     (604) 555-3392  ...             BC    V3F 2K1        Canada     90300.0
+3                 Osaka Souveniers Co.         Kentary             Mory  +81 06 6342 5555  ...          Osaka   530-0003         Japan     81200.0
+10                Classic Legends Inc.       Hernandez            Maria        2125558493  ...             NY      10022           USA     67500.0
+12                   Land of Toys Inc.             Lee             Kwai        2125557818  ...             NY      10022           USA    114900.0
+14              American Souvenirs Inc          Franco            Keith        2035557845  ...             CT      97823           USA         0.0
+15            Men R US Retailers, Ltd.        Chandler            Brian        2155554369  ...             CA      91003           USA     57700.0
+16               Diecast Classics Inc.           Leong           Kelvin        2155551555  ...             PA      70267           USA    100600.0
+20        Online Diecast Creations Co.           Young          Dorothy        6035558647  ...             NH      62005           USA    114200.0
+24            Signal Collectibles Ltd.          Taylor              Sue        4155554312  ...             CA      94217           USA     60300.0
+25           Souveniers And Things Co.          Huxley           Adrian   +61 2 9495 8555  ...            NSW       2067     Australia     93300.0
+28          Cambridge Collectables Co.           Tseng            Jerry        6175555555  ...             MA      51247           USA     43400.0
+33        Motor Mint Distributors Inc.         Salazar             Rosa        2155559857  ...             PA      71270           USA     72600.0
+34                    Gift Ideas Corp.           Lewis              Dan        2035554407  ...             CT      97561           USA     49700.0
+35                     Gift Depot Inc.            King            Julie        2035552570  ...             CT      97562           USA     84300.0
+36                     Microscale Inc.            Choi               Yu        2125551957  ...             NY      10022           USA     39800.0
+41                     Vitachrome Inc.           Frick          Michael        2125551500  ...             NY      10022           USA     76400.0
+45              Annas Decorations, Ltd           OHara             Anna      02 9936 8555  ...            NSW       2060     Australia    107800.0
+54        Collectable Mini Designs Co.        Thompson          Valarie        7605558146  ...             CA      91217           USA    105000.0
+62                  Muscle Machine Inc           Young             Jeff        2125557413  ...             NY      10022           USA    138500.0
+64                   giftsbymail.co.uk         Bennett           Helen     (198) 555-8888  ...  Isle of Wight   PO31 7PJ            UK     93900.0
+67                Technics Stores Inc.       Hashimoto             Juri        6505556809  ...             CA      94217           USA     84600.0
+68        Australian Collectables, Ltd        Clenahan             Sean    61-9-3844-6555  ...       Victoria       3150     Australia     60300.0
+69            Corporate Gift Ideas Co.           Brown            Julie        6505551386  ...             CA      94217           USA    105000.0
+70                   Boards & Toys Co.           Young             Mary        3105552373  ...             CA      92561           USA     11000.0
+72             Tokyo Collectables, Ltd       Shimamura            Akiko   +81 3 3584 0555  ...          Tokyo   106-0032         Japan     94400.0
+74                     Mini Wheels Co.          Murphy            Julie        6505555787  ...             CA      94217           USA     64600.0
+75                    FunGiftIdeas.com         Benitez          Violeta        5085552555  ...             MA      50553           USA     85800.0
+76                    Super Scale Inc.          Murphy           Leslie        2035559545  ...             CT      97823           USA     95400.0
+78            Online Mini Collectables         Barajas           Miguel        6175557555  ...             MA      58339           USA     68700.0
+79             Classic Gift Ideas, Inc       Cervantes        Francisca        2155554695  ...             PA      71270           USA     81100.0
+80           The Sharp Gifts Warehouse           Frick              Sue        4085553659  ...             CA      94217           USA     77600.0
+81         Australian Gift Network, Co        Calaghan              Ben    61-7-3844-6555  ...     Queensland       4101     Australia     51600.0
+82                 Mini Creations Ltd.           Huang             Wing        5085559555  ...             MA      50553           USA     94500.0
+86   Royal Canadian Collectables, Ltd.         Lincoln       Elizabeth     (604) 555-4555  ...             BC    T2F 8M4        Canada     89600.0
+90                 Martas Replicas Co.       Hernandez            Marta        6175558555  ...             MA      51247           USA    123700.0
+92          Collectables For Less Inc.          Nelson            Allen        6175558555  ...             MA      58339           USA     70700.0
+98        Québec Home Shopping Network       Fresnière            Jean     (514) 555-8054  ...         Québec    H1J 1C3        Canada     48700.0
+103                 Signal Gift Stores            King             Jean        7025551838  ...             NV      83030           USA     71800.0
+107                  Toys4GrownUps.com           Young            Julie        6265557265  ...             CA      90003           USA     90700.0
+108         Australian Collectors, Co.        Ferguson            Peter      03 9520 4555  ...       Victoria       3004     Australia    117300.0
+110               SAR Distributors, Co           Kuger           Armand   +27 21 550 3555  ...       Pretoria       0028  South Africa         0.0
+112                  Gifts4AllAges.com         Yoshido             Juri        6175559555  ...             MA      51003           USA     41900.0
+114       Mini Gifts Distributors Ltd.          Nelson            Susan        4155551450  ...             CA      97562           USA    210500.0
+118                      Mini Classics           Frick            Steve        9145554562  ...             NY      24067           USA    102700.0
+119        West Coast Collectables Co.        Thompson            Steve        3105553722  ...             CA      94019           USA     55400.0
+120               Diecast Collectables          Franco          Valarie        6175552555  ...             MA      51003           USA     85100.0
+121            Auto-Moto Classics Inc.          Taylor           Leslie        6175558428  ...             MA      58339           USA     23000.0
+
+[48 rows x 10 columns],                                productname       productline              productvendor                                 productdescription
+0                   1964 Mercedes Tour Bus  Trucks and Buses       Unimax Art Galleries  Exact replica. 100+ parts. working steering sy...
+1                    1976 Ford Gran Torino      Classic Cars       Gearbox Collectibles  Highly detailed 1976 Ford Gran Torino \"Starsk...
+2    1950s Chicago Surface Lines Streetcar            Trains       Gearbox Collectibles  This streetcar is a joy to see. It has 80 sepa...
+3                1957 Corvette Convertible      Classic Cars    Classic Metal Creations  1957 die cast Corvette Convertible in Roman Re...
+4                          1993 Mazda RX-7      Classic Cars   Highway 66 Mini Classics  This model features, opening hood, opening doo...
+..                                     ...               ...                        ...                                                ...
+105                      2001 Ferrari Enzo      Classic Cars        Second Gear Diecast  Turnable front wheels; steering function; deta...
+106            1992 Ferrari 360 Spider red      Classic Cars       Unimax Art Galleries  his replica features opening doors, superb det...
+107                       1995 Honda Civic      Classic Cars            Min Lin Diecast  This model features, opening hood, opening doo...
+108                         1958 Setra Bus  Trucks and Buses  Welly Diecast Productions  Model features 30 windows, skylights & glare r...
+109   2003 Harley-Davidson Eagle Drag Bike       Motorcycles          Red Start Diecast  Model features, official Harley Davidson logos...
+
+[110 rows x 4 columns],       orderdate requireddate shippeddate
+1    2003-11-06   2003-11-15  2003-11-10
+2    2003-11-20   2003-11-29  2003-11-25
+3    2005-05-09   2005-05-20  2005-05-12
+4    2004-08-20   2004-08-26  2004-08-22
+5    2004-05-26   2004-06-04  2004-05-29
+..          ...          ...         ...
+318  2004-05-04   2004-05-12  2004-05-09
+319  2004-07-23   2004-08-02  2004-07-29
+320  2004-12-16   2004-12-22  2004-12-18
+321  2004-02-20   2004-02-29  2004-02-24
+322  2003-06-03   2003-06-09  2003-06-06
+
+[309 rows x 3 columns],       quantityordered  priceeach  buyprice
+0                21.0      81.68     67.56
+1                34.0      80.54     46.91
+2                20.0     126.51     61.34
+3                25.0      49.71     32.37
+4                44.0      83.90     50.51
+...               ...        ...       ...
+2990             21.0      74.84     51.61
+2991             32.0     140.06     72.56
+2992             39.0      31.86     22.57
+2993             45.0      68.11     36.27
+2994             30.0     134.05     66.27
+
+[2994 rows x 3 columns],      lastname firstname                            email              jobtitle
+0    Thompson    Leslie   lthompson@classicmodelcars.com             Sales Rep
+1      Fixter      Andy     afixter@classicmodelcars.com             Sales Rep
+2        Bott     Larry       lbott@classicmodelcars.com             Sales Rep
+3    Castillo    Pamela   pcastillo@classicmodelcars.com             Sales Rep
+4        King       Tom       tking@classicmodelcars.com             Sales Rep
+5       Marsh     Peter      pmarsh@classicmodelcars.com             Sales Rep
+6   Patterson     Steve  spatterson@classicmodelcars.com             Sales Rep
+7         Bow   Anthony        abow@classicmodelcars.com    Sales Manager (NA)
+8       Tseng  Foon Yue      ftseng@classicmodelcars.com             Sales Rep
+9      Bondur      Loui     lbondur@classicmodelcars.com             Sales Rep
+10  Hernandez    Gerard   ghernande@classicmodelcars.com             Sales Rep
+11  Patterson      Mary   mpatterso@classicmodelcars.com              VP Sales
+12      Jones     Barry      bjones@classicmodelcars.com             Sales Rep
+13      Nishi      Mami      mnishi@classicmodelcars.com             Sales Rep
+14  Patterson   William  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+15   Jennings    Leslie   ljennings@classicmodelcars.com             Sales Rep
+16     Gerard    Martin     mgerard@classicmodelcars.com             Sales Rep
+17     Bondur    Gerard     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+18   Firrelli      Jeff   jfirrelli@classicmodelcars.com          VP Marketing
+19     Vanauf    George     gvanauf@classicmodelcars.com             Sales Rep
+20   Firrelli     Julie   jfirrelli@classicmodelcars.com             Sales Rep
+21     Murphy     Diane     dmurphy@classicmodelcars.com             President
+22       Kato   Yoshimi       ykato@classicmodelcars.com             Sales Rep)
+[2022-06-17 17:36:33,444] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=transforma_tabela, execution_date=20220616T000000, start_date=20220617T203632, end_date=20220617T203633
+[2022-06-17 17:36:33,504] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-17 17:36:33,584] {local_task_job.py:273} INFO - 5 downstream tasks scheduled from follow-on schedule check
+[2022-06-17 19:44:57,584] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.transforma_tabela scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 19:44:57,603] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.transforma_tabela scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 19:44:57,604] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 19:44:57,604] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-17 19:44:57,604] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 19:44:57,625] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-16 00:00:00+00:00
+[2022-06-17 19:44:57,633] {standard_task_runner.py:52} INFO - Started process 166123 to run task
+[2022-06-17 19:44:57,639] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'transforma_tabela', 'scheduled__2022-06-16T00:00:00+00:00', '--job-id', '1280', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpdrtxq4vo', '--error-file', '/tmp/tmpxr1pam4_']
+[2022-06-17 19:44:57,640] {standard_task_runner.py:80} INFO - Job 1280: Subtask transforma_tabela
+[2022-06-17 19:44:57,732] {task_command.py:370} INFO - Running <TaskInstance: sales.transforma_tabela scheduled__2022-06-16T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-17 19:44:57,859] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-16T00:00:00+00:00
+[2022-06-17 19:44:57,939] {logging_mixin.py:115} INFO -      lastname firstname extension                            email              jobtitle
+0    Thompson    Leslie     x4065   lthompson@classicmodelcars.com             Sales Rep
+1      Fixter      Andy      x101     afixter@classicmodelcars.com             Sales Rep
+2        Bott     Larry     x2311       lbott@classicmodelcars.com             Sales Rep
+3    Castillo    Pamela     x2759   pcastillo@classicmodelcars.com             Sales Rep
+4        King       Tom      x103       tking@classicmodelcars.com             Sales Rep
+5       Marsh     Peter      x102      pmarsh@classicmodelcars.com             Sales Rep
+6   Patterson     Steve     x4334  spatterson@classicmodelcars.com             Sales Rep
+7         Bow   Anthony     x5428        abow@classicmodelcars.com    Sales Manager (NA)
+8       Tseng  Foon Yue     x2248      ftseng@classicmodelcars.com             Sales Rep
+9      Bondur      Loui     x6493     lbondur@classicmodelcars.com             Sales Rep
+10  Hernandez    Gerard     x2028   ghernande@classicmodelcars.com             Sales Rep
+11  Patterson      Mary     x4611   mpatterso@classicmodelcars.com              VP Sales
+12      Jones     Barry      x102      bjones@classicmodelcars.com             Sales Rep
+13      Nishi      Mami      x101      mnishi@classicmodelcars.com             Sales Rep
+14  Patterson   William     x4871  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+15   Jennings    Leslie     x3291   ljennings@classicmodelcars.com             Sales Rep
+16     Gerard    Martin     x2312     mgerard@classicmodelcars.com             Sales Rep
+17     Bondur    Gerard     x5408     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+18   Firrelli      Jeff     x9273   jfirrelli@classicmodelcars.com          VP Marketing
+19     Vanauf    George     x4102     gvanauf@classicmodelcars.com             Sales Rep
+20   Firrelli     Julie     x2173   jfirrelli@classicmodelcars.com             Sales Rep
+21     Murphy     Diane     x5800     dmurphy@classicmodelcars.com             President
+22       Kato   Yoshimi      x102       ykato@classicmodelcars.com             Sales Rep
+[2022-06-17 19:44:58,005] {python.py:173} INFO - Done. Returned value was: (                          customername contactlastname contactfirstname             phone  ...          state postalcode       country creditlimit
+0              Tekni Collectables Inc.           Brown          William        2015559350  ...             NJ      94019           USA     43000.0
+2       Canadian Gift Exchange Network          Tamuri           Yoshi     (604) 555-3392  ...             BC    V3F 2K1        Canada     90300.0
+3                 Osaka Souveniers Co.         Kentary             Mory  +81 06 6342 5555  ...          Osaka   530-0003         Japan     81200.0
+10                Classic Legends Inc.       Hernandez            Maria        2125558493  ...             NY      10022           USA     67500.0
+12                   Land of Toys Inc.             Lee             Kwai        2125557818  ...             NY      10022           USA    114900.0
+14              American Souvenirs Inc          Franco            Keith        2035557845  ...             CT      97823           USA         0.0
+15            Men R US Retailers, Ltd.        Chandler            Brian        2155554369  ...             CA      91003           USA     57700.0
+16               Diecast Classics Inc.           Leong           Kelvin        2155551555  ...             PA      70267           USA    100600.0
+20        Online Diecast Creations Co.           Young          Dorothy        6035558647  ...             NH      62005           USA    114200.0
+24            Signal Collectibles Ltd.          Taylor              Sue        4155554312  ...             CA      94217           USA     60300.0
+25           Souveniers And Things Co.          Huxley           Adrian   +61 2 9495 8555  ...            NSW       2067     Australia     93300.0
+28          Cambridge Collectables Co.           Tseng            Jerry        6175555555  ...             MA      51247           USA     43400.0
+33        Motor Mint Distributors Inc.         Salazar             Rosa        2155559857  ...             PA      71270           USA     72600.0
+34                    Gift Ideas Corp.           Lewis              Dan        2035554407  ...             CT      97561           USA     49700.0
+35                     Gift Depot Inc.            King            Julie        2035552570  ...             CT      97562           USA     84300.0
+36                     Microscale Inc.            Choi               Yu        2125551957  ...             NY      10022           USA     39800.0
+41                     Vitachrome Inc.           Frick          Michael        2125551500  ...             NY      10022           USA     76400.0
+45              Annas Decorations, Ltd           OHara             Anna      02 9936 8555  ...            NSW       2060     Australia    107800.0
+54        Collectable Mini Designs Co.        Thompson          Valarie        7605558146  ...             CA      91217           USA    105000.0
+62                  Muscle Machine Inc           Young             Jeff        2125557413  ...             NY      10022           USA    138500.0
+64                   giftsbymail.co.uk         Bennett           Helen     (198) 555-8888  ...  Isle of Wight   PO31 7PJ            UK     93900.0
+67                Technics Stores Inc.       Hashimoto             Juri        6505556809  ...             CA      94217           USA     84600.0
+68        Australian Collectables, Ltd        Clenahan             Sean    61-9-3844-6555  ...       Victoria       3150     Australia     60300.0
+69            Corporate Gift Ideas Co.           Brown            Julie        6505551386  ...             CA      94217           USA    105000.0
+70                   Boards & Toys Co.           Young             Mary        3105552373  ...             CA      92561           USA     11000.0
+72             Tokyo Collectables, Ltd       Shimamura            Akiko   +81 3 3584 0555  ...          Tokyo   106-0032         Japan     94400.0
+74                     Mini Wheels Co.          Murphy            Julie        6505555787  ...             CA      94217           USA     64600.0
+75                    FunGiftIdeas.com         Benitez          Violeta        5085552555  ...             MA      50553           USA     85800.0
+76                    Super Scale Inc.          Murphy           Leslie        2035559545  ...             CT      97823           USA     95400.0
+78            Online Mini Collectables         Barajas           Miguel        6175557555  ...             MA      58339           USA     68700.0
+79             Classic Gift Ideas, Inc       Cervantes        Francisca        2155554695  ...             PA      71270           USA     81100.0
+80           The Sharp Gifts Warehouse           Frick              Sue        4085553659  ...             CA      94217           USA     77600.0
+81         Australian Gift Network, Co        Calaghan              Ben    61-7-3844-6555  ...     Queensland       4101     Australia     51600.0
+82                 Mini Creations Ltd.           Huang             Wing        5085559555  ...             MA      50553           USA     94500.0
+86   Royal Canadian Collectables, Ltd.         Lincoln       Elizabeth     (604) 555-4555  ...             BC    T2F 8M4        Canada     89600.0
+90                 Martas Replicas Co.       Hernandez            Marta        6175558555  ...             MA      51247           USA    123700.0
+92          Collectables For Less Inc.          Nelson            Allen        6175558555  ...             MA      58339           USA     70700.0
+98        Québec Home Shopping Network       Fresnière            Jean     (514) 555-8054  ...         Québec    H1J 1C3        Canada     48700.0
+103                 Signal Gift Stores            King             Jean        7025551838  ...             NV      83030           USA     71800.0
+107                  Toys4GrownUps.com           Young            Julie        6265557265  ...             CA      90003           USA     90700.0
+108         Australian Collectors, Co.        Ferguson            Peter      03 9520 4555  ...       Victoria       3004     Australia    117300.0
+110               SAR Distributors, Co           Kuger           Armand   +27 21 550 3555  ...       Pretoria       0028  South Africa         0.0
+112                  Gifts4AllAges.com         Yoshido             Juri        6175559555  ...             MA      51003           USA     41900.0
+114       Mini Gifts Distributors Ltd.          Nelson            Susan        4155551450  ...             CA      97562           USA    210500.0
+118                      Mini Classics           Frick            Steve        9145554562  ...             NY      24067           USA    102700.0
+119        West Coast Collectables Co.        Thompson            Steve        3105553722  ...             CA      94019           USA     55400.0
+120               Diecast Collectables          Franco          Valarie        6175552555  ...             MA      51003           USA     85100.0
+121            Auto-Moto Classics Inc.          Taylor           Leslie        6175558428  ...             MA      58339           USA     23000.0
+
+[48 rows x 10 columns],                                productname       productline              productvendor                                 productdescription
+0                   1964 Mercedes Tour Bus  Trucks and Buses       Unimax Art Galleries  Exact replica. 100+ parts. working steering sy...
+1                    1976 Ford Gran Torino      Classic Cars       Gearbox Collectibles  Highly detailed 1976 Ford Gran Torino \"Starsk...
+2    1950s Chicago Surface Lines Streetcar            Trains       Gearbox Collectibles  This streetcar is a joy to see. It has 80 sepa...
+3                1957 Corvette Convertible      Classic Cars    Classic Metal Creations  1957 die cast Corvette Convertible in Roman Re...
+4                          1993 Mazda RX-7      Classic Cars   Highway 66 Mini Classics  This model features, opening hood, opening doo...
+..                                     ...               ...                        ...                                                ...
+105                      2001 Ferrari Enzo      Classic Cars        Second Gear Diecast  Turnable front wheels; steering function; deta...
+106            1992 Ferrari 360 Spider red      Classic Cars       Unimax Art Galleries  his replica features opening doors, superb det...
+107                       1995 Honda Civic      Classic Cars            Min Lin Diecast  This model features, opening hood, opening doo...
+108                         1958 Setra Bus  Trucks and Buses  Welly Diecast Productions  Model features 30 windows, skylights & glare r...
+109   2003 Harley-Davidson Eagle Drag Bike       Motorcycles          Red Start Diecast  Model features, official Harley Davidson logos...
+
+[110 rows x 4 columns],       orderdate requireddate shippeddate
+1    2003-11-06   2003-11-15  2003-11-10
+2    2003-11-20   2003-11-29  2003-11-25
+3    2005-05-09   2005-05-20  2005-05-12
+4    2004-08-20   2004-08-26  2004-08-22
+5    2004-05-26   2004-06-04  2004-05-29
+..          ...          ...         ...
+318  2004-05-04   2004-05-12  2004-05-09
+319  2004-07-23   2004-08-02  2004-07-29
+320  2004-12-16   2004-12-22  2004-12-18
+321  2004-02-20   2004-02-29  2004-02-24
+322  2003-06-03   2003-06-09  2003-06-06
+
+[309 rows x 3 columns],                             customername                                productname   orderdate requireddate  lastname  quantityordered  priceeach  buyprice
+0                     Signal Gift Stores  1938 Cadillac V-16 Presidential Limousine  2003-05-21   2003-05-29  Thompson             22.0      36.29     20.61
+1                      Auto Canal+ Petit        1936 Harley Davidson El Knucklehead  2005-04-07   2005-04-14    Bondur             55.0      58.15     24.23
+2                 Saveley & Henriot, Co.                          1903 Ford Model A  2004-01-02   2004-01-11    Bondur             24.0     117.47     68.30
+3                     Enaco Distributors                      The Schooner Bluenose  2003-11-26   2003-12-02    Gerard             23.0      60.00     34.00
+4                Dragon Souveniers, Ltd.                1954 Greyhound Scenicruiser  2003-10-22   2003-10-31     Nishi             48.0      50.86     25.98
+...                                  ...                                        ...         ...          ...       ...              ...        ...       ...
+2992                Classic Legends Inc.                        1972 Alfa Romeo GTA  2004-11-21   2004-11-30     Tseng             25.0     131.92     85.68
+2993  Bavarian Collectables Imports, Co.                         F/A 18 Hornet 1/72  2004-09-15   2004-09-22     Jones             22.0      74.40     54.40
+2994                Classic Legends Inc.                1913 Ford Model T Speedster  2003-10-20   2003-10-27     Tseng             31.0     101.31     60.78
+2995                  Muscle Machine Inc               1999 Indy 500 Monte Carlo SS  2003-12-02   2003-12-10     Tseng             27.0     106.92     56.76
+2996        Québec Home Shopping Network                                 Pont Yacht  2004-06-17   2004-06-25     Tseng             29.0      43.68     33.30
+
+[2996 rows x 8 columns],      lastname firstname                            email              jobtitle
+0    Thompson    Leslie   lthompson@classicmodelcars.com             Sales Rep
+1      Fixter      Andy     afixter@classicmodelcars.com             Sales Rep
+2        Bott     Larry       lbott@classicmodelcars.com             Sales Rep
+3    Castillo    Pamela   pcastillo@classicmodelcars.com             Sales Rep
+4        King       Tom       tking@classicmodelcars.com             Sales Rep
+5       Marsh     Peter      pmarsh@classicmodelcars.com             Sales Rep
+6   Patterson     Steve  spatterson@classicmodelcars.com             Sales Rep
+7         Bow   Anthony        abow@classicmodelcars.com    Sales Manager (NA)
+8       Tseng  Foon Yue      ftseng@classicmodelcars.com             Sales Rep
+9      Bondur      Loui     lbondur@classicmodelcars.com             Sales Rep
+10  Hernandez    Gerard   ghernande@classicmodelcars.com             Sales Rep
+11  Patterson      Mary   mpatterso@classicmodelcars.com              VP Sales
+12      Jones     Barry      bjones@classicmodelcars.com             Sales Rep
+13      Nishi      Mami      mnishi@classicmodelcars.com             Sales Rep
+14  Patterson   William  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+15   Jennings    Leslie   ljennings@classicmodelcars.com             Sales Rep
+16     Gerard    Martin     mgerard@classicmodelcars.com             Sales Rep
+17     Bondur    Gerard     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+18   Firrelli      Jeff   jfirrelli@classicmodelcars.com          VP Marketing
+19     Vanauf    George     gvanauf@classicmodelcars.com             Sales Rep
+20   Firrelli     Julie   jfirrelli@classicmodelcars.com             Sales Rep
+21     Murphy     Diane     dmurphy@classicmodelcars.com             President
+22       Kato   Yoshimi       ykato@classicmodelcars.com             Sales Rep)
+[2022-06-17 19:44:58,123] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=transforma_tabela, execution_date=20220616T000000, start_date=20220617T224457, end_date=20220617T224458
+[2022-06-17 19:44:58,171] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-17 19:44:58,261] {local_task_job.py:273} INFO - 5 downstream tasks scheduled from follow-on schedule check
+[2022-06-17 19:46:39,412] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.transforma_tabela scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 19:46:39,429] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.transforma_tabela scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 19:46:39,429] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 19:46:39,429] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-17 19:46:39,429] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 19:46:39,451] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-16 00:00:00+00:00
+[2022-06-17 19:46:39,461] {standard_task_runner.py:52} INFO - Started process 167513 to run task
+[2022-06-17 19:46:39,467] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'transforma_tabela', 'scheduled__2022-06-16T00:00:00+00:00', '--job-id', '1294', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpfq9qhxrz', '--error-file', '/tmp/tmph5xir7_h']
+[2022-06-17 19:46:39,468] {standard_task_runner.py:80} INFO - Job 1294: Subtask transforma_tabela
+[2022-06-17 19:46:39,551] {task_command.py:370} INFO - Running <TaskInstance: sales.transforma_tabela scheduled__2022-06-16T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-17 19:46:39,667] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-16T00:00:00+00:00
+[2022-06-17 19:46:39,735] {logging_mixin.py:115} INFO -      lastname firstname extension                            email              jobtitle
+0    Thompson    Leslie     x4065   lthompson@classicmodelcars.com             Sales Rep
+1      Fixter      Andy      x101     afixter@classicmodelcars.com             Sales Rep
+2        Bott     Larry     x2311       lbott@classicmodelcars.com             Sales Rep
+3    Castillo    Pamela     x2759   pcastillo@classicmodelcars.com             Sales Rep
+4        King       Tom      x103       tking@classicmodelcars.com             Sales Rep
+5       Marsh     Peter      x102      pmarsh@classicmodelcars.com             Sales Rep
+6   Patterson     Steve     x4334  spatterson@classicmodelcars.com             Sales Rep
+7         Bow   Anthony     x5428        abow@classicmodelcars.com    Sales Manager (NA)
+8       Tseng  Foon Yue     x2248      ftseng@classicmodelcars.com             Sales Rep
+9      Bondur      Loui     x6493     lbondur@classicmodelcars.com             Sales Rep
+10  Hernandez    Gerard     x2028   ghernande@classicmodelcars.com             Sales Rep
+11  Patterson      Mary     x4611   mpatterso@classicmodelcars.com              VP Sales
+12      Jones     Barry      x102      bjones@classicmodelcars.com             Sales Rep
+13      Nishi      Mami      x101      mnishi@classicmodelcars.com             Sales Rep
+14  Patterson   William     x4871  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+15   Jennings    Leslie     x3291   ljennings@classicmodelcars.com             Sales Rep
+16     Gerard    Martin     x2312     mgerard@classicmodelcars.com             Sales Rep
+17     Bondur    Gerard     x5408     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+18   Firrelli      Jeff     x9273   jfirrelli@classicmodelcars.com          VP Marketing
+19     Vanauf    George     x4102     gvanauf@classicmodelcars.com             Sales Rep
+20   Firrelli     Julie     x2173   jfirrelli@classicmodelcars.com             Sales Rep
+21     Murphy     Diane     x5800     dmurphy@classicmodelcars.com             President
+22       Kato   Yoshimi      x102       ykato@classicmodelcars.com             Sales Rep
+[2022-06-17 19:46:39,796] {python.py:173} INFO - Done. Returned value was: (                          customername contactlastname contactfirstname             phone  ...          state postalcode       country creditlimit
+0              Tekni Collectables Inc.           Brown          William        2015559350  ...             NJ      94019           USA     43000.0
+2       Canadian Gift Exchange Network          Tamuri           Yoshi     (604) 555-3392  ...             BC    V3F 2K1        Canada     90300.0
+3                 Osaka Souveniers Co.         Kentary             Mory  +81 06 6342 5555  ...          Osaka   530-0003         Japan     81200.0
+10                Classic Legends Inc.       Hernandez            Maria        2125558493  ...             NY      10022           USA     67500.0
+12                   Land of Toys Inc.             Lee             Kwai        2125557818  ...             NY      10022           USA    114900.0
+14              American Souvenirs Inc          Franco            Keith        2035557845  ...             CT      97823           USA         0.0
+15            Men R US Retailers, Ltd.        Chandler            Brian        2155554369  ...             CA      91003           USA     57700.0
+16               Diecast Classics Inc.           Leong           Kelvin        2155551555  ...             PA      70267           USA    100600.0
+20        Online Diecast Creations Co.           Young          Dorothy        6035558647  ...             NH      62005           USA    114200.0
+24            Signal Collectibles Ltd.          Taylor              Sue        4155554312  ...             CA      94217           USA     60300.0
+25           Souveniers And Things Co.          Huxley           Adrian   +61 2 9495 8555  ...            NSW       2067     Australia     93300.0
+28          Cambridge Collectables Co.           Tseng            Jerry        6175555555  ...             MA      51247           USA     43400.0
+33        Motor Mint Distributors Inc.         Salazar             Rosa        2155559857  ...             PA      71270           USA     72600.0
+34                    Gift Ideas Corp.           Lewis              Dan        2035554407  ...             CT      97561           USA     49700.0
+35                     Gift Depot Inc.            King            Julie        2035552570  ...             CT      97562           USA     84300.0
+36                     Microscale Inc.            Choi               Yu        2125551957  ...             NY      10022           USA     39800.0
+41                     Vitachrome Inc.           Frick          Michael        2125551500  ...             NY      10022           USA     76400.0
+45              Annas Decorations, Ltd           OHara             Anna      02 9936 8555  ...            NSW       2060     Australia    107800.0
+54        Collectable Mini Designs Co.        Thompson          Valarie        7605558146  ...             CA      91217           USA    105000.0
+62                  Muscle Machine Inc           Young             Jeff        2125557413  ...             NY      10022           USA    138500.0
+64                   giftsbymail.co.uk         Bennett           Helen     (198) 555-8888  ...  Isle of Wight   PO31 7PJ            UK     93900.0
+67                Technics Stores Inc.       Hashimoto             Juri        6505556809  ...             CA      94217           USA     84600.0
+68        Australian Collectables, Ltd        Clenahan             Sean    61-9-3844-6555  ...       Victoria       3150     Australia     60300.0
+69            Corporate Gift Ideas Co.           Brown            Julie        6505551386  ...             CA      94217           USA    105000.0
+70                   Boards & Toys Co.           Young             Mary        3105552373  ...             CA      92561           USA     11000.0
+72             Tokyo Collectables, Ltd       Shimamura            Akiko   +81 3 3584 0555  ...          Tokyo   106-0032         Japan     94400.0
+74                     Mini Wheels Co.          Murphy            Julie        6505555787  ...             CA      94217           USA     64600.0
+75                    FunGiftIdeas.com         Benitez          Violeta        5085552555  ...             MA      50553           USA     85800.0
+76                    Super Scale Inc.          Murphy           Leslie        2035559545  ...             CT      97823           USA     95400.0
+78            Online Mini Collectables         Barajas           Miguel        6175557555  ...             MA      58339           USA     68700.0
+79             Classic Gift Ideas, Inc       Cervantes        Francisca        2155554695  ...             PA      71270           USA     81100.0
+80           The Sharp Gifts Warehouse           Frick              Sue        4085553659  ...             CA      94217           USA     77600.0
+81         Australian Gift Network, Co        Calaghan              Ben    61-7-3844-6555  ...     Queensland       4101     Australia     51600.0
+82                 Mini Creations Ltd.           Huang             Wing        5085559555  ...             MA      50553           USA     94500.0
+86   Royal Canadian Collectables, Ltd.         Lincoln       Elizabeth     (604) 555-4555  ...             BC    T2F 8M4        Canada     89600.0
+90                 Martas Replicas Co.       Hernandez            Marta        6175558555  ...             MA      51247           USA    123700.0
+92          Collectables For Less Inc.          Nelson            Allen        6175558555  ...             MA      58339           USA     70700.0
+98        Québec Home Shopping Network       Fresnière            Jean     (514) 555-8054  ...         Québec    H1J 1C3        Canada     48700.0
+103                 Signal Gift Stores            King             Jean        7025551838  ...             NV      83030           USA     71800.0
+107                  Toys4GrownUps.com           Young            Julie        6265557265  ...             CA      90003           USA     90700.0
+108         Australian Collectors, Co.        Ferguson            Peter      03 9520 4555  ...       Victoria       3004     Australia    117300.0
+110               SAR Distributors, Co           Kuger           Armand   +27 21 550 3555  ...       Pretoria       0028  South Africa         0.0
+112                  Gifts4AllAges.com         Yoshido             Juri        6175559555  ...             MA      51003           USA     41900.0
+114       Mini Gifts Distributors Ltd.          Nelson            Susan        4155551450  ...             CA      97562           USA    210500.0
+118                      Mini Classics           Frick            Steve        9145554562  ...             NY      24067           USA    102700.0
+119        West Coast Collectables Co.        Thompson            Steve        3105553722  ...             CA      94019           USA     55400.0
+120               Diecast Collectables          Franco          Valarie        6175552555  ...             MA      51003           USA     85100.0
+121            Auto-Moto Classics Inc.          Taylor           Leslie        6175558428  ...             MA      58339           USA     23000.0
+
+[48 rows x 10 columns],                                productname       productline              productvendor                                 productdescription
+0                   1964 Mercedes Tour Bus  Trucks and Buses       Unimax Art Galleries  Exact replica. 100+ parts. working steering sy...
+1                    1976 Ford Gran Torino      Classic Cars       Gearbox Collectibles  Highly detailed 1976 Ford Gran Torino \"Starsk...
+2    1950s Chicago Surface Lines Streetcar            Trains       Gearbox Collectibles  This streetcar is a joy to see. It has 80 sepa...
+3                1957 Corvette Convertible      Classic Cars    Classic Metal Creations  1957 die cast Corvette Convertible in Roman Re...
+4                          1993 Mazda RX-7      Classic Cars   Highway 66 Mini Classics  This model features, opening hood, opening doo...
+..                                     ...               ...                        ...                                                ...
+105                      2001 Ferrari Enzo      Classic Cars        Second Gear Diecast  Turnable front wheels; steering function; deta...
+106            1992 Ferrari 360 Spider red      Classic Cars       Unimax Art Galleries  his replica features opening doors, superb det...
+107                       1995 Honda Civic      Classic Cars            Min Lin Diecast  This model features, opening hood, opening doo...
+108                         1958 Setra Bus  Trucks and Buses  Welly Diecast Productions  Model features 30 windows, skylights & glare r...
+109   2003 Harley-Davidson Eagle Drag Bike       Motorcycles          Red Start Diecast  Model features, official Harley Davidson logos...
+
+[110 rows x 4 columns],       orderdate requireddate shippeddate
+1    2003-11-06   2003-11-15  2003-11-10
+2    2003-11-20   2003-11-29  2003-11-25
+3    2005-05-09   2005-05-20  2005-05-12
+4    2004-08-20   2004-08-26  2004-08-22
+5    2004-05-26   2004-06-04  2004-05-29
+..          ...          ...         ...
+318  2004-05-04   2004-05-12  2004-05-09
+319  2004-07-23   2004-08-02  2004-07-29
+320  2004-12-16   2004-12-22  2004-12-18
+321  2004-02-20   2004-02-29  2004-02-24
+322  2003-06-03   2003-06-09  2003-06-06
+
+[309 rows x 3 columns],                             customername                                productname   orderdate requireddate  lastname  quantityordered  priceeach  buyprice
+0                     Signal Gift Stores  1938 Cadillac V-16 Presidential Limousine  2003-05-21   2003-05-29  Thompson             22.0      36.29     20.61
+1                      Auto Canal+ Petit        1936 Harley Davidson El Knucklehead  2005-04-07   2005-04-14    Bondur             55.0      58.15     24.23
+2                 Saveley & Henriot, Co.                          1903 Ford Model A  2004-01-02   2004-01-11    Bondur             24.0     117.47     68.30
+3                     Enaco Distributors                      The Schooner Bluenose  2003-11-26   2003-12-02    Gerard             23.0      60.00     34.00
+4                Dragon Souveniers, Ltd.                1954 Greyhound Scenicruiser  2003-10-22   2003-10-31     Nishi             48.0      50.86     25.98
+...                                  ...                                        ...         ...          ...       ...              ...        ...       ...
+2992                Classic Legends Inc.                        1972 Alfa Romeo GTA  2004-11-21   2004-11-30     Tseng             25.0     131.92     85.68
+2993  Bavarian Collectables Imports, Co.                         F/A 18 Hornet 1/72  2004-09-15   2004-09-22     Jones             22.0      74.40     54.40
+2994                Classic Legends Inc.                1913 Ford Model T Speedster  2003-10-20   2003-10-27     Tseng             31.0     101.31     60.78
+2995                  Muscle Machine Inc               1999 Indy 500 Monte Carlo SS  2003-12-02   2003-12-10     Tseng             27.0     106.92     56.76
+2996        Québec Home Shopping Network                                 Pont Yacht  2004-06-17   2004-06-25     Tseng             29.0      43.68     33.30
+
+[2996 rows x 8 columns],      lastname firstname                            email              jobtitle
+0    Thompson    Leslie   lthompson@classicmodelcars.com             Sales Rep
+1      Fixter      Andy     afixter@classicmodelcars.com             Sales Rep
+2        Bott     Larry       lbott@classicmodelcars.com             Sales Rep
+3    Castillo    Pamela   pcastillo@classicmodelcars.com             Sales Rep
+4        King       Tom       tking@classicmodelcars.com             Sales Rep
+5       Marsh     Peter      pmarsh@classicmodelcars.com             Sales Rep
+6   Patterson     Steve  spatterson@classicmodelcars.com             Sales Rep
+7         Bow   Anthony        abow@classicmodelcars.com    Sales Manager (NA)
+8       Tseng  Foon Yue      ftseng@classicmodelcars.com             Sales Rep
+9      Bondur      Loui     lbondur@classicmodelcars.com             Sales Rep
+10  Hernandez    Gerard   ghernande@classicmodelcars.com             Sales Rep
+11  Patterson      Mary   mpatterso@classicmodelcars.com              VP Sales
+12      Jones     Barry      bjones@classicmodelcars.com             Sales Rep
+13      Nishi      Mami      mnishi@classicmodelcars.com             Sales Rep
+14  Patterson   William  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+15   Jennings    Leslie   ljennings@classicmodelcars.com             Sales Rep
+16     Gerard    Martin     mgerard@classicmodelcars.com             Sales Rep
+17     Bondur    Gerard     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+18   Firrelli      Jeff   jfirrelli@classicmodelcars.com          VP Marketing
+19     Vanauf    George     gvanauf@classicmodelcars.com             Sales Rep
+20   Firrelli     Julie   jfirrelli@classicmodelcars.com             Sales Rep
+21     Murphy     Diane     dmurphy@classicmodelcars.com             President
+22       Kato   Yoshimi       ykato@classicmodelcars.com             Sales Rep)
+[2022-06-17 19:46:39,907] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=transforma_tabela, execution_date=20220616T000000, start_date=20220617T224639, end_date=20220617T224639
+[2022-06-17 19:46:39,960] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-17 19:46:40,033] {local_task_job.py:273} INFO - 5 downstream tasks scheduled from follow-on schedule check
+[2022-06-17 19:49:47,781] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.transforma_tabela scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 19:49:47,801] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.transforma_tabela scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 19:49:47,801] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 19:49:47,801] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-17 19:49:47,801] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 19:49:47,822] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-16 00:00:00+00:00
+[2022-06-17 19:49:47,832] {standard_task_runner.py:52} INFO - Started process 169214 to run task
+[2022-06-17 19:49:47,839] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'transforma_tabela', 'scheduled__2022-06-16T00:00:00+00:00', '--job-id', '1308', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpegwzjkbc', '--error-file', '/tmp/tmp91kbym28']
+[2022-06-17 19:49:47,840] {standard_task_runner.py:80} INFO - Job 1308: Subtask transforma_tabela
+[2022-06-17 19:49:47,923] {task_command.py:370} INFO - Running <TaskInstance: sales.transforma_tabela scheduled__2022-06-16T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-17 19:49:48,031] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-16T00:00:00+00:00
+[2022-06-17 19:49:48,087] {logging_mixin.py:115} INFO -      lastname firstname extension                            email              jobtitle
+0    Thompson    Leslie     x4065   lthompson@classicmodelcars.com             Sales Rep
+1      Fixter      Andy      x101     afixter@classicmodelcars.com             Sales Rep
+2        Bott     Larry     x2311       lbott@classicmodelcars.com             Sales Rep
+3    Castillo    Pamela     x2759   pcastillo@classicmodelcars.com             Sales Rep
+4        King       Tom      x103       tking@classicmodelcars.com             Sales Rep
+5       Marsh     Peter      x102      pmarsh@classicmodelcars.com             Sales Rep
+6   Patterson     Steve     x4334  spatterson@classicmodelcars.com             Sales Rep
+7         Bow   Anthony     x5428        abow@classicmodelcars.com    Sales Manager (NA)
+8       Tseng  Foon Yue     x2248      ftseng@classicmodelcars.com             Sales Rep
+9      Bondur      Loui     x6493     lbondur@classicmodelcars.com             Sales Rep
+10  Hernandez    Gerard     x2028   ghernande@classicmodelcars.com             Sales Rep
+11  Patterson      Mary     x4611   mpatterso@classicmodelcars.com              VP Sales
+12      Jones     Barry      x102      bjones@classicmodelcars.com             Sales Rep
+13      Nishi      Mami      x101      mnishi@classicmodelcars.com             Sales Rep
+14  Patterson   William     x4871  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+15   Jennings    Leslie     x3291   ljennings@classicmodelcars.com             Sales Rep
+16     Gerard    Martin     x2312     mgerard@classicmodelcars.com             Sales Rep
+17     Bondur    Gerard     x5408     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+18   Firrelli      Jeff     x9273   jfirrelli@classicmodelcars.com          VP Marketing
+19     Vanauf    George     x4102     gvanauf@classicmodelcars.com             Sales Rep
+20   Firrelli     Julie     x2173   jfirrelli@classicmodelcars.com             Sales Rep
+21     Murphy     Diane     x5800     dmurphy@classicmodelcars.com             President
+22       Kato   Yoshimi      x102       ykato@classicmodelcars.com             Sales Rep
+[2022-06-17 19:49:48,147] {python.py:173} INFO - Done. Returned value was: (                          customername contactlastname contactfirstname             phone  ...          state postalcode       country creditlimit
+0              Tekni Collectables Inc.           Brown          William        2015559350  ...             NJ      94019           USA     43000.0
+2       Canadian Gift Exchange Network          Tamuri           Yoshi     (604) 555-3392  ...             BC    V3F 2K1        Canada     90300.0
+3                 Osaka Souveniers Co.         Kentary             Mory  +81 06 6342 5555  ...          Osaka   530-0003         Japan     81200.0
+10                Classic Legends Inc.       Hernandez            Maria        2125558493  ...             NY      10022           USA     67500.0
+12                   Land of Toys Inc.             Lee             Kwai        2125557818  ...             NY      10022           USA    114900.0
+14              American Souvenirs Inc          Franco            Keith        2035557845  ...             CT      97823           USA         0.0
+15            Men R US Retailers, Ltd.        Chandler            Brian        2155554369  ...             CA      91003           USA     57700.0
+16               Diecast Classics Inc.           Leong           Kelvin        2155551555  ...             PA      70267           USA    100600.0
+20        Online Diecast Creations Co.           Young          Dorothy        6035558647  ...             NH      62005           USA    114200.0
+24            Signal Collectibles Ltd.          Taylor              Sue        4155554312  ...             CA      94217           USA     60300.0
+25           Souveniers And Things Co.          Huxley           Adrian   +61 2 9495 8555  ...            NSW       2067     Australia     93300.0
+28          Cambridge Collectables Co.           Tseng            Jerry        6175555555  ...             MA      51247           USA     43400.0
+33        Motor Mint Distributors Inc.         Salazar             Rosa        2155559857  ...             PA      71270           USA     72600.0
+34                    Gift Ideas Corp.           Lewis              Dan        2035554407  ...             CT      97561           USA     49700.0
+35                     Gift Depot Inc.            King            Julie        2035552570  ...             CT      97562           USA     84300.0
+36                     Microscale Inc.            Choi               Yu        2125551957  ...             NY      10022           USA     39800.0
+41                     Vitachrome Inc.           Frick          Michael        2125551500  ...             NY      10022           USA     76400.0
+45              Annas Decorations, Ltd           OHara             Anna      02 9936 8555  ...            NSW       2060     Australia    107800.0
+54        Collectable Mini Designs Co.        Thompson          Valarie        7605558146  ...             CA      91217           USA    105000.0
+62                  Muscle Machine Inc           Young             Jeff        2125557413  ...             NY      10022           USA    138500.0
+64                   giftsbymail.co.uk         Bennett           Helen     (198) 555-8888  ...  Isle of Wight   PO31 7PJ            UK     93900.0
+67                Technics Stores Inc.       Hashimoto             Juri        6505556809  ...             CA      94217           USA     84600.0
+68        Australian Collectables, Ltd        Clenahan             Sean    61-9-3844-6555  ...       Victoria       3150     Australia     60300.0
+69            Corporate Gift Ideas Co.           Brown            Julie        6505551386  ...             CA      94217           USA    105000.0
+70                   Boards & Toys Co.           Young             Mary        3105552373  ...             CA      92561           USA     11000.0
+72             Tokyo Collectables, Ltd       Shimamura            Akiko   +81 3 3584 0555  ...          Tokyo   106-0032         Japan     94400.0
+74                     Mini Wheels Co.          Murphy            Julie        6505555787  ...             CA      94217           USA     64600.0
+75                    FunGiftIdeas.com         Benitez          Violeta        5085552555  ...             MA      50553           USA     85800.0
+76                    Super Scale Inc.          Murphy           Leslie        2035559545  ...             CT      97823           USA     95400.0
+78            Online Mini Collectables         Barajas           Miguel        6175557555  ...             MA      58339           USA     68700.0
+79             Classic Gift Ideas, Inc       Cervantes        Francisca        2155554695  ...             PA      71270           USA     81100.0
+80           The Sharp Gifts Warehouse           Frick              Sue        4085553659  ...             CA      94217           USA     77600.0
+81         Australian Gift Network, Co        Calaghan              Ben    61-7-3844-6555  ...     Queensland       4101     Australia     51600.0
+82                 Mini Creations Ltd.           Huang             Wing        5085559555  ...             MA      50553           USA     94500.0
+86   Royal Canadian Collectables, Ltd.         Lincoln       Elizabeth     (604) 555-4555  ...             BC    T2F 8M4        Canada     89600.0
+90                 Martas Replicas Co.       Hernandez            Marta        6175558555  ...             MA      51247           USA    123700.0
+92          Collectables For Less Inc.          Nelson            Allen        6175558555  ...             MA      58339           USA     70700.0
+98        Québec Home Shopping Network       Fresnière            Jean     (514) 555-8054  ...         Québec    H1J 1C3        Canada     48700.0
+103                 Signal Gift Stores            King             Jean        7025551838  ...             NV      83030           USA     71800.0
+107                  Toys4GrownUps.com           Young            Julie        6265557265  ...             CA      90003           USA     90700.0
+108         Australian Collectors, Co.        Ferguson            Peter      03 9520 4555  ...       Victoria       3004     Australia    117300.0
+110               SAR Distributors, Co           Kuger           Armand   +27 21 550 3555  ...       Pretoria       0028  South Africa         0.0
+112                  Gifts4AllAges.com         Yoshido             Juri        6175559555  ...             MA      51003           USA     41900.0
+114       Mini Gifts Distributors Ltd.          Nelson            Susan        4155551450  ...             CA      97562           USA    210500.0
+118                      Mini Classics           Frick            Steve        9145554562  ...             NY      24067           USA    102700.0
+119        West Coast Collectables Co.        Thompson            Steve        3105553722  ...             CA      94019           USA     55400.0
+120               Diecast Collectables          Franco          Valarie        6175552555  ...             MA      51003           USA     85100.0
+121            Auto-Moto Classics Inc.          Taylor           Leslie        6175558428  ...             MA      58339           USA     23000.0
+
+[48 rows x 10 columns],                                productname       productline              productvendor                                 productdescription
+0                   1964 Mercedes Tour Bus  Trucks and Buses       Unimax Art Galleries  Exact replica. 100+ parts. working steering sy...
+1                    1976 Ford Gran Torino      Classic Cars       Gearbox Collectibles  Highly detailed 1976 Ford Gran Torino \"Starsk...
+2    1950s Chicago Surface Lines Streetcar            Trains       Gearbox Collectibles  This streetcar is a joy to see. It has 80 sepa...
+3                1957 Corvette Convertible      Classic Cars    Classic Metal Creations  1957 die cast Corvette Convertible in Roman Re...
+4                          1993 Mazda RX-7      Classic Cars   Highway 66 Mini Classics  This model features, opening hood, opening doo...
+..                                     ...               ...                        ...                                                ...
+105                      2001 Ferrari Enzo      Classic Cars        Second Gear Diecast  Turnable front wheels; steering function; deta...
+106            1992 Ferrari 360 Spider red      Classic Cars       Unimax Art Galleries  his replica features opening doors, superb det...
+107                       1995 Honda Civic      Classic Cars            Min Lin Diecast  This model features, opening hood, opening doo...
+108                         1958 Setra Bus  Trucks and Buses  Welly Diecast Productions  Model features 30 windows, skylights & glare r...
+109   2003 Harley-Davidson Eagle Drag Bike       Motorcycles          Red Start Diecast  Model features, official Harley Davidson logos...
+
+[110 rows x 4 columns],       orderdate requireddate shippeddate
+1    2003-11-06   2003-11-15  2003-11-10
+2    2003-11-20   2003-11-29  2003-11-25
+3    2005-05-09   2005-05-20  2005-05-12
+4    2004-08-20   2004-08-26  2004-08-22
+5    2004-05-26   2004-06-04  2004-05-29
+..          ...          ...         ...
+318  2004-05-04   2004-05-12  2004-05-09
+319  2004-07-23   2004-08-02  2004-07-29
+320  2004-12-16   2004-12-22  2004-12-18
+321  2004-02-20   2004-02-29  2004-02-24
+322  2003-06-03   2003-06-09  2003-06-06
+
+[309 rows x 3 columns],                             customername                                productname   orderdate requireddate  lastname  quantityordered  priceeach  buyprice
+0                     Signal Gift Stores  1938 Cadillac V-16 Presidential Limousine  2003-05-21   2003-05-29  Thompson             22.0      36.29     20.61
+1                      Auto Canal+ Petit        1936 Harley Davidson El Knucklehead  2005-04-07   2005-04-14    Bondur             55.0      58.15     24.23
+2                 Saveley & Henriot, Co.                          1903 Ford Model A  2004-01-02   2004-01-11    Bondur             24.0     117.47     68.30
+3                     Enaco Distributors                      The Schooner Bluenose  2003-11-26   2003-12-02    Gerard             23.0      60.00     34.00
+4                Dragon Souveniers, Ltd.                1954 Greyhound Scenicruiser  2003-10-22   2003-10-31     Nishi             48.0      50.86     25.98
+...                                  ...                                        ...         ...          ...       ...              ...        ...       ...
+2992                Classic Legends Inc.                        1972 Alfa Romeo GTA  2004-11-21   2004-11-30     Tseng             25.0     131.92     85.68
+2993  Bavarian Collectables Imports, Co.                         F/A 18 Hornet 1/72  2004-09-15   2004-09-22     Jones             22.0      74.40     54.40
+2994                Classic Legends Inc.                1913 Ford Model T Speedster  2003-10-20   2003-10-27     Tseng             31.0     101.31     60.78
+2995                  Muscle Machine Inc               1999 Indy 500 Monte Carlo SS  2003-12-02   2003-12-10     Tseng             27.0     106.92     56.76
+2996        Québec Home Shopping Network                                 Pont Yacht  2004-06-17   2004-06-25     Tseng             29.0      43.68     33.30
+
+[2996 rows x 8 columns],      lastname firstname                            email              jobtitle
+0    Thompson    Leslie   lthompson@classicmodelcars.com             Sales Rep
+1      Fixter      Andy     afixter@classicmodelcars.com             Sales Rep
+2        Bott     Larry       lbott@classicmodelcars.com             Sales Rep
+3    Castillo    Pamela   pcastillo@classicmodelcars.com             Sales Rep
+4        King       Tom       tking@classicmodelcars.com             Sales Rep
+5       Marsh     Peter      pmarsh@classicmodelcars.com             Sales Rep
+6   Patterson     Steve  spatterson@classicmodelcars.com             Sales Rep
+7         Bow   Anthony        abow@classicmodelcars.com    Sales Manager (NA)
+8       Tseng  Foon Yue      ftseng@classicmodelcars.com             Sales Rep
+9      Bondur      Loui     lbondur@classicmodelcars.com             Sales Rep
+10  Hernandez    Gerard   ghernande@classicmodelcars.com             Sales Rep
+11  Patterson      Mary   mpatterso@classicmodelcars.com              VP Sales
+12      Jones     Barry      bjones@classicmodelcars.com             Sales Rep
+13      Nishi      Mami      mnishi@classicmodelcars.com             Sales Rep
+14  Patterson   William  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+15   Jennings    Leslie   ljennings@classicmodelcars.com             Sales Rep
+16     Gerard    Martin     mgerard@classicmodelcars.com             Sales Rep
+17     Bondur    Gerard     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+18   Firrelli      Jeff   jfirrelli@classicmodelcars.com          VP Marketing
+19     Vanauf    George     gvanauf@classicmodelcars.com             Sales Rep
+20   Firrelli     Julie   jfirrelli@classicmodelcars.com             Sales Rep
+21     Murphy     Diane     dmurphy@classicmodelcars.com             President
+22       Kato   Yoshimi       ykato@classicmodelcars.com             Sales Rep)
+[2022-06-17 19:49:48,251] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=transforma_tabela, execution_date=20220616T000000, start_date=20220617T224947, end_date=20220617T224948
+[2022-06-17 19:49:48,289] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-17 19:49:48,366] {local_task_job.py:273} INFO - 5 downstream tasks scheduled from follow-on schedule check
+[2022-06-17 20:02:27,537] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.transforma_tabela scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 20:02:27,553] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.transforma_tabela scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 20:02:27,554] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 20:02:27,554] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-17 20:02:27,554] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 20:02:27,572] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-16 00:00:00+00:00
+[2022-06-17 20:02:27,580] {standard_task_runner.py:52} INFO - Started process 172878 to run task
+[2022-06-17 20:02:27,585] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'transforma_tabela', 'scheduled__2022-06-16T00:00:00+00:00', '--job-id', '1323', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpsaawraqp', '--error-file', '/tmp/tmp_hjsqel0']
+[2022-06-17 20:02:27,586] {standard_task_runner.py:80} INFO - Job 1323: Subtask transforma_tabela
+[2022-06-17 20:02:27,666] {task_command.py:370} INFO - Running <TaskInstance: sales.transforma_tabela scheduled__2022-06-16T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-17 20:02:27,779] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-16T00:00:00+00:00
+[2022-06-17 20:02:27,828] {logging_mixin.py:115} INFO -      lastname firstname extension                            email              jobtitle
+0    Thompson    Leslie     x4065   lthompson@classicmodelcars.com             Sales Rep
+1      Fixter      Andy      x101     afixter@classicmodelcars.com             Sales Rep
+2        Bott     Larry     x2311       lbott@classicmodelcars.com             Sales Rep
+3    Castillo    Pamela     x2759   pcastillo@classicmodelcars.com             Sales Rep
+4        King       Tom      x103       tking@classicmodelcars.com             Sales Rep
+5       Marsh     Peter      x102      pmarsh@classicmodelcars.com             Sales Rep
+6   Patterson     Steve     x4334  spatterson@classicmodelcars.com             Sales Rep
+7         Bow   Anthony     x5428        abow@classicmodelcars.com    Sales Manager (NA)
+8       Tseng  Foon Yue     x2248      ftseng@classicmodelcars.com             Sales Rep
+9      Bondur      Loui     x6493     lbondur@classicmodelcars.com             Sales Rep
+10  Hernandez    Gerard     x2028   ghernande@classicmodelcars.com             Sales Rep
+11  Patterson      Mary     x4611   mpatterso@classicmodelcars.com              VP Sales
+12      Jones     Barry      x102      bjones@classicmodelcars.com             Sales Rep
+13      Nishi      Mami      x101      mnishi@classicmodelcars.com             Sales Rep
+14  Patterson   William     x4871  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+15   Jennings    Leslie     x3291   ljennings@classicmodelcars.com             Sales Rep
+16     Gerard    Martin     x2312     mgerard@classicmodelcars.com             Sales Rep
+17     Bondur    Gerard     x5408     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+18   Firrelli      Jeff     x9273   jfirrelli@classicmodelcars.com          VP Marketing
+19     Vanauf    George     x4102     gvanauf@classicmodelcars.com             Sales Rep
+20   Firrelli     Julie     x2173   jfirrelli@classicmodelcars.com             Sales Rep
+21     Murphy     Diane     x5800     dmurphy@classicmodelcars.com             President
+22       Kato   Yoshimi      x102       ykato@classicmodelcars.com             Sales Rep
+[2022-06-17 20:02:27,884] {python.py:173} INFO - Done. Returned value was: (                          customername contactlastname contactfirstname             phone  ...          state postalcode       country creditlimit
+0              Tekni Collectables Inc.           Brown          William        2015559350  ...             NJ      94019           USA     43000.0
+2       Canadian Gift Exchange Network          Tamuri           Yoshi     (604) 555-3392  ...             BC    V3F 2K1        Canada     90300.0
+3                 Osaka Souveniers Co.         Kentary             Mory  +81 06 6342 5555  ...          Osaka   530-0003         Japan     81200.0
+10                Classic Legends Inc.       Hernandez            Maria        2125558493  ...             NY      10022           USA     67500.0
+12                   Land of Toys Inc.             Lee             Kwai        2125557818  ...             NY      10022           USA    114900.0
+14              American Souvenirs Inc          Franco            Keith        2035557845  ...             CT      97823           USA         0.0
+15            Men R US Retailers, Ltd.        Chandler            Brian        2155554369  ...             CA      91003           USA     57700.0
+16               Diecast Classics Inc.           Leong           Kelvin        2155551555  ...             PA      70267           USA    100600.0
+20        Online Diecast Creations Co.           Young          Dorothy        6035558647  ...             NH      62005           USA    114200.0
+24            Signal Collectibles Ltd.          Taylor              Sue        4155554312  ...             CA      94217           USA     60300.0
+25           Souveniers And Things Co.          Huxley           Adrian   +61 2 9495 8555  ...            NSW       2067     Australia     93300.0
+28          Cambridge Collectables Co.           Tseng            Jerry        6175555555  ...             MA      51247           USA     43400.0
+33        Motor Mint Distributors Inc.         Salazar             Rosa        2155559857  ...             PA      71270           USA     72600.0
+34                    Gift Ideas Corp.           Lewis              Dan        2035554407  ...             CT      97561           USA     49700.0
+35                     Gift Depot Inc.            King            Julie        2035552570  ...             CT      97562           USA     84300.0
+36                     Microscale Inc.            Choi               Yu        2125551957  ...             NY      10022           USA     39800.0
+41                     Vitachrome Inc.           Frick          Michael        2125551500  ...             NY      10022           USA     76400.0
+45              Annas Decorations, Ltd           OHara             Anna      02 9936 8555  ...            NSW       2060     Australia    107800.0
+54        Collectable Mini Designs Co.        Thompson          Valarie        7605558146  ...             CA      91217           USA    105000.0
+62                  Muscle Machine Inc           Young             Jeff        2125557413  ...             NY      10022           USA    138500.0
+64                   giftsbymail.co.uk         Bennett           Helen     (198) 555-8888  ...  Isle of Wight   PO31 7PJ            UK     93900.0
+67                Technics Stores Inc.       Hashimoto             Juri        6505556809  ...             CA      94217           USA     84600.0
+68        Australian Collectables, Ltd        Clenahan             Sean    61-9-3844-6555  ...       Victoria       3150     Australia     60300.0
+69            Corporate Gift Ideas Co.           Brown            Julie        6505551386  ...             CA      94217           USA    105000.0
+70                   Boards & Toys Co.           Young             Mary        3105552373  ...             CA      92561           USA     11000.0
+72             Tokyo Collectables, Ltd       Shimamura            Akiko   +81 3 3584 0555  ...          Tokyo   106-0032         Japan     94400.0
+74                     Mini Wheels Co.          Murphy            Julie        6505555787  ...             CA      94217           USA     64600.0
+75                    FunGiftIdeas.com         Benitez          Violeta        5085552555  ...             MA      50553           USA     85800.0
+76                    Super Scale Inc.          Murphy           Leslie        2035559545  ...             CT      97823           USA     95400.0
+78            Online Mini Collectables         Barajas           Miguel        6175557555  ...             MA      58339           USA     68700.0
+79             Classic Gift Ideas, Inc       Cervantes        Francisca        2155554695  ...             PA      71270           USA     81100.0
+80           The Sharp Gifts Warehouse           Frick              Sue        4085553659  ...             CA      94217           USA     77600.0
+81         Australian Gift Network, Co        Calaghan              Ben    61-7-3844-6555  ...     Queensland       4101     Australia     51600.0
+82                 Mini Creations Ltd.           Huang             Wing        5085559555  ...             MA      50553           USA     94500.0
+86   Royal Canadian Collectables, Ltd.         Lincoln       Elizabeth     (604) 555-4555  ...             BC    T2F 8M4        Canada     89600.0
+90                 Martas Replicas Co.       Hernandez            Marta        6175558555  ...             MA      51247           USA    123700.0
+92          Collectables For Less Inc.          Nelson            Allen        6175558555  ...             MA      58339           USA     70700.0
+98        Québec Home Shopping Network       Fresnière            Jean     (514) 555-8054  ...         Québec    H1J 1C3        Canada     48700.0
+103                 Signal Gift Stores            King             Jean        7025551838  ...             NV      83030           USA     71800.0
+107                  Toys4GrownUps.com           Young            Julie        6265557265  ...             CA      90003           USA     90700.0
+108         Australian Collectors, Co.        Ferguson            Peter      03 9520 4555  ...       Victoria       3004     Australia    117300.0
+110               SAR Distributors, Co           Kuger           Armand   +27 21 550 3555  ...       Pretoria       0028  South Africa         0.0
+112                  Gifts4AllAges.com         Yoshido             Juri        6175559555  ...             MA      51003           USA     41900.0
+114       Mini Gifts Distributors Ltd.          Nelson            Susan        4155551450  ...             CA      97562           USA    210500.0
+118                      Mini Classics           Frick            Steve        9145554562  ...             NY      24067           USA    102700.0
+119        West Coast Collectables Co.        Thompson            Steve        3105553722  ...             CA      94019           USA     55400.0
+120               Diecast Collectables          Franco          Valarie        6175552555  ...             MA      51003           USA     85100.0
+121            Auto-Moto Classics Inc.          Taylor           Leslie        6175558428  ...             MA      58339           USA     23000.0
+
+[48 rows x 10 columns],                                productname       productline              productvendor                                 productdescription
+0                   1964 Mercedes Tour Bus  Trucks and Buses       Unimax Art Galleries  Exact replica. 100+ parts. working steering sy...
+1                    1976 Ford Gran Torino      Classic Cars       Gearbox Collectibles  Highly detailed 1976 Ford Gran Torino \"Starsk...
+2    1950s Chicago Surface Lines Streetcar            Trains       Gearbox Collectibles  This streetcar is a joy to see. It has 80 sepa...
+3                1957 Corvette Convertible      Classic Cars    Classic Metal Creations  1957 die cast Corvette Convertible in Roman Re...
+4                          1993 Mazda RX-7      Classic Cars   Highway 66 Mini Classics  This model features, opening hood, opening doo...
+..                                     ...               ...                        ...                                                ...
+105                      2001 Ferrari Enzo      Classic Cars        Second Gear Diecast  Turnable front wheels; steering function; deta...
+106            1992 Ferrari 360 Spider red      Classic Cars       Unimax Art Galleries  his replica features opening doors, superb det...
+107                       1995 Honda Civic      Classic Cars            Min Lin Diecast  This model features, opening hood, opening doo...
+108                         1958 Setra Bus  Trucks and Buses  Welly Diecast Productions  Model features 30 windows, skylights & glare r...
+109   2003 Harley-Davidson Eagle Drag Bike       Motorcycles          Red Start Diecast  Model features, official Harley Davidson logos...
+
+[110 rows x 4 columns],       orderdate requireddate shippeddate
+1    2003-11-06   2003-11-15  2003-11-10
+2    2003-11-20   2003-11-29  2003-11-25
+3    2005-05-09   2005-05-20  2005-05-12
+4    2004-08-20   2004-08-26  2004-08-22
+5    2004-05-26   2004-06-04  2004-05-29
+..          ...          ...         ...
+318  2004-05-04   2004-05-12  2004-05-09
+319  2004-07-23   2004-08-02  2004-07-29
+320  2004-12-16   2004-12-22  2004-12-18
+321  2004-02-20   2004-02-29  2004-02-24
+322  2003-06-03   2003-06-09  2003-06-06
+
+[309 rows x 3 columns],                             customername                                productname   orderdate requireddate  lastname  quantityordered  priceeach  buyprice
+0                     Signal Gift Stores  1938 Cadillac V-16 Presidential Limousine  2003-05-21   2003-05-29  Thompson             22.0      36.29     20.61
+1                      Auto Canal+ Petit        1936 Harley Davidson El Knucklehead  2005-04-07   2005-04-14    Bondur             55.0      58.15     24.23
+2                 Saveley & Henriot, Co.                          1903 Ford Model A  2004-01-02   2004-01-11    Bondur             24.0     117.47     68.30
+3                     Enaco Distributors                      The Schooner Bluenose  2003-11-26   2003-12-02    Gerard             23.0      60.00     34.00
+4                Dragon Souveniers, Ltd.                1954 Greyhound Scenicruiser  2003-10-22   2003-10-31     Nishi             48.0      50.86     25.98
+...                                  ...                                        ...         ...          ...       ...              ...        ...       ...
+2992                Classic Legends Inc.                        1972 Alfa Romeo GTA  2004-11-21   2004-11-30     Tseng             25.0     131.92     85.68
+2993  Bavarian Collectables Imports, Co.                         F/A 18 Hornet 1/72  2004-09-15   2004-09-22     Jones             22.0      74.40     54.40
+2994                Classic Legends Inc.                1913 Ford Model T Speedster  2003-10-20   2003-10-27     Tseng             31.0     101.31     60.78
+2995                  Muscle Machine Inc               1999 Indy 500 Monte Carlo SS  2003-12-02   2003-12-10     Tseng             27.0     106.92     56.76
+2996        Québec Home Shopping Network                                 Pont Yacht  2004-06-17   2004-06-25     Tseng             29.0      43.68     33.30
+
+[2996 rows x 8 columns],      lastname firstname                            email              jobtitle
+0    Thompson    Leslie   lthompson@classicmodelcars.com             Sales Rep
+1      Fixter      Andy     afixter@classicmodelcars.com             Sales Rep
+2        Bott     Larry       lbott@classicmodelcars.com             Sales Rep
+3    Castillo    Pamela   pcastillo@classicmodelcars.com             Sales Rep
+4        King       Tom       tking@classicmodelcars.com             Sales Rep
+5       Marsh     Peter      pmarsh@classicmodelcars.com             Sales Rep
+6   Patterson     Steve  spatterson@classicmodelcars.com             Sales Rep
+7         Bow   Anthony        abow@classicmodelcars.com    Sales Manager (NA)
+8       Tseng  Foon Yue      ftseng@classicmodelcars.com             Sales Rep
+9      Bondur      Loui     lbondur@classicmodelcars.com             Sales Rep
+10  Hernandez    Gerard   ghernande@classicmodelcars.com             Sales Rep
+11  Patterson      Mary   mpatterso@classicmodelcars.com              VP Sales
+12      Jones     Barry      bjones@classicmodelcars.com             Sales Rep
+13      Nishi      Mami      mnishi@classicmodelcars.com             Sales Rep
+14  Patterson   William  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+15   Jennings    Leslie   ljennings@classicmodelcars.com             Sales Rep
+16     Gerard    Martin     mgerard@classicmodelcars.com             Sales Rep
+17     Bondur    Gerard     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+18   Firrelli      Jeff   jfirrelli@classicmodelcars.com          VP Marketing
+19     Vanauf    George     gvanauf@classicmodelcars.com             Sales Rep
+20   Firrelli     Julie   jfirrelli@classicmodelcars.com             Sales Rep
+21     Murphy     Diane     dmurphy@classicmodelcars.com             President
+22       Kato   Yoshimi       ykato@classicmodelcars.com             Sales Rep)
+[2022-06-17 20:02:27,979] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=transforma_tabela, execution_date=20220616T000000, start_date=20220617T230227, end_date=20220617T230227
+[2022-06-17 20:02:28,037] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-17 20:02:28,117] {local_task_job.py:273} INFO - 5 downstream tasks scheduled from follow-on schedule check
+[2022-06-17 20:08:24,615] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.transforma_tabela scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 20:08:24,632] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.transforma_tabela scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 20:08:24,633] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 20:08:24,633] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-17 20:08:24,633] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 20:08:24,651] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-16 00:00:00+00:00
+[2022-06-17 20:08:24,660] {standard_task_runner.py:52} INFO - Started process 175208 to run task
+[2022-06-17 20:08:24,665] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'transforma_tabela', 'scheduled__2022-06-16T00:00:00+00:00', '--job-id', '1338', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpkr065f5w', '--error-file', '/tmp/tmprgcekoo8']
+[2022-06-17 20:08:24,666] {standard_task_runner.py:80} INFO - Job 1338: Subtask transforma_tabela
+[2022-06-17 20:08:24,750] {task_command.py:370} INFO - Running <TaskInstance: sales.transforma_tabela scheduled__2022-06-16T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-17 20:08:24,849] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-16T00:00:00+00:00
+[2022-06-17 20:08:24,901] {logging_mixin.py:115} INFO -      lastname firstname extension                            email              jobtitle
+0    Thompson    Leslie     x4065   lthompson@classicmodelcars.com             Sales Rep
+1      Fixter      Andy      x101     afixter@classicmodelcars.com             Sales Rep
+2        Bott     Larry     x2311       lbott@classicmodelcars.com             Sales Rep
+3    Castillo    Pamela     x2759   pcastillo@classicmodelcars.com             Sales Rep
+4        King       Tom      x103       tking@classicmodelcars.com             Sales Rep
+5       Marsh     Peter      x102      pmarsh@classicmodelcars.com             Sales Rep
+6   Patterson     Steve     x4334  spatterson@classicmodelcars.com             Sales Rep
+7         Bow   Anthony     x5428        abow@classicmodelcars.com    Sales Manager (NA)
+8       Tseng  Foon Yue     x2248      ftseng@classicmodelcars.com             Sales Rep
+9      Bondur      Loui     x6493     lbondur@classicmodelcars.com             Sales Rep
+10  Hernandez    Gerard     x2028   ghernande@classicmodelcars.com             Sales Rep
+11  Patterson      Mary     x4611   mpatterso@classicmodelcars.com              VP Sales
+12      Jones     Barry      x102      bjones@classicmodelcars.com             Sales Rep
+13      Nishi      Mami      x101      mnishi@classicmodelcars.com             Sales Rep
+14  Patterson   William     x4871  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+15   Jennings    Leslie     x3291   ljennings@classicmodelcars.com             Sales Rep
+16     Gerard    Martin     x2312     mgerard@classicmodelcars.com             Sales Rep
+17     Bondur    Gerard     x5408     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+18   Firrelli      Jeff     x9273   jfirrelli@classicmodelcars.com          VP Marketing
+19     Vanauf    George     x4102     gvanauf@classicmodelcars.com             Sales Rep
+20   Firrelli     Julie     x2173   jfirrelli@classicmodelcars.com             Sales Rep
+21     Murphy     Diane     x5800     dmurphy@classicmodelcars.com             President
+22       Kato   Yoshimi      x102       ykato@classicmodelcars.com             Sales Rep
+[2022-06-17 20:08:24,956] {python.py:173} INFO - Done. Returned value was: (                          customername contactlastname contactfirstname             phone  ...          state postalcode       country creditlimit
+0              Tekni Collectables Inc.           Brown          William        2015559350  ...             NJ      94019           USA     43000.0
+2       Canadian Gift Exchange Network          Tamuri           Yoshi     (604) 555-3392  ...             BC    V3F 2K1        Canada     90300.0
+3                 Osaka Souveniers Co.         Kentary             Mory  +81 06 6342 5555  ...          Osaka   530-0003         Japan     81200.0
+10                Classic Legends Inc.       Hernandez            Maria        2125558493  ...             NY      10022           USA     67500.0
+12                   Land of Toys Inc.             Lee             Kwai        2125557818  ...             NY      10022           USA    114900.0
+14              American Souvenirs Inc          Franco            Keith        2035557845  ...             CT      97823           USA         0.0
+15            Men R US Retailers, Ltd.        Chandler            Brian        2155554369  ...             CA      91003           USA     57700.0
+16               Diecast Classics Inc.           Leong           Kelvin        2155551555  ...             PA      70267           USA    100600.0
+20        Online Diecast Creations Co.           Young          Dorothy        6035558647  ...             NH      62005           USA    114200.0
+24            Signal Collectibles Ltd.          Taylor              Sue        4155554312  ...             CA      94217           USA     60300.0
+25           Souveniers And Things Co.          Huxley           Adrian   +61 2 9495 8555  ...            NSW       2067     Australia     93300.0
+28          Cambridge Collectables Co.           Tseng            Jerry        6175555555  ...             MA      51247           USA     43400.0
+33        Motor Mint Distributors Inc.         Salazar             Rosa        2155559857  ...             PA      71270           USA     72600.0
+34                    Gift Ideas Corp.           Lewis              Dan        2035554407  ...             CT      97561           USA     49700.0
+35                     Gift Depot Inc.            King            Julie        2035552570  ...             CT      97562           USA     84300.0
+36                     Microscale Inc.            Choi               Yu        2125551957  ...             NY      10022           USA     39800.0
+41                     Vitachrome Inc.           Frick          Michael        2125551500  ...             NY      10022           USA     76400.0
+45              Annas Decorations, Ltd           OHara             Anna      02 9936 8555  ...            NSW       2060     Australia    107800.0
+54        Collectable Mini Designs Co.        Thompson          Valarie        7605558146  ...             CA      91217           USA    105000.0
+62                  Muscle Machine Inc           Young             Jeff        2125557413  ...             NY      10022           USA    138500.0
+64                   giftsbymail.co.uk         Bennett           Helen     (198) 555-8888  ...  Isle of Wight   PO31 7PJ            UK     93900.0
+67                Technics Stores Inc.       Hashimoto             Juri        6505556809  ...             CA      94217           USA     84600.0
+68        Australian Collectables, Ltd        Clenahan             Sean    61-9-3844-6555  ...       Victoria       3150     Australia     60300.0
+69            Corporate Gift Ideas Co.           Brown            Julie        6505551386  ...             CA      94217           USA    105000.0
+70                   Boards & Toys Co.           Young             Mary        3105552373  ...             CA      92561           USA     11000.0
+72             Tokyo Collectables, Ltd       Shimamura            Akiko   +81 3 3584 0555  ...          Tokyo   106-0032         Japan     94400.0
+74                     Mini Wheels Co.          Murphy            Julie        6505555787  ...             CA      94217           USA     64600.0
+75                    FunGiftIdeas.com         Benitez          Violeta        5085552555  ...             MA      50553           USA     85800.0
+76                    Super Scale Inc.          Murphy           Leslie        2035559545  ...             CT      97823           USA     95400.0
+78            Online Mini Collectables         Barajas           Miguel        6175557555  ...             MA      58339           USA     68700.0
+79             Classic Gift Ideas, Inc       Cervantes        Francisca        2155554695  ...             PA      71270           USA     81100.0
+80           The Sharp Gifts Warehouse           Frick              Sue        4085553659  ...             CA      94217           USA     77600.0
+81         Australian Gift Network, Co        Calaghan              Ben    61-7-3844-6555  ...     Queensland       4101     Australia     51600.0
+82                 Mini Creations Ltd.           Huang             Wing        5085559555  ...             MA      50553           USA     94500.0
+86   Royal Canadian Collectables, Ltd.         Lincoln       Elizabeth     (604) 555-4555  ...             BC    T2F 8M4        Canada     89600.0
+90                 Martas Replicas Co.       Hernandez            Marta        6175558555  ...             MA      51247           USA    123700.0
+92          Collectables For Less Inc.          Nelson            Allen        6175558555  ...             MA      58339           USA     70700.0
+98        Québec Home Shopping Network       Fresnière            Jean     (514) 555-8054  ...         Québec    H1J 1C3        Canada     48700.0
+103                 Signal Gift Stores            King             Jean        7025551838  ...             NV      83030           USA     71800.0
+107                  Toys4GrownUps.com           Young            Julie        6265557265  ...             CA      90003           USA     90700.0
+108         Australian Collectors, Co.        Ferguson            Peter      03 9520 4555  ...       Victoria       3004     Australia    117300.0
+110               SAR Distributors, Co           Kuger           Armand   +27 21 550 3555  ...       Pretoria       0028  South Africa         0.0
+112                  Gifts4AllAges.com         Yoshido             Juri        6175559555  ...             MA      51003           USA     41900.0
+114       Mini Gifts Distributors Ltd.          Nelson            Susan        4155551450  ...             CA      97562           USA    210500.0
+118                      Mini Classics           Frick            Steve        9145554562  ...             NY      24067           USA    102700.0
+119        West Coast Collectables Co.        Thompson            Steve        3105553722  ...             CA      94019           USA     55400.0
+120               Diecast Collectables          Franco          Valarie        6175552555  ...             MA      51003           USA     85100.0
+121            Auto-Moto Classics Inc.          Taylor           Leslie        6175558428  ...             MA      58339           USA     23000.0
+
+[48 rows x 10 columns],                                productname       productline              productvendor                                 productdescription
+0                   1964 Mercedes Tour Bus  Trucks and Buses       Unimax Art Galleries  Exact replica. 100+ parts. working steering sy...
+1                    1976 Ford Gran Torino      Classic Cars       Gearbox Collectibles  Highly detailed 1976 Ford Gran Torino \"Starsk...
+2    1950s Chicago Surface Lines Streetcar            Trains       Gearbox Collectibles  This streetcar is a joy to see. It has 80 sepa...
+3                1957 Corvette Convertible      Classic Cars    Classic Metal Creations  1957 die cast Corvette Convertible in Roman Re...
+4                          1993 Mazda RX-7      Classic Cars   Highway 66 Mini Classics  This model features, opening hood, opening doo...
+..                                     ...               ...                        ...                                                ...
+105                      2001 Ferrari Enzo      Classic Cars        Second Gear Diecast  Turnable front wheels; steering function; deta...
+106            1992 Ferrari 360 Spider red      Classic Cars       Unimax Art Galleries  his replica features opening doors, superb det...
+107                       1995 Honda Civic      Classic Cars            Min Lin Diecast  This model features, opening hood, opening doo...
+108                         1958 Setra Bus  Trucks and Buses  Welly Diecast Productions  Model features 30 windows, skylights & glare r...
+109   2003 Harley-Davidson Eagle Drag Bike       Motorcycles          Red Start Diecast  Model features, official Harley Davidson logos...
+
+[110 rows x 4 columns],       orderdate requireddate shippeddate
+1    2003-11-06   2003-11-15  2003-11-10
+2    2003-11-20   2003-11-29  2003-11-25
+3    2005-05-09   2005-05-20  2005-05-12
+4    2004-08-20   2004-08-26  2004-08-22
+5    2004-05-26   2004-06-04  2004-05-29
+..          ...          ...         ...
+318  2004-05-04   2004-05-12  2004-05-09
+319  2004-07-23   2004-08-02  2004-07-29
+320  2004-12-16   2004-12-22  2004-12-18
+321  2004-02-20   2004-02-29  2004-02-24
+322  2003-06-03   2003-06-09  2003-06-06
+
+[309 rows x 3 columns],                             customername                                productname   orderdate requireddate  lastname  quantityordered  priceeach  buyprice
+0                     Signal Gift Stores  1938 Cadillac V-16 Presidential Limousine  2003-05-21   2003-05-29  Thompson             22.0      36.29     20.61
+1                      Auto Canal+ Petit        1936 Harley Davidson El Knucklehead  2005-04-07   2005-04-14    Bondur             55.0      58.15     24.23
+2                 Saveley & Henriot, Co.                          1903 Ford Model A  2004-01-02   2004-01-11    Bondur             24.0     117.47     68.30
+3                     Enaco Distributors                      The Schooner Bluenose  2003-11-26   2003-12-02    Gerard             23.0      60.00     34.00
+4                Dragon Souveniers, Ltd.                1954 Greyhound Scenicruiser  2003-10-22   2003-10-31     Nishi             48.0      50.86     25.98
+...                                  ...                                        ...         ...          ...       ...              ...        ...       ...
+2992                Classic Legends Inc.                        1972 Alfa Romeo GTA  2004-11-21   2004-11-30     Tseng             25.0     131.92     85.68
+2993  Bavarian Collectables Imports, Co.                         F/A 18 Hornet 1/72  2004-09-15   2004-09-22     Jones             22.0      74.40     54.40
+2994                Classic Legends Inc.                1913 Ford Model T Speedster  2003-10-20   2003-10-27     Tseng             31.0     101.31     60.78
+2995                  Muscle Machine Inc               1999 Indy 500 Monte Carlo SS  2003-12-02   2003-12-10     Tseng             27.0     106.92     56.76
+2996        Québec Home Shopping Network                                 Pont Yacht  2004-06-17   2004-06-25     Tseng             29.0      43.68     33.30
+
+[2996 rows x 8 columns],      lastname firstname                            email              jobtitle
+0    Thompson    Leslie   lthompson@classicmodelcars.com             Sales Rep
+1      Fixter      Andy     afixter@classicmodelcars.com             Sales Rep
+2        Bott     Larry       lbott@classicmodelcars.com             Sales Rep
+3    Castillo    Pamela   pcastillo@classicmodelcars.com             Sales Rep
+4        King       Tom       tking@classicmodelcars.com             Sales Rep
+5       Marsh     Peter      pmarsh@classicmodelcars.com             Sales Rep
+6   Patterson     Steve  spatterson@classicmodelcars.com             Sales Rep
+7         Bow   Anthony        abow@classicmodelcars.com    Sales Manager (NA)
+8       Tseng  Foon Yue      ftseng@classicmodelcars.com             Sales Rep
+9      Bondur      Loui     lbondur@classicmodelcars.com             Sales Rep
+10  Hernandez    Gerard   ghernande@classicmodelcars.com             Sales Rep
+11  Patterson      Mary   mpatterso@classicmodelcars.com              VP Sales
+12      Jones     Barry      bjones@classicmodelcars.com             Sales Rep
+13      Nishi      Mami      mnishi@classicmodelcars.com             Sales Rep
+14  Patterson   William  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+15   Jennings    Leslie   ljennings@classicmodelcars.com             Sales Rep
+16     Gerard    Martin     mgerard@classicmodelcars.com             Sales Rep
+17     Bondur    Gerard     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+18   Firrelli      Jeff   jfirrelli@classicmodelcars.com          VP Marketing
+19     Vanauf    George     gvanauf@classicmodelcars.com             Sales Rep
+20   Firrelli     Julie   jfirrelli@classicmodelcars.com             Sales Rep
+21     Murphy     Diane     dmurphy@classicmodelcars.com             President
+22       Kato   Yoshimi       ykato@classicmodelcars.com             Sales Rep)
+[2022-06-17 20:08:25,043] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=transforma_tabela, execution_date=20220616T000000, start_date=20220617T230824, end_date=20220617T230825
+[2022-06-17 20:08:25,078] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-17 20:08:25,154] {local_task_job.py:273} INFO - 5 downstream tasks scheduled from follow-on schedule check
+[2022-06-17 20:15:29,020] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.transforma_tabela scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 20:15:29,040] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.transforma_tabela scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 20:15:29,040] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 20:15:29,041] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-17 20:15:29,041] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 20:15:29,064] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): transforma_tabela> on 2022-06-16 00:00:00+00:00
+[2022-06-17 20:15:29,075] {standard_task_runner.py:52} INFO - Started process 177986 to run task
+[2022-06-17 20:15:29,081] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'transforma_tabela', 'scheduled__2022-06-16T00:00:00+00:00', '--job-id', '1353', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpko3rrvc0', '--error-file', '/tmp/tmp_ef3wz4y']
+[2022-06-17 20:15:29,082] {standard_task_runner.py:80} INFO - Job 1353: Subtask transforma_tabela
+[2022-06-17 20:15:29,165] {task_command.py:370} INFO - Running <TaskInstance: sales.transforma_tabela scheduled__2022-06-16T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-17 20:15:29,287] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=transforma_tabela
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-16T00:00:00+00:00
+[2022-06-17 20:15:29,346] {logging_mixin.py:115} INFO -      lastname firstname extension                            email              jobtitle
+0    Thompson    Leslie     x4065   lthompson@classicmodelcars.com             Sales Rep
+1      Fixter      Andy      x101     afixter@classicmodelcars.com             Sales Rep
+2        Bott     Larry     x2311       lbott@classicmodelcars.com             Sales Rep
+3    Castillo    Pamela     x2759   pcastillo@classicmodelcars.com             Sales Rep
+4        King       Tom      x103       tking@classicmodelcars.com             Sales Rep
+5       Marsh     Peter      x102      pmarsh@classicmodelcars.com             Sales Rep
+6   Patterson     Steve     x4334  spatterson@classicmodelcars.com             Sales Rep
+7         Bow   Anthony     x5428        abow@classicmodelcars.com    Sales Manager (NA)
+8       Tseng  Foon Yue     x2248      ftseng@classicmodelcars.com             Sales Rep
+9      Bondur      Loui     x6493     lbondur@classicmodelcars.com             Sales Rep
+10  Hernandez    Gerard     x2028   ghernande@classicmodelcars.com             Sales Rep
+11  Patterson      Mary     x4611   mpatterso@classicmodelcars.com              VP Sales
+12      Jones     Barry      x102      bjones@classicmodelcars.com             Sales Rep
+13      Nishi      Mami      x101      mnishi@classicmodelcars.com             Sales Rep
+14  Patterson   William     x4871  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+15   Jennings    Leslie     x3291   ljennings@classicmodelcars.com             Sales Rep
+16     Gerard    Martin     x2312     mgerard@classicmodelcars.com             Sales Rep
+17     Bondur    Gerard     x5408     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+18   Firrelli      Jeff     x9273   jfirrelli@classicmodelcars.com          VP Marketing
+19     Vanauf    George     x4102     gvanauf@classicmodelcars.com             Sales Rep
+20   Firrelli     Julie     x2173   jfirrelli@classicmodelcars.com             Sales Rep
+21     Murphy     Diane     x5800     dmurphy@classicmodelcars.com             President
+22       Kato   Yoshimi      x102       ykato@classicmodelcars.com             Sales Rep
+[2022-06-17 20:15:29,412] {python.py:173} INFO - Done. Returned value was: (                          customername contactlastname contactfirstname             phone  ...          state postalcode       country creditlimit
+0              Tekni Collectables Inc.           Brown          William        2015559350  ...             NJ      94019           USA     43000.0
+2       Canadian Gift Exchange Network          Tamuri           Yoshi     (604) 555-3392  ...             BC    V3F 2K1        Canada     90300.0
+3                 Osaka Souveniers Co.         Kentary             Mory  +81 06 6342 5555  ...          Osaka   530-0003         Japan     81200.0
+10                Classic Legends Inc.       Hernandez            Maria        2125558493  ...             NY      10022           USA     67500.0
+12                   Land of Toys Inc.             Lee             Kwai        2125557818  ...             NY      10022           USA    114900.0
+14              American Souvenirs Inc          Franco            Keith        2035557845  ...             CT      97823           USA         0.0
+15            Men R US Retailers, Ltd.        Chandler            Brian        2155554369  ...             CA      91003           USA     57700.0
+16               Diecast Classics Inc.           Leong           Kelvin        2155551555  ...             PA      70267           USA    100600.0
+20        Online Diecast Creations Co.           Young          Dorothy        6035558647  ...             NH      62005           USA    114200.0
+24            Signal Collectibles Ltd.          Taylor              Sue        4155554312  ...             CA      94217           USA     60300.0
+25           Souveniers And Things Co.          Huxley           Adrian   +61 2 9495 8555  ...            NSW       2067     Australia     93300.0
+28          Cambridge Collectables Co.           Tseng            Jerry        6175555555  ...             MA      51247           USA     43400.0
+33        Motor Mint Distributors Inc.         Salazar             Rosa        2155559857  ...             PA      71270           USA     72600.0
+34                    Gift Ideas Corp.           Lewis              Dan        2035554407  ...             CT      97561           USA     49700.0
+35                     Gift Depot Inc.            King            Julie        2035552570  ...             CT      97562           USA     84300.0
+36                     Microscale Inc.            Choi               Yu        2125551957  ...             NY      10022           USA     39800.0
+41                     Vitachrome Inc.           Frick          Michael        2125551500  ...             NY      10022           USA     76400.0
+45              Annas Decorations, Ltd           OHara             Anna      02 9936 8555  ...            NSW       2060     Australia    107800.0
+54        Collectable Mini Designs Co.        Thompson          Valarie        7605558146  ...             CA      91217           USA    105000.0
+62                  Muscle Machine Inc           Young             Jeff        2125557413  ...             NY      10022           USA    138500.0
+64                   giftsbymail.co.uk         Bennett           Helen     (198) 555-8888  ...  Isle of Wight   PO31 7PJ            UK     93900.0
+67                Technics Stores Inc.       Hashimoto             Juri        6505556809  ...             CA      94217           USA     84600.0
+68        Australian Collectables, Ltd        Clenahan             Sean    61-9-3844-6555  ...       Victoria       3150     Australia     60300.0
+69            Corporate Gift Ideas Co.           Brown            Julie        6505551386  ...             CA      94217           USA    105000.0
+70                   Boards & Toys Co.           Young             Mary        3105552373  ...             CA      92561           USA     11000.0
+72             Tokyo Collectables, Ltd       Shimamura            Akiko   +81 3 3584 0555  ...          Tokyo   106-0032         Japan     94400.0
+74                     Mini Wheels Co.          Murphy            Julie        6505555787  ...             CA      94217           USA     64600.0
+75                    FunGiftIdeas.com         Benitez          Violeta        5085552555  ...             MA      50553           USA     85800.0
+76                    Super Scale Inc.          Murphy           Leslie        2035559545  ...             CT      97823           USA     95400.0
+78            Online Mini Collectables         Barajas           Miguel        6175557555  ...             MA      58339           USA     68700.0
+79             Classic Gift Ideas, Inc       Cervantes        Francisca        2155554695  ...             PA      71270           USA     81100.0
+80           The Sharp Gifts Warehouse           Frick              Sue        4085553659  ...             CA      94217           USA     77600.0
+81         Australian Gift Network, Co        Calaghan              Ben    61-7-3844-6555  ...     Queensland       4101     Australia     51600.0
+82                 Mini Creations Ltd.           Huang             Wing        5085559555  ...             MA      50553           USA     94500.0
+86   Royal Canadian Collectables, Ltd.         Lincoln       Elizabeth     (604) 555-4555  ...             BC    T2F 8M4        Canada     89600.0
+90                 Martas Replicas Co.       Hernandez            Marta        6175558555  ...             MA      51247           USA    123700.0
+92          Collectables For Less Inc.          Nelson            Allen        6175558555  ...             MA      58339           USA     70700.0
+98        Québec Home Shopping Network       Fresnière            Jean     (514) 555-8054  ...         Québec    H1J 1C3        Canada     48700.0
+103                 Signal Gift Stores            King             Jean        7025551838  ...             NV      83030           USA     71800.0
+107                  Toys4GrownUps.com           Young            Julie        6265557265  ...             CA      90003           USA     90700.0
+108         Australian Collectors, Co.        Ferguson            Peter      03 9520 4555  ...       Victoria       3004     Australia    117300.0
+110               SAR Distributors, Co           Kuger           Armand   +27 21 550 3555  ...       Pretoria       0028  South Africa         0.0
+112                  Gifts4AllAges.com         Yoshido             Juri        6175559555  ...             MA      51003           USA     41900.0
+114       Mini Gifts Distributors Ltd.          Nelson            Susan        4155551450  ...             CA      97562           USA    210500.0
+118                      Mini Classics           Frick            Steve        9145554562  ...             NY      24067           USA    102700.0
+119        West Coast Collectables Co.        Thompson            Steve        3105553722  ...             CA      94019           USA     55400.0
+120               Diecast Collectables          Franco          Valarie        6175552555  ...             MA      51003           USA     85100.0
+121            Auto-Moto Classics Inc.          Taylor           Leslie        6175558428  ...             MA      58339           USA     23000.0
+
+[48 rows x 10 columns],                                productname       productline              productvendor                                 productdescription
+0                   1964 Mercedes Tour Bus  Trucks and Buses       Unimax Art Galleries  Exact replica. 100+ parts. working steering sy...
+1                    1976 Ford Gran Torino      Classic Cars       Gearbox Collectibles  Highly detailed 1976 Ford Gran Torino \"Starsk...
+2    1950s Chicago Surface Lines Streetcar            Trains       Gearbox Collectibles  This streetcar is a joy to see. It has 80 sepa...
+3                1957 Corvette Convertible      Classic Cars    Classic Metal Creations  1957 die cast Corvette Convertible in Roman Re...
+4                          1993 Mazda RX-7      Classic Cars   Highway 66 Mini Classics  This model features, opening hood, opening doo...
+..                                     ...               ...                        ...                                                ...
+105                      2001 Ferrari Enzo      Classic Cars        Second Gear Diecast  Turnable front wheels; steering function; deta...
+106            1992 Ferrari 360 Spider red      Classic Cars       Unimax Art Galleries  his replica features opening doors, superb det...
+107                       1995 Honda Civic      Classic Cars            Min Lin Diecast  This model features, opening hood, opening doo...
+108                         1958 Setra Bus  Trucks and Buses  Welly Diecast Productions  Model features 30 windows, skylights & glare r...
+109   2003 Harley-Davidson Eagle Drag Bike       Motorcycles          Red Start Diecast  Model features, official Harley Davidson logos...
+
+[110 rows x 4 columns],       orderdate requireddate shippeddate
+1    2003-11-06   2003-11-15  2003-11-10
+2    2003-11-20   2003-11-29  2003-11-25
+3    2005-05-09   2005-05-20  2005-05-12
+4    2004-08-20   2004-08-26  2004-08-22
+5    2004-05-26   2004-06-04  2004-05-29
+..          ...          ...         ...
+318  2004-05-04   2004-05-12  2004-05-09
+319  2004-07-23   2004-08-02  2004-07-29
+320  2004-12-16   2004-12-22  2004-12-18
+321  2004-02-20   2004-02-29  2004-02-24
+322  2003-06-03   2003-06-09  2003-06-06
+
+[309 rows x 3 columns],                             customername                                productname   orderdate requireddate  lastname  quantityordered  priceeach  buyprice
+0                     Signal Gift Stores  1938 Cadillac V-16 Presidential Limousine  2003-05-21   2003-05-29  Thompson             22.0      36.29     20.61
+1                      Auto Canal+ Petit        1936 Harley Davidson El Knucklehead  2005-04-07   2005-04-14    Bondur             55.0      58.15     24.23
+2                 Saveley & Henriot, Co.                          1903 Ford Model A  2004-01-02   2004-01-11    Bondur             24.0     117.47     68.30
+3                     Enaco Distributors                      The Schooner Bluenose  2003-11-26   2003-12-02    Gerard             23.0      60.00     34.00
+4                Dragon Souveniers, Ltd.                1954 Greyhound Scenicruiser  2003-10-22   2003-10-31     Nishi             48.0      50.86     25.98
+...                                  ...                                        ...         ...          ...       ...              ...        ...       ...
+2992                Classic Legends Inc.                        1972 Alfa Romeo GTA  2004-11-21   2004-11-30     Tseng             25.0     131.92     85.68
+2993  Bavarian Collectables Imports, Co.                         F/A 18 Hornet 1/72  2004-09-15   2004-09-22     Jones             22.0      74.40     54.40
+2994                Classic Legends Inc.                1913 Ford Model T Speedster  2003-10-20   2003-10-27     Tseng             31.0     101.31     60.78
+2995                  Muscle Machine Inc               1999 Indy 500 Monte Carlo SS  2003-12-02   2003-12-10     Tseng             27.0     106.92     56.76
+2996        Québec Home Shopping Network                                 Pont Yacht  2004-06-17   2004-06-25     Tseng             29.0      43.68     33.30
+
+[2996 rows x 8 columns],      lastname firstname                            email              jobtitle
+0    Thompson    Leslie   lthompson@classicmodelcars.com             Sales Rep
+1      Fixter      Andy     afixter@classicmodelcars.com             Sales Rep
+2        Bott     Larry       lbott@classicmodelcars.com             Sales Rep
+3    Castillo    Pamela   pcastillo@classicmodelcars.com             Sales Rep
+4        King       Tom       tking@classicmodelcars.com             Sales Rep
+5       Marsh     Peter      pmarsh@classicmodelcars.com             Sales Rep
+6   Patterson     Steve  spatterson@classicmodelcars.com             Sales Rep
+7         Bow   Anthony        abow@classicmodelcars.com    Sales Manager (NA)
+8       Tseng  Foon Yue      ftseng@classicmodelcars.com             Sales Rep
+9      Bondur      Loui     lbondur@classicmodelcars.com             Sales Rep
+10  Hernandez    Gerard   ghernande@classicmodelcars.com             Sales Rep
+11  Patterson      Mary   mpatterso@classicmodelcars.com              VP Sales
+12      Jones     Barry      bjones@classicmodelcars.com             Sales Rep
+13      Nishi      Mami      mnishi@classicmodelcars.com             Sales Rep
+14  Patterson   William  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+15   Jennings    Leslie   ljennings@classicmodelcars.com             Sales Rep
+16     Gerard    Martin     mgerard@classicmodelcars.com             Sales Rep
+17     Bondur    Gerard     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+18   Firrelli      Jeff   jfirrelli@classicmodelcars.com          VP Marketing
+19     Vanauf    George     gvanauf@classicmodelcars.com             Sales Rep
+20   Firrelli     Julie   jfirrelli@classicmodelcars.com             Sales Rep
+21     Murphy     Diane     dmurphy@classicmodelcars.com             President
+22       Kato   Yoshimi       ykato@classicmodelcars.com             Sales Rep)
+[2022-06-17 20:15:29,525] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=transforma_tabela, execution_date=20220616T000000, start_date=20220617T231529, end_date=20220617T231529
+[2022-06-17 20:15:29,573] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-17 20:15:29,658] {local_task_job.py:273} INFO - 5 downstream tasks scheduled from follow-on schedule check

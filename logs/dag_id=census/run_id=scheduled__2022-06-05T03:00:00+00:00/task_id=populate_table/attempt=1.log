@@ -1,0 +1,146 @@
+[2022-06-05 01:16:17,557] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.populate_table scheduled__2022-06-05T03:00:00+00:00 [queued]>
+[2022-06-05 01:16:17,579] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.populate_table scheduled__2022-06-05T03:00:00+00:00 [queued]>
+[2022-06-05 01:16:17,579] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 01:16:17,579] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-05 01:16:17,580] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 01:16:17,610] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): populate_table> on 2022-06-05 03:00:00+00:00
+[2022-06-05 01:16:17,621] {standard_task_runner.py:52} INFO - Started process 42565 to run task
+[2022-06-05 01:16:17,626] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'populate_table', 'scheduled__2022-06-05T03:00:00+00:00', '--job-id', '782', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpjlvvm4jc', '--error-file', '/tmp/tmpyg62s4eh']
+[2022-06-05 01:16:17,627] {standard_task_runner.py:80} INFO - Job 782: Subtask populate_table
+[2022-06-05 01:16:17,712] {task_command.py:370} INFO - Running <TaskInstance: census.populate_table scheduled__2022-06-05T03:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-05 01:16:17,813] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=populate_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-05T03:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-05T03:00:00+00:00
+[2022-06-05 01:16:17,819] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/uiliam/airflow/dags/census.py", line 117, in populate_table
+    file = open('teste_uiliam.csv', "r")
+FileNotFoundError: [Errno 2] No such file or directory: 'teste_uiliam.csv'
+[2022-06-05 01:16:17,835] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=census, task_id=populate_table, execution_date=20220605T030000, start_date=20220605T041617, end_date=20220605T041617
+[2022-06-05 01:16:17,853] {standard_task_runner.py:92} ERROR - Failed to execute job 782 for task populate_table ([Errno 2] No such file or directory: 'teste_uiliam.csv'; 42565)
+[2022-06-05 01:16:17,878] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-05 01:16:17,926] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-05 01:17:55,886] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.populate_table scheduled__2022-06-05T03:00:00+00:00 [queued]>
+[2022-06-05 01:17:55,902] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.populate_table scheduled__2022-06-05T03:00:00+00:00 [queued]>
+[2022-06-05 01:17:55,902] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 01:17:55,902] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-05 01:17:55,902] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 01:17:55,922] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): populate_table> on 2022-06-05 03:00:00+00:00
+[2022-06-05 01:17:55,930] {standard_task_runner.py:52} INFO - Started process 44017 to run task
+[2022-06-05 01:17:55,935] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'populate_table', 'scheduled__2022-06-05T03:00:00+00:00', '--job-id', '788', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpetsvbckq', '--error-file', '/tmp/tmprg28pfu7']
+[2022-06-05 01:17:55,935] {standard_task_runner.py:80} INFO - Job 788: Subtask populate_table
+[2022-06-05 01:17:56,009] {task_command.py:370} INFO - Running <TaskInstance: census.populate_table scheduled__2022-06-05T03:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-05 01:17:56,107] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=populate_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-05T03:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-05T03:00:00+00:00
+[2022-06-05 01:17:56,113] {logging_mixin.py:115} INFO - <_io.TextIOWrapper name='teste_uiliam.csv' mode='r' encoding='UTF-8'>
+[2022-06-05 01:17:56,382] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-05 01:17:56,403] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=populate_table, execution_date=20220605T030000, start_date=20220605T041755, end_date=20220605T041756
+[2022-06-05 01:17:56,468] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-05 01:17:56,523] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-05 01:30:12,181] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.populate_table scheduled__2022-06-05T03:00:00+00:00 [queued]>
+[2022-06-05 01:30:12,196] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.populate_table scheduled__2022-06-05T03:00:00+00:00 [queued]>
+[2022-06-05 01:30:12,197] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 01:30:12,197] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-05 01:30:12,197] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 01:30:12,218] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): populate_table> on 2022-06-05 03:00:00+00:00
+[2022-06-05 01:30:12,226] {standard_task_runner.py:52} INFO - Started process 7660 to run task
+[2022-06-05 01:30:12,231] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'populate_table', 'scheduled__2022-06-05T03:00:00+00:00', '--job-id', '796', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp_4i00aje', '--error-file', '/tmp/tmpz64m11dm']
+[2022-06-05 01:30:12,232] {standard_task_runner.py:80} INFO - Job 796: Subtask populate_table
+[2022-06-05 01:30:12,306] {task_command.py:370} INFO - Running <TaskInstance: census.populate_table scheduled__2022-06-05T03:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-05 01:30:12,410] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=populate_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-05T03:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-05T03:00:00+00:00
+[2022-06-05 01:30:12,416] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/uiliam/airflow/dags/census.py", line 117, in populate_table
+    file = open('teste_uiliam.csv', "r")
+FileNotFoundError: [Errno 2] No such file or directory: 'teste_uiliam.csv'
+[2022-06-05 01:30:12,429] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=census, task_id=populate_table, execution_date=20220605T030000, start_date=20220605T043012, end_date=20220605T043012
+[2022-06-05 01:30:12,448] {standard_task_runner.py:92} ERROR - Failed to execute job 796 for task populate_table ([Errno 2] No such file or directory: 'teste_uiliam.csv'; 7660)
+[2022-06-05 01:30:12,483] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-05 01:30:12,528] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-05 01:32:59,429] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.populate_table scheduled__2022-06-05T03:00:00+00:00 [queued]>
+[2022-06-05 01:32:59,447] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.populate_table scheduled__2022-06-05T03:00:00+00:00 [queued]>
+[2022-06-05 01:32:59,447] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 01:32:59,447] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-05 01:32:59,447] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 01:32:59,467] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): populate_table> on 2022-06-05 03:00:00+00:00
+[2022-06-05 01:32:59,476] {standard_task_runner.py:52} INFO - Started process 9158 to run task
+[2022-06-05 01:32:59,481] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'populate_table', 'scheduled__2022-06-05T03:00:00+00:00', '--job-id', '802', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpwz5b8lx8', '--error-file', '/tmp/tmpus6_lloy']
+[2022-06-05 01:32:59,481] {standard_task_runner.py:80} INFO - Job 802: Subtask populate_table
+[2022-06-05 01:32:59,552] {task_command.py:370} INFO - Running <TaskInstance: census.populate_table scheduled__2022-06-05T03:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-05 01:32:59,658] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=populate_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-05T03:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-05T03:00:00+00:00
+[2022-06-05 01:33:00,152] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/uiliam/airflow/dags/census.py", line 108, in populate_table
+    controller_fluxo()
+  File "/home/uiliam/airflow/dags/census.py", line 100, in controller_fluxo
+    df = df.iloc[init:init + quant]
+AttributeError: 'NoneType' object has no attribute 'iloc'
+[2022-06-05 01:33:00,169] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=census, task_id=populate_table, execution_date=20220605T030000, start_date=20220605T043259, end_date=20220605T043300
+[2022-06-05 01:33:00,192] {standard_task_runner.py:92} ERROR - Failed to execute job 802 for task populate_table ('NoneType' object has no attribute 'iloc'; 9158)
+[2022-06-05 01:33:00,215] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-05 01:33:00,268] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-05 01:46:51,292] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.populate_table scheduled__2022-06-05T03:00:00+00:00 [queued]>
+[2022-06-05 01:46:51,316] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.populate_table scheduled__2022-06-05T03:00:00+00:00 [queued]>
+[2022-06-05 01:46:51,317] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 01:46:51,317] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-05 01:46:51,317] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 01:46:51,344] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): populate_table> on 2022-06-05 03:00:00+00:00
+[2022-06-05 01:46:51,356] {standard_task_runner.py:52} INFO - Started process 15657 to run task
+[2022-06-05 01:46:51,361] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'populate_table', 'scheduled__2022-06-05T03:00:00+00:00', '--job-id', '815', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp77fioo4b', '--error-file', '/tmp/tmp6hbturm1']
+[2022-06-05 01:46:51,361] {standard_task_runner.py:80} INFO - Job 815: Subtask populate_table
+[2022-06-05 01:46:51,454] {task_command.py:370} INFO - Running <TaskInstance: census.populate_table scheduled__2022-06-05T03:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-05 01:46:51,556] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=populate_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-05T03:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-05T03:00:00+00:00
+[2022-06-05 01:46:51,561] {logging_mixin.py:115} INFO - <_io.TextIOWrapper name='teste_uiliam.csv' mode='r' encoding='UTF-8'>
+[2022-06-05 01:46:51,579] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-05 01:46:51,601] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=census, task_id=populate_table, execution_date=20220605T030000, start_date=20220605T044651, end_date=20220605T044651
+[2022-06-05 01:46:51,654] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-05 01:46:51,701] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

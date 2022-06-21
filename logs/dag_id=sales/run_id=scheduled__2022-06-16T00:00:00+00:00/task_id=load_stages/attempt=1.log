@@ -1,0 +1,347 @@
+[2022-06-17 17:36:36,244] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_stages scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 17:36:36,266] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_stages scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 17:36:36,266] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 17:36:36,266] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-17 17:36:36,266] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 17:36:36,288] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): load_stages> on 2022-06-16 00:00:00+00:00
+[2022-06-17 17:36:36,298] {standard_task_runner.py:52} INFO - Started process 146716 to run task
+[2022-06-17 17:36:36,304] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'load_stages', 'scheduled__2022-06-16T00:00:00+00:00', '--job-id', '1277', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmprkgub2_v', '--error-file', '/tmp/tmp3pcho6va']
+[2022-06-17 17:36:36,305] {standard_task_runner.py:80} INFO - Job 1277: Subtask load_stages
+[2022-06-17 17:36:36,388] {task_command.py:370} INFO - Running <TaskInstance: sales.load_stages scheduled__2022-06-16T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-17 17:36:36,501] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=load_stages
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-16T00:00:00+00:00
+[2022-06-17 17:36:36,961] {logging_mixin.py:115} INFO -    lastname firstname                           email   jobtitle
+0  Thompson    Leslie  lthompson@classicmodelcars.com  Sales Rep
+1    Fixter      Andy    afixter@classicmodelcars.com  Sales Rep
+2      Bott     Larry      lbott@classicmodelcars.com  Sales Rep
+3  Castillo    Pamela  pcastillo@classicmodelcars.com  Sales Rep
+4      King       Tom      tking@classicmodelcars.com  Sales Rep
+[2022-06-17 17:36:36,961] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-17 17:36:36,984] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=load_stages, execution_date=20220616T000000, start_date=20220617T203636, end_date=20220617T203636
+[2022-06-17 17:36:37,037] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-17 17:36:37,095] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-17 19:45:01,338] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_stages scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 19:45:01,359] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_stages scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 19:45:01,359] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 19:45:01,359] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-17 19:45:01,360] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 19:45:01,381] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): load_stages> on 2022-06-16 00:00:00+00:00
+[2022-06-17 19:45:01,393] {standard_task_runner.py:52} INFO - Started process 166390 to run task
+[2022-06-17 19:45:01,398] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'load_stages', 'scheduled__2022-06-16T00:00:00+00:00', '--job-id', '1286', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpvqpe15bz', '--error-file', '/tmp/tmpkcklm3fk']
+[2022-06-17 19:45:01,399] {standard_task_runner.py:80} INFO - Job 1286: Subtask load_stages
+[2022-06-17 19:45:01,489] {task_command.py:370} INFO - Running <TaskInstance: sales.load_stages scheduled__2022-06-16T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-17 19:45:01,607] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=load_stages
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-16T00:00:00+00:00
+[2022-06-17 19:45:01,665] {logging_mixin.py:115} INFO -      lastname firstname extension                            email              jobtitle
+0    Thompson    Leslie     x4065   lthompson@classicmodelcars.com             Sales Rep
+1      Fixter      Andy      x101     afixter@classicmodelcars.com             Sales Rep
+2        Bott     Larry     x2311       lbott@classicmodelcars.com             Sales Rep
+3    Castillo    Pamela     x2759   pcastillo@classicmodelcars.com             Sales Rep
+4        King       Tom      x103       tking@classicmodelcars.com             Sales Rep
+5       Marsh     Peter      x102      pmarsh@classicmodelcars.com             Sales Rep
+6   Patterson     Steve     x4334  spatterson@classicmodelcars.com             Sales Rep
+7         Bow   Anthony     x5428        abow@classicmodelcars.com    Sales Manager (NA)
+8       Tseng  Foon Yue     x2248      ftseng@classicmodelcars.com             Sales Rep
+9      Bondur      Loui     x6493     lbondur@classicmodelcars.com             Sales Rep
+10  Hernandez    Gerard     x2028   ghernande@classicmodelcars.com             Sales Rep
+11  Patterson      Mary     x4611   mpatterso@classicmodelcars.com              VP Sales
+12      Jones     Barry      x102      bjones@classicmodelcars.com             Sales Rep
+13      Nishi      Mami      x101      mnishi@classicmodelcars.com             Sales Rep
+14  Patterson   William     x4871  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+15   Jennings    Leslie     x3291   ljennings@classicmodelcars.com             Sales Rep
+16     Gerard    Martin     x2312     mgerard@classicmodelcars.com             Sales Rep
+17     Bondur    Gerard     x5408     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+18   Firrelli      Jeff     x9273   jfirrelli@classicmodelcars.com          VP Marketing
+19     Vanauf    George     x4102     gvanauf@classicmodelcars.com             Sales Rep
+20   Firrelli     Julie     x2173   jfirrelli@classicmodelcars.com             Sales Rep
+21     Murphy     Diane     x5800     dmurphy@classicmodelcars.com             President
+22       Kato   Yoshimi      x102       ykato@classicmodelcars.com             Sales Rep
+[2022-06-17 19:45:02,218] {logging_mixin.py:115} INFO -    lastname firstname                           email   jobtitle
+0  Thompson    Leslie  lthompson@classicmodelcars.com  Sales Rep
+1    Fixter      Andy    afixter@classicmodelcars.com  Sales Rep
+2      Bott     Larry      lbott@classicmodelcars.com  Sales Rep
+3  Castillo    Pamela  pcastillo@classicmodelcars.com  Sales Rep
+4      King       Tom      tking@classicmodelcars.com  Sales Rep
+[2022-06-17 19:45:02,220] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-17 19:45:02,241] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=load_stages, execution_date=20220616T000000, start_date=20220617T224501, end_date=20220617T224502
+[2022-06-17 19:45:02,291] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-17 19:45:02,366] {local_task_job.py:273} INFO - 5 downstream tasks scheduled from follow-on schedule check
+[2022-06-17 19:46:44,315] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_stages scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 19:46:44,336] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_stages scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 19:46:44,336] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 19:46:44,336] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-17 19:46:44,336] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 19:46:44,356] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): load_stages> on 2022-06-16 00:00:00+00:00
+[2022-06-17 19:46:44,365] {standard_task_runner.py:52} INFO - Started process 167780 to run task
+[2022-06-17 19:46:44,370] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'load_stages', 'scheduled__2022-06-16T00:00:00+00:00', '--job-id', '1300', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpfh71cjqa', '--error-file', '/tmp/tmpavpprunt']
+[2022-06-17 19:46:44,370] {standard_task_runner.py:80} INFO - Job 1300: Subtask load_stages
+[2022-06-17 19:46:44,456] {task_command.py:370} INFO - Running <TaskInstance: sales.load_stages scheduled__2022-06-16T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-17 19:46:44,566] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=load_stages
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-16T00:00:00+00:00
+[2022-06-17 19:46:44,623] {logging_mixin.py:115} INFO -      lastname firstname extension                            email              jobtitle
+0    Thompson    Leslie     x4065   lthompson@classicmodelcars.com             Sales Rep
+1      Fixter      Andy      x101     afixter@classicmodelcars.com             Sales Rep
+2        Bott     Larry     x2311       lbott@classicmodelcars.com             Sales Rep
+3    Castillo    Pamela     x2759   pcastillo@classicmodelcars.com             Sales Rep
+4        King       Tom      x103       tking@classicmodelcars.com             Sales Rep
+5       Marsh     Peter      x102      pmarsh@classicmodelcars.com             Sales Rep
+6   Patterson     Steve     x4334  spatterson@classicmodelcars.com             Sales Rep
+7         Bow   Anthony     x5428        abow@classicmodelcars.com    Sales Manager (NA)
+8       Tseng  Foon Yue     x2248      ftseng@classicmodelcars.com             Sales Rep
+9      Bondur      Loui     x6493     lbondur@classicmodelcars.com             Sales Rep
+10  Hernandez    Gerard     x2028   ghernande@classicmodelcars.com             Sales Rep
+11  Patterson      Mary     x4611   mpatterso@classicmodelcars.com              VP Sales
+12      Jones     Barry      x102      bjones@classicmodelcars.com             Sales Rep
+13      Nishi      Mami      x101      mnishi@classicmodelcars.com             Sales Rep
+14  Patterson   William     x4871  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+15   Jennings    Leslie     x3291   ljennings@classicmodelcars.com             Sales Rep
+16     Gerard    Martin     x2312     mgerard@classicmodelcars.com             Sales Rep
+17     Bondur    Gerard     x5408     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+18   Firrelli      Jeff     x9273   jfirrelli@classicmodelcars.com          VP Marketing
+19     Vanauf    George     x4102     gvanauf@classicmodelcars.com             Sales Rep
+20   Firrelli     Julie     x2173   jfirrelli@classicmodelcars.com             Sales Rep
+21     Murphy     Diane     x5800     dmurphy@classicmodelcars.com             President
+22       Kato   Yoshimi      x102       ykato@classicmodelcars.com             Sales Rep
+[2022-06-17 19:46:45,190] {logging_mixin.py:115} INFO -    lastname firstname                           email   jobtitle
+0  Thompson    Leslie  lthompson@classicmodelcars.com  Sales Rep
+1    Fixter      Andy    afixter@classicmodelcars.com  Sales Rep
+2      Bott     Larry      lbott@classicmodelcars.com  Sales Rep
+3  Castillo    Pamela  pcastillo@classicmodelcars.com  Sales Rep
+4      King       Tom      tking@classicmodelcars.com  Sales Rep
+[2022-06-17 19:46:45,192] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-17 19:46:45,214] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=load_stages, execution_date=20220616T000000, start_date=20220617T224644, end_date=20220617T224645
+[2022-06-17 19:46:45,263] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-17 19:46:45,346] {local_task_job.py:273} INFO - 5 downstream tasks scheduled from follow-on schedule check
+[2022-06-17 19:49:52,163] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_stages scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 19:49:52,185] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_stages scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 19:49:52,186] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 19:49:52,186] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-17 19:49:52,186] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 19:49:52,210] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): load_stages> on 2022-06-16 00:00:00+00:00
+[2022-06-17 19:49:52,217] {standard_task_runner.py:52} INFO - Started process 169492 to run task
+[2022-06-17 19:49:52,223] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'load_stages', 'scheduled__2022-06-16T00:00:00+00:00', '--job-id', '1314', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmppyvfzcfn', '--error-file', '/tmp/tmphpc_x9y8']
+[2022-06-17 19:49:52,224] {standard_task_runner.py:80} INFO - Job 1314: Subtask load_stages
+[2022-06-17 19:49:52,306] {task_command.py:370} INFO - Running <TaskInstance: sales.load_stages scheduled__2022-06-16T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-17 19:49:52,422] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=load_stages
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-16T00:00:00+00:00
+[2022-06-17 19:49:52,482] {logging_mixin.py:115} INFO -      lastname firstname extension                            email              jobtitle
+0    Thompson    Leslie     x4065   lthompson@classicmodelcars.com             Sales Rep
+1      Fixter      Andy      x101     afixter@classicmodelcars.com             Sales Rep
+2        Bott     Larry     x2311       lbott@classicmodelcars.com             Sales Rep
+3    Castillo    Pamela     x2759   pcastillo@classicmodelcars.com             Sales Rep
+4        King       Tom      x103       tking@classicmodelcars.com             Sales Rep
+5       Marsh     Peter      x102      pmarsh@classicmodelcars.com             Sales Rep
+6   Patterson     Steve     x4334  spatterson@classicmodelcars.com             Sales Rep
+7         Bow   Anthony     x5428        abow@classicmodelcars.com    Sales Manager (NA)
+8       Tseng  Foon Yue     x2248      ftseng@classicmodelcars.com             Sales Rep
+9      Bondur      Loui     x6493     lbondur@classicmodelcars.com             Sales Rep
+10  Hernandez    Gerard     x2028   ghernande@classicmodelcars.com             Sales Rep
+11  Patterson      Mary     x4611   mpatterso@classicmodelcars.com              VP Sales
+12      Jones     Barry      x102      bjones@classicmodelcars.com             Sales Rep
+13      Nishi      Mami      x101      mnishi@classicmodelcars.com             Sales Rep
+14  Patterson   William     x4871  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+15   Jennings    Leslie     x3291   ljennings@classicmodelcars.com             Sales Rep
+16     Gerard    Martin     x2312     mgerard@classicmodelcars.com             Sales Rep
+17     Bondur    Gerard     x5408     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+18   Firrelli      Jeff     x9273   jfirrelli@classicmodelcars.com          VP Marketing
+19     Vanauf    George     x4102     gvanauf@classicmodelcars.com             Sales Rep
+20   Firrelli     Julie     x2173   jfirrelli@classicmodelcars.com             Sales Rep
+21     Murphy     Diane     x5800     dmurphy@classicmodelcars.com             President
+22       Kato   Yoshimi      x102       ykato@classicmodelcars.com             Sales Rep
+[2022-06-17 19:49:53,064] {logging_mixin.py:115} INFO -    lastname firstname                           email   jobtitle
+0  Thompson    Leslie  lthompson@classicmodelcars.com  Sales Rep
+1    Fixter      Andy    afixter@classicmodelcars.com  Sales Rep
+2      Bott     Larry      lbott@classicmodelcars.com  Sales Rep
+3  Castillo    Pamela  pcastillo@classicmodelcars.com  Sales Rep
+4      King       Tom      tking@classicmodelcars.com  Sales Rep
+[2022-06-17 19:49:53,065] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-17 19:49:53,088] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=load_stages, execution_date=20220616T000000, start_date=20220617T224952, end_date=20220617T224953
+[2022-06-17 19:49:53,157] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-17 19:49:53,241] {local_task_job.py:273} INFO - 5 downstream tasks scheduled from follow-on schedule check
+[2022-06-17 20:02:32,389] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_stages scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 20:02:32,408] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_stages scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 20:02:32,409] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 20:02:32,409] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-17 20:02:32,409] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 20:02:32,429] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): load_stages> on 2022-06-16 00:00:00+00:00
+[2022-06-17 20:02:32,442] {standard_task_runner.py:52} INFO - Started process 173145 to run task
+[2022-06-17 20:02:32,446] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'load_stages', 'scheduled__2022-06-16T00:00:00+00:00', '--job-id', '1329', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpwszbtep6', '--error-file', '/tmp/tmp_ejl8l59']
+[2022-06-17 20:02:32,447] {standard_task_runner.py:80} INFO - Job 1329: Subtask load_stages
+[2022-06-17 20:02:32,533] {task_command.py:370} INFO - Running <TaskInstance: sales.load_stages scheduled__2022-06-16T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-17 20:02:32,650] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=load_stages
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-16T00:00:00+00:00
+[2022-06-17 20:02:32,716] {logging_mixin.py:115} INFO -      lastname firstname extension                            email              jobtitle
+0    Thompson    Leslie     x4065   lthompson@classicmodelcars.com             Sales Rep
+1      Fixter      Andy      x101     afixter@classicmodelcars.com             Sales Rep
+2        Bott     Larry     x2311       lbott@classicmodelcars.com             Sales Rep
+3    Castillo    Pamela     x2759   pcastillo@classicmodelcars.com             Sales Rep
+4        King       Tom      x103       tking@classicmodelcars.com             Sales Rep
+5       Marsh     Peter      x102      pmarsh@classicmodelcars.com             Sales Rep
+6   Patterson     Steve     x4334  spatterson@classicmodelcars.com             Sales Rep
+7         Bow   Anthony     x5428        abow@classicmodelcars.com    Sales Manager (NA)
+8       Tseng  Foon Yue     x2248      ftseng@classicmodelcars.com             Sales Rep
+9      Bondur      Loui     x6493     lbondur@classicmodelcars.com             Sales Rep
+10  Hernandez    Gerard     x2028   ghernande@classicmodelcars.com             Sales Rep
+11  Patterson      Mary     x4611   mpatterso@classicmodelcars.com              VP Sales
+12      Jones     Barry      x102      bjones@classicmodelcars.com             Sales Rep
+13      Nishi      Mami      x101      mnishi@classicmodelcars.com             Sales Rep
+14  Patterson   William     x4871  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+15   Jennings    Leslie     x3291   ljennings@classicmodelcars.com             Sales Rep
+16     Gerard    Martin     x2312     mgerard@classicmodelcars.com             Sales Rep
+17     Bondur    Gerard     x5408     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+18   Firrelli      Jeff     x9273   jfirrelli@classicmodelcars.com          VP Marketing
+19     Vanauf    George     x4102     gvanauf@classicmodelcars.com             Sales Rep
+20   Firrelli     Julie     x2173   jfirrelli@classicmodelcars.com             Sales Rep
+21     Murphy     Diane     x5800     dmurphy@classicmodelcars.com             President
+22       Kato   Yoshimi      x102       ykato@classicmodelcars.com             Sales Rep
+[2022-06-17 20:02:33,262] {logging_mixin.py:115} INFO -    lastname firstname                           email   jobtitle
+0  Thompson    Leslie  lthompson@classicmodelcars.com  Sales Rep
+1    Fixter      Andy    afixter@classicmodelcars.com  Sales Rep
+2      Bott     Larry      lbott@classicmodelcars.com  Sales Rep
+3  Castillo    Pamela  pcastillo@classicmodelcars.com  Sales Rep
+4      King       Tom      tking@classicmodelcars.com  Sales Rep
+[2022-06-17 20:02:33,263] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-17 20:02:33,290] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=load_stages, execution_date=20220616T000000, start_date=20220617T230232, end_date=20220617T230233
+[2022-06-17 20:02:33,340] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-17 20:02:33,413] {local_task_job.py:273} INFO - 5 downstream tasks scheduled from follow-on schedule check
+[2022-06-17 20:08:27,966] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_stages scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 20:08:27,985] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_stages scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 20:08:27,985] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 20:08:27,986] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-17 20:08:27,986] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 20:08:28,005] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): load_stages> on 2022-06-16 00:00:00+00:00
+[2022-06-17 20:08:28,013] {standard_task_runner.py:52} INFO - Started process 175449 to run task
+[2022-06-17 20:08:28,018] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'load_stages', 'scheduled__2022-06-16T00:00:00+00:00', '--job-id', '1344', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmprpn6l1hu', '--error-file', '/tmp/tmpxmzc59gv']
+[2022-06-17 20:08:28,018] {standard_task_runner.py:80} INFO - Job 1344: Subtask load_stages
+[2022-06-17 20:08:28,096] {task_command.py:370} INFO - Running <TaskInstance: sales.load_stages scheduled__2022-06-16T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-17 20:08:28,197] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=load_stages
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-16T00:00:00+00:00
+[2022-06-17 20:08:28,248] {logging_mixin.py:115} INFO -      lastname firstname extension                            email              jobtitle
+0    Thompson    Leslie     x4065   lthompson@classicmodelcars.com             Sales Rep
+1      Fixter      Andy      x101     afixter@classicmodelcars.com             Sales Rep
+2        Bott     Larry     x2311       lbott@classicmodelcars.com             Sales Rep
+3    Castillo    Pamela     x2759   pcastillo@classicmodelcars.com             Sales Rep
+4        King       Tom      x103       tking@classicmodelcars.com             Sales Rep
+5       Marsh     Peter      x102      pmarsh@classicmodelcars.com             Sales Rep
+6   Patterson     Steve     x4334  spatterson@classicmodelcars.com             Sales Rep
+7         Bow   Anthony     x5428        abow@classicmodelcars.com    Sales Manager (NA)
+8       Tseng  Foon Yue     x2248      ftseng@classicmodelcars.com             Sales Rep
+9      Bondur      Loui     x6493     lbondur@classicmodelcars.com             Sales Rep
+10  Hernandez    Gerard     x2028   ghernande@classicmodelcars.com             Sales Rep
+11  Patterson      Mary     x4611   mpatterso@classicmodelcars.com              VP Sales
+12      Jones     Barry      x102      bjones@classicmodelcars.com             Sales Rep
+13      Nishi      Mami      x101      mnishi@classicmodelcars.com             Sales Rep
+14  Patterson   William     x4871  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+15   Jennings    Leslie     x3291   ljennings@classicmodelcars.com             Sales Rep
+16     Gerard    Martin     x2312     mgerard@classicmodelcars.com             Sales Rep
+17     Bondur    Gerard     x5408     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+18   Firrelli      Jeff     x9273   jfirrelli@classicmodelcars.com          VP Marketing
+19     Vanauf    George     x4102     gvanauf@classicmodelcars.com             Sales Rep
+20   Firrelli     Julie     x2173   jfirrelli@classicmodelcars.com             Sales Rep
+21     Murphy     Diane     x5800     dmurphy@classicmodelcars.com             President
+22       Kato   Yoshimi      x102       ykato@classicmodelcars.com             Sales Rep
+[2022-06-17 20:08:28,715] {logging_mixin.py:115} INFO -    lastname firstname                           email   jobtitle
+0  Thompson    Leslie  lthompson@classicmodelcars.com  Sales Rep
+1    Fixter      Andy    afixter@classicmodelcars.com  Sales Rep
+2      Bott     Larry      lbott@classicmodelcars.com  Sales Rep
+3  Castillo    Pamela  pcastillo@classicmodelcars.com  Sales Rep
+4      King       Tom      tking@classicmodelcars.com  Sales Rep
+[2022-06-17 20:08:28,716] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-17 20:08:28,736] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=load_stages, execution_date=20220616T000000, start_date=20220617T230827, end_date=20220617T230828
+[2022-06-17 20:08:28,791] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-17 20:08:28,865] {local_task_job.py:273} INFO - 5 downstream tasks scheduled from follow-on schedule check
+[2022-06-17 20:15:33,557] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_stages scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 20:15:33,581] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.load_stages scheduled__2022-06-16T00:00:00+00:00 [queued]>
+[2022-06-17 20:15:33,581] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 20:15:33,582] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-17 20:15:33,582] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 20:15:33,609] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): load_stages> on 2022-06-16 00:00:00+00:00
+[2022-06-17 20:15:33,619] {standard_task_runner.py:52} INFO - Started process 178263 to run task
+[2022-06-17 20:15:33,625] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'load_stages', 'scheduled__2022-06-16T00:00:00+00:00', '--job-id', '1359', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpmv8dn_m0', '--error-file', '/tmp/tmp7ux1hkuf']
+[2022-06-17 20:15:33,626] {standard_task_runner.py:80} INFO - Job 1359: Subtask load_stages
+[2022-06-17 20:15:33,717] {task_command.py:370} INFO - Running <TaskInstance: sales.load_stages scheduled__2022-06-16T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-17 20:15:33,838] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=load_stages
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-16T00:00:00+00:00
+[2022-06-17 20:15:33,903] {logging_mixin.py:115} INFO -      lastname firstname extension                            email              jobtitle
+0    Thompson    Leslie     x4065   lthompson@classicmodelcars.com             Sales Rep
+1      Fixter      Andy      x101     afixter@classicmodelcars.com             Sales Rep
+2        Bott     Larry     x2311       lbott@classicmodelcars.com             Sales Rep
+3    Castillo    Pamela     x2759   pcastillo@classicmodelcars.com             Sales Rep
+4        King       Tom      x103       tking@classicmodelcars.com             Sales Rep
+5       Marsh     Peter      x102      pmarsh@classicmodelcars.com             Sales Rep
+6   Patterson     Steve     x4334  spatterson@classicmodelcars.com             Sales Rep
+7         Bow   Anthony     x5428        abow@classicmodelcars.com    Sales Manager (NA)
+8       Tseng  Foon Yue     x2248      ftseng@classicmodelcars.com             Sales Rep
+9      Bondur      Loui     x6493     lbondur@classicmodelcars.com             Sales Rep
+10  Hernandez    Gerard     x2028   ghernande@classicmodelcars.com             Sales Rep
+11  Patterson      Mary     x4611   mpatterso@classicmodelcars.com              VP Sales
+12      Jones     Barry      x102      bjones@classicmodelcars.com             Sales Rep
+13      Nishi      Mami      x101      mnishi@classicmodelcars.com             Sales Rep
+14  Patterson   William     x4871  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+15   Jennings    Leslie     x3291   ljennings@classicmodelcars.com             Sales Rep
+16     Gerard    Martin     x2312     mgerard@classicmodelcars.com             Sales Rep
+17     Bondur    Gerard     x5408     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+18   Firrelli      Jeff     x9273   jfirrelli@classicmodelcars.com          VP Marketing
+19     Vanauf    George     x4102     gvanauf@classicmodelcars.com             Sales Rep
+20   Firrelli     Julie     x2173   jfirrelli@classicmodelcars.com             Sales Rep
+21     Murphy     Diane     x5800     dmurphy@classicmodelcars.com             President
+22       Kato   Yoshimi      x102       ykato@classicmodelcars.com             Sales Rep
+[2022-06-17 20:15:34,462] {logging_mixin.py:115} INFO -    lastname firstname                           email   jobtitle
+0  Thompson    Leslie  lthompson@classicmodelcars.com  Sales Rep
+1    Fixter      Andy    afixter@classicmodelcars.com  Sales Rep
+2      Bott     Larry      lbott@classicmodelcars.com  Sales Rep
+3  Castillo    Pamela  pcastillo@classicmodelcars.com  Sales Rep
+4      King       Tom      tking@classicmodelcars.com  Sales Rep
+[2022-06-17 20:15:34,463] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-17 20:15:34,486] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=load_stages, execution_date=20220616T000000, start_date=20220617T231533, end_date=20220617T231534
+[2022-06-17 20:15:34,520] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-17 20:15:34,595] {local_task_job.py:273} INFO - 5 downstream tasks scheduled from follow-on schedule check

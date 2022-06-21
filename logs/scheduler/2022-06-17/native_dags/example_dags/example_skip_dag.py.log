@@ -1,0 +1,343 @@
+[2022-06-17 17:11:09,916] {processor.py:153} INFO - Started process (PID=132451) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:11:09,917] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:11:09,918] {logging_mixin.py:115} INFO - [2022-06-17 17:11:09,917] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:11:09,925] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:11:09,958] {logging_mixin.py:115} INFO - [2022-06-17 17:11:09,958] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:11:09,997] {logging_mixin.py:115} INFO - [2022-06-17 17:11:09,996] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:11:09.996406+00:00, run_after=2022-06-17T20:11:09.996406+00:00
+[2022-06-17 17:11:10,024] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.113 seconds
+[2022-06-17 17:11:40,923] {processor.py:153} INFO - Started process (PID=132782) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:11:40,924] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:11:40,926] {logging_mixin.py:115} INFO - [2022-06-17 17:11:40,925] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:11:40,937] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:11:40,990] {logging_mixin.py:115} INFO - [2022-06-17 17:11:40,990] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:11:41,036] {logging_mixin.py:115} INFO - [2022-06-17 17:11:41,036] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:11:41.035750+00:00, run_after=2022-06-17T20:11:41.035750+00:00
+[2022-06-17 17:11:41,066] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.150 seconds
+[2022-06-17 17:12:12,413] {processor.py:153} INFO - Started process (PID=133981) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:12:12,414] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:12:12,415] {logging_mixin.py:115} INFO - [2022-06-17 17:12:12,414] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:12:12,422] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:12:12,454] {logging_mixin.py:115} INFO - [2022-06-17 17:12:12,454] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:12:12,491] {logging_mixin.py:115} INFO - [2022-06-17 17:12:12,491] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:12:12.491169+00:00, run_after=2022-06-17T20:12:12.491169+00:00
+[2022-06-17 17:12:12,512] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.103 seconds
+[2022-06-17 17:12:43,504] {processor.py:153} INFO - Started process (PID=135073) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:12:43,505] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:12:43,506] {logging_mixin.py:115} INFO - [2022-06-17 17:12:43,506] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:12:43,515] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:12:43,551] {logging_mixin.py:115} INFO - [2022-06-17 17:12:43,551] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:12:43,599] {logging_mixin.py:115} INFO - [2022-06-17 17:12:43,599] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:12:43.598818+00:00, run_after=2022-06-17T20:12:43.598818+00:00
+[2022-06-17 17:12:43,627] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.128 seconds
+[2022-06-17 17:13:14,804] {processor.py:153} INFO - Started process (PID=135480) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:13:14,805] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:13:14,805] {logging_mixin.py:115} INFO - [2022-06-17 17:13:14,805] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:13:14,812] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:13:14,849] {logging_mixin.py:115} INFO - [2022-06-17 17:13:14,848] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:13:14,910] {logging_mixin.py:115} INFO - [2022-06-17 17:13:14,910] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:13:14.908990+00:00, run_after=2022-06-17T20:13:14.908990+00:00
+[2022-06-17 17:13:14,946] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.148 seconds
+[2022-06-17 17:13:46,006] {processor.py:153} INFO - Started process (PID=135787) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:13:46,007] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:13:46,007] {logging_mixin.py:115} INFO - [2022-06-17 17:13:46,007] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:13:46,014] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:13:46,046] {logging_mixin.py:115} INFO - [2022-06-17 17:13:46,046] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:13:46,082] {logging_mixin.py:115} INFO - [2022-06-17 17:13:46,081] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:13:46.081635+00:00, run_after=2022-06-17T20:13:46.081635+00:00
+[2022-06-17 17:13:46,102] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.100 seconds
+[2022-06-17 17:14:17,249] {processor.py:153} INFO - Started process (PID=136047) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:14:17,250] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:14:17,251] {logging_mixin.py:115} INFO - [2022-06-17 17:14:17,251] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:14:17,260] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:14:17,300] {logging_mixin.py:115} INFO - [2022-06-17 17:14:17,300] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:14:17,349] {logging_mixin.py:115} INFO - [2022-06-17 17:14:17,349] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:14:17.348942+00:00, run_after=2022-06-17T20:14:17.348942+00:00
+[2022-06-17 17:14:17,370] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.128 seconds
+[2022-06-17 17:14:48,589] {processor.py:153} INFO - Started process (PID=136415) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:14:48,590] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:14:48,590] {logging_mixin.py:115} INFO - [2022-06-17 17:14:48,590] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:14:48,597] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:14:48,629] {logging_mixin.py:115} INFO - [2022-06-17 17:14:48,629] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:14:48,668] {logging_mixin.py:115} INFO - [2022-06-17 17:14:48,668] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:14:48.667317+00:00, run_after=2022-06-17T20:14:48.667317+00:00
+[2022-06-17 17:14:48,692] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.107 seconds
+[2022-06-17 17:15:19,968] {processor.py:153} INFO - Started process (PID=136680) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:15:19,969] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:15:19,969] {logging_mixin.py:115} INFO - [2022-06-17 17:15:19,969] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:15:19,976] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:15:20,009] {logging_mixin.py:115} INFO - [2022-06-17 17:15:20,009] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:15:20,047] {logging_mixin.py:115} INFO - [2022-06-17 17:15:20,047] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:15:20.046868+00:00, run_after=2022-06-17T20:15:20.046868+00:00
+[2022-06-17 17:15:20,067] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.104 seconds
+[2022-06-17 17:15:50,953] {processor.py:153} INFO - Started process (PID=136844) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:15:50,953] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:15:50,954] {logging_mixin.py:115} INFO - [2022-06-17 17:15:50,954] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:15:50,961] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:15:50,994] {logging_mixin.py:115} INFO - [2022-06-17 17:15:50,993] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:15:51,028] {logging_mixin.py:115} INFO - [2022-06-17 17:15:51,027] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:15:51.027405+00:00, run_after=2022-06-17T20:15:51.027405+00:00
+[2022-06-17 17:15:51,046] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.097 seconds
+[2022-06-17 17:16:21,970] {processor.py:153} INFO - Started process (PID=137049) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:16:21,971] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:16:21,972] {logging_mixin.py:115} INFO - [2022-06-17 17:16:21,972] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:16:21,979] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:16:22,013] {logging_mixin.py:115} INFO - [2022-06-17 17:16:22,013] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:16:22,050] {logging_mixin.py:115} INFO - [2022-06-17 17:16:22,049] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:16:22.049438+00:00, run_after=2022-06-17T20:16:22.049438+00:00
+[2022-06-17 17:16:22,069] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.103 seconds
+[2022-06-17 17:16:53,223] {processor.py:153} INFO - Started process (PID=137268) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:16:53,224] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:16:53,224] {logging_mixin.py:115} INFO - [2022-06-17 17:16:53,224] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:16:53,231] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:16:53,262] {logging_mixin.py:115} INFO - [2022-06-17 17:16:53,262] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:16:53,300] {logging_mixin.py:115} INFO - [2022-06-17 17:16:53,299] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:16:53.299350+00:00, run_after=2022-06-17T20:16:53.299350+00:00
+[2022-06-17 17:16:53,319] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.102 seconds
+[2022-06-17 17:17:24,162] {processor.py:153} INFO - Started process (PID=137519) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:17:24,162] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:17:24,163] {logging_mixin.py:115} INFO - [2022-06-17 17:17:24,163] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:17:24,170] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:17:24,205] {logging_mixin.py:115} INFO - [2022-06-17 17:17:24,205] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:17:24,237] {logging_mixin.py:115} INFO - [2022-06-17 17:17:24,237] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:17:24.237116+00:00, run_after=2022-06-17T20:17:24.237116+00:00
+[2022-06-17 17:17:24,254] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.098 seconds
+[2022-06-17 17:17:55,234] {processor.py:153} INFO - Started process (PID=137761) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:17:55,234] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:17:55,235] {logging_mixin.py:115} INFO - [2022-06-17 17:17:55,235] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:17:55,242] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:17:55,276] {logging_mixin.py:115} INFO - [2022-06-17 17:17:55,276] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:17:55,313] {logging_mixin.py:115} INFO - [2022-06-17 17:17:55,313] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:17:55.313209+00:00, run_after=2022-06-17T20:17:55.313209+00:00
+[2022-06-17 17:17:55,333] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.104 seconds
+[2022-06-17 17:18:26,497] {processor.py:153} INFO - Started process (PID=138062) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:18:26,497] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:18:26,498] {logging_mixin.py:115} INFO - [2022-06-17 17:18:26,498] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:18:26,505] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:18:26,543] {logging_mixin.py:115} INFO - [2022-06-17 17:18:26,543] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:18:26,580] {logging_mixin.py:115} INFO - [2022-06-17 17:18:26,580] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:18:26.580008+00:00, run_after=2022-06-17T20:18:26.580008+00:00
+[2022-06-17 17:18:26,600] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.108 seconds
+[2022-06-17 17:18:57,525] {processor.py:153} INFO - Started process (PID=138318) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:18:57,526] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:18:57,526] {logging_mixin.py:115} INFO - [2022-06-17 17:18:57,526] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:18:57,533] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:18:57,563] {logging_mixin.py:115} INFO - [2022-06-17 17:18:57,563] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:18:57,597] {logging_mixin.py:115} INFO - [2022-06-17 17:18:57,597] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:18:57.597113+00:00, run_after=2022-06-17T20:18:57.597113+00:00
+[2022-06-17 17:18:57,615] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.093 seconds
+[2022-06-17 17:19:28,787] {processor.py:153} INFO - Started process (PID=138582) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:19:28,788] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:19:28,789] {logging_mixin.py:115} INFO - [2022-06-17 17:19:28,789] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:19:28,795] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:19:28,829] {logging_mixin.py:115} INFO - [2022-06-17 17:19:28,829] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:19:28,867] {logging_mixin.py:115} INFO - [2022-06-17 17:19:28,866] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:19:28.866488+00:00, run_after=2022-06-17T20:19:28.866488+00:00
+[2022-06-17 17:19:28,887] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.105 seconds
+[2022-06-17 17:19:59,671] {processor.py:153} INFO - Started process (PID=138841) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:19:59,671] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:19:59,672] {logging_mixin.py:115} INFO - [2022-06-17 17:19:59,671] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:19:59,679] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:19:59,711] {logging_mixin.py:115} INFO - [2022-06-17 17:19:59,710] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:19:59,746] {logging_mixin.py:115} INFO - [2022-06-17 17:19:59,746] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:19:59.746036+00:00, run_after=2022-06-17T20:19:59.746036+00:00
+[2022-06-17 17:19:59,769] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.102 seconds
+[2022-06-17 17:20:30,860] {processor.py:153} INFO - Started process (PID=139158) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:20:30,861] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:20:30,861] {logging_mixin.py:115} INFO - [2022-06-17 17:20:30,861] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:20:30,869] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:20:30,903] {logging_mixin.py:115} INFO - [2022-06-17 17:20:30,903] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:20:30,946] {logging_mixin.py:115} INFO - [2022-06-17 17:20:30,945] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:20:30.945531+00:00, run_after=2022-06-17T20:20:30.945531+00:00
+[2022-06-17 17:20:30,965] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.109 seconds
+[2022-06-17 17:21:01,930] {processor.py:153} INFO - Started process (PID=139373) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:21:01,930] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:21:01,931] {logging_mixin.py:115} INFO - [2022-06-17 17:21:01,931] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:21:01,937] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:21:01,971] {logging_mixin.py:115} INFO - [2022-06-17 17:21:01,970] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:21:02,006] {logging_mixin.py:115} INFO - [2022-06-17 17:21:02,006] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:21:02.006141+00:00, run_after=2022-06-17T20:21:02.006141+00:00
+[2022-06-17 17:21:02,027] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.102 seconds
+[2022-06-17 17:21:32,913] {processor.py:153} INFO - Started process (PID=139616) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:21:32,913] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:21:32,914] {logging_mixin.py:115} INFO - [2022-06-17 17:21:32,914] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:21:32,920] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:21:32,954] {logging_mixin.py:115} INFO - [2022-06-17 17:21:32,954] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:21:32,993] {logging_mixin.py:115} INFO - [2022-06-17 17:21:32,993] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:21:32.992621+00:00, run_after=2022-06-17T20:21:32.992621+00:00
+[2022-06-17 17:21:33,012] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.103 seconds
+[2022-06-17 17:22:04,022] {processor.py:153} INFO - Started process (PID=139875) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:22:04,023] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:22:04,023] {logging_mixin.py:115} INFO - [2022-06-17 17:22:04,023] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:22:04,030] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:22:04,060] {logging_mixin.py:115} INFO - [2022-06-17 17:22:04,060] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:22:04,093] {logging_mixin.py:115} INFO - [2022-06-17 17:22:04,093] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:22:04.093345+00:00, run_after=2022-06-17T20:22:04.093345+00:00
+[2022-06-17 17:22:04,111] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.094 seconds
+[2022-06-17 17:22:35,019] {processor.py:153} INFO - Started process (PID=140138) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:22:35,020] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:22:35,020] {logging_mixin.py:115} INFO - [2022-06-17 17:22:35,020] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:22:35,029] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:22:35,066] {logging_mixin.py:115} INFO - [2022-06-17 17:22:35,066] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:22:35,104] {logging_mixin.py:115} INFO - [2022-06-17 17:22:35,104] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:22:35.103983+00:00, run_after=2022-06-17T20:22:35.103983+00:00
+[2022-06-17 17:22:35,124] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.108 seconds
+[2022-06-17 17:23:06,129] {processor.py:153} INFO - Started process (PID=140364) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:23:06,130] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:23:06,131] {logging_mixin.py:115} INFO - [2022-06-17 17:23:06,131] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:23:06,137] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:23:06,170] {logging_mixin.py:115} INFO - [2022-06-17 17:23:06,169] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:23:06,207] {logging_mixin.py:115} INFO - [2022-06-17 17:23:06,207] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:23:06.206691+00:00, run_after=2022-06-17T20:23:06.206691+00:00
+[2022-06-17 17:23:06,225] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.100 seconds
+[2022-06-17 17:23:37,258] {processor.py:153} INFO - Started process (PID=140604) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:23:37,259] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:23:37,260] {logging_mixin.py:115} INFO - [2022-06-17 17:23:37,260] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:23:37,266] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:23:37,298] {logging_mixin.py:115} INFO - [2022-06-17 17:23:37,297] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:23:37,331] {logging_mixin.py:115} INFO - [2022-06-17 17:23:37,331] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:23:37.330748+00:00, run_after=2022-06-17T20:23:37.330748+00:00
+[2022-06-17 17:23:37,354] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.100 seconds
+[2022-06-17 17:24:08,616] {processor.py:153} INFO - Started process (PID=140769) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:24:08,617] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:24:08,617] {logging_mixin.py:115} INFO - [2022-06-17 17:24:08,617] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:24:08,624] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:24:08,657] {logging_mixin.py:115} INFO - [2022-06-17 17:24:08,657] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:24:08,698] {logging_mixin.py:115} INFO - [2022-06-17 17:24:08,697] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:24:08.697331+00:00, run_after=2022-06-17T20:24:08.697331+00:00
+[2022-06-17 17:24:08,730] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.118 seconds
+[2022-06-17 17:24:39,822] {processor.py:153} INFO - Started process (PID=141094) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:24:39,822] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:24:39,823] {logging_mixin.py:115} INFO - [2022-06-17 17:24:39,823] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:24:39,830] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:24:39,866] {logging_mixin.py:115} INFO - [2022-06-17 17:24:39,866] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:24:39,905] {logging_mixin.py:115} INFO - [2022-06-17 17:24:39,904] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:24:39.904425+00:00, run_after=2022-06-17T20:24:39.904425+00:00
+[2022-06-17 17:24:39,926] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.109 seconds
+[2022-06-17 17:25:11,104] {processor.py:153} INFO - Started process (PID=141282) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:25:11,105] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:25:11,105] {logging_mixin.py:115} INFO - [2022-06-17 17:25:11,105] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:25:11,115] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:25:11,155] {logging_mixin.py:115} INFO - [2022-06-17 17:25:11,155] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:25:11,198] {logging_mixin.py:115} INFO - [2022-06-17 17:25:11,198] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:25:11.198125+00:00, run_after=2022-06-17T20:25:11.198125+00:00
+[2022-06-17 17:25:11,221] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.122 seconds
+[2022-06-17 17:25:42,339] {processor.py:153} INFO - Started process (PID=141478) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:25:42,340] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:25:42,341] {logging_mixin.py:115} INFO - [2022-06-17 17:25:42,341] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:25:42,348] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:25:42,384] {logging_mixin.py:115} INFO - [2022-06-17 17:25:42,384] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:25:42,427] {logging_mixin.py:115} INFO - [2022-06-17 17:25:42,426] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:25:42.426232+00:00, run_after=2022-06-17T20:25:42.426232+00:00
+[2022-06-17 17:25:42,446] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.112 seconds
+[2022-06-17 17:26:13,711] {processor.py:153} INFO - Started process (PID=141683) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:26:13,712] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:26:13,712] {logging_mixin.py:115} INFO - [2022-06-17 17:26:13,712] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:26:13,719] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:26:13,750] {logging_mixin.py:115} INFO - [2022-06-17 17:26:13,750] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:26:13,788] {logging_mixin.py:115} INFO - [2022-06-17 17:26:13,788] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:26:13.788253+00:00, run_after=2022-06-17T20:26:13.788253+00:00
+[2022-06-17 17:26:13,806] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.098 seconds
+[2022-06-17 17:26:44,833] {processor.py:153} INFO - Started process (PID=141857) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:26:44,834] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:26:44,834] {logging_mixin.py:115} INFO - [2022-06-17 17:26:44,834] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:26:44,840] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:26:44,876] {logging_mixin.py:115} INFO - [2022-06-17 17:26:44,876] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:26:44,911] {logging_mixin.py:115} INFO - [2022-06-17 17:26:44,911] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:26:44.910948+00:00, run_after=2022-06-17T20:26:44.910948+00:00
+[2022-06-17 17:26:44,929] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.101 seconds
+[2022-06-17 17:27:15,983] {processor.py:153} INFO - Started process (PID=142024) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:27:15,983] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:27:15,984] {logging_mixin.py:115} INFO - [2022-06-17 17:27:15,984] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:27:15,992] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:27:16,025] {logging_mixin.py:115} INFO - [2022-06-17 17:27:16,025] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:27:16,069] {logging_mixin.py:115} INFO - [2022-06-17 17:27:16,068] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:27:16.068156+00:00, run_after=2022-06-17T20:27:16.068156+00:00
+[2022-06-17 17:27:16,094] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.116 seconds
+[2022-06-17 17:27:47,117] {processor.py:153} INFO - Started process (PID=142259) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:27:47,117] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:27:47,118] {logging_mixin.py:115} INFO - [2022-06-17 17:27:47,118] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:27:47,125] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:27:47,160] {logging_mixin.py:115} INFO - [2022-06-17 17:27:47,159] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:27:47,198] {logging_mixin.py:115} INFO - [2022-06-17 17:27:47,198] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:27:47.197891+00:00, run_after=2022-06-17T20:27:47.197891+00:00
+[2022-06-17 17:27:47,217] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.105 seconds
+[2022-06-17 17:28:18,055] {processor.py:153} INFO - Started process (PID=142520) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:28:18,056] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:28:18,056] {logging_mixin.py:115} INFO - [2022-06-17 17:28:18,056] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:28:18,062] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:28:18,093] {logging_mixin.py:115} INFO - [2022-06-17 17:28:18,093] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:28:18,130] {logging_mixin.py:115} INFO - [2022-06-17 17:28:18,130] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:28:18.130155+00:00, run_after=2022-06-17T20:28:18.130155+00:00
+[2022-06-17 17:28:18,149] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.099 seconds
+[2022-06-17 17:28:49,199] {processor.py:153} INFO - Started process (PID=142721) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:28:49,199] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:28:49,200] {logging_mixin.py:115} INFO - [2022-06-17 17:28:49,200] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:28:49,207] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:28:49,241] {logging_mixin.py:115} INFO - [2022-06-17 17:28:49,241] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:28:49,274] {logging_mixin.py:115} INFO - [2022-06-17 17:28:49,274] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:28:49.274174+00:00, run_after=2022-06-17T20:28:49.274174+00:00
+[2022-06-17 17:28:49,293] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.099 seconds
+[2022-06-17 17:29:20,383] {processor.py:153} INFO - Started process (PID=142924) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:29:20,384] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:29:20,385] {logging_mixin.py:115} INFO - [2022-06-17 17:29:20,385] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:29:20,392] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:29:20,427] {logging_mixin.py:115} INFO - [2022-06-17 17:29:20,427] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:29:20,470] {logging_mixin.py:115} INFO - [2022-06-17 17:29:20,470] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:29:20.470014+00:00, run_after=2022-06-17T20:29:20.470014+00:00
+[2022-06-17 17:29:20,494] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.116 seconds
+[2022-06-17 17:29:51,440] {processor.py:153} INFO - Started process (PID=143128) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:29:51,441] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:29:51,441] {logging_mixin.py:115} INFO - [2022-06-17 17:29:51,441] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:29:51,450] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:29:51,484] {logging_mixin.py:115} INFO - [2022-06-17 17:29:51,484] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:29:51,537] {logging_mixin.py:115} INFO - [2022-06-17 17:29:51,537] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:29:51.537137+00:00, run_after=2022-06-17T20:29:51.537137+00:00
+[2022-06-17 17:29:51,558] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.121 seconds
+[2022-06-17 17:30:22,507] {processor.py:153} INFO - Started process (PID=143285) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:30:22,507] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:30:22,508] {logging_mixin.py:115} INFO - [2022-06-17 17:30:22,508] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:30:22,515] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:30:22,554] {logging_mixin.py:115} INFO - [2022-06-17 17:30:22,554] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:30:22,592] {logging_mixin.py:115} INFO - [2022-06-17 17:30:22,592] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:30:22.591893+00:00, run_after=2022-06-17T20:30:22.591893+00:00
+[2022-06-17 17:30:22,612] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.109 seconds
+[2022-06-17 17:30:53,465] {processor.py:153} INFO - Started process (PID=143452) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:30:53,466] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:30:53,467] {logging_mixin.py:115} INFO - [2022-06-17 17:30:53,467] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:30:53,474] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:30:53,511] {logging_mixin.py:115} INFO - [2022-06-17 17:30:53,511] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:30:53,550] {logging_mixin.py:115} INFO - [2022-06-17 17:30:53,550] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:30:53.549968+00:00, run_after=2022-06-17T20:30:53.549968+00:00
+[2022-06-17 17:30:53,572] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.112 seconds
+[2022-06-17 17:31:24,843] {processor.py:153} INFO - Started process (PID=143728) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:31:24,844] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:31:24,845] {logging_mixin.py:115} INFO - [2022-06-17 17:31:24,844] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:31:24,851] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:31:24,888] {logging_mixin.py:115} INFO - [2022-06-17 17:31:24,888] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:31:24,930] {logging_mixin.py:115} INFO - [2022-06-17 17:31:24,930] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:31:24.930110+00:00, run_after=2022-06-17T20:31:24.930110+00:00
+[2022-06-17 17:31:24,951] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.114 seconds
+[2022-06-17 17:31:55,527] {processor.py:153} INFO - Started process (PID=143906) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:31:55,528] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:31:55,529] {logging_mixin.py:115} INFO - [2022-06-17 17:31:55,529] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:31:55,536] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:31:55,572] {logging_mixin.py:115} INFO - [2022-06-17 17:31:55,572] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:31:55,618] {logging_mixin.py:115} INFO - [2022-06-17 17:31:55,618] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:31:55.617928+00:00, run_after=2022-06-17T20:31:55.617928+00:00
+[2022-06-17 17:31:55,649] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.129 seconds
+[2022-06-17 17:32:25,953] {processor.py:153} INFO - Started process (PID=144091) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:32:25,954] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:32:25,954] {logging_mixin.py:115} INFO - [2022-06-17 17:32:25,954] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:32:25,961] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:32:25,997] {logging_mixin.py:115} INFO - [2022-06-17 17:32:25,996] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:32:26,034] {logging_mixin.py:115} INFO - [2022-06-17 17:32:26,034] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:32:26.034125+00:00, run_after=2022-06-17T20:32:26.034125+00:00
+[2022-06-17 17:32:26,056] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.109 seconds
+[2022-06-17 17:32:57,474] {processor.py:153} INFO - Started process (PID=144262) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:32:57,475] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:32:57,476] {logging_mixin.py:115} INFO - [2022-06-17 17:32:57,476] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:32:57,483] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:32:57,520] {logging_mixin.py:115} INFO - [2022-06-17 17:32:57,520] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:32:57,559] {logging_mixin.py:115} INFO - [2022-06-17 17:32:57,559] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:32:57.559092+00:00, run_after=2022-06-17T20:32:57.559092+00:00
+[2022-06-17 17:32:57,579] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.111 seconds
+[2022-06-17 17:33:28,235] {processor.py:153} INFO - Started process (PID=144440) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:33:28,236] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:33:28,237] {logging_mixin.py:115} INFO - [2022-06-17 17:33:28,237] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:33:28,244] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:33:28,281] {logging_mixin.py:115} INFO - [2022-06-17 17:33:28,281] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:33:28,319] {logging_mixin.py:115} INFO - [2022-06-17 17:33:28,318] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:33:28.318555+00:00, run_after=2022-06-17T20:33:28.318555+00:00
+[2022-06-17 17:33:28,340] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.109 seconds
+[2022-06-17 17:33:59,799] {processor.py:153} INFO - Started process (PID=144607) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:33:59,799] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:33:59,800] {logging_mixin.py:115} INFO - [2022-06-17 17:33:59,800] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:33:59,806] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:33:59,843] {logging_mixin.py:115} INFO - [2022-06-17 17:33:59,843] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:33:59,883] {logging_mixin.py:115} INFO - [2022-06-17 17:33:59,883] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:33:59.883026+00:00, run_after=2022-06-17T20:33:59.883026+00:00
+[2022-06-17 17:33:59,904] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.110 seconds
+[2022-06-17 17:34:30,994] {processor.py:153} INFO - Started process (PID=144987) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:34:30,995] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:34:30,997] {logging_mixin.py:115} INFO - [2022-06-17 17:34:30,997] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:34:31,007] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:34:31,058] {logging_mixin.py:115} INFO - [2022-06-17 17:34:31,058] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:34:31,099] {logging_mixin.py:115} INFO - [2022-06-17 17:34:31,098] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:34:31.098327+00:00, run_after=2022-06-17T20:34:31.098327+00:00
+[2022-06-17 17:34:31,123] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.135 seconds
+[2022-06-17 17:35:02,571] {processor.py:153} INFO - Started process (PID=145339) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:35:02,571] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:35:02,572] {logging_mixin.py:115} INFO - [2022-06-17 17:35:02,572] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:35:02,580] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:35:02,614] {logging_mixin.py:115} INFO - [2022-06-17 17:35:02,614] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:35:02,648] {logging_mixin.py:115} INFO - [2022-06-17 17:35:02,648] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:35:02.648104+00:00, run_after=2022-06-17T20:35:02.648104+00:00
+[2022-06-17 17:35:02,674] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.108 seconds
+[2022-06-17 17:35:33,962] {processor.py:153} INFO - Started process (PID=145658) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:35:33,963] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:35:33,964] {logging_mixin.py:115} INFO - [2022-06-17 17:35:33,964] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:35:33,973] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:35:34,011] {logging_mixin.py:115} INFO - [2022-06-17 17:35:34,011] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:35:34,057] {logging_mixin.py:115} INFO - [2022-06-17 17:35:34,057] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:35:34.056097+00:00, run_after=2022-06-17T20:35:34.056097+00:00
+[2022-06-17 17:35:34,080] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.123 seconds
+[2022-06-17 17:36:05,262] {processor.py:153} INFO - Started process (PID=145996) to work on /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:36:05,263] {processor.py:641} INFO - Processing file /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2022-06-17 17:36:05,264] {logging_mixin.py:115} INFO - [2022-06-17 17:36:05,263] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:36:05,271] {processor.py:651} INFO - DAG(s) dict_keys(['example_skip_dag']) retrieved from /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py
+[2022-06-17 17:36:05,311] {logging_mixin.py:115} INFO - [2022-06-17 17:36:05,311] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-17 17:36:05,354] {logging_mixin.py:115} INFO - [2022-06-17 17:36:05,354] {dag.py:2927} INFO - Setting next_dagrun for example_skip_dag to 2022-06-16T20:36:05.353777+00:00, run_after=2022-06-17T20:36:05.353777+00:00
+[2022-06-17 17:36:05,377] {processor.py:161} INFO - Processing /home/uiliam/sandbox/lib/python3.9/site-packages/airflow/example_dags/example_skip_dag.py took 0.120 seconds

@@ -1,0 +1,424 @@
+[2022-06-20 23:02:33,054] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-20 23:02:33,071] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-20 23:02:33,071] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-20 23:02:33,071] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-20 23:02:33,071] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-20 23:02:33,084] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): criar_Fato> on 2022-06-20 00:00:00+00:00
+[2022-06-20 23:02:33,092] {standard_task_runner.py:52} INFO - Started process 9188 to run task
+[2022-06-20 23:02:33,096] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'criar_Fato', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '528', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmp5i7i731z', '--error-file', '/tmp/tmp_0no0aov']
+[2022-06-20 23:02:33,097] {standard_task_runner.py:80} INFO - Job 528: Subtask criar_Fato
+[2022-06-20 23:02:33,162] {task_command.py:370} INFO - Running <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-20 23:02:33,249] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=criar_Fato
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-20 23:02:33,263] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-20 23:02:33,269] {dbapi.py:213} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS fato (
+            id_sales SERIAL PRIMARY KEY,
+            id_customers INT NOT NULL ,
+            id_products INT NOT NULL,
+            id_time INT NOT NULL,
+            id_emp INT NOT NULL,
+            CONSTRAINT fk_customers FOREIGN KEY (id_customers) REFERENCES dm_customers(id_customers),
+            CONSTRAINT fk_products FOREIGN KEY (id_products) REFERENCES dm_products (id_products),
+            CONSTRAINT fk_time FOREIGN KEY (id_time) REFERENCES dm_time(id_time),
+            CONSTRAINT fk_emp FOREIGN KEY (id_emp) REFERENCES dm_emp(id_emp),
+            quantityordered int NOT NULL,
+            priceeach float NOT NULL,
+            buyprice float NOT NULL
+            )
+            , parameters: None
+[2022-06-20 23:02:33,270] {postgres.py:94} INFO - NOTICE:  relation "fato" already exists, skipping
+
+[2022-06-20 23:02:33,291] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=criar_Fato, execution_date=20220620T000000, start_date=20220621T020233, end_date=20220621T020233
+[2022-06-20 23:02:33,347] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-20 23:02:33,391] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 01:39:15,964] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:39:15,985] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:39:15,986] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:39:15,986] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 01:39:15,986] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:39:16,005] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): criar_Fato> on 2022-06-20 00:00:00+00:00
+[2022-06-21 01:39:16,015] {standard_task_runner.py:52} INFO - Started process 26969 to run task
+[2022-06-21 01:39:16,019] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'criar_Fato', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '564', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpldcnh6ih', '--error-file', '/tmp/tmpb6jhx1oz']
+[2022-06-21 01:39:16,019] {standard_task_runner.py:80} INFO - Job 564: Subtask criar_Fato
+[2022-06-21 01:39:16,105] {task_command.py:370} INFO - Running <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 01:39:16,212] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=criar_Fato
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 01:39:16,228] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 01:39:16,234] {dbapi.py:213} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS fato (
+            id_sales SERIAL PRIMARY KEY,
+            id_customers INT NOT NULL ,
+            id_products INT NOT NULL,
+            id_time INT NOT NULL,
+            id_emp INT NOT NULL,
+            CONSTRAINT fk_customers FOREIGN KEY (id_customers) REFERENCES dm_customers(id_customers),
+            CONSTRAINT fk_products FOREIGN KEY (id_products) REFERENCES dm_products (id_products),
+            CONSTRAINT fk_time FOREIGN KEY (id_time) REFERENCES dm_time(id_time),
+            CONSTRAINT fk_emp FOREIGN KEY (id_emp) REFERENCES dm_emp(id_emp),
+            quantityordered int NOT NULL,
+            priceeach float NOT NULL,
+            buyprice float NOT NULL
+            )
+            , parameters: None
+[2022-06-21 01:39:16,268] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=criar_Fato, execution_date=20220620T000000, start_date=20220621T043915, end_date=20220621T043916
+[2022-06-21 01:39:16,312] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 01:39:16,374] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 01:43:25,452] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:43:25,474] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:43:25,474] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:43:25,474] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 01:43:25,474] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:43:25,497] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): criar_Fato> on 2022-06-20 00:00:00+00:00
+[2022-06-21 01:43:25,506] {standard_task_runner.py:52} INFO - Started process 28878 to run task
+[2022-06-21 01:43:25,512] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'criar_Fato', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '582', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpopdz9dwn', '--error-file', '/tmp/tmpixu9ltgx']
+[2022-06-21 01:43:25,513] {standard_task_runner.py:80} INFO - Job 582: Subtask criar_Fato
+[2022-06-21 01:43:25,594] {task_command.py:370} INFO - Running <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 01:43:25,704] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=criar_Fato
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 01:43:25,719] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 01:43:25,725] {dbapi.py:213} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS fato (
+            id_sales SERIAL PRIMARY KEY,
+            id_customers INT NOT NULL ,
+            id_products INT NOT NULL,
+            id_time INT NOT NULL,
+            id_emp INT NOT NULL,
+            CONSTRAINT fk_customers FOREIGN KEY (id_customers) REFERENCES dm_customers(id_customers),
+            CONSTRAINT fk_products FOREIGN KEY (id_products) REFERENCES dm_products (id_products),
+            CONSTRAINT fk_time FOREIGN KEY (id_time) REFERENCES dm_time(id_time),
+            CONSTRAINT fk_emp FOREIGN KEY (id_emp) REFERENCES dm_emp(id_emp),
+            quantityordered int NOT NULL,
+            priceeach float NOT NULL,
+            buyprice float NOT NULL
+            )
+            , parameters: None
+[2022-06-21 01:43:25,727] {postgres.py:94} INFO - NOTICE:  relation "fato" already exists, skipping
+
+[2022-06-21 01:43:25,753] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=criar_Fato, execution_date=20220620T000000, start_date=20220621T044325, end_date=20220621T044325
+[2022-06-21 01:43:25,803] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 01:43:25,858] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:14:13,373] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:14:13,397] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:14:13,397] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:14:13,397] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:14:13,398] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:14:13,417] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): criar_Fato> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:14:13,429] {standard_task_runner.py:52} INFO - Started process 46893 to run task
+[2022-06-21 02:14:13,435] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'criar_Fato', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '26', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmppnvt14n1', '--error-file', '/tmp/tmpa2fpre1e']
+[2022-06-21 02:14:13,436] {standard_task_runner.py:80} INFO - Job 26: Subtask criar_Fato
+[2022-06-21 02:14:13,516] {task_command.py:370} INFO - Running <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:14:13,623] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=criar_Fato
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:14:13,639] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:14:13,645] {dbapi.py:213} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS fato (
+            id_sales SERIAL PRIMARY KEY,
+            id_customers INT NOT NULL ,
+            id_products INT NOT NULL,
+            id_time INT NOT NULL,
+            id_emp INT NOT NULL,
+            id_ordd INT NOT NULL,
+            CONSTRAINT fk_customers FOREIGN KEY (id_customers) REFERENCES dm_customers(id_customers),
+            CONSTRAINT fk_products FOREIGN KEY (id_products) REFERENCES dm_products (id_products),
+            CONSTRAINT fk_time FOREIGN KEY (id_time) REFERENCES dm_time(id_time),
+            CONSTRAINT fk_emp FOREIGN KEY (id_emp) REFERENCES dm_emp(id_emp),
+            CONSTRAINT fk_ordd FOREIGN KEY (id_ordd) REFERENCES dm_ordd(id_ordd),
+            quantityordered int NOT NULL,
+            priceeach float NOT NULL,
+            buyprice float NOT NULL
+            )
+            , parameters: None
+[2022-06-21 02:14:13,654] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/providers/postgres/operators/postgres.py", line 92, in execute
+    self.hook.run(self.sql, self.autocommit, parameters=self.parameters)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/hooks/dbapi.py", line 193, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/hooks/dbapi.py", line 217, in _run_command
+    cur.execute(sql_statement)
+psycopg2.errors.UndefinedTable: relation "dm_ordd" does not exist
+
+[2022-06-21 02:14:13,670] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=sales, task_id=criar_Fato, execution_date=20220620T000000, start_date=20220621T051413, end_date=20220621T051413
+[2022-06-21 02:14:13,693] {standard_task_runner.py:92} ERROR - Failed to execute job 26 for task criar_Fato (relation "dm_ordd" does not exist
+; 46893)
+[2022-06-21 02:14:13,726] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-21 02:14:13,797] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:16:58,253] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:16:58,276] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:16:58,277] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:16:58,277] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:16:58,277] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:16:58,298] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): criar_Fato> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:16:58,307] {standard_task_runner.py:52} INFO - Started process 48658 to run task
+[2022-06-21 02:16:58,312] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'criar_Fato', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '43', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmp_srlo87p', '--error-file', '/tmp/tmptau4sj0t']
+[2022-06-21 02:16:58,312] {standard_task_runner.py:80} INFO - Job 43: Subtask criar_Fato
+[2022-06-21 02:16:58,407] {task_command.py:370} INFO - Running <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:16:58,527] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=criar_Fato
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:16:58,544] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:16:58,550] {dbapi.py:213} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS fato (
+            id_sales SERIAL PRIMARY KEY,
+            id_customers INT NOT NULL ,
+            id_products INT NOT NULL,
+            id_time INT NOT NULL,
+            id_emp INT NOT NULL,
+            id_ordd INT NOT NULL,
+            CONSTRAINT fk_customers FOREIGN KEY (id_customers) REFERENCES dm_customers(id_customers),
+            CONSTRAINT fk_products FOREIGN KEY (id_products) REFERENCES dm_products (id_products),
+            CONSTRAINT fk_time FOREIGN KEY (id_time) REFERENCES dm_time(id_time),
+            CONSTRAINT fk_emp FOREIGN KEY (id_emp) REFERENCES dm_emp(id_emp),
+            CONSTRAINT fk_ordd FOREIGN KEY (id_ordd) REFERENCES dm_orderd(id_ordd),
+            quantityordered int NOT NULL,
+            priceeach float NOT NULL,
+            buyprice float NOT NULL
+            )
+            , parameters: None
+[2022-06-21 02:16:58,585] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=criar_Fato, execution_date=20220620T000000, start_date=20220621T051658, end_date=20220621T051658
+[2022-06-21 02:16:58,644] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:16:58,702] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:18:50,980] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:18:51,006] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:18:51,006] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:18:51,006] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:18:51,006] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:18:51,033] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): criar_Fato> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:18:51,044] {standard_task_runner.py:52} INFO - Started process 50320 to run task
+[2022-06-21 02:18:51,051] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'criar_Fato', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '61', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpbrwmaj4p', '--error-file', '/tmp/tmpgdglqenq']
+[2022-06-21 02:18:51,051] {standard_task_runner.py:80} INFO - Job 61: Subtask criar_Fato
+[2022-06-21 02:18:51,140] {task_command.py:370} INFO - Running <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:18:51,253] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=criar_Fato
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:18:51,270] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:18:51,276] {dbapi.py:213} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS fato (
+            id_sales SERIAL PRIMARY KEY,
+            id_customers INT NOT NULL ,
+            id_products INT NOT NULL,
+            id_time INT NOT NULL,
+            id_emp INT NOT NULL,
+            id_ordd INT NOT NULL,
+            CONSTRAINT fk_customers FOREIGN KEY (id_customers) REFERENCES dm_customers(id_customers),
+            CONSTRAINT fk_products FOREIGN KEY (id_products) REFERENCES dm_products (id_products),
+            CONSTRAINT fk_time FOREIGN KEY (id_time) REFERENCES dm_time(id_time),
+            CONSTRAINT fk_emp FOREIGN KEY (id_emp) REFERENCES dm_emp(id_emp),
+            CONSTRAINT fk_ordd FOREIGN KEY (id_ordd) REFERENCES dm_orderd(id_ordd),
+            quantityordered int NOT NULL,
+            priceeach float NOT NULL,
+            buyprice float NOT NULL
+            )
+            , parameters: None
+[2022-06-21 02:18:51,278] {postgres.py:94} INFO - NOTICE:  relation "fato" already exists, skipping
+
+[2022-06-21 02:18:51,304] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=criar_Fato, execution_date=20220620T000000, start_date=20220621T051850, end_date=20220621T051851
+[2022-06-21 02:18:51,342] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:18:51,400] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:24:28,801] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:24:28,823] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:24:28,823] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:24:28,823] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:24:28,823] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:24:28,844] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): criar_Fato> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:24:28,855] {standard_task_runner.py:52} INFO - Started process 52634 to run task
+[2022-06-21 02:24:28,862] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'criar_Fato', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '79', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpzoolgtee', '--error-file', '/tmp/tmpilyn8ubz']
+[2022-06-21 02:24:28,863] {standard_task_runner.py:80} INFO - Job 79: Subtask criar_Fato
+[2022-06-21 02:24:28,949] {task_command.py:370} INFO - Running <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:24:29,063] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=criar_Fato
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:24:29,078] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:24:29,085] {dbapi.py:213} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS fato (
+            id_sales SERIAL PRIMARY KEY,
+            id_customers INT NOT NULL ,
+            id_products INT NOT NULL,
+            id_time INT NOT NULL,
+            id_emp INT NOT NULL,
+            id_ordd INT NOT NULL,
+            CONSTRAINT fk_customers FOREIGN KEY (id_customers) REFERENCES dm_customers(id_customers),
+            CONSTRAINT fk_products FOREIGN KEY (id_products) REFERENCES dm_products (id_products),
+            CONSTRAINT fk_time FOREIGN KEY (id_time) REFERENCES dm_time(id_time),
+            CONSTRAINT fk_emp FOREIGN KEY (id_emp) REFERENCES dm_emp(id_emp),
+            CONSTRAINT fk_ordd FOREIGN KEY (id_ordd) REFERENCES dm_orderd(id_ordd),
+            quantityordered int NOT NULL,
+            priceeach float NOT NULL,
+            buyprice float NOT NULL
+            )
+            , parameters: None
+[2022-06-21 02:24:29,120] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=criar_Fato, execution_date=20220620T000000, start_date=20220621T052428, end_date=20220621T052429
+[2022-06-21 02:24:29,152] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:24:29,215] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:42:22,333] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:42:22,359] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:42:22,360] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:42:22,360] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:42:22,360] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:42:22,381] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): criar_Fato> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:42:22,392] {standard_task_runner.py:52} INFO - Started process 56198 to run task
+[2022-06-21 02:42:22,398] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'criar_Fato', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '97', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmp0yeksfin', '--error-file', '/tmp/tmpvruwpjgh']
+[2022-06-21 02:42:22,399] {standard_task_runner.py:80} INFO - Job 97: Subtask criar_Fato
+[2022-06-21 02:42:22,483] {task_command.py:370} INFO - Running <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:42:22,615] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=criar_Fato
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:42:22,632] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:42:22,638] {dbapi.py:213} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS fato (
+            id_sales SERIAL PRIMARY KEY,
+            id_customers INT NOT NULL ,
+            id_products INT NOT NULL,
+            id_time INT NOT NULL,
+            id_emp INT NOT NULL,
+            id_ordd INT NOT NULL,
+            CONSTRAINT fk_customers FOREIGN KEY (id_customers) REFERENCES dm_customers(id_customers),
+            CONSTRAINT fk_products FOREIGN KEY (id_products) REFERENCES dm_products (id_products),
+            CONSTRAINT fk_time FOREIGN KEY (id_time) REFERENCES dm_time(id_time),
+            CONSTRAINT fk_emp FOREIGN KEY (id_emp) REFERENCES dm_emp(id_emp),
+            CONSTRAINT fk_ordd FOREIGN KEY (id_ordd) REFERENCES dm_orderd(id_ordd),
+            quantityordered int NOT NULL,
+            priceeach float NOT NULL,
+            buyprice float NOT NULL
+            )
+            , parameters: None
+[2022-06-21 02:42:22,640] {postgres.py:94} INFO - NOTICE:  relation "fato" already exists, skipping
+
+[2022-06-21 02:42:22,676] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=criar_Fato, execution_date=20220620T000000, start_date=20220621T054222, end_date=20220621T054222
+[2022-06-21 02:42:22,730] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:42:22,796] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:51:20,513] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:51:20,534] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:51:20,535] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:51:20,535] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:51:20,535] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:51:20,556] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): criar_Fato> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:51:20,568] {standard_task_runner.py:52} INFO - Started process 60941 to run task
+[2022-06-21 02:51:20,573] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'criar_Fato', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '132', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpa1a6dc66', '--error-file', '/tmp/tmpjzx41x70']
+[2022-06-21 02:51:20,574] {standard_task_runner.py:80} INFO - Job 132: Subtask criar_Fato
+[2022-06-21 02:51:20,667] {task_command.py:370} INFO - Running <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:51:20,778] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=criar_Fato
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:51:20,795] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:51:20,802] {dbapi.py:213} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS fato (
+            id_sales SERIAL PRIMARY KEY,
+            id_customers INT NOT NULL ,
+            id_products INT NOT NULL,
+            id_time INT NOT NULL,
+            id_emp INT NOT NULL,
+            id_ordd INT NOT NULL,
+            CONSTRAINT fk_customers FOREIGN KEY (id_customers) REFERENCES dm_customers(id_customers),
+            CONSTRAINT fk_products FOREIGN KEY (id_products) REFERENCES dm_products (id_products),
+            CONSTRAINT fk_time FOREIGN KEY (id_time) REFERENCES dm_time(id_time),
+            CONSTRAINT fk_emp FOREIGN KEY (id_emp) REFERENCES dm_emp(id_emp),
+            CONSTRAINT fk_ordd FOREIGN KEY (id_ordd) REFERENCES dm_orderd(id_ordd),
+            quantityordered int NOT NULL,
+            priceeach float NOT NULL,
+            buyprice float NOT NULL
+            )
+            , parameters: None
+[2022-06-21 02:51:20,838] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=criar_Fato, execution_date=20220620T000000, start_date=20220621T055120, end_date=20220621T055120
+[2022-06-21 02:51:20,905] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:51:20,975] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:52:54,274] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:52:54,294] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:52:54,295] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:52:54,295] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:52:54,295] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:52:54,314] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): criar_Fato> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:52:54,322] {standard_task_runner.py:52} INFO - Started process 62618 to run task
+[2022-06-21 02:52:54,327] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'criar_Fato', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '150', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmp1vrf62u6', '--error-file', '/tmp/tmptxuh53xd']
+[2022-06-21 02:52:54,327] {standard_task_runner.py:80} INFO - Job 150: Subtask criar_Fato
+[2022-06-21 02:52:54,404] {task_command.py:370} INFO - Running <TaskInstance: sales.criar_Fato scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:52:54,504] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=criar_Fato
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:52:54,519] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-21 02:52:54,524] {dbapi.py:213} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS fato (
+            id_sales SERIAL PRIMARY KEY,
+            id_customers INT NOT NULL ,
+            id_products INT NOT NULL,
+            id_time INT NOT NULL,
+            id_emp INT NOT NULL,
+            id_ordd INT NOT NULL,
+            CONSTRAINT fk_customers FOREIGN KEY (id_customers) REFERENCES dm_customers(id_customers),
+            CONSTRAINT fk_products FOREIGN KEY (id_products) REFERENCES dm_products (id_products),
+            CONSTRAINT fk_time FOREIGN KEY (id_time) REFERENCES dm_time(id_time),
+            CONSTRAINT fk_emp FOREIGN KEY (id_emp) REFERENCES dm_emp(id_emp),
+            CONSTRAINT fk_ordd FOREIGN KEY (id_ordd) REFERENCES dm_orderd(id_ordd),
+            quantityordered int NOT NULL,
+            priceeach float NOT NULL,
+            buyprice float NOT NULL
+            )
+            , parameters: None
+[2022-06-21 02:52:54,556] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=criar_Fato, execution_date=20220620T000000, start_date=20220621T055254, end_date=20220621T055254
+[2022-06-21 02:52:54,618] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:52:54,690] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,133 @@
+[2022-06-20 22:45:22,584] {processor.py:153} INFO - Started process (PID=91111) to work on /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:45:22,585] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/dag.py for tasks to queue
+[2022-06-20 22:45:22,587] {logging_mixin.py:115} INFO - [2022-06-20 22:45:22,586] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:45:23,846] {processor.py:651} INFO - DAG(s) dict_keys(['census']) retrieved from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:45:23,899] {logging_mixin.py:115} INFO - [2022-06-20 22:45:23,899] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-20 22:45:23,950] {logging_mixin.py:115} INFO - [2022-06-20 22:45:23,950] {dag.py:2927} INFO - Setting next_dagrun for census to 2022-06-21T01:45:13.949974+00:00, run_after=2022-06-21T01:45:23.949974+00:00
+[2022-06-20 22:45:23,991] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/dag.py took 1.417 seconds
+[2022-06-20 22:45:54,127] {processor.py:153} INFO - Started process (PID=91836) to work on /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:45:54,127] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/dag.py for tasks to queue
+[2022-06-20 22:45:54,128] {logging_mixin.py:115} INFO - [2022-06-20 22:45:54,128] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:45:54,600] {processor.py:651} INFO - DAG(s) dict_keys(['census']) retrieved from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:45:54,635] {logging_mixin.py:115} INFO - [2022-06-20 22:45:54,634] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-20 22:45:54,664] {logging_mixin.py:115} INFO - [2022-06-20 22:45:54,663] {dag.py:2927} INFO - Setting next_dagrun for census to 2022-06-21T01:45:44.663583+00:00, run_after=2022-06-21T01:45:54.663583+00:00
+[2022-06-20 22:45:54,682] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/dag.py took 0.560 seconds
+[2022-06-20 22:46:24,791] {processor.py:153} INFO - Started process (PID=92029) to work on /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:46:24,792] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/dag.py for tasks to queue
+[2022-06-20 22:46:24,793] {logging_mixin.py:115} INFO - [2022-06-20 22:46:24,792] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:46:25,251] {processor.py:651} INFO - DAG(s) dict_keys(['census']) retrieved from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:46:25,286] {logging_mixin.py:115} INFO - [2022-06-20 22:46:25,285] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-20 22:46:25,320] {logging_mixin.py:115} INFO - [2022-06-20 22:46:25,320] {dag.py:2927} INFO - Setting next_dagrun for census to 2022-06-21T01:46:15.320217+00:00, run_after=2022-06-21T01:46:25.320217+00:00
+[2022-06-20 22:46:25,350] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/dag.py took 0.565 seconds
+[2022-06-20 22:46:55,456] {processor.py:153} INFO - Started process (PID=92219) to work on /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:46:55,457] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/dag.py for tasks to queue
+[2022-06-20 22:46:55,457] {logging_mixin.py:115} INFO - [2022-06-20 22:46:55,457] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:46:55,954] {processor.py:651} INFO - DAG(s) dict_keys(['census']) retrieved from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:46:55,985] {logging_mixin.py:115} INFO - [2022-06-20 22:46:55,985] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-20 22:46:56,016] {logging_mixin.py:115} INFO - [2022-06-20 22:46:56,016] {dag.py:2927} INFO - Setting next_dagrun for census to 2022-06-21T01:46:46.016485+00:00, run_after=2022-06-21T01:46:56.016485+00:00
+[2022-06-20 22:46:56,043] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/dag.py took 0.592 seconds
+[2022-06-20 22:47:26,148] {processor.py:153} INFO - Started process (PID=92309) to work on /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:47:26,155] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/dag.py for tasks to queue
+[2022-06-20 22:47:26,156] {logging_mixin.py:115} INFO - [2022-06-20 22:47:26,155] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:47:26,670] {processor.py:651} INFO - DAG(s) dict_keys(['census']) retrieved from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:47:26,702] {logging_mixin.py:115} INFO - [2022-06-20 22:47:26,702] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-20 22:47:26,735] {logging_mixin.py:115} INFO - [2022-06-20 22:47:26,735] {dag.py:2927} INFO - Setting next_dagrun for census to 2022-06-21T01:47:16.734772+00:00, run_after=2022-06-21T01:47:26.734772+00:00
+[2022-06-20 22:47:26,755] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/dag.py took 0.612 seconds
+[2022-06-20 22:47:56,855] {processor.py:153} INFO - Started process (PID=92414) to work on /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:47:56,856] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/dag.py for tasks to queue
+[2022-06-20 22:47:56,856] {logging_mixin.py:115} INFO - [2022-06-20 22:47:56,856] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:47:57,423] {processor.py:651} INFO - DAG(s) dict_keys(['census']) retrieved from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:47:57,458] {logging_mixin.py:115} INFO - [2022-06-20 22:47:57,458] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-20 22:47:57,487] {logging_mixin.py:115} INFO - [2022-06-20 22:47:57,487] {dag.py:2927} INFO - Setting next_dagrun for census to 2022-06-21T01:47:47.486819+00:00, run_after=2022-06-21T01:47:57.486819+00:00
+[2022-06-20 22:47:57,511] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/dag.py took 0.661 seconds
+[2022-06-20 22:48:27,621] {processor.py:153} INFO - Started process (PID=92519) to work on /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:48:27,622] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/dag.py for tasks to queue
+[2022-06-20 22:48:27,622] {logging_mixin.py:115} INFO - [2022-06-20 22:48:27,622] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:48:28,162] {processor.py:651} INFO - DAG(s) dict_keys(['census']) retrieved from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:48:28,202] {logging_mixin.py:115} INFO - [2022-06-20 22:48:28,202] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-20 22:48:28,238] {logging_mixin.py:115} INFO - [2022-06-20 22:48:28,237] {dag.py:2927} INFO - Setting next_dagrun for census to 2022-06-21T01:48:18.237620+00:00, run_after=2022-06-21T01:48:28.237620+00:00
+[2022-06-20 22:48:28,267] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/dag.py took 0.652 seconds
+[2022-06-20 22:48:58,372] {processor.py:153} INFO - Started process (PID=92629) to work on /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:48:58,372] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/dag.py for tasks to queue
+[2022-06-20 22:48:58,373] {logging_mixin.py:115} INFO - [2022-06-20 22:48:58,373] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:48:58,939] {processor.py:651} INFO - DAG(s) dict_keys(['census']) retrieved from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:48:58,972] {logging_mixin.py:115} INFO - [2022-06-20 22:48:58,972] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-20 22:48:59,014] {logging_mixin.py:115} INFO - [2022-06-20 22:48:59,013] {dag.py:2927} INFO - Setting next_dagrun for census to 2022-06-21T01:48:49.013312+00:00, run_after=2022-06-21T01:48:59.013312+00:00
+[2022-06-20 22:48:59,042] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/dag.py took 0.677 seconds
+[2022-06-20 22:49:29,147] {processor.py:153} INFO - Started process (PID=92735) to work on /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:49:29,148] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/dag.py for tasks to queue
+[2022-06-20 22:49:29,149] {logging_mixin.py:115} INFO - [2022-06-20 22:49:29,149] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:49:29,671] {processor.py:651} INFO - DAG(s) dict_keys(['census']) retrieved from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:49:29,710] {logging_mixin.py:115} INFO - [2022-06-20 22:49:29,710] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-20 22:49:29,745] {logging_mixin.py:115} INFO - [2022-06-20 22:49:29,744] {dag.py:2927} INFO - Setting next_dagrun for census to 2022-06-21T01:49:19.744450+00:00, run_after=2022-06-21T01:49:29.744450+00:00
+[2022-06-20 22:49:29,774] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/dag.py took 0.632 seconds
+[2022-06-20 22:49:59,875] {processor.py:153} INFO - Started process (PID=92837) to work on /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:49:59,875] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/dag.py for tasks to queue
+[2022-06-20 22:49:59,876] {logging_mixin.py:115} INFO - [2022-06-20 22:49:59,876] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:50:00,393] {processor.py:651} INFO - DAG(s) dict_keys(['census']) retrieved from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:50:00,429] {logging_mixin.py:115} INFO - [2022-06-20 22:50:00,428] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-20 22:50:00,459] {logging_mixin.py:115} INFO - [2022-06-20 22:50:00,459] {dag.py:2927} INFO - Setting next_dagrun for census to 2022-06-21T01:49:50.459452+00:00, run_after=2022-06-21T01:50:00.459452+00:00
+[2022-06-20 22:50:00,487] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/dag.py took 0.617 seconds
+[2022-06-20 22:50:30,614] {processor.py:153} INFO - Started process (PID=92946) to work on /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:50:30,614] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/dag.py for tasks to queue
+[2022-06-20 22:50:30,615] {logging_mixin.py:115} INFO - [2022-06-20 22:50:30,615] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:50:31,117] {processor.py:651} INFO - DAG(s) dict_keys(['census']) retrieved from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:50:31,146] {logging_mixin.py:115} INFO - [2022-06-20 22:50:31,146] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-20 22:50:31,176] {logging_mixin.py:115} INFO - [2022-06-20 22:50:31,176] {dag.py:2927} INFO - Setting next_dagrun for census to 2022-06-21T01:50:21.176327+00:00, run_after=2022-06-21T01:50:31.176327+00:00
+[2022-06-20 22:50:31,201] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/dag.py took 0.592 seconds
+[2022-06-20 22:51:01,296] {processor.py:153} INFO - Started process (PID=93024) to work on /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:51:01,297] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/dag.py for tasks to queue
+[2022-06-20 22:51:01,297] {logging_mixin.py:115} INFO - [2022-06-20 22:51:01,297] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:51:01,784] {processor.py:651} INFO - DAG(s) dict_keys(['census']) retrieved from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:51:01,811] {logging_mixin.py:115} INFO - [2022-06-20 22:51:01,811] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-20 22:51:01,839] {logging_mixin.py:115} INFO - [2022-06-20 22:51:01,839] {dag.py:2927} INFO - Setting next_dagrun for census to 2022-06-21T01:50:51.839057+00:00, run_after=2022-06-21T01:51:01.839057+00:00
+[2022-06-20 22:51:01,862] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/dag.py took 0.571 seconds
+[2022-06-20 22:51:31,958] {processor.py:153} INFO - Started process (PID=93142) to work on /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:51:31,965] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/dag.py for tasks to queue
+[2022-06-20 22:51:31,966] {logging_mixin.py:115} INFO - [2022-06-20 22:51:31,966] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:51:32,419] {processor.py:651} INFO - DAG(s) dict_keys(['census']) retrieved from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:51:32,450] {logging_mixin.py:115} INFO - [2022-06-20 22:51:32,450] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-20 22:51:32,482] {logging_mixin.py:115} INFO - [2022-06-20 22:51:32,481] {dag.py:2927} INFO - Setting next_dagrun for census to 2022-06-21T01:51:22.481523+00:00, run_after=2022-06-21T01:51:32.481523+00:00
+[2022-06-20 22:51:32,506] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/dag.py took 0.553 seconds
+[2022-06-20 22:52:02,595] {processor.py:153} INFO - Started process (PID=93255) to work on /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:52:02,596] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/dag.py for tasks to queue
+[2022-06-20 22:52:02,596] {logging_mixin.py:115} INFO - [2022-06-20 22:52:02,596] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:52:03,028] {processor.py:651} INFO - DAG(s) dict_keys(['census']) retrieved from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:52:03,056] {logging_mixin.py:115} INFO - [2022-06-20 22:52:03,056] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-20 22:52:03,086] {logging_mixin.py:115} INFO - [2022-06-20 22:52:03,086] {dag.py:2927} INFO - Setting next_dagrun for census to 2022-06-21T01:51:53.085925+00:00, run_after=2022-06-21T01:52:03.085925+00:00
+[2022-06-20 22:52:03,108] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/dag.py took 0.518 seconds
+[2022-06-20 22:52:33,196] {processor.py:153} INFO - Started process (PID=93318) to work on /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:52:33,203] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/dag.py for tasks to queue
+[2022-06-20 22:52:33,204] {logging_mixin.py:115} INFO - [2022-06-20 22:52:33,204] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:52:33,780] {processor.py:651} INFO - DAG(s) dict_keys(['census']) retrieved from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:52:33,817] {logging_mixin.py:115} INFO - [2022-06-20 22:52:33,816] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-20 22:52:33,852] {logging_mixin.py:115} INFO - [2022-06-20 22:52:33,852] {dag.py:2927} INFO - Setting next_dagrun for census to 2022-06-21T01:52:23.851603+00:00, run_after=2022-06-21T01:52:33.851603+00:00
+[2022-06-20 22:52:33,875] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/dag.py took 0.684 seconds
+[2022-06-20 22:53:03,978] {processor.py:153} INFO - Started process (PID=93395) to work on /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:53:03,979] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/dag.py for tasks to queue
+[2022-06-20 22:53:03,980] {logging_mixin.py:115} INFO - [2022-06-20 22:53:03,979] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:53:04,415] {processor.py:651} INFO - DAG(s) dict_keys(['census']) retrieved from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:53:04,446] {logging_mixin.py:115} INFO - [2022-06-20 22:53:04,446] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-20 22:53:04,476] {logging_mixin.py:115} INFO - [2022-06-20 22:53:04,476] {dag.py:2927} INFO - Setting next_dagrun for census to 2022-06-21T01:52:54.476270+00:00, run_after=2022-06-21T01:53:04.476270+00:00
+[2022-06-20 22:53:04,502] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/dag.py took 0.529 seconds
+[2022-06-20 22:53:34,591] {processor.py:153} INFO - Started process (PID=93564) to work on /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:53:34,598] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/dag.py for tasks to queue
+[2022-06-20 22:53:34,598] {logging_mixin.py:115} INFO - [2022-06-20 22:53:34,598] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:53:34,862] {processor.py:651} INFO - DAG(s) dict_keys(['census']) retrieved from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:53:34,884] {logging_mixin.py:115} INFO - [2022-06-20 22:53:34,884] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-20 22:53:34,905] {logging_mixin.py:115} INFO - [2022-06-20 22:53:34,904] {dag.py:2927} INFO - Setting next_dagrun for census to 2022-06-21T01:53:24.904780+00:00, run_after=2022-06-21T01:53:34.904780+00:00
+[2022-06-20 22:53:34,920] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/dag.py took 0.333 seconds
+[2022-06-20 22:54:04,990] {processor.py:153} INFO - Started process (PID=94103) to work on /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:54:04,997] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/dag.py for tasks to queue
+[2022-06-20 22:54:04,997] {logging_mixin.py:115} INFO - [2022-06-20 22:54:04,997] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:54:05,260] {processor.py:651} INFO - DAG(s) dict_keys(['census']) retrieved from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:54:05,279] {logging_mixin.py:115} INFO - [2022-06-20 22:54:05,279] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-20 22:54:05,298] {logging_mixin.py:115} INFO - [2022-06-20 22:54:05,298] {dag.py:2927} INFO - Setting next_dagrun for census to 2022-06-21T01:53:55.298354+00:00, run_after=2022-06-21T01:54:05.298354+00:00
+[2022-06-20 22:54:05,314] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/dag.py took 0.328 seconds
+[2022-06-20 22:54:35,392] {processor.py:153} INFO - Started process (PID=94150) to work on /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:54:35,399] {processor.py:641} INFO - Processing file /home/uiliam/airflow/dags/dag.py for tasks to queue
+[2022-06-20 22:54:35,399] {logging_mixin.py:115} INFO - [2022-06-20 22:54:35,399] {dagbag.py:507} INFO - Filling up the DagBag from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:54:35,658] {processor.py:651} INFO - DAG(s) dict_keys(['census']) retrieved from /home/uiliam/airflow/dags/dag.py
+[2022-06-20 22:54:35,682] {logging_mixin.py:115} INFO - [2022-06-20 22:54:35,682] {dag.py:2379} INFO - Sync 1 DAGs
+[2022-06-20 22:54:35,699] {logging_mixin.py:115} INFO - [2022-06-20 22:54:35,699] {dag.py:2927} INFO - Setting next_dagrun for census to 2022-06-21T01:54:25.699417+00:00, run_after=2022-06-21T01:54:35.699417+00:00
+[2022-06-20 22:54:35,720] {processor.py:161} INFO - Processing /home/uiliam/airflow/dags/dag.py took 0.332 seconds

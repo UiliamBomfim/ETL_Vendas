@@ -1,0 +1,90 @@
+[2022-06-05 21:00:17,133] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.populate_table scheduled__2022-06-05T23:59:35.099963+00:00 [queued]>
+[2022-06-05 21:00:17,151] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.populate_table scheduled__2022-06-05T23:59:35.099963+00:00 [queued]>
+[2022-06-05 21:00:17,151] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 21:00:17,151] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-05 21:00:17,151] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 21:00:17,175] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): populate_table> on 2022-06-05 23:59:35.099963+00:00
+[2022-06-05 21:00:17,184] {standard_task_runner.py:52} INFO - Started process 193688 to run task
+[2022-06-05 21:00:17,189] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'populate_table', 'scheduled__2022-06-05T23:59:35.099963+00:00', '--job-id', '1088', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpsmhle4__', '--error-file', '/tmp/tmpu84jyi0v']
+[2022-06-05 21:00:17,190] {standard_task_runner.py:80} INFO - Job 1088: Subtask populate_table
+[2022-06-05 21:00:17,273] {task_command.py:370} INFO - Running <TaskInstance: census.populate_table scheduled__2022-06-05T23:59:35.099963+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-05 21:00:17,380] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=populate_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-05T23:59:35.099963+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-05T23:59:35.099963+00:00
+[2022-06-05 21:00:17,503] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1685, in _execute_context
+    self.dialect.do_executemany(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/dialects/postgresql/psycopg2.py", line 903, in do_executemany
+    context._psycopg2_fetched_rows = xtras.execute_values(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/psycopg2/extras.py", line 1270, in execute_values
+    cur.execute(b''.join(parts))
+psycopg2.errors.UndefinedColumn: column "index" of relation "census" does not exist
+LINE 1: INSERT INTO census (index, "0", "1", "2", "3", "4", "5", "6"...
+                            ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/uiliam/airflow/dags/populate.py", line 24, in populate_table
+    df.to_sql('census', engine, index=True, if_exists='append')
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/generic.py", line 2951, in to_sql
+    return sql.to_sql(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 697, in to_sql
+    return pandas_sql.to_sql(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 1739, in to_sql
+    total_inserted = sql_engine.insert_records(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 1332, in insert_records
+    raise err
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 1322, in insert_records
+    return table.insert(chunksize=chunksize, method=method)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 950, in insert
+    num_inserted = exec_insert(conn, keys, chunk_iter)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 857, in _execute_insert
+    result = conn.execute(self.table.insert(), data)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1200, in execute
+    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 313, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1389, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1748, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1929, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1685, in _execute_context
+    self.dialect.do_executemany(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/dialects/postgresql/psycopg2.py", line 903, in do_executemany
+    context._psycopg2_fetched_rows = xtras.execute_values(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/psycopg2/extras.py", line 1270, in execute_values
+    cur.execute(b''.join(parts))
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column "index" of relation "census" does not exist
+LINE 1: INSERT INTO census (index, "0", "1", "2", "3", "4", "5", "6"...
+                            ^
+
+[SQL: INSERT INTO census (index, "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15") VALUES (%(index)s, %(0)s, %(1)s, %(2)s, %(3)s, %(4)s, %(5)s, %(6)s, %(7)s, %(8)s, %(9)s, %(10)s, %(11)s, %(12)s, %(13)s, %(14)s, %(15)s)]
+[parameters: ({'index': 0, '0': None, '1': 'age', '2': 'workclass', '3': 'fnlwgt', '4': 'education', '5': 'education_num', '6': 'marital_status', '7': 'occupation', '8': 'relationship', '9': 'race', '10': 'sex', '11': 'capital_gain', '12': 'capital_loss', '13': 'hours_per_week', '14': 'native_country', '15': 'class'}, {'index': 1, '0': 0.0, '1': '-1', '2': ' State-gov', '3': '77516', '4': ' Bachelors', '5': '13', '6': ' Never-married', '7': ' Adm-clerical', '8': ' Not-in-family', '9': ' White', '10': ' Male', '11': '2174', '12': '0', '13': '40', '14': ' United-States', '15': ' <=50K'}, {'index': 2, '0': 1.0, '1': '-1', '2': ' Self-emp-not-inc', '3': '83311', '4': ' Bachelors', '5': '13', '6': ' Married-civ-spouse', '7': ' Exec-managerial', '8': ' Husband', '9': ' White', '10': ' Male', '11': '0', '12': '0', '13': '13', '14': ' United-States', '15': ' <=50K'}, {'index': 3, '0': 2.0, '1': '-1', '2': ' Private', '3': '215646', '4': ' HS-grad', '5': '9', '6': ' Divorced', '7': ' Handlers-cleaners', '8': ' Not-in-family', '9': ' White', '10': ' Male', '11': '0', '12': '0', '13': '40', '14': ' United-States', '15': ' <=50K'}, {'index': 4, '0': 3.0, '1': '-1', '2': ' Private', '3': '234721', '4': ' 11th', '5': '7', '6': ' Married-civ-spouse', '7': ' Handlers-cleaners', '8': ' Husband', '9': ' Black', '10': ' Male', '11': '0', '12': '0', '13': '40', '14': ' United-States', '15': ' <=50K'}, {'index': 5, '0': 4.0, '1': '-1', '2': ' Private', '3': '338409', '4': ' Bachelors', '5': '13', '6': ' Married-civ-spouse', '7': ' Prof-specialty', '8': ' Wife', '9': ' Black', '10': ' Female', '11': '0', '12': '0', '13': '40', '14': ' Cuba', '15': ' <=50K'}, {'index': 6, '0': 5.0, '1': '-1', '2': ' Private', '3': '284582', '4': ' Masters', '5': '14', '6': ' Married-civ-spouse', '7': ' Exec-managerial', '8': ' Wife', '9': ' White', '10': ' Female', '11': '0', '12': '0', '13': '40', '14': ' United-States', '15': ' <=50K'}, {'index': 7, '0': 6.0, '1': '-1', '2': ' Private', '3': '160187', '4': ' 9th', '5': '5', '6': ' Married-spouse-absent', '7': ' Other-service', '8': ' Not-in-family', '9': ' Black', '10': ' Female', '11': '0', '12': '0', '13': '16', '14': ' Jamaica', '15': ' <=50K'}  ... displaying 10 of 1630 total bound parameter sets ...  {'index': 1628, '0': 1627.0, '1': '-1', '2': ' Private', '3': '147876', '4': ' Bachelors', '5': '13', '6': ' Married-civ-spouse', '7': ' Sales', '8': ' Wife', '9': ' White', '10': ' Female', '11': '15024', '12': '0', '13': '60', '14': ' United-States', '15': ' >50K'}, {'index': 1629, '0': 1628.0, '1': '-1', '2': ' Private', '3': '428350', '4': ' HS-grad', '5': '9', '6': ' Married-civ-spouse', '7': ' Machine-op-inspct', '8': ' Wife', '9': ' White', '10': ' Female', '11': '0', '12': '1740', '13': '40', '14': ' United-States', '15': ' <=50K'})]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+[2022-06-05 21:00:17,529] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=census, task_id=populate_table, execution_date=20220605T235935, start_date=20220606T000017, end_date=20220606T000017
+[2022-06-05 21:00:17,552] {standard_task_runner.py:92} ERROR - Failed to execute job 1088 for task populate_table ((psycopg2.errors.UndefinedColumn) column "index" of relation "census" does not exist
+LINE 1: INSERT INTO census (index, "0", "1", "2", "3", "4", "5", "6"...
+                            ^
+
+[SQL: INSERT INTO census (index, "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15") VALUES (%(index)s, %(0)s, %(1)s, %(2)s, %(3)s, %(4)s, %(5)s, %(6)s, %(7)s, %(8)s, %(9)s, %(10)s, %(11)s, %(12)s, %(13)s, %(14)s, %(15)s)]
+[parameters: ({'index': 0, '0': None, '1': 'age', '2': 'workclass', '3': 'fnlwgt', '4': 'education', '5': 'education_num', '6': 'marital_status', '7': 'occupation', '8': 'relationship', '9': 'race', '10': 'sex', '11': 'capital_gain', '12': 'capital_loss', '13': 'hours_per_week', '14': 'native_country', '15': 'class'}, {'index': 1, '0': 0.0, '1': '-1', '2': ' State-gov', '3': '77516', '4': ' Bachelors', '5': '13', '6': ' Never-married', '7': ' Adm-clerical', '8': ' Not-in-family', '9': ' White', '10': ' Male', '11': '2174', '12': '0', '13': '40', '14': ' United-States', '15': ' <=50K'}, {'index': 2, '0': 1.0, '1': '-1', '2': ' Self-emp-not-inc', '3': '83311', '4': ' Bachelors', '5': '13', '6': ' Married-civ-spouse', '7': ' Exec-managerial', '8': ' Husband', '9': ' White', '10': ' Male', '11': '0', '12': '0', '13': '13', '14': ' United-States', '15': ' <=50K'}, {'index': 3, '0': 2.0, '1': '-1', '2': ' Private', '3': '215646', '4': ' HS-grad', '5': '9', '6': ' Divorced', '7': ' Handlers-cleaners', '8': ' Not-in-family', '9': ' White', '10': ' Male', '11': '0', '12': '0', '13': '40', '14': ' United-States', '15': ' <=50K'}, {'index': 4, '0': 3.0, '1': '-1', '2': ' Private', '3': '234721', '4': ' 11th', '5': '7', '6': ' Married-civ-spouse', '7': ' Handlers-cleaners', '8': ' Husband', '9': ' Black', '10': ' Male', '11': '0', '12': '0', '13': '40', '14': ' United-States', '15': ' <=50K'}, {'index': 5, '0': 4.0, '1': '-1', '2': ' Private', '3': '338409', '4': ' Bachelors', '5': '13', '6': ' Married-civ-spouse', '7': ' Prof-specialty', '8': ' Wife', '9': ' Black', '10': ' Female', '11': '0', '12': '0', '13': '40', '14': ' Cuba', '15': ' <=50K'}, {'index': 6, '0': 5.0, '1': '-1', '2': ' Private', '3': '284582', '4': ' Masters', '5': '14', '6': ' Married-civ-spouse', '7': ' Exec-managerial', '8': ' Wife', '9': ' White', '10': ' Female', '11': '0', '12': '0', '13': '40', '14': ' United-States', '15': ' <=50K'}, {'index': 7, '0': 6.0, '1': '-1', '2': ' Private', '3': '160187', '4': ' 9th', '5': '5', '6': ' Married-spouse-absent', '7': ' Other-service', '8': ' Not-in-family', '9': ' Black', '10': ' Female', '11': '0', '12': '0', '13': '16', '14': ' Jamaica', '15': ' <=50K'}  ... displaying 10 of 1630 total bound parameter sets ...  {'index': 1628, '0': 1627.0, '1': '-1', '2': ' Private', '3': '147876', '4': ' Bachelors', '5': '13', '6': ' Married-civ-spouse', '7': ' Sales', '8': ' Wife', '9': ' White', '10': ' Female', '11': '15024', '12': '0', '13': '60', '14': ' United-States', '15': ' >50K'}, {'index': 1629, '0': 1628.0, '1': '-1', '2': ' Private', '3': '428350', '4': ' HS-grad', '5': '9', '6': ' Married-civ-spouse', '7': ' Machine-op-inspct', '8': ' Wife', '9': ' White', '10': ' Female', '11': '0', '12': '1740', '13': '40', '14': ' United-States', '15': ' <=50K'})]
+(Background on this error at: http://sqlalche.me/e/14/f405); 193688)
+[2022-06-05 21:00:17,601] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-05 21:00:17,665] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

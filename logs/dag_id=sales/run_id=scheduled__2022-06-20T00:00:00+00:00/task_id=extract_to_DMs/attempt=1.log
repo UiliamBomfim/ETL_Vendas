@@ -1,0 +1,1274 @@
+[2022-06-20 23:02:30,603] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-20 23:02:30,615] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-20 23:02:30,616] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-20 23:02:30,616] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-20 23:02:30,616] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-20 23:02:30,628] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): extract_to_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-20 23:02:30,634] {standard_task_runner.py:52} INFO - Started process 9143 to run task
+[2022-06-20 23:02:30,638] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'extract_to_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '526', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpv24x8lgn', '--error-file', '/tmp/tmpktjctc1c']
+[2022-06-20 23:02:30,638] {standard_task_runner.py:80} INFO - Job 526: Subtask extract_to_DMs
+[2022-06-20 23:02:30,694] {task_command.py:370} INFO - Running <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-20 23:02:30,784] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=extract_to_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-20 23:02:30,827] {python.py:173} INFO - Done. Returned value was: (     customernumber                    customername contactlastname contactfirstname           phone  ...          city     state postalcode      country creditlimit
+0               103               Atelier graphique         Schmitt          Carine       40.32.2555  ...        Nantes      None      44000       France     21000.0
+1               112              Signal Gift Stores            King             Jean      7025551838  ...     Las Vegas        NV      83030          USA     71800.0
+2               114      Australian Collectors, Co.        Ferguson            Peter    03 9520 4555  ...     Melbourne  Victoria       3004    Australia    117300.0
+3               119               La Rochelle Gifts         Labrune          Janine       40.67.8555  ...        Nantes      None      44000       France    118200.0
+4               121              Baane Mini Imports      Bergulfsen           Jonas       07-98 9555  ...       Stavern      None       4110       Norway     81700.0
+..              ...                             ...             ...              ...             ...  ...           ...       ...        ...          ...         ...
+117             486    Motor Mint Distributors Inc.         Salazar             Rosa      2155559857  ...  Philadelphia        PA      71270          USA     72600.0
+118             487        Signal Collectibles Ltd.          Taylor              Sue      4155554312  ...      Brisbane        CA      94217          USA     60300.0
+119             489  Double Decker Gift Stores, Ltd           Smith          Thomas   (171) 555-7555  ...        London      None    WA1 1DP           UK     43300.0
+120             495            Diecast Collectables          Franco          Valarie      6175552555  ...        Boston        MA      51003          USA     85100.0
+121             496                Kellys Gift Shop         Snowden             Tony   +64 9 5555500  ...    Auckland        None       None  New Zealand    110000.0
+
+[122 rows x 11 columns],     productcode                            productname   productline              productvendor                                 productdescription
+0      S18_2870           1999 Indy 500 Monte Carlo SS  Classic Cars          Red Start Diecast  Features include opening and closing doors. Co...
+1      S32_4485              1974 Ducati 350 Mk3 Desmo   Motorcycles        Second Gear Diecast  This model features two-tone paint with chrome...
+2      S18_1749               1917 Grand Touring Sedan  Vintage Cars  Welly Diecast Productions  This 1:18 scale replica of the 1917 Grand Tour...
+3      S10_4962                 1962 LanciaA Delta 16V  Classic Cars        Second Gear Diecast  Features include: Turnable front wheels; steer...
+4      S32_3207  1950s Chicago Surface Lines Streetcar        Trains       Gearbox Collectibles  This streetcar is a joy to see. It has 80 sepa...
+..          ...                                    ...           ...                        ...                                                ...
+105   S700_1691            American Airlines: B767-300        Planes            Min Lin Diecast  Exact replia with official logos and insignias...
+106    S24_3969       1936 Mercedes Benz 500k Roadster  Vintage Cars          Red Start Diecast  This model features grille-mounted chrome horn...
+107    S50_1341           1930 Buick Marquette Phaeton  Vintage Cars        Studio M Art Models   Features opening trunk,  working steering system
+108    S18_3232            1992 Ferrari 360 Spider red  Classic Cars       Unimax Art Galleries  his replica features opening doors, superb det...
+109    S18_3136    18th Century Vintage Horse Carriage  Vintage Cars          Red Start Diecast  Hand crafted diecast-like metal horse carriage...
+
+[110 rows x 5 columns],      ordernumber   orderdate requireddate shippeddate
+0          10300  2003-10-04   2003-10-13  2003-10-09
+1          10294  2004-09-10   2004-09-17  2004-09-14
+2          10303  2004-10-06   2004-10-14  2004-10-09
+3          10315  2004-10-29   2004-11-08  2004-10-30
+4          10336  2004-11-20   2004-11-26  2004-11-24
+..           ...         ...          ...         ...
+321        10372  2005-01-26   2005-02-05  2005-01-28
+322        10187  2003-11-15   2003-11-24  2003-11-16
+323        10289  2004-09-03   2004-09-13  2004-09-04
+324        10265  2004-07-02   2004-07-09  2004-07-07
+325        10307  2004-10-14   2004-10-23  2004-10-20
+
+[326 rows x 4 columns],     employeenumber   lastname firstname                            email              jobtitle
+0             1370  Hernandez    Gerard   ghernande@classicmodelcars.com             Sales Rep
+1             1286      Tseng  Foon Yue      ftseng@classicmodelcars.com             Sales Rep
+2             1619       King       Tom       tking@classicmodelcars.com             Sales Rep
+3             1102     Bondur    Gerard     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+4             1056  Patterson      Mary   mpatterso@classicmodelcars.com              VP Sales
+5             1002     Murphy     Diane     dmurphy@classicmodelcars.com             President
+6             1625       Kato   Yoshimi       ykato@classicmodelcars.com             Sales Rep
+7             1088  Patterson   William  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+8             1611     Fixter      Andy     afixter@classicmodelcars.com             Sales Rep
+9             1621      Nishi      Mami      mnishi@classicmodelcars.com             Sales Rep
+10            1504      Jones     Barry      bjones@classicmodelcars.com             Sales Rep
+11            1702     Gerard    Martin     mgerard@classicmodelcars.com             Sales Rep
+12            1216  Patterson     Steve  spatterson@classicmodelcars.com             Sales Rep
+13            1076   Firrelli      Jeff   jfirrelli@classicmodelcars.com          VP Marketing
+14            1501       Bott     Larry       lbott@classicmodelcars.com             Sales Rep
+15            1165   Jennings    Leslie   ljennings@classicmodelcars.com             Sales Rep
+16            1612      Marsh     Peter      pmarsh@classicmodelcars.com             Sales Rep
+17            1166   Thompson    Leslie   lthompson@classicmodelcars.com             Sales Rep
+18            1323     Vanauf    George     gvanauf@classicmodelcars.com             Sales Rep
+19            1401   Castillo    Pamela   pcastillo@classicmodelcars.com             Sales Rep
+20            1188   Firrelli     Julie   jfirrelli@classicmodelcars.com             Sales Rep
+21            1337     Bondur      Loui     lbondur@classicmodelcars.com             Sales Rep
+22            1143        Bow   Anthony        abow@classicmodelcars.com    Sales Manager (NA),       ordernumber  orderlinenumber  quantityordered  priceeach
+0           10382               12               34     143.61
+1           10301                1               27      64.67
+2           10252                1               41     145.52
+3           10341                6               32      63.03
+4           10386               14               37      90.75
+...           ...              ...              ...        ...
+2991        10150                1               20     121.15
+2992        10103                4               42     119.67
+2993        10367               11               38      50.31
+2994        10342                1               55      63.14
+2995        10226                3               36      47.79
+
+[2996 rows x 4 columns])
+[2022-06-20 23:02:30,891] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=extract_to_DMs, execution_date=20220620T000000, start_date=20220621T020230, end_date=20220621T020230
+[2022-06-20 23:02:30,929] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-20 23:02:30,986] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 01:35:39,392] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:35:39,416] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:35:39,416] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:35:39,416] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 01:35:39,416] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:35:39,435] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): extract_to_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-21 01:35:39,445] {standard_task_runner.py:52} INFO - Started process 24925 to run task
+[2022-06-21 01:35:39,451] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'extract_to_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '546', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpn04d84pl', '--error-file', '/tmp/tmpcrc1gvl9']
+[2022-06-21 01:35:39,452] {standard_task_runner.py:80} INFO - Job 546: Subtask extract_to_DMs
+[2022-06-21 01:35:39,538] {task_command.py:370} INFO - Running <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 01:35:39,652] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=extract_to_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 01:35:39,702] {python.py:173} INFO - Done. Returned value was: (     customernumber                    customername contactlastname contactfirstname           phone  ...          city     state postalcode      country creditlimit
+0               103               Atelier graphique         Schmitt          Carine       40.32.2555  ...        Nantes      None      44000       France     21000.0
+1               112              Signal Gift Stores            King             Jean      7025551838  ...     Las Vegas        NV      83030          USA     71800.0
+2               114      Australian Collectors, Co.        Ferguson            Peter    03 9520 4555  ...     Melbourne  Victoria       3004    Australia    117300.0
+3               119               La Rochelle Gifts         Labrune          Janine       40.67.8555  ...        Nantes      None      44000       France    118200.0
+4               121              Baane Mini Imports      Bergulfsen           Jonas       07-98 9555  ...       Stavern      None       4110       Norway     81700.0
+..              ...                             ...             ...              ...             ...  ...           ...       ...        ...          ...         ...
+117             486    Motor Mint Distributors Inc.         Salazar             Rosa      2155559857  ...  Philadelphia        PA      71270          USA     72600.0
+118             487        Signal Collectibles Ltd.          Taylor              Sue      4155554312  ...      Brisbane        CA      94217          USA     60300.0
+119             489  Double Decker Gift Stores, Ltd           Smith          Thomas   (171) 555-7555  ...        London      None    WA1 1DP           UK     43300.0
+120             495            Diecast Collectables          Franco          Valarie      6175552555  ...        Boston        MA      51003          USA     85100.0
+121             496                Kellys Gift Shop         Snowden             Tony   +64 9 5555500  ...    Auckland        None       None  New Zealand    110000.0
+
+[122 rows x 11 columns],     productcode                            productname   productline              productvendor                                 productdescription
+0      S18_2870           1999 Indy 500 Monte Carlo SS  Classic Cars          Red Start Diecast  Features include opening and closing doors. Co...
+1      S32_4485              1974 Ducati 350 Mk3 Desmo   Motorcycles        Second Gear Diecast  This model features two-tone paint with chrome...
+2      S18_1749               1917 Grand Touring Sedan  Vintage Cars  Welly Diecast Productions  This 1:18 scale replica of the 1917 Grand Tour...
+3      S10_4962                 1962 LanciaA Delta 16V  Classic Cars        Second Gear Diecast  Features include: Turnable front wheels; steer...
+4      S32_3207  1950s Chicago Surface Lines Streetcar        Trains       Gearbox Collectibles  This streetcar is a joy to see. It has 80 sepa...
+..          ...                                    ...           ...                        ...                                                ...
+105   S700_1691            American Airlines: B767-300        Planes            Min Lin Diecast  Exact replia with official logos and insignias...
+106    S24_3969       1936 Mercedes Benz 500k Roadster  Vintage Cars          Red Start Diecast  This model features grille-mounted chrome horn...
+107    S50_1341           1930 Buick Marquette Phaeton  Vintage Cars        Studio M Art Models   Features opening trunk,  working steering system
+108    S18_3232            1992 Ferrari 360 Spider red  Classic Cars       Unimax Art Galleries  his replica features opening doors, superb det...
+109    S18_3136    18th Century Vintage Horse Carriage  Vintage Cars          Red Start Diecast  Hand crafted diecast-like metal horse carriage...
+
+[110 rows x 5 columns],      ordernumber   orderdate requireddate shippeddate
+0          10300  2003-10-04   2003-10-13  2003-10-09
+1          10294  2004-09-10   2004-09-17  2004-09-14
+2          10303  2004-10-06   2004-10-14  2004-10-09
+3          10315  2004-10-29   2004-11-08  2004-10-30
+4          10336  2004-11-20   2004-11-26  2004-11-24
+..           ...         ...          ...         ...
+321        10372  2005-01-26   2005-02-05  2005-01-28
+322        10187  2003-11-15   2003-11-24  2003-11-16
+323        10289  2004-09-03   2004-09-13  2004-09-04
+324        10265  2004-07-02   2004-07-09  2004-07-07
+325        10307  2004-10-14   2004-10-23  2004-10-20
+
+[326 rows x 4 columns],     employeenumber   lastname firstname                            email              jobtitle
+0             1370  Hernandez    Gerard   ghernande@classicmodelcars.com             Sales Rep
+1             1286      Tseng  Foon Yue      ftseng@classicmodelcars.com             Sales Rep
+2             1619       King       Tom       tking@classicmodelcars.com             Sales Rep
+3             1102     Bondur    Gerard     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+4             1056  Patterson      Mary   mpatterso@classicmodelcars.com              VP Sales
+5             1002     Murphy     Diane     dmurphy@classicmodelcars.com             President
+6             1625       Kato   Yoshimi       ykato@classicmodelcars.com             Sales Rep
+7             1088  Patterson   William  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+8             1611     Fixter      Andy     afixter@classicmodelcars.com             Sales Rep
+9             1621      Nishi      Mami      mnishi@classicmodelcars.com             Sales Rep
+10            1504      Jones     Barry      bjones@classicmodelcars.com             Sales Rep
+11            1702     Gerard    Martin     mgerard@classicmodelcars.com             Sales Rep
+12            1216  Patterson     Steve  spatterson@classicmodelcars.com             Sales Rep
+13            1076   Firrelli      Jeff   jfirrelli@classicmodelcars.com          VP Marketing
+14            1501       Bott     Larry       lbott@classicmodelcars.com             Sales Rep
+15            1165   Jennings    Leslie   ljennings@classicmodelcars.com             Sales Rep
+16            1612      Marsh     Peter      pmarsh@classicmodelcars.com             Sales Rep
+17            1166   Thompson    Leslie   lthompson@classicmodelcars.com             Sales Rep
+18            1323     Vanauf    George     gvanauf@classicmodelcars.com             Sales Rep
+19            1401   Castillo    Pamela   pcastillo@classicmodelcars.com             Sales Rep
+20            1188   Firrelli     Julie   jfirrelli@classicmodelcars.com             Sales Rep
+21            1337     Bondur      Loui     lbondur@classicmodelcars.com             Sales Rep
+22            1143        Bow   Anthony        abow@classicmodelcars.com    Sales Manager (NA),       ordernumber  orderlinenumber   status
+0           10181                7  Shipped
+1           10110               12  Shipped
+2           10234                2  Shipped
+3           10328                7  Shipped
+4           10292                5  Shipped
+...           ...              ...      ...
+2991        10304                9  Shipped
+2992        10313                4  Shipped
+2993        10139                3  Shipped
+2994        10371                4  Shipped
+2995        10301                5  Shipped
+
+[2996 rows x 3 columns])
+[2022-06-21 01:35:39,802] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=extract_to_DMs, execution_date=20220620T000000, start_date=20220621T043539, end_date=20220621T043539
+[2022-06-21 01:35:39,863] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 01:35:39,939] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 01:39:13,395] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:39:13,416] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:39:13,416] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:39:13,416] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 01:39:13,416] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:39:13,435] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): extract_to_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-21 01:39:13,445] {standard_task_runner.py:52} INFO - Started process 26904 to run task
+[2022-06-21 01:39:13,451] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'extract_to_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '562', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmp97rr0k07', '--error-file', '/tmp/tmp79h3xiid']
+[2022-06-21 01:39:13,452] {standard_task_runner.py:80} INFO - Job 562: Subtask extract_to_DMs
+[2022-06-21 01:39:13,537] {task_command.py:370} INFO - Running <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 01:39:13,646] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=extract_to_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 01:39:13,699] {python.py:173} INFO - Done. Returned value was: (     customernumber                    customername contactlastname contactfirstname           phone  ...          city     state postalcode      country creditlimit
+0               103               Atelier graphique         Schmitt          Carine       40.32.2555  ...        Nantes      None      44000       France     21000.0
+1               112              Signal Gift Stores            King             Jean      7025551838  ...     Las Vegas        NV      83030          USA     71800.0
+2               114      Australian Collectors, Co.        Ferguson            Peter    03 9520 4555  ...     Melbourne  Victoria       3004    Australia    117300.0
+3               119               La Rochelle Gifts         Labrune          Janine       40.67.8555  ...        Nantes      None      44000       France    118200.0
+4               121              Baane Mini Imports      Bergulfsen           Jonas       07-98 9555  ...       Stavern      None       4110       Norway     81700.0
+..              ...                             ...             ...              ...             ...  ...           ...       ...        ...          ...         ...
+117             486    Motor Mint Distributors Inc.         Salazar             Rosa      2155559857  ...  Philadelphia        PA      71270          USA     72600.0
+118             487        Signal Collectibles Ltd.          Taylor              Sue      4155554312  ...      Brisbane        CA      94217          USA     60300.0
+119             489  Double Decker Gift Stores, Ltd           Smith          Thomas   (171) 555-7555  ...        London      None    WA1 1DP           UK     43300.0
+120             495            Diecast Collectables          Franco          Valarie      6175552555  ...        Boston        MA      51003          USA     85100.0
+121             496                Kellys Gift Shop         Snowden             Tony   +64 9 5555500  ...    Auckland        None       None  New Zealand    110000.0
+
+[122 rows x 11 columns],     productcode                            productname   productline              productvendor                                 productdescription
+0      S18_2870           1999 Indy 500 Monte Carlo SS  Classic Cars          Red Start Diecast  Features include opening and closing doors. Co...
+1      S32_4485              1974 Ducati 350 Mk3 Desmo   Motorcycles        Second Gear Diecast  This model features two-tone paint with chrome...
+2      S18_1749               1917 Grand Touring Sedan  Vintage Cars  Welly Diecast Productions  This 1:18 scale replica of the 1917 Grand Tour...
+3      S10_4962                 1962 LanciaA Delta 16V  Classic Cars        Second Gear Diecast  Features include: Turnable front wheels; steer...
+4      S32_3207  1950s Chicago Surface Lines Streetcar        Trains       Gearbox Collectibles  This streetcar is a joy to see. It has 80 sepa...
+..          ...                                    ...           ...                        ...                                                ...
+105   S700_1691            American Airlines: B767-300        Planes            Min Lin Diecast  Exact replia with official logos and insignias...
+106    S24_3969       1936 Mercedes Benz 500k Roadster  Vintage Cars          Red Start Diecast  This model features grille-mounted chrome horn...
+107    S50_1341           1930 Buick Marquette Phaeton  Vintage Cars        Studio M Art Models   Features opening trunk,  working steering system
+108    S18_3232            1992 Ferrari 360 Spider red  Classic Cars       Unimax Art Galleries  his replica features opening doors, superb det...
+109    S18_3136    18th Century Vintage Horse Carriage  Vintage Cars          Red Start Diecast  Hand crafted diecast-like metal horse carriage...
+
+[110 rows x 5 columns],      ordernumber   orderdate requireddate shippeddate
+0          10300  2003-10-04   2003-10-13  2003-10-09
+1          10294  2004-09-10   2004-09-17  2004-09-14
+2          10303  2004-10-06   2004-10-14  2004-10-09
+3          10315  2004-10-29   2004-11-08  2004-10-30
+4          10336  2004-11-20   2004-11-26  2004-11-24
+..           ...         ...          ...         ...
+321        10372  2005-01-26   2005-02-05  2005-01-28
+322        10187  2003-11-15   2003-11-24  2003-11-16
+323        10289  2004-09-03   2004-09-13  2004-09-04
+324        10265  2004-07-02   2004-07-09  2004-07-07
+325        10307  2004-10-14   2004-10-23  2004-10-20
+
+[326 rows x 4 columns],     employeenumber   lastname firstname                            email              jobtitle
+0             1370  Hernandez    Gerard   ghernande@classicmodelcars.com             Sales Rep
+1             1286      Tseng  Foon Yue      ftseng@classicmodelcars.com             Sales Rep
+2             1619       King       Tom       tking@classicmodelcars.com             Sales Rep
+3             1102     Bondur    Gerard     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+4             1056  Patterson      Mary   mpatterso@classicmodelcars.com              VP Sales
+5             1002     Murphy     Diane     dmurphy@classicmodelcars.com             President
+6             1625       Kato   Yoshimi       ykato@classicmodelcars.com             Sales Rep
+7             1088  Patterson   William  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+8             1611     Fixter      Andy     afixter@classicmodelcars.com             Sales Rep
+9             1621      Nishi      Mami      mnishi@classicmodelcars.com             Sales Rep
+10            1504      Jones     Barry      bjones@classicmodelcars.com             Sales Rep
+11            1702     Gerard    Martin     mgerard@classicmodelcars.com             Sales Rep
+12            1216  Patterson     Steve  spatterson@classicmodelcars.com             Sales Rep
+13            1076   Firrelli      Jeff   jfirrelli@classicmodelcars.com          VP Marketing
+14            1501       Bott     Larry       lbott@classicmodelcars.com             Sales Rep
+15            1165   Jennings    Leslie   ljennings@classicmodelcars.com             Sales Rep
+16            1612      Marsh     Peter      pmarsh@classicmodelcars.com             Sales Rep
+17            1166   Thompson    Leslie   lthompson@classicmodelcars.com             Sales Rep
+18            1323     Vanauf    George     gvanauf@classicmodelcars.com             Sales Rep
+19            1401   Castillo    Pamela   pcastillo@classicmodelcars.com             Sales Rep
+20            1188   Firrelli     Julie   jfirrelli@classicmodelcars.com             Sales Rep
+21            1337     Bondur      Loui     lbondur@classicmodelcars.com             Sales Rep
+22            1143        Bow   Anthony        abow@classicmodelcars.com    Sales Manager (NA),       ordernumber  orderlinenumber   status
+0           10181                7  Shipped
+1           10110               12  Shipped
+2           10234                2  Shipped
+3           10328                7  Shipped
+4           10292                5  Shipped
+...           ...              ...      ...
+2991        10304                9  Shipped
+2992        10313                4  Shipped
+2993        10139                3  Shipped
+2994        10371                4  Shipped
+2995        10301                5  Shipped
+
+[2996 rows x 3 columns])
+[2022-06-21 01:39:13,811] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=extract_to_DMs, execution_date=20220620T000000, start_date=20220621T043913, end_date=20220621T043913
+[2022-06-21 01:39:13,863] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 01:39:13,935] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 01:43:22,863] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:43:22,885] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:43:22,885] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:43:22,885] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 01:43:22,885] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:43:22,906] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): extract_to_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-21 01:43:22,918] {standard_task_runner.py:52} INFO - Started process 28804 to run task
+[2022-06-21 01:43:22,925] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'extract_to_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '580', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpsb5l_tfc', '--error-file', '/tmp/tmp8t211irb']
+[2022-06-21 01:43:22,925] {standard_task_runner.py:80} INFO - Job 580: Subtask extract_to_DMs
+[2022-06-21 01:43:23,008] {task_command.py:370} INFO - Running <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 01:43:23,114] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=extract_to_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 01:43:23,170] {python.py:173} INFO - Done. Returned value was: (     customernumber                    customername contactlastname contactfirstname           phone  ...          city     state postalcode      country creditlimit
+0               103               Atelier graphique         Schmitt          Carine       40.32.2555  ...        Nantes      None      44000       France     21000.0
+1               112              Signal Gift Stores            King             Jean      7025551838  ...     Las Vegas        NV      83030          USA     71800.0
+2               114      Australian Collectors, Co.        Ferguson            Peter    03 9520 4555  ...     Melbourne  Victoria       3004    Australia    117300.0
+3               119               La Rochelle Gifts         Labrune          Janine       40.67.8555  ...        Nantes      None      44000       France    118200.0
+4               121              Baane Mini Imports      Bergulfsen           Jonas       07-98 9555  ...       Stavern      None       4110       Norway     81700.0
+..              ...                             ...             ...              ...             ...  ...           ...       ...        ...          ...         ...
+117             486    Motor Mint Distributors Inc.         Salazar             Rosa      2155559857  ...  Philadelphia        PA      71270          USA     72600.0
+118             487        Signal Collectibles Ltd.          Taylor              Sue      4155554312  ...      Brisbane        CA      94217          USA     60300.0
+119             489  Double Decker Gift Stores, Ltd           Smith          Thomas   (171) 555-7555  ...        London      None    WA1 1DP           UK     43300.0
+120             495            Diecast Collectables          Franco          Valarie      6175552555  ...        Boston        MA      51003          USA     85100.0
+121             496                Kellys Gift Shop         Snowden             Tony   +64 9 5555500  ...    Auckland        None       None  New Zealand    110000.0
+
+[122 rows x 11 columns],     productcode                            productname   productline              productvendor                                 productdescription
+0      S18_2870           1999 Indy 500 Monte Carlo SS  Classic Cars          Red Start Diecast  Features include opening and closing doors. Co...
+1      S32_4485              1974 Ducati 350 Mk3 Desmo   Motorcycles        Second Gear Diecast  This model features two-tone paint with chrome...
+2      S18_1749               1917 Grand Touring Sedan  Vintage Cars  Welly Diecast Productions  This 1:18 scale replica of the 1917 Grand Tour...
+3      S10_4962                 1962 LanciaA Delta 16V  Classic Cars        Second Gear Diecast  Features include: Turnable front wheels; steer...
+4      S32_3207  1950s Chicago Surface Lines Streetcar        Trains       Gearbox Collectibles  This streetcar is a joy to see. It has 80 sepa...
+..          ...                                    ...           ...                        ...                                                ...
+105   S700_1691            American Airlines: B767-300        Planes            Min Lin Diecast  Exact replia with official logos and insignias...
+106    S24_3969       1936 Mercedes Benz 500k Roadster  Vintage Cars          Red Start Diecast  This model features grille-mounted chrome horn...
+107    S50_1341           1930 Buick Marquette Phaeton  Vintage Cars        Studio M Art Models   Features opening trunk,  working steering system
+108    S18_3232            1992 Ferrari 360 Spider red  Classic Cars       Unimax Art Galleries  his replica features opening doors, superb det...
+109    S18_3136    18th Century Vintage Horse Carriage  Vintage Cars          Red Start Diecast  Hand crafted diecast-like metal horse carriage...
+
+[110 rows x 5 columns],      ordernumber   orderdate requireddate shippeddate
+0          10300  2003-10-04   2003-10-13  2003-10-09
+1          10294  2004-09-10   2004-09-17  2004-09-14
+2          10303  2004-10-06   2004-10-14  2004-10-09
+3          10315  2004-10-29   2004-11-08  2004-10-30
+4          10336  2004-11-20   2004-11-26  2004-11-24
+..           ...         ...          ...         ...
+321        10372  2005-01-26   2005-02-05  2005-01-28
+322        10187  2003-11-15   2003-11-24  2003-11-16
+323        10289  2004-09-03   2004-09-13  2004-09-04
+324        10265  2004-07-02   2004-07-09  2004-07-07
+325        10307  2004-10-14   2004-10-23  2004-10-20
+
+[326 rows x 4 columns],     employeenumber   lastname firstname                            email              jobtitle
+0             1370  Hernandez    Gerard   ghernande@classicmodelcars.com             Sales Rep
+1             1286      Tseng  Foon Yue      ftseng@classicmodelcars.com             Sales Rep
+2             1619       King       Tom       tking@classicmodelcars.com             Sales Rep
+3             1102     Bondur    Gerard     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+4             1056  Patterson      Mary   mpatterso@classicmodelcars.com              VP Sales
+5             1002     Murphy     Diane     dmurphy@classicmodelcars.com             President
+6             1625       Kato   Yoshimi       ykato@classicmodelcars.com             Sales Rep
+7             1088  Patterson   William  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+8             1611     Fixter      Andy     afixter@classicmodelcars.com             Sales Rep
+9             1621      Nishi      Mami      mnishi@classicmodelcars.com             Sales Rep
+10            1504      Jones     Barry      bjones@classicmodelcars.com             Sales Rep
+11            1702     Gerard    Martin     mgerard@classicmodelcars.com             Sales Rep
+12            1216  Patterson     Steve  spatterson@classicmodelcars.com             Sales Rep
+13            1076   Firrelli      Jeff   jfirrelli@classicmodelcars.com          VP Marketing
+14            1501       Bott     Larry       lbott@classicmodelcars.com             Sales Rep
+15            1165   Jennings    Leslie   ljennings@classicmodelcars.com             Sales Rep
+16            1612      Marsh     Peter      pmarsh@classicmodelcars.com             Sales Rep
+17            1166   Thompson    Leslie   lthompson@classicmodelcars.com             Sales Rep
+18            1323     Vanauf    George     gvanauf@classicmodelcars.com             Sales Rep
+19            1401   Castillo    Pamela   pcastillo@classicmodelcars.com             Sales Rep
+20            1188   Firrelli     Julie   jfirrelli@classicmodelcars.com             Sales Rep
+21            1337     Bondur      Loui     lbondur@classicmodelcars.com             Sales Rep
+22            1143        Bow   Anthony        abow@classicmodelcars.com    Sales Manager (NA),       ordernumber  orderlinenumber   status
+0           10181                7  Shipped
+1           10110               12  Shipped
+2           10234                2  Shipped
+3           10328                7  Shipped
+4           10292                5  Shipped
+...           ...              ...      ...
+2991        10304                9  Shipped
+2992        10313                4  Shipped
+2993        10139                3  Shipped
+2994        10371                4  Shipped
+2995        10301                5  Shipped
+
+[2996 rows x 3 columns])
+[2022-06-21 01:43:23,272] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=extract_to_DMs, execution_date=20220620T000000, start_date=20220621T044322, end_date=20220621T044323
+[2022-06-21 01:43:23,336] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 01:43:23,406] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 01:50:27,927] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:50:27,950] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 01:50:27,950] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:50:27,950] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 01:50:27,950] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 01:50:27,971] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): extract_to_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-21 01:50:27,981] {standard_task_runner.py:52} INFO - Started process 31294 to run task
+[2022-06-21 01:50:27,986] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'extract_to_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '598', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpx6ojocsn', '--error-file', '/tmp/tmp4aw3ebv4']
+[2022-06-21 01:50:27,987] {standard_task_runner.py:80} INFO - Job 598: Subtask extract_to_DMs
+[2022-06-21 01:50:28,074] {task_command.py:370} INFO - Running <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 01:50:28,178] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=extract_to_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 01:50:28,235] {python.py:173} INFO - Done. Returned value was: (     customernumber                    customername contactlastname contactfirstname           phone  ...          city     state postalcode      country creditlimit
+0               103               Atelier graphique         Schmitt          Carine       40.32.2555  ...        Nantes      None      44000       France     21000.0
+1               112              Signal Gift Stores            King             Jean      7025551838  ...     Las Vegas        NV      83030          USA     71800.0
+2               114      Australian Collectors, Co.        Ferguson            Peter    03 9520 4555  ...     Melbourne  Victoria       3004    Australia    117300.0
+3               119               La Rochelle Gifts         Labrune          Janine       40.67.8555  ...        Nantes      None      44000       France    118200.0
+4               121              Baane Mini Imports      Bergulfsen           Jonas       07-98 9555  ...       Stavern      None       4110       Norway     81700.0
+..              ...                             ...             ...              ...             ...  ...           ...       ...        ...          ...         ...
+117             486    Motor Mint Distributors Inc.         Salazar             Rosa      2155559857  ...  Philadelphia        PA      71270          USA     72600.0
+118             487        Signal Collectibles Ltd.          Taylor              Sue      4155554312  ...      Brisbane        CA      94217          USA     60300.0
+119             489  Double Decker Gift Stores, Ltd           Smith          Thomas   (171) 555-7555  ...        London      None    WA1 1DP           UK     43300.0
+120             495            Diecast Collectables          Franco          Valarie      6175552555  ...        Boston        MA      51003          USA     85100.0
+121             496                Kellys Gift Shop         Snowden             Tony   +64 9 5555500  ...    Auckland        None       None  New Zealand    110000.0
+
+[122 rows x 11 columns],     productcode                            productname   productline              productvendor                                 productdescription
+0      S18_2870           1999 Indy 500 Monte Carlo SS  Classic Cars          Red Start Diecast  Features include opening and closing doors. Co...
+1      S32_4485              1974 Ducati 350 Mk3 Desmo   Motorcycles        Second Gear Diecast  This model features two-tone paint with chrome...
+2      S18_1749               1917 Grand Touring Sedan  Vintage Cars  Welly Diecast Productions  This 1:18 scale replica of the 1917 Grand Tour...
+3      S10_4962                 1962 LanciaA Delta 16V  Classic Cars        Second Gear Diecast  Features include: Turnable front wheels; steer...
+4      S32_3207  1950s Chicago Surface Lines Streetcar        Trains       Gearbox Collectibles  This streetcar is a joy to see. It has 80 sepa...
+..          ...                                    ...           ...                        ...                                                ...
+105   S700_1691            American Airlines: B767-300        Planes            Min Lin Diecast  Exact replia with official logos and insignias...
+106    S24_3969       1936 Mercedes Benz 500k Roadster  Vintage Cars          Red Start Diecast  This model features grille-mounted chrome horn...
+107    S50_1341           1930 Buick Marquette Phaeton  Vintage Cars        Studio M Art Models   Features opening trunk,  working steering system
+108    S18_3232            1992 Ferrari 360 Spider red  Classic Cars       Unimax Art Galleries  his replica features opening doors, superb det...
+109    S18_3136    18th Century Vintage Horse Carriage  Vintage Cars          Red Start Diecast  Hand crafted diecast-like metal horse carriage...
+
+[110 rows x 5 columns],      ordernumber   orderdate requireddate shippeddate
+0          10300  2003-10-04   2003-10-13  2003-10-09
+1          10294  2004-09-10   2004-09-17  2004-09-14
+2          10303  2004-10-06   2004-10-14  2004-10-09
+3          10315  2004-10-29   2004-11-08  2004-10-30
+4          10336  2004-11-20   2004-11-26  2004-11-24
+..           ...         ...          ...         ...
+321        10372  2005-01-26   2005-02-05  2005-01-28
+322        10187  2003-11-15   2003-11-24  2003-11-16
+323        10289  2004-09-03   2004-09-13  2004-09-04
+324        10265  2004-07-02   2004-07-09  2004-07-07
+325        10307  2004-10-14   2004-10-23  2004-10-20
+
+[326 rows x 4 columns],     employeenumber   lastname firstname                            email              jobtitle
+0             1370  Hernandez    Gerard   ghernande@classicmodelcars.com             Sales Rep
+1             1286      Tseng  Foon Yue      ftseng@classicmodelcars.com             Sales Rep
+2             1619       King       Tom       tking@classicmodelcars.com             Sales Rep
+3             1102     Bondur    Gerard     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+4             1056  Patterson      Mary   mpatterso@classicmodelcars.com              VP Sales
+5             1002     Murphy     Diane     dmurphy@classicmodelcars.com             President
+6             1625       Kato   Yoshimi       ykato@classicmodelcars.com             Sales Rep
+7             1088  Patterson   William  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+8             1611     Fixter      Andy     afixter@classicmodelcars.com             Sales Rep
+9             1621      Nishi      Mami      mnishi@classicmodelcars.com             Sales Rep
+10            1504      Jones     Barry      bjones@classicmodelcars.com             Sales Rep
+11            1702     Gerard    Martin     mgerard@classicmodelcars.com             Sales Rep
+12            1216  Patterson     Steve  spatterson@classicmodelcars.com             Sales Rep
+13            1076   Firrelli      Jeff   jfirrelli@classicmodelcars.com          VP Marketing
+14            1501       Bott     Larry       lbott@classicmodelcars.com             Sales Rep
+15            1165   Jennings    Leslie   ljennings@classicmodelcars.com             Sales Rep
+16            1612      Marsh     Peter      pmarsh@classicmodelcars.com             Sales Rep
+17            1166   Thompson    Leslie   lthompson@classicmodelcars.com             Sales Rep
+18            1323     Vanauf    George     gvanauf@classicmodelcars.com             Sales Rep
+19            1401   Castillo    Pamela   pcastillo@classicmodelcars.com             Sales Rep
+20            1188   Firrelli     Julie   jfirrelli@classicmodelcars.com             Sales Rep
+21            1337     Bondur      Loui     lbondur@classicmodelcars.com             Sales Rep
+22            1143        Bow   Anthony        abow@classicmodelcars.com    Sales Manager (NA),       ordernumber  orderlinenumber   status
+0           10181                7  Shipped
+1           10110               12  Shipped
+2           10234                2  Shipped
+3           10328                7  Shipped
+4           10292                5  Shipped
+...           ...              ...      ...
+2991        10304                9  Shipped
+2992        10313                4  Shipped
+2993        10139                3  Shipped
+2994        10371                4  Shipped
+2995        10301                5  Shipped
+
+[2996 rows x 3 columns])
+[2022-06-21 01:50:28,323] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=extract_to_DMs, execution_date=20220620T000000, start_date=20220621T045027, end_date=20220621T045028
+[2022-06-21 01:50:28,398] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 01:50:28,478] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:14:09,701] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:14:09,731] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:14:09,731] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:14:09,731] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:14:09,731] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:14:09,755] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): extract_to_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:14:09,768] {standard_task_runner.py:52} INFO - Started process 46746 to run task
+[2022-06-21 02:14:09,775] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'extract_to_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpetpcebk3', '--error-file', '/tmp/tmpkxqdet95']
+[2022-06-21 02:14:09,775] {standard_task_runner.py:80} INFO - Job 24: Subtask extract_to_DMs
+[2022-06-21 02:14:09,860] {task_command.py:370} INFO - Running <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:14:09,967] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=extract_to_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:14:10,020] {python.py:173} INFO - Done. Returned value was: (     customernumber                    customername contactlastname contactfirstname           phone  ...          city     state postalcode      country creditlimit
+0               103               Atelier graphique         Schmitt          Carine       40.32.2555  ...        Nantes      None      44000       France     21000.0
+1               112              Signal Gift Stores            King             Jean      7025551838  ...     Las Vegas        NV      83030          USA     71800.0
+2               114      Australian Collectors, Co.        Ferguson            Peter    03 9520 4555  ...     Melbourne  Victoria       3004    Australia    117300.0
+3               119               La Rochelle Gifts         Labrune          Janine       40.67.8555  ...        Nantes      None      44000       France    118200.0
+4               121              Baane Mini Imports      Bergulfsen           Jonas       07-98 9555  ...       Stavern      None       4110       Norway     81700.0
+..              ...                             ...             ...              ...             ...  ...           ...       ...        ...          ...         ...
+117             486    Motor Mint Distributors Inc.         Salazar             Rosa      2155559857  ...  Philadelphia        PA      71270          USA     72600.0
+118             487        Signal Collectibles Ltd.          Taylor              Sue      4155554312  ...      Brisbane        CA      94217          USA     60300.0
+119             489  Double Decker Gift Stores, Ltd           Smith          Thomas   (171) 555-7555  ...        London      None    WA1 1DP           UK     43300.0
+120             495            Diecast Collectables          Franco          Valarie      6175552555  ...        Boston        MA      51003          USA     85100.0
+121             496                Kellys Gift Shop         Snowden             Tony   +64 9 5555500  ...    Auckland        None       None  New Zealand    110000.0
+
+[122 rows x 11 columns],     productcode                            productname   productline              productvendor                                 productdescription
+0      S18_2870           1999 Indy 500 Monte Carlo SS  Classic Cars          Red Start Diecast  Features include opening and closing doors. Co...
+1      S32_4485              1974 Ducati 350 Mk3 Desmo   Motorcycles        Second Gear Diecast  This model features two-tone paint with chrome...
+2      S18_1749               1917 Grand Touring Sedan  Vintage Cars  Welly Diecast Productions  This 1:18 scale replica of the 1917 Grand Tour...
+3      S10_4962                 1962 LanciaA Delta 16V  Classic Cars        Second Gear Diecast  Features include: Turnable front wheels; steer...
+4      S32_3207  1950s Chicago Surface Lines Streetcar        Trains       Gearbox Collectibles  This streetcar is a joy to see. It has 80 sepa...
+..          ...                                    ...           ...                        ...                                                ...
+105   S700_1691            American Airlines: B767-300        Planes            Min Lin Diecast  Exact replia with official logos and insignias...
+106    S24_3969       1936 Mercedes Benz 500k Roadster  Vintage Cars          Red Start Diecast  This model features grille-mounted chrome horn...
+107    S50_1341           1930 Buick Marquette Phaeton  Vintage Cars        Studio M Art Models   Features opening trunk,  working steering system
+108    S18_3232            1992 Ferrari 360 Spider red  Classic Cars       Unimax Art Galleries  his replica features opening doors, superb det...
+109    S18_3136    18th Century Vintage Horse Carriage  Vintage Cars          Red Start Diecast  Hand crafted diecast-like metal horse carriage...
+
+[110 rows x 5 columns],      ordernumber   orderdate requireddate shippeddate
+0          10300  2003-10-04   2003-10-13  2003-10-09
+1          10294  2004-09-10   2004-09-17  2004-09-14
+2          10303  2004-10-06   2004-10-14  2004-10-09
+3          10315  2004-10-29   2004-11-08  2004-10-30
+4          10336  2004-11-20   2004-11-26  2004-11-24
+..           ...         ...          ...         ...
+321        10372  2005-01-26   2005-02-05  2005-01-28
+322        10187  2003-11-15   2003-11-24  2003-11-16
+323        10289  2004-09-03   2004-09-13  2004-09-04
+324        10265  2004-07-02   2004-07-09  2004-07-07
+325        10307  2004-10-14   2004-10-23  2004-10-20
+
+[326 rows x 4 columns],     employeenumber   lastname firstname                            email              jobtitle
+0             1370  Hernandez    Gerard   ghernande@classicmodelcars.com             Sales Rep
+1             1286      Tseng  Foon Yue      ftseng@classicmodelcars.com             Sales Rep
+2             1619       King       Tom       tking@classicmodelcars.com             Sales Rep
+3             1102     Bondur    Gerard     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+4             1056  Patterson      Mary   mpatterso@classicmodelcars.com              VP Sales
+5             1002     Murphy     Diane     dmurphy@classicmodelcars.com             President
+6             1625       Kato   Yoshimi       ykato@classicmodelcars.com             Sales Rep
+7             1088  Patterson   William  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+8             1611     Fixter      Andy     afixter@classicmodelcars.com             Sales Rep
+9             1621      Nishi      Mami      mnishi@classicmodelcars.com             Sales Rep
+10            1504      Jones     Barry      bjones@classicmodelcars.com             Sales Rep
+11            1702     Gerard    Martin     mgerard@classicmodelcars.com             Sales Rep
+12            1216  Patterson     Steve  spatterson@classicmodelcars.com             Sales Rep
+13            1076   Firrelli      Jeff   jfirrelli@classicmodelcars.com          VP Marketing
+14            1501       Bott     Larry       lbott@classicmodelcars.com             Sales Rep
+15            1165   Jennings    Leslie   ljennings@classicmodelcars.com             Sales Rep
+16            1612      Marsh     Peter      pmarsh@classicmodelcars.com             Sales Rep
+17            1166   Thompson    Leslie   lthompson@classicmodelcars.com             Sales Rep
+18            1323     Vanauf    George     gvanauf@classicmodelcars.com             Sales Rep
+19            1401   Castillo    Pamela   pcastillo@classicmodelcars.com             Sales Rep
+20            1188   Firrelli     Julie   jfirrelli@classicmodelcars.com             Sales Rep
+21            1337     Bondur      Loui     lbondur@classicmodelcars.com             Sales Rep
+22            1143        Bow   Anthony        abow@classicmodelcars.com    Sales Manager (NA),       ordernumber  orderlinenumber   status
+0           10181                7  Shipped
+1           10110               12  Shipped
+2           10234                2  Shipped
+3           10328                7  Shipped
+4           10292                5  Shipped
+...           ...              ...      ...
+2991        10304                9  Shipped
+2992        10313                4  Shipped
+2993        10139                3  Shipped
+2994        10371                4  Shipped
+2995        10301                5  Shipped
+
+[2996 rows x 3 columns])
+[2022-06-21 02:14:10,112] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=extract_to_DMs, execution_date=20220620T000000, start_date=20220621T051409, end_date=20220621T051410
+[2022-06-21 02:14:10,148] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:14:10,228] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:16:55,810] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:16:55,834] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:16:55,834] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:16:55,834] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:16:55,834] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:16:55,857] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): extract_to_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:16:55,868] {standard_task_runner.py:52} INFO - Started process 48562 to run task
+[2022-06-21 02:16:55,874] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'extract_to_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '41', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpdjal39nx', '--error-file', '/tmp/tmp8lzxrlfn']
+[2022-06-21 02:16:55,875] {standard_task_runner.py:80} INFO - Job 41: Subtask extract_to_DMs
+[2022-06-21 02:16:55,960] {task_command.py:370} INFO - Running <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:16:56,064] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=extract_to_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:16:56,119] {python.py:173} INFO - Done. Returned value was: (     customernumber                    customername contactlastname contactfirstname           phone  ...          city     state postalcode      country creditlimit
+0               103               Atelier graphique         Schmitt          Carine       40.32.2555  ...        Nantes      None      44000       France     21000.0
+1               112              Signal Gift Stores            King             Jean      7025551838  ...     Las Vegas        NV      83030          USA     71800.0
+2               114      Australian Collectors, Co.        Ferguson            Peter    03 9520 4555  ...     Melbourne  Victoria       3004    Australia    117300.0
+3               119               La Rochelle Gifts         Labrune          Janine       40.67.8555  ...        Nantes      None      44000       France    118200.0
+4               121              Baane Mini Imports      Bergulfsen           Jonas       07-98 9555  ...       Stavern      None       4110       Norway     81700.0
+..              ...                             ...             ...              ...             ...  ...           ...       ...        ...          ...         ...
+117             486    Motor Mint Distributors Inc.         Salazar             Rosa      2155559857  ...  Philadelphia        PA      71270          USA     72600.0
+118             487        Signal Collectibles Ltd.          Taylor              Sue      4155554312  ...      Brisbane        CA      94217          USA     60300.0
+119             489  Double Decker Gift Stores, Ltd           Smith          Thomas   (171) 555-7555  ...        London      None    WA1 1DP           UK     43300.0
+120             495            Diecast Collectables          Franco          Valarie      6175552555  ...        Boston        MA      51003          USA     85100.0
+121             496                Kellys Gift Shop         Snowden             Tony   +64 9 5555500  ...    Auckland        None       None  New Zealand    110000.0
+
+[122 rows x 11 columns],     productcode                            productname   productline              productvendor                                 productdescription
+0      S18_2870           1999 Indy 500 Monte Carlo SS  Classic Cars          Red Start Diecast  Features include opening and closing doors. Co...
+1      S32_4485              1974 Ducati 350 Mk3 Desmo   Motorcycles        Second Gear Diecast  This model features two-tone paint with chrome...
+2      S18_1749               1917 Grand Touring Sedan  Vintage Cars  Welly Diecast Productions  This 1:18 scale replica of the 1917 Grand Tour...
+3      S10_4962                 1962 LanciaA Delta 16V  Classic Cars        Second Gear Diecast  Features include: Turnable front wheels; steer...
+4      S32_3207  1950s Chicago Surface Lines Streetcar        Trains       Gearbox Collectibles  This streetcar is a joy to see. It has 80 sepa...
+..          ...                                    ...           ...                        ...                                                ...
+105   S700_1691            American Airlines: B767-300        Planes            Min Lin Diecast  Exact replia with official logos and insignias...
+106    S24_3969       1936 Mercedes Benz 500k Roadster  Vintage Cars          Red Start Diecast  This model features grille-mounted chrome horn...
+107    S50_1341           1930 Buick Marquette Phaeton  Vintage Cars        Studio M Art Models   Features opening trunk,  working steering system
+108    S18_3232            1992 Ferrari 360 Spider red  Classic Cars       Unimax Art Galleries  his replica features opening doors, superb det...
+109    S18_3136    18th Century Vintage Horse Carriage  Vintage Cars          Red Start Diecast  Hand crafted diecast-like metal horse carriage...
+
+[110 rows x 5 columns],      ordernumber   orderdate requireddate shippeddate
+0          10300  2003-10-04   2003-10-13  2003-10-09
+1          10294  2004-09-10   2004-09-17  2004-09-14
+2          10303  2004-10-06   2004-10-14  2004-10-09
+3          10315  2004-10-29   2004-11-08  2004-10-30
+4          10336  2004-11-20   2004-11-26  2004-11-24
+..           ...         ...          ...         ...
+321        10372  2005-01-26   2005-02-05  2005-01-28
+322        10187  2003-11-15   2003-11-24  2003-11-16
+323        10289  2004-09-03   2004-09-13  2004-09-04
+324        10265  2004-07-02   2004-07-09  2004-07-07
+325        10307  2004-10-14   2004-10-23  2004-10-20
+
+[326 rows x 4 columns],     employeenumber   lastname firstname                            email              jobtitle
+0             1370  Hernandez    Gerard   ghernande@classicmodelcars.com             Sales Rep
+1             1286      Tseng  Foon Yue      ftseng@classicmodelcars.com             Sales Rep
+2             1619       King       Tom       tking@classicmodelcars.com             Sales Rep
+3             1102     Bondur    Gerard     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+4             1056  Patterson      Mary   mpatterso@classicmodelcars.com              VP Sales
+5             1002     Murphy     Diane     dmurphy@classicmodelcars.com             President
+6             1625       Kato   Yoshimi       ykato@classicmodelcars.com             Sales Rep
+7             1088  Patterson   William  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+8             1611     Fixter      Andy     afixter@classicmodelcars.com             Sales Rep
+9             1621      Nishi      Mami      mnishi@classicmodelcars.com             Sales Rep
+10            1504      Jones     Barry      bjones@classicmodelcars.com             Sales Rep
+11            1702     Gerard    Martin     mgerard@classicmodelcars.com             Sales Rep
+12            1216  Patterson     Steve  spatterson@classicmodelcars.com             Sales Rep
+13            1076   Firrelli      Jeff   jfirrelli@classicmodelcars.com          VP Marketing
+14            1501       Bott     Larry       lbott@classicmodelcars.com             Sales Rep
+15            1165   Jennings    Leslie   ljennings@classicmodelcars.com             Sales Rep
+16            1612      Marsh     Peter      pmarsh@classicmodelcars.com             Sales Rep
+17            1166   Thompson    Leslie   lthompson@classicmodelcars.com             Sales Rep
+18            1323     Vanauf    George     gvanauf@classicmodelcars.com             Sales Rep
+19            1401   Castillo    Pamela   pcastillo@classicmodelcars.com             Sales Rep
+20            1188   Firrelli     Julie   jfirrelli@classicmodelcars.com             Sales Rep
+21            1337     Bondur      Loui     lbondur@classicmodelcars.com             Sales Rep
+22            1143        Bow   Anthony        abow@classicmodelcars.com    Sales Manager (NA),       ordernumber  orderlinenumber   status
+0           10181                7  Shipped
+1           10110               12  Shipped
+2           10234                2  Shipped
+3           10328                7  Shipped
+4           10292                5  Shipped
+...           ...              ...      ...
+2991        10304                9  Shipped
+2992        10313                4  Shipped
+2993        10139                3  Shipped
+2994        10371                4  Shipped
+2995        10301                5  Shipped
+
+[2996 rows x 3 columns])
+[2022-06-21 02:16:56,213] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=extract_to_DMs, execution_date=20220620T000000, start_date=20220621T051655, end_date=20220621T051656
+[2022-06-21 02:16:56,287] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:16:56,363] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:18:47,920] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:18:47,941] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:18:47,941] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:18:47,941] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:18:47,942] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:18:47,961] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): extract_to_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:18:47,971] {standard_task_runner.py:52} INFO - Started process 50256 to run task
+[2022-06-21 02:18:47,977] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'extract_to_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '59', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmp48ouw9j_', '--error-file', '/tmp/tmp75xuqb3j']
+[2022-06-21 02:18:47,978] {standard_task_runner.py:80} INFO - Job 59: Subtask extract_to_DMs
+[2022-06-21 02:18:48,057] {task_command.py:370} INFO - Running <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:18:48,171] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=extract_to_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:18:48,222] {python.py:173} INFO - Done. Returned value was: (     customernumber                    customername contactlastname contactfirstname           phone  ...          city     state postalcode      country creditlimit
+0               103               Atelier graphique         Schmitt          Carine       40.32.2555  ...        Nantes      None      44000       France     21000.0
+1               112              Signal Gift Stores            King             Jean      7025551838  ...     Las Vegas        NV      83030          USA     71800.0
+2               114      Australian Collectors, Co.        Ferguson            Peter    03 9520 4555  ...     Melbourne  Victoria       3004    Australia    117300.0
+3               119               La Rochelle Gifts         Labrune          Janine       40.67.8555  ...        Nantes      None      44000       France    118200.0
+4               121              Baane Mini Imports      Bergulfsen           Jonas       07-98 9555  ...       Stavern      None       4110       Norway     81700.0
+..              ...                             ...             ...              ...             ...  ...           ...       ...        ...          ...         ...
+117             486    Motor Mint Distributors Inc.         Salazar             Rosa      2155559857  ...  Philadelphia        PA      71270          USA     72600.0
+118             487        Signal Collectibles Ltd.          Taylor              Sue      4155554312  ...      Brisbane        CA      94217          USA     60300.0
+119             489  Double Decker Gift Stores, Ltd           Smith          Thomas   (171) 555-7555  ...        London      None    WA1 1DP           UK     43300.0
+120             495            Diecast Collectables          Franco          Valarie      6175552555  ...        Boston        MA      51003          USA     85100.0
+121             496                Kellys Gift Shop         Snowden             Tony   +64 9 5555500  ...    Auckland        None       None  New Zealand    110000.0
+
+[122 rows x 11 columns],     productcode                            productname   productline              productvendor                                 productdescription
+0      S18_2870           1999 Indy 500 Monte Carlo SS  Classic Cars          Red Start Diecast  Features include opening and closing doors. Co...
+1      S32_4485              1974 Ducati 350 Mk3 Desmo   Motorcycles        Second Gear Diecast  This model features two-tone paint with chrome...
+2      S18_1749               1917 Grand Touring Sedan  Vintage Cars  Welly Diecast Productions  This 1:18 scale replica of the 1917 Grand Tour...
+3      S10_4962                 1962 LanciaA Delta 16V  Classic Cars        Second Gear Diecast  Features include: Turnable front wheels; steer...
+4      S32_3207  1950s Chicago Surface Lines Streetcar        Trains       Gearbox Collectibles  This streetcar is a joy to see. It has 80 sepa...
+..          ...                                    ...           ...                        ...                                                ...
+105   S700_1691            American Airlines: B767-300        Planes            Min Lin Diecast  Exact replia with official logos and insignias...
+106    S24_3969       1936 Mercedes Benz 500k Roadster  Vintage Cars          Red Start Diecast  This model features grille-mounted chrome horn...
+107    S50_1341           1930 Buick Marquette Phaeton  Vintage Cars        Studio M Art Models   Features opening trunk,  working steering system
+108    S18_3232            1992 Ferrari 360 Spider red  Classic Cars       Unimax Art Galleries  his replica features opening doors, superb det...
+109    S18_3136    18th Century Vintage Horse Carriage  Vintage Cars          Red Start Diecast  Hand crafted diecast-like metal horse carriage...
+
+[110 rows x 5 columns],      ordernumber   orderdate requireddate shippeddate
+0          10300  2003-10-04   2003-10-13  2003-10-09
+1          10294  2004-09-10   2004-09-17  2004-09-14
+2          10303  2004-10-06   2004-10-14  2004-10-09
+3          10315  2004-10-29   2004-11-08  2004-10-30
+4          10336  2004-11-20   2004-11-26  2004-11-24
+..           ...         ...          ...         ...
+321        10372  2005-01-26   2005-02-05  2005-01-28
+322        10187  2003-11-15   2003-11-24  2003-11-16
+323        10289  2004-09-03   2004-09-13  2004-09-04
+324        10265  2004-07-02   2004-07-09  2004-07-07
+325        10307  2004-10-14   2004-10-23  2004-10-20
+
+[326 rows x 4 columns],     employeenumber   lastname firstname                            email              jobtitle
+0             1370  Hernandez    Gerard   ghernande@classicmodelcars.com             Sales Rep
+1             1286      Tseng  Foon Yue      ftseng@classicmodelcars.com             Sales Rep
+2             1619       King       Tom       tking@classicmodelcars.com             Sales Rep
+3             1102     Bondur    Gerard     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+4             1056  Patterson      Mary   mpatterso@classicmodelcars.com              VP Sales
+5             1002     Murphy     Diane     dmurphy@classicmodelcars.com             President
+6             1625       Kato   Yoshimi       ykato@classicmodelcars.com             Sales Rep
+7             1088  Patterson   William  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+8             1611     Fixter      Andy     afixter@classicmodelcars.com             Sales Rep
+9             1621      Nishi      Mami      mnishi@classicmodelcars.com             Sales Rep
+10            1504      Jones     Barry      bjones@classicmodelcars.com             Sales Rep
+11            1702     Gerard    Martin     mgerard@classicmodelcars.com             Sales Rep
+12            1216  Patterson     Steve  spatterson@classicmodelcars.com             Sales Rep
+13            1076   Firrelli      Jeff   jfirrelli@classicmodelcars.com          VP Marketing
+14            1501       Bott     Larry       lbott@classicmodelcars.com             Sales Rep
+15            1165   Jennings    Leslie   ljennings@classicmodelcars.com             Sales Rep
+16            1612      Marsh     Peter      pmarsh@classicmodelcars.com             Sales Rep
+17            1166   Thompson    Leslie   lthompson@classicmodelcars.com             Sales Rep
+18            1323     Vanauf    George     gvanauf@classicmodelcars.com             Sales Rep
+19            1401   Castillo    Pamela   pcastillo@classicmodelcars.com             Sales Rep
+20            1188   Firrelli     Julie   jfirrelli@classicmodelcars.com             Sales Rep
+21            1337     Bondur      Loui     lbondur@classicmodelcars.com             Sales Rep
+22            1143        Bow   Anthony        abow@classicmodelcars.com    Sales Manager (NA),       ordernumber  orderlinenumber   status
+0           10181                7  Shipped
+1           10110               12  Shipped
+2           10234                2  Shipped
+3           10328                7  Shipped
+4           10292                5  Shipped
+...           ...              ...      ...
+2991        10304                9  Shipped
+2992        10313                4  Shipped
+2993        10139                3  Shipped
+2994        10371                4  Shipped
+2995        10301                5  Shipped
+
+[2996 rows x 3 columns])
+[2022-06-21 02:18:48,316] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=extract_to_DMs, execution_date=20220620T000000, start_date=20220621T051847, end_date=20220621T051848
+[2022-06-21 02:18:48,389] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:18:48,468] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:24:26,259] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:24:26,288] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:24:26,288] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:24:26,288] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:24:26,288] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:24:26,318] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): extract_to_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:24:26,331] {standard_task_runner.py:52} INFO - Started process 52557 to run task
+[2022-06-21 02:24:26,337] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'extract_to_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '77', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpkfqg94zz', '--error-file', '/tmp/tmpl9_45414']
+[2022-06-21 02:24:26,338] {standard_task_runner.py:80} INFO - Job 77: Subtask extract_to_DMs
+[2022-06-21 02:24:26,423] {task_command.py:370} INFO - Running <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:24:26,536] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=extract_to_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:24:26,591] {python.py:173} INFO - Done. Returned value was: (     customernumber                    customername contactlastname contactfirstname           phone  ...          city     state postalcode      country creditlimit
+0               103               Atelier graphique         Schmitt          Carine       40.32.2555  ...        Nantes      None      44000       France     21000.0
+1               112              Signal Gift Stores            King             Jean      7025551838  ...     Las Vegas        NV      83030          USA     71800.0
+2               114      Australian Collectors, Co.        Ferguson            Peter    03 9520 4555  ...     Melbourne  Victoria       3004    Australia    117300.0
+3               119               La Rochelle Gifts         Labrune          Janine       40.67.8555  ...        Nantes      None      44000       France    118200.0
+4               121              Baane Mini Imports      Bergulfsen           Jonas       07-98 9555  ...       Stavern      None       4110       Norway     81700.0
+..              ...                             ...             ...              ...             ...  ...           ...       ...        ...          ...         ...
+117             486    Motor Mint Distributors Inc.         Salazar             Rosa      2155559857  ...  Philadelphia        PA      71270          USA     72600.0
+118             487        Signal Collectibles Ltd.          Taylor              Sue      4155554312  ...      Brisbane        CA      94217          USA     60300.0
+119             489  Double Decker Gift Stores, Ltd           Smith          Thomas   (171) 555-7555  ...        London      None    WA1 1DP           UK     43300.0
+120             495            Diecast Collectables          Franco          Valarie      6175552555  ...        Boston        MA      51003          USA     85100.0
+121             496                Kellys Gift Shop         Snowden             Tony   +64 9 5555500  ...    Auckland        None       None  New Zealand    110000.0
+
+[122 rows x 11 columns],     productcode                            productname   productline              productvendor                                 productdescription
+0      S18_2870           1999 Indy 500 Monte Carlo SS  Classic Cars          Red Start Diecast  Features include opening and closing doors. Co...
+1      S32_4485              1974 Ducati 350 Mk3 Desmo   Motorcycles        Second Gear Diecast  This model features two-tone paint with chrome...
+2      S18_1749               1917 Grand Touring Sedan  Vintage Cars  Welly Diecast Productions  This 1:18 scale replica of the 1917 Grand Tour...
+3      S10_4962                 1962 LanciaA Delta 16V  Classic Cars        Second Gear Diecast  Features include: Turnable front wheels; steer...
+4      S32_3207  1950s Chicago Surface Lines Streetcar        Trains       Gearbox Collectibles  This streetcar is a joy to see. It has 80 sepa...
+..          ...                                    ...           ...                        ...                                                ...
+105   S700_1691            American Airlines: B767-300        Planes            Min Lin Diecast  Exact replia with official logos and insignias...
+106    S24_3969       1936 Mercedes Benz 500k Roadster  Vintage Cars          Red Start Diecast  This model features grille-mounted chrome horn...
+107    S50_1341           1930 Buick Marquette Phaeton  Vintage Cars        Studio M Art Models   Features opening trunk,  working steering system
+108    S18_3232            1992 Ferrari 360 Spider red  Classic Cars       Unimax Art Galleries  his replica features opening doors, superb det...
+109    S18_3136    18th Century Vintage Horse Carriage  Vintage Cars          Red Start Diecast  Hand crafted diecast-like metal horse carriage...
+
+[110 rows x 5 columns],      ordernumber   orderdate requireddate shippeddate
+0          10300  2003-10-04   2003-10-13  2003-10-09
+1          10294  2004-09-10   2004-09-17  2004-09-14
+2          10303  2004-10-06   2004-10-14  2004-10-09
+3          10315  2004-10-29   2004-11-08  2004-10-30
+4          10336  2004-11-20   2004-11-26  2004-11-24
+..           ...         ...          ...         ...
+321        10372  2005-01-26   2005-02-05  2005-01-28
+322        10187  2003-11-15   2003-11-24  2003-11-16
+323        10289  2004-09-03   2004-09-13  2004-09-04
+324        10265  2004-07-02   2004-07-09  2004-07-07
+325        10307  2004-10-14   2004-10-23  2004-10-20
+
+[326 rows x 4 columns],     employeenumber   lastname firstname                            email              jobtitle
+0             1370  Hernandez    Gerard   ghernande@classicmodelcars.com             Sales Rep
+1             1286      Tseng  Foon Yue      ftseng@classicmodelcars.com             Sales Rep
+2             1619       King       Tom       tking@classicmodelcars.com             Sales Rep
+3             1102     Bondur    Gerard     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+4             1056  Patterson      Mary   mpatterso@classicmodelcars.com              VP Sales
+5             1002     Murphy     Diane     dmurphy@classicmodelcars.com             President
+6             1625       Kato   Yoshimi       ykato@classicmodelcars.com             Sales Rep
+7             1088  Patterson   William  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+8             1611     Fixter      Andy     afixter@classicmodelcars.com             Sales Rep
+9             1621      Nishi      Mami      mnishi@classicmodelcars.com             Sales Rep
+10            1504      Jones     Barry      bjones@classicmodelcars.com             Sales Rep
+11            1702     Gerard    Martin     mgerard@classicmodelcars.com             Sales Rep
+12            1216  Patterson     Steve  spatterson@classicmodelcars.com             Sales Rep
+13            1076   Firrelli      Jeff   jfirrelli@classicmodelcars.com          VP Marketing
+14            1501       Bott     Larry       lbott@classicmodelcars.com             Sales Rep
+15            1165   Jennings    Leslie   ljennings@classicmodelcars.com             Sales Rep
+16            1612      Marsh     Peter      pmarsh@classicmodelcars.com             Sales Rep
+17            1166   Thompson    Leslie   lthompson@classicmodelcars.com             Sales Rep
+18            1323     Vanauf    George     gvanauf@classicmodelcars.com             Sales Rep
+19            1401   Castillo    Pamela   pcastillo@classicmodelcars.com             Sales Rep
+20            1188   Firrelli     Julie   jfirrelli@classicmodelcars.com             Sales Rep
+21            1337     Bondur      Loui     lbondur@classicmodelcars.com             Sales Rep
+22            1143        Bow   Anthony        abow@classicmodelcars.com    Sales Manager (NA),       ordernumber  orderlinenumber   status
+0           10181                7  Shipped
+1           10110               12  Shipped
+2           10234                2  Shipped
+3           10328                7  Shipped
+4           10292                5  Shipped
+...           ...              ...      ...
+2991        10304                9  Shipped
+2992        10313                4  Shipped
+2993        10139                3  Shipped
+2994        10371                4  Shipped
+2995        10301                5  Shipped
+
+[2996 rows x 3 columns])
+[2022-06-21 02:24:26,695] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=extract_to_DMs, execution_date=20220620T000000, start_date=20220621T052426, end_date=20220621T052426
+[2022-06-21 02:24:26,750] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:24:26,824] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:42:19,815] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:42:19,835] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:42:19,836] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:42:19,836] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:42:19,836] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:42:19,857] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): extract_to_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:42:19,866] {standard_task_runner.py:52} INFO - Started process 56125 to run task
+[2022-06-21 02:42:19,870] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'extract_to_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '95', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpwwyfr7d6', '--error-file', '/tmp/tmpjnu_9zs7']
+[2022-06-21 02:42:19,870] {standard_task_runner.py:80} INFO - Job 95: Subtask extract_to_DMs
+[2022-06-21 02:42:19,952] {task_command.py:370} INFO - Running <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:42:20,070] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=extract_to_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:42:20,123] {python.py:173} INFO - Done. Returned value was: (     customernumber                    customername contactlastname contactfirstname           phone  ...          city     state postalcode      country creditlimit
+0               103               Atelier graphique         Schmitt          Carine       40.32.2555  ...        Nantes      None      44000       France     21000.0
+1               112              Signal Gift Stores            King             Jean      7025551838  ...     Las Vegas        NV      83030          USA     71800.0
+2               114      Australian Collectors, Co.        Ferguson            Peter    03 9520 4555  ...     Melbourne  Victoria       3004    Australia    117300.0
+3               119               La Rochelle Gifts         Labrune          Janine       40.67.8555  ...        Nantes      None      44000       France    118200.0
+4               121              Baane Mini Imports      Bergulfsen           Jonas       07-98 9555  ...       Stavern      None       4110       Norway     81700.0
+..              ...                             ...             ...              ...             ...  ...           ...       ...        ...          ...         ...
+117             486    Motor Mint Distributors Inc.         Salazar             Rosa      2155559857  ...  Philadelphia        PA      71270          USA     72600.0
+118             487        Signal Collectibles Ltd.          Taylor              Sue      4155554312  ...      Brisbane        CA      94217          USA     60300.0
+119             489  Double Decker Gift Stores, Ltd           Smith          Thomas   (171) 555-7555  ...        London      None    WA1 1DP           UK     43300.0
+120             495            Diecast Collectables          Franco          Valarie      6175552555  ...        Boston        MA      51003          USA     85100.0
+121             496                Kellys Gift Shop         Snowden             Tony   +64 9 5555500  ...    Auckland        None       None  New Zealand    110000.0
+
+[122 rows x 11 columns],     productcode                            productname   productline              productvendor                                 productdescription
+0      S18_2870           1999 Indy 500 Monte Carlo SS  Classic Cars          Red Start Diecast  Features include opening and closing doors. Co...
+1      S32_4485              1974 Ducati 350 Mk3 Desmo   Motorcycles        Second Gear Diecast  This model features two-tone paint with chrome...
+2      S18_1749               1917 Grand Touring Sedan  Vintage Cars  Welly Diecast Productions  This 1:18 scale replica of the 1917 Grand Tour...
+3      S10_4962                 1962 LanciaA Delta 16V  Classic Cars        Second Gear Diecast  Features include: Turnable front wheels; steer...
+4      S32_3207  1950s Chicago Surface Lines Streetcar        Trains       Gearbox Collectibles  This streetcar is a joy to see. It has 80 sepa...
+..          ...                                    ...           ...                        ...                                                ...
+105   S700_1691            American Airlines: B767-300        Planes            Min Lin Diecast  Exact replia with official logos and insignias...
+106    S24_3969       1936 Mercedes Benz 500k Roadster  Vintage Cars          Red Start Diecast  This model features grille-mounted chrome horn...
+107    S50_1341           1930 Buick Marquette Phaeton  Vintage Cars        Studio M Art Models   Features opening trunk,  working steering system
+108    S18_3232            1992 Ferrari 360 Spider red  Classic Cars       Unimax Art Galleries  his replica features opening doors, superb det...
+109    S18_3136    18th Century Vintage Horse Carriage  Vintage Cars          Red Start Diecast  Hand crafted diecast-like metal horse carriage...
+
+[110 rows x 5 columns],      ordernumber   orderdate requireddate shippeddate
+0          10300  2003-10-04   2003-10-13  2003-10-09
+1          10294  2004-09-10   2004-09-17  2004-09-14
+2          10303  2004-10-06   2004-10-14  2004-10-09
+3          10315  2004-10-29   2004-11-08  2004-10-30
+4          10336  2004-11-20   2004-11-26  2004-11-24
+..           ...         ...          ...         ...
+321        10372  2005-01-26   2005-02-05  2005-01-28
+322        10187  2003-11-15   2003-11-24  2003-11-16
+323        10289  2004-09-03   2004-09-13  2004-09-04
+324        10265  2004-07-02   2004-07-09  2004-07-07
+325        10307  2004-10-14   2004-10-23  2004-10-20
+
+[326 rows x 4 columns],     employeenumber   lastname firstname                            email              jobtitle
+0             1370  Hernandez    Gerard   ghernande@classicmodelcars.com             Sales Rep
+1             1286      Tseng  Foon Yue      ftseng@classicmodelcars.com             Sales Rep
+2             1619       King       Tom       tking@classicmodelcars.com             Sales Rep
+3             1102     Bondur    Gerard     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+4             1056  Patterson      Mary   mpatterso@classicmodelcars.com              VP Sales
+5             1002     Murphy     Diane     dmurphy@classicmodelcars.com             President
+6             1625       Kato   Yoshimi       ykato@classicmodelcars.com             Sales Rep
+7             1088  Patterson   William  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+8             1611     Fixter      Andy     afixter@classicmodelcars.com             Sales Rep
+9             1621      Nishi      Mami      mnishi@classicmodelcars.com             Sales Rep
+10            1504      Jones     Barry      bjones@classicmodelcars.com             Sales Rep
+11            1702     Gerard    Martin     mgerard@classicmodelcars.com             Sales Rep
+12            1216  Patterson     Steve  spatterson@classicmodelcars.com             Sales Rep
+13            1076   Firrelli      Jeff   jfirrelli@classicmodelcars.com          VP Marketing
+14            1501       Bott     Larry       lbott@classicmodelcars.com             Sales Rep
+15            1165   Jennings    Leslie   ljennings@classicmodelcars.com             Sales Rep
+16            1612      Marsh     Peter      pmarsh@classicmodelcars.com             Sales Rep
+17            1166   Thompson    Leslie   lthompson@classicmodelcars.com             Sales Rep
+18            1323     Vanauf    George     gvanauf@classicmodelcars.com             Sales Rep
+19            1401   Castillo    Pamela   pcastillo@classicmodelcars.com             Sales Rep
+20            1188   Firrelli     Julie   jfirrelli@classicmodelcars.com             Sales Rep
+21            1337     Bondur      Loui     lbondur@classicmodelcars.com             Sales Rep
+22            1143        Bow   Anthony        abow@classicmodelcars.com    Sales Manager (NA),       ordernumber  orderlinenumber   status
+0           10181                7  Shipped
+1           10110               12  Shipped
+2           10234                2  Shipped
+3           10328                7  Shipped
+4           10292                5  Shipped
+...           ...              ...      ...
+2991        10304                9  Shipped
+2992        10313                4  Shipped
+2993        10139                3  Shipped
+2994        10371                4  Shipped
+2995        10301                5  Shipped
+
+[2996 rows x 3 columns])
+[2022-06-21 02:42:20,217] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=extract_to_DMs, execution_date=20220620T000000, start_date=20220621T054219, end_date=20220621T054220
+[2022-06-21 02:42:20,282] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:42:20,360] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:44:19,513] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:44:19,537] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:44:19,537] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:44:19,537] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:44:19,537] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:44:19,557] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): extract_to_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:44:19,569] {standard_task_runner.py:52} INFO - Started process 58321 to run task
+[2022-06-21 02:44:19,573] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'extract_to_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '114', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpvp4tm3yf', '--error-file', '/tmp/tmppc1bc4l4']
+[2022-06-21 02:44:19,574] {standard_task_runner.py:80} INFO - Job 114: Subtask extract_to_DMs
+[2022-06-21 02:44:19,663] {task_command.py:370} INFO - Running <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:44:19,802] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=extract_to_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:44:19,863] {python.py:173} INFO - Done. Returned value was: (     customernumber                    customername contactlastname contactfirstname           phone  ...          city     state postalcode      country creditlimit
+0               103               Atelier graphique         Schmitt          Carine       40.32.2555  ...        Nantes      None      44000       France     21000.0
+1               112              Signal Gift Stores            King             Jean      7025551838  ...     Las Vegas        NV      83030          USA     71800.0
+2               114      Australian Collectors, Co.        Ferguson            Peter    03 9520 4555  ...     Melbourne  Victoria       3004    Australia    117300.0
+3               119               La Rochelle Gifts         Labrune          Janine       40.67.8555  ...        Nantes      None      44000       France    118200.0
+4               121              Baane Mini Imports      Bergulfsen           Jonas       07-98 9555  ...       Stavern      None       4110       Norway     81700.0
+..              ...                             ...             ...              ...             ...  ...           ...       ...        ...          ...         ...
+117             486    Motor Mint Distributors Inc.         Salazar             Rosa      2155559857  ...  Philadelphia        PA      71270          USA     72600.0
+118             487        Signal Collectibles Ltd.          Taylor              Sue      4155554312  ...      Brisbane        CA      94217          USA     60300.0
+119             489  Double Decker Gift Stores, Ltd           Smith          Thomas   (171) 555-7555  ...        London      None    WA1 1DP           UK     43300.0
+120             495            Diecast Collectables          Franco          Valarie      6175552555  ...        Boston        MA      51003          USA     85100.0
+121             496                Kellys Gift Shop         Snowden             Tony   +64 9 5555500  ...    Auckland        None       None  New Zealand    110000.0
+
+[122 rows x 11 columns],     productcode                            productname   productline              productvendor                                 productdescription
+0      S18_2870           1999 Indy 500 Monte Carlo SS  Classic Cars          Red Start Diecast  Features include opening and closing doors. Co...
+1      S32_4485              1974 Ducati 350 Mk3 Desmo   Motorcycles        Second Gear Diecast  This model features two-tone paint with chrome...
+2      S18_1749               1917 Grand Touring Sedan  Vintage Cars  Welly Diecast Productions  This 1:18 scale replica of the 1917 Grand Tour...
+3      S10_4962                 1962 LanciaA Delta 16V  Classic Cars        Second Gear Diecast  Features include: Turnable front wheels; steer...
+4      S32_3207  1950s Chicago Surface Lines Streetcar        Trains       Gearbox Collectibles  This streetcar is a joy to see. It has 80 sepa...
+..          ...                                    ...           ...                        ...                                                ...
+105   S700_1691            American Airlines: B767-300        Planes            Min Lin Diecast  Exact replia with official logos and insignias...
+106    S24_3969       1936 Mercedes Benz 500k Roadster  Vintage Cars          Red Start Diecast  This model features grille-mounted chrome horn...
+107    S50_1341           1930 Buick Marquette Phaeton  Vintage Cars        Studio M Art Models   Features opening trunk,  working steering system
+108    S18_3232            1992 Ferrari 360 Spider red  Classic Cars       Unimax Art Galleries  his replica features opening doors, superb det...
+109    S18_3136    18th Century Vintage Horse Carriage  Vintage Cars          Red Start Diecast  Hand crafted diecast-like metal horse carriage...
+
+[110 rows x 5 columns],      ordernumber   orderdate requireddate shippeddate
+0          10300  2003-10-04   2003-10-13  2003-10-09
+1          10294  2004-09-10   2004-09-17  2004-09-14
+2          10303  2004-10-06   2004-10-14  2004-10-09
+3          10315  2004-10-29   2004-11-08  2004-10-30
+4          10336  2004-11-20   2004-11-26  2004-11-24
+..           ...         ...          ...         ...
+321        10372  2005-01-26   2005-02-05  2005-01-28
+322        10187  2003-11-15   2003-11-24  2003-11-16
+323        10289  2004-09-03   2004-09-13  2004-09-04
+324        10265  2004-07-02   2004-07-09  2004-07-07
+325        10307  2004-10-14   2004-10-23  2004-10-20
+
+[326 rows x 4 columns],     employeenumber   lastname firstname                            email              jobtitle
+0             1370  Hernandez    Gerard   ghernande@classicmodelcars.com             Sales Rep
+1             1286      Tseng  Foon Yue      ftseng@classicmodelcars.com             Sales Rep
+2             1619       King       Tom       tking@classicmodelcars.com             Sales Rep
+3             1102     Bondur    Gerard     gbondur@classicmodelcars.com   Sale Manager (EMEA)
+4             1056  Patterson      Mary   mpatterso@classicmodelcars.com              VP Sales
+5             1002     Murphy     Diane     dmurphy@classicmodelcars.com             President
+6             1625       Kato   Yoshimi       ykato@classicmodelcars.com             Sales Rep
+7             1088  Patterson   William  wpatterson@classicmodelcars.com  Sales Manager (APAC)
+8             1611     Fixter      Andy     afixter@classicmodelcars.com             Sales Rep
+9             1621      Nishi      Mami      mnishi@classicmodelcars.com             Sales Rep
+10            1504      Jones     Barry      bjones@classicmodelcars.com             Sales Rep
+11            1702     Gerard    Martin     mgerard@classicmodelcars.com             Sales Rep
+12            1216  Patterson     Steve  spatterson@classicmodelcars.com             Sales Rep
+13            1076   Firrelli      Jeff   jfirrelli@classicmodelcars.com          VP Marketing
+14            1501       Bott     Larry       lbott@classicmodelcars.com             Sales Rep
+15            1165   Jennings    Leslie   ljennings@classicmodelcars.com             Sales Rep
+16            1612      Marsh     Peter      pmarsh@classicmodelcars.com             Sales Rep
+17            1166   Thompson    Leslie   lthompson@classicmodelcars.com             Sales Rep
+18            1323     Vanauf    George     gvanauf@classicmodelcars.com             Sales Rep
+19            1401   Castillo    Pamela   pcastillo@classicmodelcars.com             Sales Rep
+20            1188   Firrelli     Julie   jfirrelli@classicmodelcars.com             Sales Rep
+21            1337     Bondur      Loui     lbondur@classicmodelcars.com             Sales Rep
+22            1143        Bow   Anthony        abow@classicmodelcars.com    Sales Manager (NA),       ordernumber  orderlinenumber   status
+0           10181                7  Shipped
+1           10110               12  Shipped
+2           10234                2  Shipped
+3           10328                7  Shipped
+4           10292                5  Shipped
+...           ...              ...      ...
+2991        10304                9  Shipped
+2992        10313                4  Shipped
+2993        10139                3  Shipped
+2994        10371                4  Shipped
+2995        10301                5  Shipped
+
+[2996 rows x 3 columns])
+[2022-06-21 02:44:19,960] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=extract_to_DMs, execution_date=20220620T000000, start_date=20220621T054419, end_date=20220621T054419
+[2022-06-21 02:44:20,028] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:44:20,106] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:51:17,368] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:51:17,391] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:51:17,391] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:51:17,392] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:51:17,392] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:51:17,413] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): extract_to_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:51:17,422] {standard_task_runner.py:52} INFO - Started process 60786 to run task
+[2022-06-21 02:51:17,427] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'extract_to_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '130', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpj28jud0b', '--error-file', '/tmp/tmpgwxqnwr9']
+[2022-06-21 02:51:17,428] {standard_task_runner.py:80} INFO - Job 130: Subtask extract_to_DMs
+[2022-06-21 02:51:17,518] {task_command.py:370} INFO - Running <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:51:17,631] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=extract_to_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:51:17,687] {python.py:173} INFO - Done. Returned value was: (     customernumber                    customername contactlastname contactfirstname           phone  ...          city     state postalcode      country creditlimit
+0               103               Atelier graphique         Schmitt          Carine       40.32.2555  ...        Nantes      None      44000       France     21000.0
+1               112              Signal Gift Stores            King             Jean      7025551838  ...     Las Vegas        NV      83030          USA     71800.0
+2               114      Australian Collectors, Co.        Ferguson            Peter    03 9520 4555  ...     Melbourne  Victoria       3004    Australia    117300.0
+3               119               La Rochelle Gifts         Labrune          Janine       40.67.8555  ...        Nantes      None      44000       France    118200.0
+4               121              Baane Mini Imports      Bergulfsen           Jonas       07-98 9555  ...       Stavern      None       4110       Norway     81700.0
+..              ...                             ...             ...              ...             ...  ...           ...       ...        ...          ...         ...
+117             486    Motor Mint Distributors Inc.         Salazar             Rosa      2155559857  ...  Philadelphia        PA      71270          USA     72600.0
+118             487        Signal Collectibles Ltd.          Taylor              Sue      4155554312  ...      Brisbane        CA      94217          USA     60300.0
+119             489  Double Decker Gift Stores, Ltd           Smith          Thomas   (171) 555-7555  ...        London      None    WA1 1DP           UK     43300.0
+120             495            Diecast Collectables          Franco          Valarie      6175552555  ...        Boston        MA      51003          USA     85100.0
+121             496                Kellys Gift Shop         Snowden             Tony   +64 9 5555500  ...    Auckland        None       None  New Zealand    110000.0
+
+[122 rows x 11 columns],     productcode                            productname   productline              productvendor                                 productdescription
+0      S18_2870           1999 Indy 500 Monte Carlo SS  Classic Cars          Red Start Diecast  Features include opening and closing doors. Co...
+1      S32_4485              1974 Ducati 350 Mk3 Desmo   Motorcycles        Second Gear Diecast  This model features two-tone paint with chrome...
+2      S18_1749               1917 Grand Touring Sedan  Vintage Cars  Welly Diecast Productions  This 1:18 scale replica of the 1917 Grand Tour...
+3      S10_4962                 1962 LanciaA Delta 16V  Classic Cars        Second Gear Diecast  Features include: Turnable front wheels; steer...
+4      S32_3207  1950s Chicago Surface Lines Streetcar        Trains       Gearbox Collectibles  This streetcar is a joy to see. It has 80 sepa...
+..          ...                                    ...           ...                        ...                                                ...
+105   S700_1691            American Airlines: B767-300        Planes            Min Lin Diecast  Exact replia with official logos and insignias...
+106    S24_3969       1936 Mercedes Benz 500k Roadster  Vintage Cars          Red Start Diecast  This model features grille-mounted chrome horn...
+107    S50_1341           1930 Buick Marquette Phaeton  Vintage Cars        Studio M Art Models   Features opening trunk,  working steering system
+108    S18_3232            1992 Ferrari 360 Spider red  Classic Cars       Unimax Art Galleries  his replica features opening doors, superb det...
+109    S18_3136    18th Century Vintage Horse Carriage  Vintage Cars          Red Start Diecast  Hand crafted diecast-like metal horse carriage...
+
+[110 rows x 5 columns],      ordernumber   orderdate requireddate shippeddate
+0          10300  2003-10-04   2003-10-13  2003-10-09
+1          10294  2004-09-10   2004-09-17  2004-09-14
+2          10303  2004-10-06   2004-10-14  2004-10-09
+3          10315  2004-10-29   2004-11-08  2004-10-30
+4          10336  2004-11-20   2004-11-26  2004-11-24
+..           ...         ...          ...         ...
+321        10372  2005-01-26   2005-02-05  2005-01-28
+322        10187  2003-11-15   2003-11-24  2003-11-16
+323        10289  2004-09-03   2004-09-13  2004-09-04
+324        10265  2004-07-02   2004-07-09  2004-07-07
+325        10307  2004-10-14   2004-10-23  2004-10-20
+
+[326 rows x 4 columns],     employeenumber   lastname firstname                            email  reportsto              jobtitle
+0             1088  Patterson   William  wpatterson@classicmodelcars.com     1056.0  Sales Manager (APAC)
+1             1076   Firrelli      Jeff   jfirrelli@classicmodelcars.com     1002.0          VP Marketing
+2             1621      Nishi      Mami      mnishi@classicmodelcars.com     1056.0             Sales Rep
+3             1401   Castillo    Pamela   pcastillo@classicmodelcars.com     1102.0             Sales Rep
+4             1501       Bott     Larry       lbott@classicmodelcars.com     1102.0             Sales Rep
+5             1370  Hernandez    Gerard   ghernande@classicmodelcars.com     1102.0             Sales Rep
+6             1002     Murphy     Diane     dmurphy@classicmodelcars.com        0.0             President
+7             1611     Fixter      Andy     afixter@classicmodelcars.com     1088.0             Sales Rep
+8             1056  Patterson      Mary   mpatterso@classicmodelcars.com     1002.0              VP Sales
+9             1504      Jones     Barry      bjones@classicmodelcars.com     1102.0             Sales Rep
+10            1619       King       Tom       tking@classicmodelcars.com     1088.0             Sales Rep
+11            1612      Marsh     Peter      pmarsh@classicmodelcars.com     1088.0             Sales Rep
+12            1702     Gerard    Martin     mgerard@classicmodelcars.com     1102.0             Sales Rep
+13            1286      Tseng  Foon Yue      ftseng@classicmodelcars.com     1143.0             Sales Rep
+14            1143        Bow   Anthony        abow@classicmodelcars.com     1056.0    Sales Manager (NA)
+15            1337     Bondur      Loui     lbondur@classicmodelcars.com     1102.0             Sales Rep
+16            1188   Firrelli     Julie   jfirrelli@classicmodelcars.com     1143.0             Sales Rep
+17            1166   Thompson    Leslie   lthompson@classicmodelcars.com     1143.0             Sales Rep
+18            1102     Bondur    Gerard     gbondur@classicmodelcars.com     1056.0   Sale Manager (EMEA)
+19            1625       Kato   Yoshimi       ykato@classicmodelcars.com     1621.0             Sales Rep
+20            1165   Jennings    Leslie   ljennings@classicmodelcars.com     1143.0             Sales Rep
+21            1323     Vanauf    George     gvanauf@classicmodelcars.com     1143.0             Sales Rep
+22            1216  Patterson     Steve  spatterson@classicmodelcars.com     1143.0             Sales Rep,       ordernumber  orderlinenumber   status
+0           10181                7  Shipped
+1           10110               12  Shipped
+2           10234                2  Shipped
+3           10328                7  Shipped
+4           10292                5  Shipped
+...           ...              ...      ...
+2991        10304                9  Shipped
+2992        10313                4  Shipped
+2993        10139                3  Shipped
+2994        10371                4  Shipped
+2995        10301                5  Shipped
+
+[2996 rows x 3 columns])
+[2022-06-21 02:51:17,788] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=extract_to_DMs, execution_date=20220620T000000, start_date=20220621T055117, end_date=20220621T055117
+[2022-06-21 02:51:17,839] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:51:17,905] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-21 02:52:51,759] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:52:51,779] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [queued]>
+[2022-06-21 02:52:51,779] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:52:51,779] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-21 02:52:51,779] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 02:52:51,796] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): extract_to_DMs> on 2022-06-20 00:00:00+00:00
+[2022-06-21 02:52:51,803] {standard_task_runner.py:52} INFO - Started process 62510 to run task
+[2022-06-21 02:52:51,808] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'extract_to_DMs', 'scheduled__2022-06-20T00:00:00+00:00', '--job-id', '148', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpb77nra0j', '--error-file', '/tmp/tmptqxj04fs']
+[2022-06-21 02:52:51,809] {standard_task_runner.py:80} INFO - Job 148: Subtask extract_to_DMs
+[2022-06-21 02:52:51,881] {task_command.py:370} INFO - Running <TaskInstance: sales.extract_to_DMs scheduled__2022-06-20T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-21 02:52:51,981] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=extract_to_DMs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-20T00:00:00+00:00
+[2022-06-21 02:52:52,033] {python.py:173} INFO - Done. Returned value was: (     customernumber                    customername contactlastname contactfirstname           phone  ...          city     state postalcode      country creditlimit
+0               103               Atelier graphique         Schmitt          Carine       40.32.2555  ...        Nantes      None      44000       France     21000.0
+1               112              Signal Gift Stores            King             Jean      7025551838  ...     Las Vegas        NV      83030          USA     71800.0
+2               114      Australian Collectors, Co.        Ferguson            Peter    03 9520 4555  ...     Melbourne  Victoria       3004    Australia    117300.0
+3               119               La Rochelle Gifts         Labrune          Janine       40.67.8555  ...        Nantes      None      44000       France    118200.0
+4               121              Baane Mini Imports      Bergulfsen           Jonas       07-98 9555  ...       Stavern      None       4110       Norway     81700.0
+..              ...                             ...             ...              ...             ...  ...           ...       ...        ...          ...         ...
+117             486    Motor Mint Distributors Inc.         Salazar             Rosa      2155559857  ...  Philadelphia        PA      71270          USA     72600.0
+118             487        Signal Collectibles Ltd.          Taylor              Sue      4155554312  ...      Brisbane        CA      94217          USA     60300.0
+119             489  Double Decker Gift Stores, Ltd           Smith          Thomas   (171) 555-7555  ...        London      None    WA1 1DP           UK     43300.0
+120             495            Diecast Collectables          Franco          Valarie      6175552555  ...        Boston        MA      51003          USA     85100.0
+121             496                Kellys Gift Shop         Snowden             Tony   +64 9 5555500  ...    Auckland        None       None  New Zealand    110000.0
+
+[122 rows x 11 columns],     productcode                            productname   productline              productvendor                                 productdescription
+0      S18_2870           1999 Indy 500 Monte Carlo SS  Classic Cars          Red Start Diecast  Features include opening and closing doors. Co...
+1      S32_4485              1974 Ducati 350 Mk3 Desmo   Motorcycles        Second Gear Diecast  This model features two-tone paint with chrome...
+2      S18_1749               1917 Grand Touring Sedan  Vintage Cars  Welly Diecast Productions  This 1:18 scale replica of the 1917 Grand Tour...
+3      S10_4962                 1962 LanciaA Delta 16V  Classic Cars        Second Gear Diecast  Features include: Turnable front wheels; steer...
+4      S32_3207  1950s Chicago Surface Lines Streetcar        Trains       Gearbox Collectibles  This streetcar is a joy to see. It has 80 sepa...
+..          ...                                    ...           ...                        ...                                                ...
+105   S700_1691            American Airlines: B767-300        Planes            Min Lin Diecast  Exact replia with official logos and insignias...
+106    S24_3969       1936 Mercedes Benz 500k Roadster  Vintage Cars          Red Start Diecast  This model features grille-mounted chrome horn...
+107    S50_1341           1930 Buick Marquette Phaeton  Vintage Cars        Studio M Art Models   Features opening trunk,  working steering system
+108    S18_3232            1992 Ferrari 360 Spider red  Classic Cars       Unimax Art Galleries  his replica features opening doors, superb det...
+109    S18_3136    18th Century Vintage Horse Carriage  Vintage Cars          Red Start Diecast  Hand crafted diecast-like metal horse carriage...
+
+[110 rows x 5 columns],      ordernumber   orderdate requireddate shippeddate
+0          10300  2003-10-04   2003-10-13  2003-10-09
+1          10294  2004-09-10   2004-09-17  2004-09-14
+2          10303  2004-10-06   2004-10-14  2004-10-09
+3          10315  2004-10-29   2004-11-08  2004-10-30
+4          10336  2004-11-20   2004-11-26  2004-11-24
+..           ...         ...          ...         ...
+321        10372  2005-01-26   2005-02-05  2005-01-28
+322        10187  2003-11-15   2003-11-24  2003-11-16
+323        10289  2004-09-03   2004-09-13  2004-09-04
+324        10265  2004-07-02   2004-07-09  2004-07-07
+325        10307  2004-10-14   2004-10-23  2004-10-20
+
+[326 rows x 4 columns],     employeenumber   lastname firstname                            email  reportsto              jobtitle
+0             1088  Patterson   William  wpatterson@classicmodelcars.com     1056.0  Sales Manager (APAC)
+1             1076   Firrelli      Jeff   jfirrelli@classicmodelcars.com     1002.0          VP Marketing
+2             1621      Nishi      Mami      mnishi@classicmodelcars.com     1056.0             Sales Rep
+3             1401   Castillo    Pamela   pcastillo@classicmodelcars.com     1102.0             Sales Rep
+4             1501       Bott     Larry       lbott@classicmodelcars.com     1102.0             Sales Rep
+5             1370  Hernandez    Gerard   ghernande@classicmodelcars.com     1102.0             Sales Rep
+6             1002     Murphy     Diane     dmurphy@classicmodelcars.com        0.0             President
+7             1611     Fixter      Andy     afixter@classicmodelcars.com     1088.0             Sales Rep
+8             1056  Patterson      Mary   mpatterso@classicmodelcars.com     1002.0              VP Sales
+9             1504      Jones     Barry      bjones@classicmodelcars.com     1102.0             Sales Rep
+10            1619       King       Tom       tking@classicmodelcars.com     1088.0             Sales Rep
+11            1612      Marsh     Peter      pmarsh@classicmodelcars.com     1088.0             Sales Rep
+12            1702     Gerard    Martin     mgerard@classicmodelcars.com     1102.0             Sales Rep
+13            1286      Tseng  Foon Yue      ftseng@classicmodelcars.com     1143.0             Sales Rep
+14            1143        Bow   Anthony        abow@classicmodelcars.com     1056.0    Sales Manager (NA)
+15            1337     Bondur      Loui     lbondur@classicmodelcars.com     1102.0             Sales Rep
+16            1188   Firrelli     Julie   jfirrelli@classicmodelcars.com     1143.0             Sales Rep
+17            1166   Thompson    Leslie   lthompson@classicmodelcars.com     1143.0             Sales Rep
+18            1102     Bondur    Gerard     gbondur@classicmodelcars.com     1056.0   Sale Manager (EMEA)
+19            1625       Kato   Yoshimi       ykato@classicmodelcars.com     1621.0             Sales Rep
+20            1165   Jennings    Leslie   ljennings@classicmodelcars.com     1143.0             Sales Rep
+21            1323     Vanauf    George     gvanauf@classicmodelcars.com     1143.0             Sales Rep
+22            1216  Patterson     Steve  spatterson@classicmodelcars.com     1143.0             Sales Rep,       ordernumber  orderlinenumber   status
+0           10181                7  Shipped
+1           10110               12  Shipped
+2           10234                2  Shipped
+3           10328                7  Shipped
+4           10292                5  Shipped
+...           ...              ...      ...
+2991        10304                9  Shipped
+2992        10313                4  Shipped
+2993        10139                3  Shipped
+2994        10371                4  Shipped
+2995        10301                5  Shipped
+
+[2996 rows x 3 columns])
+[2022-06-21 02:52:52,119] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=extract_to_DMs, execution_date=20220620T000000, start_date=20220621T055251, end_date=20220621T055252
+[2022-06-21 02:52:52,180] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-21 02:52:52,251] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

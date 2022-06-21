@@ -1,0 +1,87 @@
+[2022-06-05 21:50:45,029] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.populate_table scheduled__2022-06-06T00:50:05.940636+00:00 [queued]>
+[2022-06-05 21:50:45,051] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.populate_table scheduled__2022-06-06T00:50:05.940636+00:00 [queued]>
+[2022-06-05 21:50:45,051] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 21:50:45,051] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-05 21:50:45,051] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 21:50:45,076] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): populate_table> on 2022-06-06 00:50:05.940636+00:00
+[2022-06-05 21:50:45,085] {standard_task_runner.py:52} INFO - Started process 23546 to run task
+[2022-06-05 21:50:45,091] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'populate_table', 'scheduled__2022-06-06T00:50:05.940636+00:00', '--job-id', '1155', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp25snky9d', '--error-file', '/tmp/tmp9sd7x4h_']
+[2022-06-05 21:50:45,092] {standard_task_runner.py:80} INFO - Job 1155: Subtask populate_table
+[2022-06-05 21:50:45,184] {task_command.py:370} INFO - Running <TaskInstance: census.populate_table scheduled__2022-06-06T00:50:05.940636+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-05 21:50:45,292] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=populate_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-06T00:50:05.940636+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-06T00:50:05.940636+00:00
+[2022-06-05 21:50:45,899] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1685, in _execute_context
+    self.dialect.do_executemany(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/dialects/postgresql/psycopg2.py", line 903, in do_executemany
+    context._psycopg2_fetched_rows = xtras.execute_values(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/psycopg2/extras.py", line 1270, in execute_values
+    cur.execute(b''.join(parts))
+psycopg2.errors.NotNullViolation: null value in column "id_census" violates not-null constraint
+DETAIL:  Failing row contains (null, -1,  State-gov, 77516,  Bachelors, 13,  Never-married,  Adm-clerical,  Not-in-family,  White,  Male, 2174, 0, 40,  United-States,  <=50K).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/uiliam/airflow/dags/census.py", line 82, in populate_table
+    df.to_sql('census', engine, index=False, if_exists='append')
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/core/generic.py", line 2951, in to_sql
+    return sql.to_sql(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 697, in to_sql
+    return pandas_sql.to_sql(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 1739, in to_sql
+    total_inserted = sql_engine.insert_records(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 1332, in insert_records
+    raise err
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 1322, in insert_records
+    return table.insert(chunksize=chunksize, method=method)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 950, in insert
+    num_inserted = exec_insert(conn, keys, chunk_iter)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/pandas/io/sql.py", line 857, in _execute_insert
+    result = conn.execute(self.table.insert(), data)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1200, in execute
+    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 313, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1389, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1748, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1929, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1685, in _execute_context
+    self.dialect.do_executemany(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/sqlalchemy/dialects/postgresql/psycopg2.py", line 903, in do_executemany
+    context._psycopg2_fetched_rows = xtras.execute_values(
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/psycopg2/extras.py", line 1270, in execute_values
+    cur.execute(b''.join(parts))
+sqlalchemy.exc.IntegrityError: (psycopg2.errors.NotNullViolation) null value in column "id_census" violates not-null constraint
+DETAIL:  Failing row contains (null, -1,  State-gov, 77516,  Bachelors, 13,  Never-married,  Adm-clerical,  Not-in-family,  White,  Male, 2174, 0, 40,  United-States,  <=50K).
+
+[SQL: INSERT INTO census (age, workclass, fnlwgt, education, education_num, marital_status, occupation, relationship, race, sex, capital_gain, capital_loss, hours_per_week, native_country, class) VALUES (%(age)s, %(workclass)s, %(fnlwgt)s, %(education)s, %(education_num)s, %(marital_status)s, %(occupation)s, %(relationship)s, %(race)s, %(sex)s, %(capital_gain)s, %(capital_loss)s, %(hours_per_week)s, %(native_country)s, %(class)s)]
+[parameters: ({'age': -1, 'workclass': ' State-gov', 'fnlwgt': 77516, 'education': ' Bachelors', 'education_num': 13, 'marital_status': ' Never-married', 'occupation': ' Adm-clerical', 'relationship': ' Not-in-family', 'race': ' White', 'sex': ' Male', 'capital_gain': 2174, 'capital_loss': 0, 'hours_per_week': 40, 'native_country': ' United-States', 'class': ' <=50K'}, {'age': -1, 'workclass': ' Self-emp-not-inc', 'fnlwgt': 83311, 'education': ' Bachelors', 'education_num': 13, 'marital_status': ' Married-civ-spouse', 'occupation': ' Exec-managerial', 'relationship': ' Husband', 'race': ' White', 'sex': ' Male', 'capital_gain': 0, 'capital_loss': 0, 'hours_per_week': 13, 'native_country': ' United-States', 'class': ' <=50K'}, {'age': -1, 'workclass': ' Private', 'fnlwgt': 215646, 'education': ' HS-grad', 'education_num': 9, 'marital_status': ' Divorced', 'occupation': ' Handlers-cleaners', 'relationship': ' Not-in-family', 'race': ' White', 'sex': ' Male', 'capital_gain': 0, 'capital_loss': 0, 'hours_per_week': 40, 'native_country': ' United-States', 'class': ' <=50K'}, {'age': -1, 'workclass': ' Private', 'fnlwgt': 234721, 'education': ' 11th', 'education_num': 7, 'marital_status': ' Married-civ-spouse', 'occupation': ' Handlers-cleaners', 'relationship': ' Husband', 'race': ' Black', 'sex': ' Male', 'capital_gain': 0, 'capital_loss': 0, 'hours_per_week': 40, 'native_country': ' United-States', 'class': ' <=50K'}, {'age': -1, 'workclass': ' Private', 'fnlwgt': 338409, 'education': ' Bachelors', 'education_num': 13, 'marital_status': ' Married-civ-spouse', 'occupation': ' Prof-specialty', 'relationship': ' Wife', 'race': ' Black', 'sex': ' Female', 'capital_gain': 0, 'capital_loss': 0, 'hours_per_week': 40, 'native_country': ' Cuba', 'class': ' <=50K'}, {'age': -1, 'workclass': ' Private', 'fnlwgt': 284582, 'education': ' Masters', 'education_num': 14, 'marital_status': ' Married-civ-spouse', 'occupation': ' Exec-managerial', 'relationship': ' Wife', 'race': ' White', 'sex': ' Female', 'capital_gain': 0, 'capital_loss': 0, 'hours_per_week': 40, 'native_country': ' United-States', 'class': ' <=50K'}, {'age': -1, 'workclass': ' Private', 'fnlwgt': 160187, 'education': ' 9th', 'education_num': 5, 'marital_status': ' Married-spouse-absent', 'occupation': ' Other-service', 'relationship': ' Not-in-family', 'race': ' Black', 'sex': ' Female', 'capital_gain': 0, 'capital_loss': 0, 'hours_per_week': 16, 'native_country': ' Jamaica', 'class': ' <=50K'}, {'age': -1, 'workclass': ' Self-emp-not-inc', 'fnlwgt': 209642, 'education': ' HS-grad', 'education_num': 9, 'marital_status': ' Married-civ-spouse', 'occupation': ' Exec-managerial', 'relationship': ' Husband', 'race': ' White', 'sex': ' Male', 'capital_gain': 0, 'capital_loss': 0, 'hours_per_week': 45, 'native_country': ' United-States', 'class': ' >50K'}  ... displaying 10 of 1630 total bound parameter sets ...  {'age': -1, 'workclass': ' Private', 'fnlwgt': 428350, 'education': ' HS-grad', 'education_num': 9, 'marital_status': ' Married-civ-spouse', 'occupation': ' Machine-op-inspct', 'relationship': ' Wife', 'race': ' White', 'sex': ' Female', 'capital_gain': 0, 'capital_loss': 1740, 'hours_per_week': 40, 'native_country': ' United-States', 'class': ' <=50K'}, {'age': -1, 'workclass': ' null', 'fnlwgt': 200904, 'education': ' Assoc-acdm', 'education_num': 12, 'marital_status': ' Married-civ-spouse', 'occupation': ' null', 'relationship': ' Wife', 'race': ' Black', 'sex': ' Female', 'capital_gain': 0, 'capital_loss': 0, 'hours_per_week': 21, 'native_country': ' Haiti', 'class': ' <=50K'})]
+(Background on this error at: http://sqlalche.me/e/14/gkpj)
+[2022-06-05 21:50:45,930] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=census, task_id=populate_table, execution_date=20220606T005005, start_date=20220606T005045, end_date=20220606T005045
+[2022-06-05 21:50:45,950] {standard_task_runner.py:92} ERROR - Failed to execute job 1155 for task populate_table ((psycopg2.errors.NotNullViolation) null value in column "id_census" violates not-null constraint
+DETAIL:  Failing row contains (null, -1,  State-gov, 77516,  Bachelors, 13,  Never-married,  Adm-clerical,  Not-in-family,  White,  Male, 2174, 0, 40,  United-States,  <=50K).
+
+[SQL: INSERT INTO census (age, workclass, fnlwgt, education, education_num, marital_status, occupation, relationship, race, sex, capital_gain, capital_loss, hours_per_week, native_country, class) VALUES (%(age)s, %(workclass)s, %(fnlwgt)s, %(education)s, %(education_num)s, %(marital_status)s, %(occupation)s, %(relationship)s, %(race)s, %(sex)s, %(capital_gain)s, %(capital_loss)s, %(hours_per_week)s, %(native_country)s, %(class)s)]
+[parameters: ({'age': -1, 'workclass': ' State-gov', 'fnlwgt': 77516, 'education': ' Bachelors', 'education_num': 13, 'marital_status': ' Never-married', 'occupation': ' Adm-clerical', 'relationship': ' Not-in-family', 'race': ' White', 'sex': ' Male', 'capital_gain': 2174, 'capital_loss': 0, 'hours_per_week': 40, 'native_country': ' United-States', 'class': ' <=50K'}, {'age': -1, 'workclass': ' Self-emp-not-inc', 'fnlwgt': 83311, 'education': ' Bachelors', 'education_num': 13, 'marital_status': ' Married-civ-spouse', 'occupation': ' Exec-managerial', 'relationship': ' Husband', 'race': ' White', 'sex': ' Male', 'capital_gain': 0, 'capital_loss': 0, 'hours_per_week': 13, 'native_country': ' United-States', 'class': ' <=50K'}, {'age': -1, 'workclass': ' Private', 'fnlwgt': 215646, 'education': ' HS-grad', 'education_num': 9, 'marital_status': ' Divorced', 'occupation': ' Handlers-cleaners', 'relationship': ' Not-in-family', 'race': ' White', 'sex': ' Male', 'capital_gain': 0, 'capital_loss': 0, 'hours_per_week': 40, 'native_country': ' United-States', 'class': ' <=50K'}, {'age': -1, 'workclass': ' Private', 'fnlwgt': 234721, 'education': ' 11th', 'education_num': 7, 'marital_status': ' Married-civ-spouse', 'occupation': ' Handlers-cleaners', 'relationship': ' Husband', 'race': ' Black', 'sex': ' Male', 'capital_gain': 0, 'capital_loss': 0, 'hours_per_week': 40, 'native_country': ' United-States', 'class': ' <=50K'}, {'age': -1, 'workclass': ' Private', 'fnlwgt': 338409, 'education': ' Bachelors', 'education_num': 13, 'marital_status': ' Married-civ-spouse', 'occupation': ' Prof-specialty', 'relationship': ' Wife', 'race': ' Black', 'sex': ' Female', 'capital_gain': 0, 'capital_loss': 0, 'hours_per_week': 40, 'native_country': ' Cuba', 'class': ' <=50K'}, {'age': -1, 'workclass': ' Private', 'fnlwgt': 284582, 'education': ' Masters', 'education_num': 14, 'marital_status': ' Married-civ-spouse', 'occupation': ' Exec-managerial', 'relationship': ' Wife', 'race': ' White', 'sex': ' Female', 'capital_gain': 0, 'capital_loss': 0, 'hours_per_week': 40, 'native_country': ' United-States', 'class': ' <=50K'}, {'age': -1, 'workclass': ' Private', 'fnlwgt': 160187, 'education': ' 9th', 'education_num': 5, 'marital_status': ' Married-spouse-absent', 'occupation': ' Other-service', 'relationship': ' Not-in-family', 'race': ' Black', 'sex': ' Female', 'capital_gain': 0, 'capital_loss': 0, 'hours_per_week': 16, 'native_country': ' Jamaica', 'class': ' <=50K'}, {'age': -1, 'workclass': ' Self-emp-not-inc', 'fnlwgt': 209642, 'education': ' HS-grad', 'education_num': 9, 'marital_status': ' Married-civ-spouse', 'occupation': ' Exec-managerial', 'relationship': ' Husband', 'race': ' White', 'sex': ' Male', 'capital_gain': 0, 'capital_loss': 0, 'hours_per_week': 45, 'native_country': ' United-States', 'class': ' >50K'}  ... displaying 10 of 1630 total bound parameter sets ...  {'age': -1, 'workclass': ' Private', 'fnlwgt': 428350, 'education': ' HS-grad', 'education_num': 9, 'marital_status': ' Married-civ-spouse', 'occupation': ' Machine-op-inspct', 'relationship': ' Wife', 'race': ' White', 'sex': ' Female', 'capital_gain': 0, 'capital_loss': 1740, 'hours_per_week': 40, 'native_country': ' United-States', 'class': ' <=50K'}, {'age': -1, 'workclass': ' null', 'fnlwgt': 200904, 'education': ' Assoc-acdm', 'education_num': 12, 'marital_status': ' Married-civ-spouse', 'occupation': ' null', 'relationship': ' Wife', 'race': ' Black', 'sex': ' Female', 'capital_gain': 0, 'capital_loss': 0, 'hours_per_week': 21, 'native_country': ' Haiti', 'class': ' <=50K'})]
+(Background on this error at: http://sqlalche.me/e/14/gkpj); 23546)
+[2022-06-05 21:50:45,985] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-05 21:50:46,041] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

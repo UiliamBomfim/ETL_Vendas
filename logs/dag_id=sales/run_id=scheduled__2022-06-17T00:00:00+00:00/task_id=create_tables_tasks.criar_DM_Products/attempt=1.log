@@ -1,0 +1,1074 @@
+[2022-06-18 11:09:19,820] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 11:09:19,861] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 11:09:19,861] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 11:09:19,861] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 11:09:19,861] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 11:09:19,916] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 11:09:19,934] {standard_task_runner.py:52} INFO - Started process 199509 to run task
+[2022-06-18 11:09:19,939] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '1386', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmp1t2or451', '--error-file', '/tmp/tmpnlxmac0g']
+[2022-06-18 11:09:19,939] {standard_task_runner.py:80} INFO - Job 1386: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 11:09:20,043] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 11:09:20,187] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 11:09:20,205] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-18 11:09:20,212] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS DM_Products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 11:09:20,214] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 11:09:20,240] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T140919, end_date=20220618T140920
+[2022-06-18 11:09:20,315] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 11:09:20,413] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 11:34:04,111] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 11:34:04,138] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 11:34:04,138] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 11:34:04,138] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 11:34:04,138] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 11:34:04,164] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 11:34:04,177] {standard_task_runner.py:52} INFO - Started process 208340 to run task
+[2022-06-18 11:34:04,184] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpwe68nt5p', '--error-file', '/tmp/tmpjzlfeztf']
+[2022-06-18 11:34:04,184] {standard_task_runner.py:80} INFO - Job 22: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 11:34:04,287] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 11:34:04,463] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 11:34:04,487] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-18 11:34:04,496] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS DM_Products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 11:34:04,497] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 11:34:04,530] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T143404, end_date=20220618T143404
+[2022-06-18 11:34:04,596] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 11:34:04,722] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 11:41:58,206] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 11:41:58,228] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 11:41:58,229] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 11:41:58,229] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 11:41:58,229] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 11:41:58,252] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 11:41:58,265] {standard_task_runner.py:52} INFO - Started process 211753 to run task
+[2022-06-18 11:41:58,271] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '40', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpy23hv38_', '--error-file', '/tmp/tmpqk0zig3m']
+[2022-06-18 11:41:58,271] {standard_task_runner.py:80} INFO - Job 40: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 11:41:58,371] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 11:41:58,536] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 11:41:58,562] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-18 11:41:58,572] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS DM_Products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 11:41:58,573] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 11:41:58,604] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T144158, end_date=20220618T144158
+[2022-06-18 11:41:58,685] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 11:41:58,789] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 11:45:23,050] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 11:45:23,080] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 11:45:23,080] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 11:45:23,080] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 11:45:23,080] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 11:45:23,109] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 11:45:23,124] {standard_task_runner.py:52} INFO - Started process 213597 to run task
+[2022-06-18 11:45:23,133] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '57', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpcevljcp8', '--error-file', '/tmp/tmp3f1u_ppd']
+[2022-06-18 11:45:23,134] {standard_task_runner.py:80} INFO - Job 57: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 11:45:23,263] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 11:45:23,420] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 11:45:23,445] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-18 11:45:23,453] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS DM_Products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 11:45:23,455] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 11:45:23,486] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T144523, end_date=20220618T144523
+[2022-06-18 11:45:23,548] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 11:45:23,645] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 11:52:25,782] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 11:52:25,796] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 11:52:25,796] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 11:52:25,796] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 11:52:25,796] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 11:52:25,810] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 11:52:25,816] {standard_task_runner.py:52} INFO - Started process 217322 to run task
+[2022-06-18 11:52:25,819] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '75', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpvb_9t9b_', '--error-file', '/tmp/tmp8gt0udgr']
+[2022-06-18 11:52:25,819] {standard_task_runner.py:80} INFO - Job 75: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 11:52:25,884] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 11:52:25,966] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 11:52:25,978] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-18 11:52:25,983] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS DM_Products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 11:52:26,007] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T145225, end_date=20220618T145226
+[2022-06-18 11:52:26,031] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 11:52:26,084] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 11:58:00,266] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 11:58:00,281] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 11:58:00,281] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 11:58:00,281] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 11:58:00,281] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 11:58:00,299] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 11:58:00,305] {standard_task_runner.py:52} INFO - Started process 219475 to run task
+[2022-06-18 11:58:00,311] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '89', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpfrx_qmz_', '--error-file', '/tmp/tmpx63pdl0t']
+[2022-06-18 11:58:00,311] {standard_task_runner.py:80} INFO - Job 89: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 11:58:00,376] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 11:58:00,461] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 11:58:00,476] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-18 11:58:00,480] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS DM_Products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 11:58:00,481] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 11:58:00,496] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T145800, end_date=20220618T145800
+[2022-06-18 11:58:00,523] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 11:58:00,576] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 12:18:31,632] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 12:18:31,648] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 12:18:31,648] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 12:18:31,648] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 12:18:31,649] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 12:18:31,666] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 12:18:31,673] {standard_task_runner.py:52} INFO - Started process 226798 to run task
+[2022-06-18 12:18:31,676] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '1407', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpp34y31zs', '--error-file', '/tmp/tmp4i7vqhk7']
+[2022-06-18 12:18:31,677] {standard_task_runner.py:80} INFO - Job 1407: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 12:18:31,749] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 12:18:31,844] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 12:18:31,859] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-18 12:18:31,866] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS DM_Products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 12:18:31,903] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T151831, end_date=20220618T151831
+[2022-06-18 12:18:31,932] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 12:18:31,975] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 12:19:19,756] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 12:19:19,770] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 12:19:19,770] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 12:19:19,770] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 12:19:19,770] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 12:19:19,788] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 12:19:19,798] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '1418', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpjrp0ch09', '--error-file', '/tmp/tmpv6eanuf2']
+[2022-06-18 12:19:19,796] {standard_task_runner.py:52} INFO - Started process 227784 to run task
+[2022-06-18 12:19:19,799] {standard_task_runner.py:80} INFO - Job 1418: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 12:19:19,866] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 12:19:19,955] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 12:19:19,969] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-18 12:19:19,973] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS DM_Products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 12:19:19,974] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 12:19:20,012] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T151919, end_date=20220618T151920
+[2022-06-18 12:19:20,053] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 12:19:20,125] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 13:00:00,464] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:00:00,493] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:00:00,494] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:00:00,494] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 13:00:00,494] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:00:00,518] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 13:00:00,527] {standard_task_runner.py:52} INFO - Started process 8979 to run task
+[2022-06-18 13:00:00,533] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '1433', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpqf5uckzq', '--error-file', '/tmp/tmpcvdjcqu5']
+[2022-06-18 13:00:00,534] {standard_task_runner.py:80} INFO - Job 1433: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 13:00:00,630] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 13:00:00,809] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 13:00:00,835] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-18 13:00:00,845] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS DM_Products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 13:00:00,848] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 13:00:00,889] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T160000, end_date=20220618T160000
+[2022-06-18 13:00:00,948] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 13:00:01,092] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 13:02:35,462] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:02:35,492] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:02:35,493] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:02:35,493] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 13:02:35,493] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:02:35,518] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 13:02:35,531] {standard_task_runner.py:52} INFO - Started process 10750 to run task
+[2022-06-18 13:02:35,539] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '1452', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmp5doq8sbs', '--error-file', '/tmp/tmpizpr2oe7']
+[2022-06-18 13:02:35,540] {standard_task_runner.py:80} INFO - Job 1452: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 13:02:35,681] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 13:02:35,875] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 13:02:35,898] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-18 13:02:35,906] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS DM_Products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 13:02:35,907] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 13:02:35,937] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T160235, end_date=20220618T160235
+[2022-06-18 13:02:36,003] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 13:02:36,100] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 13:13:47,235] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:13:47,259] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:13:47,259] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:13:47,259] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 13:13:47,259] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:13:47,281] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 13:13:47,294] {standard_task_runner.py:52} INFO - Started process 13984 to run task
+[2022-06-18 13:13:47,301] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '1467', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmp72cho0x3', '--error-file', '/tmp/tmpd4k_aeo7']
+[2022-06-18 13:13:47,302] {standard_task_runner.py:80} INFO - Job 1467: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 13:13:47,407] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 13:13:47,583] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 13:13:47,612] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-18 13:13:47,619] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 13:13:47,655] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T161347, end_date=20220618T161347
+[2022-06-18 13:13:47,714] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 13:13:47,812] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 13:22:26,831] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:22:26,857] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:22:26,857] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:22:26,857] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 13:22:26,857] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:22:26,884] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 13:22:26,896] {standard_task_runner.py:52} INFO - Started process 16895 to run task
+[2022-06-18 13:22:26,902] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '1484', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpmxhqhto8', '--error-file', '/tmp/tmpn5w6y6bi']
+[2022-06-18 13:22:26,903] {standard_task_runner.py:80} INFO - Job 1484: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 13:22:27,019] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 13:22:27,208] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 13:22:27,236] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-18 13:22:27,246] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 13:22:27,248] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 13:22:27,312] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T162226, end_date=20220618T162227
+[2022-06-18 13:22:27,397] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 13:22:27,482] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 13:24:20,583] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:24:20,610] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:24:20,610] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:24:20,610] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 13:24:20,611] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:24:20,640] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 13:24:20,655] {standard_task_runner.py:52} INFO - Started process 18714 to run task
+[2022-06-18 13:24:20,663] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '1499', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmp8cxdu263', '--error-file', '/tmp/tmpih42cjos']
+[2022-06-18 13:24:20,664] {standard_task_runner.py:80} INFO - Job 1499: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 13:24:20,776] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 13:24:20,946] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 13:24:20,968] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-18 13:24:20,975] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 13:24:20,977] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 13:24:21,015] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T162420, end_date=20220618T162421
+[2022-06-18 13:24:21,074] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 13:24:21,180] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 13:28:23,634] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:28:23,666] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:28:23,667] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:28:23,667] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 13:28:23,667] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:28:23,692] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 13:28:23,704] {standard_task_runner.py:52} INFO - Started process 21218 to run task
+[2022-06-18 13:28:23,711] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '1513', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmp6wybw8sm', '--error-file', '/tmp/tmphteuqpxd']
+[2022-06-18 13:28:23,712] {standard_task_runner.py:80} INFO - Job 1513: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 13:28:23,804] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 13:28:23,957] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 13:28:23,986] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-18 13:28:24,001] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 13:28:24,051] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T162823, end_date=20220618T162824
+[2022-06-18 13:28:24,124] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 13:28:24,219] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 13:32:57,744] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:32:57,774] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:32:57,774] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:32:57,775] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 13:32:57,775] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:32:57,800] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 13:32:57,814] {standard_task_runner.py:52} INFO - Started process 23664 to run task
+[2022-06-18 13:32:57,824] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '1529', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpcriczzs4', '--error-file', '/tmp/tmpl6fav24z']
+[2022-06-18 13:32:57,825] {standard_task_runner.py:80} INFO - Job 1529: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 13:32:57,934] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 13:32:58,127] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 13:32:58,150] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-18 13:32:58,157] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 13:32:58,159] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 13:32:58,189] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T163257, end_date=20220618T163258
+[2022-06-18 13:32:58,235] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 13:32:58,326] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 13:40:03,705] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:40:03,730] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:40:03,730] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:40:03,731] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 13:40:03,731] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:40:03,758] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 13:40:03,772] {standard_task_runner.py:52} INFO - Started process 27241 to run task
+[2022-06-18 13:40:03,780] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '1546', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmp7b1n5rc3', '--error-file', '/tmp/tmp6ibjr96g']
+[2022-06-18 13:40:03,781] {standard_task_runner.py:80} INFO - Job 1546: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 13:40:03,906] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 13:40:04,076] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 13:40:04,100] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-18 13:40:04,107] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 13:40:04,109] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 13:40:04,156] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T164003, end_date=20220618T164004
+[2022-06-18 13:40:04,232] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 13:40:04,330] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 13:41:59,973] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:41:59,999] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:41:59,999] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:41:59,999] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 13:41:59,999] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:42:00,026] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 13:42:00,041] {standard_task_runner.py:52} INFO - Started process 29099 to run task
+[2022-06-18 13:42:00,053] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '1561', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmp1z8_0dx2', '--error-file', '/tmp/tmpe02dsva3']
+[2022-06-18 13:42:00,054] {standard_task_runner.py:80} INFO - Job 1561: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 13:42:00,215] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 13:42:00,417] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 13:42:00,441] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-18 13:42:00,451] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 13:42:00,453] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 13:42:00,485] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T164159, end_date=20220618T164200
+[2022-06-18 13:42:00,550] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 13:42:00,651] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 13:43:38,349] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:43:38,381] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:43:38,381] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:43:38,382] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 13:43:38,382] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:43:38,412] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 13:43:38,428] {standard_task_runner.py:52} INFO - Started process 30782 to run task
+[2022-06-18 13:43:38,436] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '1576', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmp3jh0a0u_', '--error-file', '/tmp/tmpnbsacns6']
+[2022-06-18 13:43:38,437] {standard_task_runner.py:80} INFO - Job 1576: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 13:43:38,573] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 13:43:38,785] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 13:43:38,812] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-18 13:43:38,821] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 13:43:38,823] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 13:43:38,859] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T164338, end_date=20220618T164338
+[2022-06-18 13:43:38,933] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 13:43:39,022] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 13:46:30,959] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:46:30,987] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:46:30,987] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:46:30,988] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 13:46:30,988] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:46:31,017] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 13:46:31,032] {standard_task_runner.py:52} INFO - Started process 32351 to run task
+[2022-06-18 13:46:31,039] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '1592', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmp32zrfqk5', '--error-file', '/tmp/tmpmemlhp_g']
+[2022-06-18 13:46:31,040] {standard_task_runner.py:80} INFO - Job 1592: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 13:46:31,185] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 13:46:31,336] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 13:46:31,354] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-18 13:46:31,361] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 13:46:31,362] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 13:46:31,396] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T164630, end_date=20220618T164631
+[2022-06-18 13:46:31,453] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 13:46:31,569] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 13:52:07,711] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:52:07,742] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:52:07,742] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:52:07,742] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 13:52:07,743] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:52:07,771] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 13:52:07,786] {standard_task_runner.py:52} INFO - Started process 34335 to run task
+[2022-06-18 13:52:07,800] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '1607', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpqhatykcs', '--error-file', '/tmp/tmpy131s9_2']
+[2022-06-18 13:52:07,801] {standard_task_runner.py:80} INFO - Job 1607: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 13:52:08,003] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 13:52:08,181] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 13:52:08,205] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-18 13:52:08,216] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 13:52:08,217] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 13:52:08,251] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T165207, end_date=20220618T165208
+[2022-06-18 13:52:08,303] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 13:52:08,400] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 13:56:33,710] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:56:33,737] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 13:56:33,738] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:56:33,738] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 13:56:33,738] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 13:56:33,765] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 13:56:33,780] {standard_task_runner.py:52} INFO - Started process 36864 to run task
+[2022-06-18 13:56:33,787] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '1623', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmp9ix5m_et', '--error-file', '/tmp/tmpix2kvmr3']
+[2022-06-18 13:56:33,788] {standard_task_runner.py:80} INFO - Job 1623: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 13:56:33,930] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 13:56:34,102] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 13:56:34,127] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-18 13:56:34,135] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 13:56:34,137] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 13:56:34,167] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T165633, end_date=20220618T165634
+[2022-06-18 13:56:34,244] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 13:56:34,339] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 14:03:03,836] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 14:03:03,869] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 14:03:03,870] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 14:03:03,870] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 14:03:03,870] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 14:03:03,898] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 14:03:03,914] {standard_task_runner.py:52} INFO - Started process 41347 to run task
+[2022-06-18 14:03:03,921] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/dag copy.py', '--cfg-path', '/tmp/tmpzmtiaiwn', '--error-file', '/tmp/tmp3ntgs0f4']
+[2022-06-18 14:03:03,922] {standard_task_runner.py:80} INFO - Job 29: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 14:03:04,039] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 14:03:04,192] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 14:03:04,215] {base.py:68} INFO - Using connection ID '***_default' for task execution.
+[2022-06-18 14:03:04,223] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 14:03:04,225] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 14:03:04,256] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T170303, end_date=20220618T170304
+[2022-06-18 14:03:04,334] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 14:03:04,407] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 14:19:14,158] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 14:19:14,182] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 14:19:14,182] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 14:19:14,182] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 14:19:14,182] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 14:19:14,208] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 14:19:14,217] {standard_task_runner.py:52} INFO - Started process 46827 to run task
+[2022-06-18 14:19:14,221] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmp4k55u2ij', '--error-file', '/tmp/tmpzild6p0u']
+[2022-06-18 14:19:14,222] {standard_task_runner.py:80} INFO - Job 18: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 14:19:14,308] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 14:19:14,452] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 14:19:14,476] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-18 14:19:14,486] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 14:19:14,487] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 14:19:14,513] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T171914, end_date=20220618T171914
+[2022-06-18 14:19:14,555] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 14:19:14,652] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 14:22:48,767] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 14:22:48,793] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 14:22:48,793] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 14:22:48,793] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 14:22:48,794] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 14:22:48,819] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 14:22:48,834] {standard_task_runner.py:52} INFO - Started process 48590 to run task
+[2022-06-18 14:22:48,840] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '35', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpcy6ehrni', '--error-file', '/tmp/tmprhe27mm6']
+[2022-06-18 14:22:48,841] {standard_task_runner.py:80} INFO - Job 35: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 14:22:48,942] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 14:22:49,121] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 14:22:49,153] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-18 14:22:49,163] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 14:22:49,165] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 14:22:49,223] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T172248, end_date=20220618T172249
+[2022-06-18 14:22:49,294] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 14:22:49,381] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 14:29:11,950] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 14:29:12,011] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 14:29:12,011] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 14:29:12,012] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 14:29:12,012] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 14:29:12,065] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 14:29:12,089] {standard_task_runner.py:52} INFO - Started process 50803 to run task
+[2022-06-18 14:29:12,109] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '54', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpgow2dcaj', '--error-file', '/tmp/tmp49z0bxj8']
+[2022-06-18 14:29:12,109] {standard_task_runner.py:80} INFO - Job 54: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 14:29:12,245] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 14:29:12,401] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 14:29:12,421] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-18 14:29:12,431] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(40),
+                productline VARCHAR(20),
+                productvendor VARCHAR(25),
+                productdescription VARCHAR(200)
+                )
+            , parameters: None
+[2022-06-18 14:29:12,433] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 14:29:12,513] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T172911, end_date=20220618T172912
+[2022-06-18 14:29:12,568] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 14:29:12,647] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 14:46:16,002] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 14:46:16,025] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 14:46:16,025] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 14:46:16,025] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 14:46:16,025] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 14:46:16,048] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 14:46:16,058] {standard_task_runner.py:52} INFO - Started process 54804 to run task
+[2022-06-18 14:46:16,064] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '68', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpn7_565fz', '--error-file', '/tmp/tmphwukjixk']
+[2022-06-18 14:46:16,065] {standard_task_runner.py:80} INFO - Job 68: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 14:46:16,174] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 14:46:16,340] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 14:46:16,364] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-18 14:46:16,372] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(50),
+                productline VARCHAR(40),
+                productvendor VARCHAR(40),
+                productdescription VARCHAR(300)
+                )
+            , parameters: None
+[2022-06-18 14:46:16,415] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T174616, end_date=20220618T174616
+[2022-06-18 14:46:16,477] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 14:46:16,569] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 14:53:16,321] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 14:53:16,341] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 14:53:16,342] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 14:53:16,342] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 14:53:16,342] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 14:53:16,365] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 14:53:16,376] {standard_task_runner.py:52} INFO - Started process 58911 to run task
+[2022-06-18 14:53:16,383] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '96', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmphf7ixmfx', '--error-file', '/tmp/tmpon32ytox']
+[2022-06-18 14:53:16,384] {standard_task_runner.py:80} INFO - Job 96: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 14:53:16,482] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 14:53:16,651] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 14:53:16,676] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-18 14:53:16,690] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(50),
+                productline VARCHAR(40),
+                productvendor VARCHAR(40),
+                productdescription VARCHAR(1000)
+                )
+            , parameters: None
+[2022-06-18 14:53:16,730] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T175316, end_date=20220618T175316
+[2022-06-18 14:53:16,797] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 14:53:16,900] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 15:01:52,352] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 15:01:52,393] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 15:01:52,394] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 15:01:52,394] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 15:01:52,394] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 15:01:52,419] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 15:01:52,431] {standard_task_runner.py:52} INFO - Started process 62420 to run task
+[2022-06-18 15:01:52,437] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '115', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpxmupjghx', '--error-file', '/tmp/tmpwyqt0gan']
+[2022-06-18 15:01:52,437] {standard_task_runner.py:80} INFO - Job 115: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 15:01:52,544] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 15:01:52,751] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 15:01:52,771] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-18 15:01:52,785] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(50),
+                productline VARCHAR(40),
+                productvendor VARCHAR(40),
+                productdescription VARCHAR(1000)
+                )
+            , parameters: None
+[2022-06-18 15:01:52,836] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T180152, end_date=20220618T180152
+[2022-06-18 15:01:52,894] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 15:01:53,031] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 15:06:34,881] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 15:06:34,906] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 15:06:34,906] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 15:06:34,906] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 15:06:34,906] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 15:06:34,930] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 15:06:34,945] {standard_task_runner.py:52} INFO - Started process 65313 to run task
+[2022-06-18 15:06:34,952] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '131', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmpt0k07e1x', '--error-file', '/tmp/tmp2ko3ugv6']
+[2022-06-18 15:06:34,952] {standard_task_runner.py:80} INFO - Job 131: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 15:06:35,066] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 15:06:35,275] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 15:06:35,299] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-18 15:06:35,308] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(50),
+                productline VARCHAR(40),
+                productvendor VARCHAR(40),
+                productdescription VARCHAR(1000)
+                )
+            , parameters: None
+[2022-06-18 15:06:35,310] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 15:06:35,340] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T180634, end_date=20220618T180635
+[2022-06-18 15:06:35,408] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 15:06:35,501] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 15:08:13,247] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 15:08:13,273] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 15:08:13,274] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 15:08:13,274] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 15:08:13,274] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 15:08:13,299] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 15:08:13,311] {standard_task_runner.py:52} INFO - Started process 67345 to run task
+[2022-06-18 15:08:13,318] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '147', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmp14izav8m', '--error-file', '/tmp/tmp5_xwkjrv']
+[2022-06-18 15:08:13,319] {standard_task_runner.py:80} INFO - Job 147: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 15:08:13,435] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 15:08:13,606] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 15:08:13,640] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-18 15:08:13,652] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(50),
+                productline VARCHAR(40),
+                productvendor VARCHAR(40),
+                productdescription VARCHAR(1000)
+                )
+            , parameters: None
+[2022-06-18 15:08:13,654] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 15:08:13,695] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T180813, end_date=20220618T180813
+[2022-06-18 15:08:13,770] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 15:08:13,878] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 15:27:13,988] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 15:27:14,019] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 15:27:14,019] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 15:27:14,019] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 15:27:14,019] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 15:27:14,048] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 15:27:14,063] {standard_task_runner.py:52} INFO - Started process 75912 to run task
+[2022-06-18 15:27:14,069] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '163', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmp2hzkl2vq', '--error-file', '/tmp/tmpglais6j9']
+[2022-06-18 15:27:14,069] {standard_task_runner.py:80} INFO - Job 163: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 15:27:14,187] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 15:27:14,340] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 15:27:14,364] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-18 15:27:14,370] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(50),
+                productline VARCHAR(40),
+                productvendor VARCHAR(40),
+                productdescription VARCHAR(1000)
+                )
+            , parameters: None
+[2022-06-18 15:27:14,373] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 15:27:14,411] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T182713, end_date=20220618T182714
+[2022-06-18 15:27:14,482] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 15:27:14,577] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-06-18 15:29:54,777] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 15:29:54,805] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [queued]>
+[2022-06-18 15:29:54,806] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 15:29:54,806] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-18 15:29:54,806] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 15:29:54,837] {taskinstance.py:1378} INFO - Executing <Task(PostgresOperator): create_tables_tasks.criar_DM_Products> on 2022-06-17 00:00:00+00:00
+[2022-06-18 15:29:54,851] {standard_task_runner.py:52} INFO - Started process 79304 to run task
+[2022-06-18 15:29:54,857] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'sales', 'create_tables_tasks.criar_DM_Products', 'scheduled__2022-06-17T00:00:00+00:00', '--job-id', '181', '--raw', '--subdir', 'DAGS_FOLDER/sales.py', '--cfg-path', '/tmp/tmp_obxtvo_', '--error-file', '/tmp/tmpb_uk0nae']
+[2022-06-18 15:29:54,857] {standard_task_runner.py:80} INFO - Job 181: Subtask create_tables_tasks.criar_DM_Products
+[2022-06-18 15:29:54,950] {task_command.py:370} INFO - Running <TaskInstance: sales.create_tables_tasks.criar_DM_Products scheduled__2022-06-17T00:00:00+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-18 15:29:55,124] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=sales
+AIRFLOW_CTX_TASK_ID=create_tables_tasks.criar_DM_Products
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T00:00:00+00:00
+[2022-06-18 15:29:55,148] {base.py:68} INFO - Using connection ID '***' for task execution.
+[2022-06-18 15:29:55,161] {dbapi.py:213} INFO - Running statement: 
+                CREATE TABLE IF NOT EXISTS dm_products (
+                id_products SERIAL PRIMARY KEY,    
+                productname VARCHAR(50),
+                productline VARCHAR(40),
+                productvendor VARCHAR(40),
+                productdescription VARCHAR(1000)
+                )
+            , parameters: None
+[2022-06-18 15:29:55,162] {postgres.py:94} INFO - NOTICE:  relation "dm_products" already exists, skipping
+
+[2022-06-18 15:29:55,200] {taskinstance.py:1396} INFO - Marking task as SUCCESS. dag_id=sales, task_id=create_tables_tasks.criar_DM_Products, execution_date=20220617T000000, start_date=20220618T182954, end_date=20220618T182955
+[2022-06-18 15:29:55,273] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-18 15:29:55,416] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

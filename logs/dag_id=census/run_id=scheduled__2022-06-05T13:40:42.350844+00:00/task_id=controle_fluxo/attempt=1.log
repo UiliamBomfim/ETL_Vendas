@@ -1,0 +1,30 @@
+[2022-06-05 10:42:00,504] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.controle_fluxo scheduled__2022-06-05T13:40:42.350844+00:00 [queued]>
+[2022-06-05 10:42:00,516] {taskinstance.py:1160} INFO - Dependencies all met for <TaskInstance: census.controle_fluxo scheduled__2022-06-05T13:40:42.350844+00:00 [queued]>
+[2022-06-05 10:42:00,516] {taskinstance.py:1357} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 10:42:00,516] {taskinstance.py:1358} INFO - Starting attempt 1 of 1
+[2022-06-05 10:42:00,516] {taskinstance.py:1359} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-05 10:42:00,534] {taskinstance.py:1378} INFO - Executing <Task(PythonOperator): controle_fluxo> on 2022-06-05 13:40:42.350844+00:00
+[2022-06-05 10:42:00,542] {standard_task_runner.py:52} INFO - Started process 77454 to run task
+[2022-06-05 10:42:00,546] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'census', 'controle_fluxo', 'scheduled__2022-06-05T13:40:42.350844+00:00', '--job-id', '879', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpdx71yjey', '--error-file', '/tmp/tmpj1frcw_h']
+[2022-06-05 10:42:00,546] {standard_task_runner.py:80} INFO - Job 879: Subtask controle_fluxo
+[2022-06-05 10:42:00,605] {task_command.py:370} INFO - Running <TaskInstance: census.controle_fluxo scheduled__2022-06-05T13:40:42.350844+00:00 [running]> on host uiliam-Vostro-15-3515
+[2022-06-05 10:42:00,687] {taskinstance.py:1570} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=census
+AIRFLOW_CTX_TASK_ID=controle_fluxo
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-05T13:40:42.350844+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-05T13:40:42.350844+00:00
+[2022-06-05 10:42:00,688] {taskinstance.py:1890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/uiliam/sandbox/lib/python3.9/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+TypeError: controller_fluxo() missing 1 required positional argument: 'init'
+[2022-06-05 10:42:00,701] {taskinstance.py:1396} INFO - Marking task as FAILED. dag_id=census, task_id=controle_fluxo, execution_date=20220605T134042, start_date=20220605T134200, end_date=20220605T134200
+[2022-06-05 10:42:00,716] {standard_task_runner.py:92} ERROR - Failed to execute job 879 for task controle_fluxo (controller_fluxo() missing 1 required positional argument: 'init'; 77454)
+[2022-06-05 10:42:00,758] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-05 10:42:00,812] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
